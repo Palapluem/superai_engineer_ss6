@@ -1,0 +1,1114 @@
+ข้อที่ 1
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ทำไม correlation ไม่ใช่ causation
+ลบคำตอบ
+	อะไรปรากฎด้วยกัน อาจปรากฎด้วยกันโดยความบังเอิญ 
+	correlation วัดง่ายกว่า causation
+	เขียนคนละแบบ
+	Causation ปรัชญาเกินไป วัดไม่ได้
+
+ข้อที่ 2
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+การเลือก Degree ของ Polynomial จะขึ้นกับข้อมูล แต่หากเลือก Degree ที่สูงเกินไป ซึ่งทำงานได้ดีกับข้อมูล Train แต่ไม่ดีกับข้อมูล Test เรียกเหตุการณ์แบบนี้ว่าอะไร?
+ลบคำตอบ
+	ไม่ข้อใดถูกต้อง
+	Overfitting
+	Just Right (Good fitting)
+	Underfitting
+
+ข้อที่ 3
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้กล่าวได้ถูกต้องเกี่ยวกับฐานข้อมูล SQL และ NoSQL
+ลบคำตอบ
+	ถูกทุกข้อ
+	ฐานข้อมูล SQL เป็นแบบตาราง ในขณะที่ฐานข้อมูล NoSQL เป็นdocument, key-value, graph หรือ wide-column stores
+	ฐานข้อมูล SQL ดีกว่าสำหรับธุรกรรมแบบหลายแถว ในขณะที่ NoSQL ดีกว่าสำหรับข้อมูลที่ไม่มีโครงสร้าง 
+	ฐานข้อมูล SQL เป็นฐานข้อมูลเชิงสัมพันธ์ ฐานข้อมูล NoSQL ไม่ใช่เชิงสัมพันธ์
+
+ข้อที่ 4
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+หากต้องการพัฒนาระบบเพื่อช่วยคัดกรองอาการผู้ป่วยในโรงพยาบาล คุณคิดว่า named entity ใด เกี่ยวข้องน้อยที่สุด
+ลบคำตอบ
+	ข้อมูลผู้ป่วย
+	ชื่อยา
+	ชื่อพืช
+	ชื่อโรค
+
+ข้อที่ 5
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดเป็นเว็บไซต์ของศูนย์กลางข้อมูลเปิดภาครัฐ (Open Government Data) จัดการโดยสำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน)
+ลบคำตอบ
+	data.co.th
+	data.go.th
+	data.gov
+	data.or.th
+
+ข้อที่ 6
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+วิธีการประมวลผลภาพที่กระทำโดยตรงบนพิกเซลของภาพ คือ วิธีการใด
+ลบคำตอบ
+	Spatial domain
+	Transform domain
+	Inverse transformation
+	ไม่มีข้อใดถูก
+
+ข้อที่ 7
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดกล่าวถูกต้อง เกี่ยวกับ Metric ในการวัดประสิทธิภาพของ Regression Model?
+ลบคำตอบ
+	วัดด้วย RMSE (Root Mean Square Error) เพื่อดูว่า ค่าที่ทำนายจะเบี่ยงเบนไปเท่าไรโดยเฉลี่ย
+	วัดด้วย R^2 (R Square) หากมีค่าใกล้ 1 แสดงว่า Model Fit กับ Data ได้ดี
+	ไม่มีข้อใดถูก 
+	ถูกทั้งสองข้อ
+
+ข้อที่ 8
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ภาษาไทย (Thai) มีระบบการเขียนคล้ายกับภาษาใด?
+ลบคำตอบ
+	ภาษาอาราบิก (Arabic Alphabets)
+	ภาษาเกาหลี (Korean – Hangeul)
+	ภาษาพม่า (Burmese)
+	ภาษาญี่ปุ่น (Japanese)
+
+ข้อที่ 9
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จากตัวอย่างได้แสดงผลลัพธ์จากระบบ (System) และมนุษย์ (Reference) ให้คำตอบ ต่อไปนี้ 
+
+System Summary: ฉัน|ไป|เข้า|ค่าย|พัฒนา|นวัตกร
+
+Reference Summary: ฉัน|เข้า|ค่าย|นวัตกร
+
+      จงหาค่า ROUGE-N (F-measure) เมื่อ N=1?
+
+ลบคำตอบ
+	1.67
+	1.60
+	1.00
+	0.67
+
+ข้อที่ 10
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+กฎหมาย PDPA ของประเทศไทยมีผลบังคับใช้อย่างเต็มรูปแบบตั้งแต่เมื่อใด?
+ลบคำตอบ
+	1 มกราคม 2022
+	1 มกราคม 2020
+	1 มิถุนายน 2023
+	1 มิถุนายน 2022
+	31 ธันวาคม 2021
+
+ข้อที่ 11
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด คือ เครื่องมือสำเร็จรูปที่ใช้ในการสร้างโมเดล
+ลบคำตอบ
+	Teachable Machine
+	ถูกทุกข้อ
+	Lobe.ai
+	AutoML
+
+ข้อที่ 12
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เมื่อพิจารณาความสามารถในการแข่งขันและการพัฒนาอย่างยั่งยืน (Competitiveness and Sustainability Development) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์ ข้อใดกล่าวไม่ถูกต้อง
+ลบคำตอบ
+	ปัญญาประดิษฐ์ควรสร้างและใช้งานเพื่อสร้างประโยชน์และความผาสุกให้แก่มนุษย์ สังคม เศรษฐกิจ และสิ่งแวดล้อมอย่างยั่งยืน
+	ปัญญาประดิษฐ์ควรนำมาใช้ในการกำหนดชะตาชีวิตของมนุษย์
+	ปัญญาประดิษฐ์ควรใช้งานเพื่อเพิ่มความสามารถในการแข่งขันและสร้างความเจริญให้กับมนุษย์ สังคม ประเทศ ภูมิภาค และโลกอย่างเป็นธรรม
+	ปัญญาประดิษฐ์ควรได้รับการวิจัยและพัฒนาอย่างต่อเนื่อง เพื่อให้มนุษย์เกิดการสร้างสรรค์นวัตกรรมและอุตสาหกรรมใหม่
+
+ข้อที่ 13
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดกล่าวถูกต้อง เกี่ยวกับ Linear Regression และ Polynomial Regression?
+ลบคำตอบ
+	Polynomial Regression ใช้สมการ Polynomial Degree ต่าง ๆ ในการ Fit กับ Data
+	ในการใช้ Polynomial Regression ค่า Degree ที่เหมาะสม จะขึ้นกับข้อมูลแต่ละชุด ต้องทำการทดลองโดยกระบวนการ Train และ Test
+	Linear Regression ใช้สมการเส้นตรงในการ Fit กับ Data
+	ถูกทุกข้อ
+
+ข้อที่ 14
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในระบบ RAG ถ้าขั้นตอน Retrieval ค้นหาเอกสารที่ไม่เกี่ยวข้องกับคำถามมาให้ LLM จะเกิดอะไรขึ้น?
+ลบคำตอบ
+	ระบบจะทำ Retrieval ซ้ำอัตโนมัติจนกว่าจะได้ข้อมูลที่ถูกต้อง
+	LLM จะตรวจจับได้เองว่าข้อมูลไม่เกี่ยวข้อง และปฏิเสธตอบ
+	LLM จะข้ามข้อมูลที่ไม่เกี่ยวข้องและตอบจากความรู้ของตัวเองแทน
+	LLM จะนำข้อมูลที่ไม่เกี่ยวข้องนั้นไปสร้างคำตอบที่ผิดพลาดให้ผู้ใช้
+	ระบบจะหยุดทำงานและแจ้ง Error
+
+ข้อที่ 15
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+WangchanBERTa โมเดลประมวลผลภาษาไทยที่ใหญ่และก้าวหน้าที่สุดในขณะนี้ ที่พัฒนาโดย VISTEC-depa THAILAND AI RESEARCH INSTITUTE ที่ปล่อยโมเดลออกเมื่อต้นปี 2021 มีพื้นฐานมาจากสถาปัตยกรรมอะไร
+ลบคำตอบ
+	CAMEMBERT
+	ALBERT
+	ROBERTA
+	BERT
+
+ข้อที่ 16
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Thai elementary discourse unit (TEDU) มุ่งเน้นการจัดโครงสร้างในลักษณะใด?
+ลบคำตอบ
+	มุ่งเน้นคำกริยาต้องปรากฏในหน่วยนั้นเสมอ
+	มุ่งเน้นความสำคัญที่ประธานของโครงสร้าง ต้องมีคำนามประกอบเสมอ
+	มุ่งเน้นคำกริยาและประธานของหน่วยเสมอ
+	มุ่งเน้นคำนามที่เป็นกรรมของหน่วย รวมไปถึงวลี
+
+ข้อที่ 17
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+แนวคิด 'Baseline First' ในการทำ Prototype หมายถึงสิ่งใด?
+ลบคำตอบ
+	การทำแบบสำรวจความพึงพอใจก่อนเริ่มทำโปรแกรม
+	การจ้างบริษัทภายนอกมาทำระบบทั้งหมดให้เสร็จในครั้งเดียว
+	การเริ่มจากวิธีที่ง่ายและเร็วที่สุด เช่น Rule-based เพื่อพิสูจน์แนวคิด
+	การซื้อซอฟต์แวร์สำเร็จรูปจากต่างประเทศมาใช้งานทันที
+	การเริ่มสร้างระบบด้วยโมเดล Deep Learning ที่ซับซ้อนที่สุด
+
+ข้อที่ 18
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด ไม่ใช่ โจทย์แบบ Regression
+ลบคำตอบ
+	การทำนายราคาบ้าน
+	การทำนายจำนวนเงินที่ลูกค้าจะใช้ในห้างสรรพสินค้า
+	การทำนายว่าลูกค้าจะย้ายค่ายโทรศัพท์มือถือ หรือไม่
+	การทำนายราคาหุ้น
+
+ข้อที่ 19
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดกล่าวถูกต้องในความเท่าเทียม หลากหลาย ครอบคลุม และเป็นธรรม (Fairness) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์
+ลบคำตอบ
+	การตัดสินใจที่เกี่ยวข้องกับการวิจัย ออกแบบ พัฒนา ให้บริการ และใช้งานปัญญาประดิษฐ์ควรสามารถพิสูจน์ถึงความเป็นธรรมได้ (Fairness)
+	การออกแบบและพัฒนาปัญญาประดิษฐ์ควรคำนึงถึงความหลากหลาย หลีกเลี่ยงการผูกขาด ลดการแบ่งแยกและเอนเอียง
+	ถูกทุกข้อ
+	ควรพัฒนาปัญญาประดิษฐ์ให้ก่อให้เกิดประโยชน์ต่อผู้คนจำนวนมากเท่าที่จะทำได้ โดยเฉพาะกลุ่มคนผู้ด้อยโอกาสในสังคม (Diversity)
+
+ข้อที่ 20
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จากข้อมูลในตาราง ค่าใช้จ่ายทั้งหมดของรายการเหล่านี้ในปี 2017 คิดเป็นร้อยละของค่าใช้จ่ายทั้งหมดในปี 2021 โดยประมาณกี่เปอร์เซ็นต์
+
+ปี	ค่าใช้จ่ายของบริษัท ABC
+เงินเดือน	ค่าเดินทาง	ดอกเบี้ยเงินกู้	โบนัส	ภาษี
+2017	288	98	23.4	3.00	83
+2018	342	112	32.5	2.52	108
+2019	324	101	41.6	3.84	74
+2020	336	133	36.4	3.68	88
+2021	420	142	49.4	3.96	98
+ลบคำตอบ
+	66%
+	69%
+	62%
+	71%
+
+ข้อที่ 21
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+พิกเซลหนึ่งของภาพ เก็บข้อมูลแบบ float64 โดยมีเท่ากับ 0.27745873 (ค่าโดยประมาณ) หากนำข้อมูลในพิกเซลดังกล่าวมาแปลงประเภทข้อมูลให้อยู่ในรูปแบบ unit8 จะได้คำตอบตรงกับข้อใด
+ลบคำตอบ
+	71
+	70
+	17
+	0
+
+ข้อที่ 22
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+มีภาษาสองภาษาคือ L1 และ L2 ดังนิยามด้านล่างนี้
+
+L1 = { ambn  |  0 < m ≤ n }
+
+L2 = { ambn  |  0 < n ≤ m }
+
+ภาษาใดต่อไปนี้เท่ากับ  L1 ∩ L2
+
+ลบคำตอบ
+	{ ambn  |  0 < m < n }
+	{ anbn  |  n > 0 }
+	{ ambn  |  m > 0,  n > 0 }
+	{ anbn  |  n ≥ 0 }
+
+ข้อที่ 23
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด เป็น ชื่อเรียกของประเภทการเขียนแบบ Syllabic Alphabets?
+ลบคำตอบ
+	Alphabets
+	Abjads
+	Syllabaries
+	Abugidas
+
+ข้อที่ 24
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดไม่ถูกต้องเกี่ยวกับ SVD?
+ลบคำตอบ
+	SVD สามารถใช้ในการหาองค์ประกอบหลักของข้อมูลได้
+	SVD สามารถใช้ในการหาเมทริกซ์ผกผันได้เร็วกว่าวิธีการ QR decomposition
+	SVD สามารถใช้ในการลดมิติของข้อมูลได้
+	SVD สามารถใช้ในการหาเมทริกซ์ผกผันของเมทริกซ์ได้โดยไม่ต้องกังวลเรื่อง Ill-conditioned matrix
+
+ข้อที่ 25
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+RAG ย่อมาจากอะไร?
+ลบคำตอบ
+	Retrieval Augmented Generation
+	Resource Allocation Generator
+	Retrieval Augmented Graphics
+	Rapid Accelerated Generation
+	Real-time Analysis Gateway
+
+ข้อที่ 26
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อมูลใดเป็นข้อมูลที่เกี่ยวข้องกับตำแหน่งที่ตั้งของข้อมูลต่าง ๆ บนพื้นโลก
+ลบคำตอบ
+	IP Connection Data
+	Geospatial Data
+	Metadata
+	Internet of Things Data
+
+ข้อที่ 27
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+“ระบบวิเคราะห์และจัดระดับความยากง่ายของข้อความสำหรับเอกสารภาษาไทย” คุณคิดว่า ระดับความยากง่ายของข้อความภาษาไทย ดูจากอะไรได้บ้าง
+
+1. ประเภทของคำ เช่น คำไทยแท้ คำยืม
+
+2. ชนิดของประโยค เช่น ประโยคความเดียว ประโยคความรวม ประโยคความซ้อน
+
+3. จำนวนคำในประโยค
+
+ลบคำตอบ
+	ถูก เฉพาะข้อ 2 กับ 3
+	ถูก เฉพาะข้อ 1
+	ถูก เฉพาะข้อ 2
+	ถูก เฉพาะข้อ 1, 2, 3
+
+ข้อที่ 28
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Do calculus มีประโยชน์อะไร
+ลบคำตอบ
+	ช่วยบอกว่า data นี้ซับซ้อน
+	เอาไว้หา model
+	เอาไว้แก้โจทย์ calculus
+	ช่วยบอกว่า บางครั้งเราไม่ต้องทำการทดลองจริง สามารถพูดถึง causation จาก data ได้เลย
+
+ข้อที่ 29
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดกล่าวถูกต้อง เกี่ยวกับ Regression และ Classification?
+ลบคำตอบ
+	Regression มี Target เป็นหมวดหมู่ (Classes) แต่ Classification มี Target เป็นตัวเลข
+	Regression มี Target เป็นตัวเลข แต่ Classification มี Target เป็นหมวดหมู่ (Classes)
+	ทั้ง Regression และ Classification มี Target เป็นตัวเลข
+	ทั้ง Regression และ Classification มี Target เป็นหมวดหมู่ (Classes)
+
+ข้อที่ 30
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Google Translation เป็นผลลัพธ์ที่เกิดจากการใช้วิธีการเป็นสำคัญ?
+ลบคำตอบ
+	Extraction-based Approach
+	Abstraction-based Approach
+	Aided Summarization
+	Question-Answering Technique
+
+ข้อที่ 31
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้
+ลบคำตอบ
+	ถูกทุกข้อ
+	UINT8
+	Float64
+	Float32
+
+ข้อที่ 32
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+สูตรการคำนวณ ROI เบื้องต้นสำหรับโปรเจกต์ AI ตามที่ปรากฏในเนื้อหาคืออะไร?
+ลบคำตอบ
+	ROI= Cost/Benefit
+	ROI=Benefit×Cost
+	ROI=(Benefit−Cost)​/Cost
+	ROI=Benefit−Cost
+	ROI=(Reach×Impact)/Effort
+
+ข้อที่ 33
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+วิธีการประมวลผลใด สามารถนำมาใช้ในการหาขนาดของวัตถุในภาพได้
+ลบคำตอบ
+	Histogram equalization
+	Opening และ Closing
+	Histogram Processing
+	Contour
+
+ข้อที่ 34
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+กระบวนการทำ Data Science ที่ถูกต้องควรเป็นอย่างไร?
+ลบคำตอบ
+	เริ่มต้นด้วยการวิเคราะห์ข้อมูล (Data Analysis) ก่อนทำความสะอาดชุดข้อมูล (Clean Dataset) และสร้างรายงานผลลัพธ์ (Visualize Report)
+	รวบรวมข้อมูลดิบ (Raw Data) ก่อน ทำความสะอาดชุดข้อมูล (Clean Dataset) วิเคราะห์ข้อมูล (Data Analysis) และสร้างรายงานผลลัพธ์ (Visualize Report)
+	ทำความสะอาดชุดข้อมูล (Clean Dataset) ก่อนรวบรวมข้อมูลดิบ (Raw Data) วิเคราะห์ข้อมูล (Data Analysis) และสร้างรายงานผลลัพธ์ (Visualize Report)
+	สร้างรายงานผลลัพธ์ (Visualize Report) ก่อนทำความสะอาดชุดข้อมูล (Clean Dataset) วิเคราะห์ข้อมูล (Data Analysis) และรวบรวมข้อมูลดิบ (Raw Data)
+
+ข้อที่ 35
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จากศึกษาความสัมพันธ์ระหว่างจำนวนเบียร์ที่บริโภค (x) กับปริมาณแอลกอฮอล์ในเลือด (y) ในนักศึกษาชายจำนวน 16 คน โดยใช้สมการถดถอย least squares regression โดยสมการถดถอยต่อไปนี้ได้มาจากการศึกษาครั้งนี้:
+
+𝑦^ = −0.0127 + 0.0180𝑥
+
+มีผู้ชายอีกคนหนึ่งชื่อ Bobby เขามีสมการถดถอยที่เขียนบนเศษกระดาษในกระเป๋าของเขา Bobby ออกไปดื่มเบียร์จำนวน 4 ขวด เขาคำนวณแล้วว่าปริมาณแอลกอฮอล์ในเลือดเขาอยู่ภายใต้ขีดจำกัดทางกฎหมาย (0.08) ดังนั้นเขาจึงตัดสินใจขับรถไปที่อื่น น่าเสียดายที่ Bobby ถูกดึงตัวและยอมเข้ารับการตรวจแอลกอฮอล์ในเลือดข้างถนน เขามีแอลกอฮอล์ในเลือด 0.085 และถูกจับตัวไป เห็นได้ชัดว่า Bobby ข้ามการบรรยายในห้องเกี่ยวกับ residual variation ดังนั้น residual ของ Bobby  คือเท่าไหร่
+
+ลบคำตอบ
+	+0.005
+	-0.0257
+	+0.0257
+	-0.005
+
+ข้อที่ 36
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ถ้าโมเดล regression มีการทำนายบนข้อมูลที่ใช้เทรนได้อย่างแม่นยำ แต่ทำงานบนข้อมูลทดสอบได้ไม่ดี ควรจะแก้ไขอย่างไร
+ลบคำตอบ
+	a) เลือก feature ที่จำเป็นเท่านั้น
+	b) ใส่ nonlinear feature เพิ่ม
+	c) เปลี่ยนไปใช้ L1 Loss
+	d) ใช้ L2 regularization
+	a) และ d)
+	c) และ d)
+
+ข้อที่ 37
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+บทบาทใดใน Governance Roles ที่ทำหน้าที่เป็น 'เจ้าของผลลัพธ์' (Outcome) และเป็นผู้รับผิดชอบหลักของ Use Case นั้น ๆ?
+ลบคำตอบ
+	Data Steward
+	Business Owner
+	AI Engineer
+	Executive Sponsor
+	Legal Advisor
+
+ข้อที่ 38
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Amazon เก็บข้อมูลผู้บริโภคจำนวนมหาศาลเพื่อวิเคราะห์พฤติกรรมการซื้อและค้นหาสินค้า โมเดลข้อมูลใดต่อไปนี้ ไม่ใช่โมเดลหลักที่ Amazon ใช้เพื่อวิเคราะห์พฤติกรรมของผู้บริโภค?
+ลบคำตอบ
+	โมเดลข้อมูลสินค้า (Product Data Model) เก็บข้อมูลเกี่ยวกับสินค้าที่ Amazon ขาย เช่น รายละเอียดสินค้า ราคา รูปภาพ และรีวิว
+	โมเดลข้อมูลลูกค้า (Customer Data Model) เก็บข้อมูลส่วนตัว ประวัติการซื้อ และข้อมูลอื่นๆ เกี่ยวกับลูกค้าแต่ละราย
+	โมเดลข้อมูลการค้นหา (Search Data Model) เก็บข้อมูลคำค้นหาของลูกค้า สินค้าที่พวกเขาเลือกใส่ตะกร้า และสินค้าที่ซื้อ
+	โมเดลข้อมูลการจัดส่ง (Delivery Data Model) เก็บข้อมูลเกี่ยวกับที่อยู่จัดส่ง วันที่จัดส่ง และข้อมูลติดตามสินค้า
+
+ข้อที่ 39
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในขั้นตอนประมวลผลข้อมูลเบื้องต้น (Preprocessing) สำหรับข้อความภาษาไทย ขั้นตอนสำคัญที่ตัดแบ่งข้อความที่ได้รับออกเป็น “คำ” หรือส่วนย่อย ๆ เพื่อนำไปประมวลผลต่อ คือข้อใด?
+ลบคำตอบ
+	Tokenization
+	Stemming
+	Lemmatization
+	Vectorization
+
+ข้อที่ 40
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+หน้าที่หลักของ 'Champions Network' ในช่วง Rollout ระบบ AI คืออะไร?
+ลบคำตอบ
+	การเป็นผู้ถือสิทธิ์ Admin สูงสุดเพื่อลบข้อมูลที่ผิดพลาด
+	การตัดสินใจอนุมัติงบประมาณในเฟสถัดไป
+	การทำหน้าที่เป็นพรีเซนเตอร์ในโฆษณาของบริษัท
+	การเป็นผู้ใช้งานแกนนำที่ช่วยสอนเพื่อนร่วมงานและสะท้อนปัญหาจริง
+	การเขียนโปรแกรมเพื่อแก้ไขบั๊กของระบบ
+
+ข้อที่ 41
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ฟังก์ชันที่ใช้ในการแสดงรูปภาพ คือฟังก์ชันใด
+ลบคำตอบ
+	ถูกทุกข้อ
+	ฟังก์ชัน cv2.imshow()
+	ฟังก์ชัน plt.imshow()
+	ฟังก์ชัน Image.show()
+
+ข้อที่ 42
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ทำไมการทดสอบ AI จึงต้องวัดทั้งในส่วนของ 'AI Output' และ 'User Experience'?
+ลบคำตอบ
+	เพื่อให้นักพัฒนาและนักออกแบบไม่ต้องคุยกัน
+	เพราะกฎหมายบังคับให้ต้องส่งรายงานสองฉบับ
+	เพราะเป็นวิธีเดียวที่จะทำให้ AI เรียนรู้ได้ด้วยตัวเอง
+	เพื่อลดจำนวนพนักงานในองค์กรลงครึ่งหนึ่ง
+	เพื่อให้มั่นใจว่าคำตอบถูกต้องและผู้ใช้สามารถนำไปใช้ทำงานต่อได้จริง
+
+ข้อที่ 43
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดถูกต้องเกี่ยวกับ Validation set?
+ลบคำตอบ
+	Validation set เป็นชุดข้อมูลที่ไม่เคยถูกใช้ในกระบวนการฝึกและทดสอบโมเดลเลย
+	Validation set เป็นชุดข้อมูลที่ใช้สำหรับฝึกโมเดลเพื่อปรับ Learning parameter
+	Validation set เป็นชุดข้อมูลที่ใช้เพื่อทดสอบโมเดลที่แม่นยำกว่า Test set
+	Validation set ใช้ในการปรับค่า Hyperparameters ของโมเดล
+
+ข้อที่ 44
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+อะไรคือ Data science ตามหลักวิชาการ
+ลบคำตอบ
+	Buzzword
+	การค้นหาองค์ความรู้ จากข้อมูล
+	Big data
+	Machine learning
+
+ข้อที่ 45
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด เป็น Machine learning approach
+ลบคำตอบ
+	A* algorithm
+	Linear Regression
+	ANOVA
+	Bootstrapping
+
+ข้อที่ 46
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดไม่ถูกต้องเกี่ยวกับ K-mean
+ลบคำตอบ
+	a) ต้องกำหนดค่า K ก่อนการใช้งาน
+	b) ถ้าใช้ข้อมูลชุดเดียวกัน จะได้คำตอบเดิมเสมอ
+	c) เป็น model ประเภท unsupervised จึงไม่ต้องมี label ก็ได้
+	d) ไม่เหมาะกับข้อมูลที่มี feature จำนวนมากๆ
+	e) ถ้าข้อมูลมีการกระจายในแต่ละ feature ไม่เท่ากัน ควรปรับให้การกระจายเท่าๆกันก่อนใช้งาน
+	ข้อ c) และ d) ไม่ถูกต้อง
+
+ข้อที่ 47
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+การเปรียบเทียบในข้อใดต่อไปนี้ให้ผลลัพธ์เป็น True?
+ลบคำตอบ
+	'a' != 'A'
+	'a' == 'A'
+	'a' > 'A'
+	'a' < 'A'
+
+ข้อที่ 48
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Model คืออะไร
+ลบคำตอบ
+	สิ่งที่ใช้อธิบายปรากฎการ ธรรมชาติ ระบบ ฯลฯ
+	Gunpla เท่านั้น
+	กฎธรรมชาติเท่านั้น
+	สมการคณิตศาสตร์เท่านั้น
+
+ข้อที่ 49
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อดีของ ReLU ที่นำมาใช้ใน Deep learning คือข้อใด?
+ลบคำตอบ
+	ทำให้ Deep learning เป็น Universal approximator เนื่องจากมีผลลัพธ์เป็นรูป S curve
+	สามารถปรับค่า Learning rate ได้อัตโนมัติ
+	ReLU ช่วยลดปัญหา Gradient Vanishing ในการฝึกโมเดล
+	ความสามารถในการแปลค่าบวกเป็น 0
+
+ข้อที่ 50
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดถูกต้องเกี่ยวกับ Bias Variance ใน classical ML
+ลบคำตอบ
+	เราสามารถลด Bias และ Variance ของโมเดลได้พร้อม ๆ กัน
+	การใช้ deep learning ทำให้ไม่ต้องสนใจ bias และ variance ของโมเดล
+	ถ้า Bias สูง ควรไปเก็บข้อมูลมาทดสอบเพิ่ม
+	ถ้า Bias มาก แสดงว่าโมเดล Overfit
+	โมเดลยิ่งซับซ้อน ยิ่งมี Variance สูง
+	ถ้า Bias สูง ควรไปเก็บข้อมูลเทรนนิ่งมาเพิ่ม
+
+ข้อที่ 51
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จงพิจารณาภาษาดังต่อไปนี้
+
+L1 = { ambn  | m > 0,  n > 0 }
+
+L2 = { anbncndn  | n > 0 }
+
+L3 = { ambncm  | m > 0, n > 0 }
+
+L4 = { anbncn  | n > 0 }
+
+ลบคำตอบ
+	L1 < L2 < L3 < L4
+	L1 < L3 < L4 < L2
+	L1 < L4 < L3 < L2
+	L1 < L3 < L2 < L4
+
+ข้อที่ 52
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในงาน Triage ที่มีความเสี่ยงสูง การตั้งค่า Error Budget ควรให้ความสำคัญกับเรื่องใดเป็นพิเศษ?
+ลบคำตอบ
+	ลด False Positive (การเตือนเกินจริง) ให้เหลือน้อยที่สุด
+	ยกเลิก Error Budget เพื่อให้ AI ทำงานถูกต้อง 100%
+	ลด False Negative (การพลาดเคสสำคัญ) ให้เหลือน้อยที่สุด
+	ทำให้ค่าเฉลี่ยความผิดพลาดทั้งสองแบบเท่ากันเป๊ะ
+	เน้นความเร็วในการประมวลผลโดยไม่สนใจความแม่นยำ
+
+ข้อที่ 53
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เราใช้การกรองข้อมูลภาพ โดยใช้ค่ามัธยฐาน (Median filter) เพื่อทำอะไร 
+ลบคำตอบ
+	ทำให้ภาพไม่มีสัญญาณรบกวน
+	ทำให้ภาพมีคอนทราสต์ต่ำ
+	ทำให้ภาพคมชัด
+	ทำให้ภาพมีคอนทราสต์สูง
+
+ข้อที่ 54
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เพราะเหตุใดภาษาไทยจึงจัดเป็นภาษาคำโดด (analytic language)
+ลบคำตอบ
+	จะใช้คำขยายเพื่ออธิบายรายละเอียดทางไวยากรณ์ เช่น พจน์ (number) หรือกาล (tense) ไม่ใช้การผันท้ายคำ
+	มีลำดับคำแน่นอนตายตัว เช่น ประธาน-กริยา-กรรม หากเปลี่ยนลำดับคำในประโยค ความหมายของประโยคก็จะเปลี่ยนไปทันที
+	หน่วยความหมายของคำมีขนาดเล็ก จึงต้องนำคำมาประกอบสร้างเพื่ออธิบายความหมายที่ซับซ้อน
+	ถูกทุกข้อ
+
+ข้อที่ 55
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Programming Language ใดต่อไปนี้ ที่ได้รับความนิยมมากที่สุดสำหรับการใช้งานใน Data Science ในปี 2024?
+ลบคำตอบ
+	C++
+	Java
+	Python
+	R
+
+ข้อที่ 56
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เมื่อเลือกใช้ Embedding Model สิ่งสำคัญที่ต้องพิจารณาคืออะไร?
+ลบคำตอบ
+	ความเร็วในการดาวน์โหลดโมเดล
+	ชนิดของฐานข้อมูลที่ใช้เก็บข้อมูล
+	ภาษาที่โมเดลรองรับ ว่าตรงกับภาษาของเอกสารที่ใช้หรือไม่
+	ภาษาโปรแกรมที่ใช้ในการพัฒนา
+	จำนวน GPU ที่ใช้ในโมเดล
+
+ข้อที่ 57
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+กรณีต้องการนับจำนวนของวัตถุในภาพ ต้องใช้โมเดลการเรียนรู้เชิงลึกแบบใด
+ลบคำตอบ
+	a) Image Classification
+	b) Image segmentation
+	c) Object detection
+	ถูกทั้งข้อ b และ c
+
+ข้อที่ 58
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด เป็น คำอธิบายของ ระบบการเขียน (Writing System)?
+ลบคำตอบ
+	use sets of symbols to represent the consonants, punctuation and numerals.
+	use sets of symbols to represent the syllables, punctuation and numerals.
+	use sets of symbols to represent the sounds of speech, punctuation and numerals.
+	use sets of symbols to represent the vowels, punctuation and numerals.
+
+ข้อที่ 59
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จาก คำสั่ง ในภาษา Python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+img_shape = 1280,720,3
+img = np.random.rand(*img_shape)
+
+plt.imshow(img)
+plt.show()
+
+จงเลือกคำอธิบายที่ถูกต้องเกี่ยวกับขนาดของภาพที่ถูกแสดงออกมา และ ประเภทข้อมูลที่ถูกเก็บในตัวแปล img
+
+ลบคำตอบ
+	ความสูงเท่ากับ 720 พิกเซล, ความกว้างเท่ากับ 1280 พิกเซล ประกอบด้วย 3 ระนาบ และเป็นข้อมูลประเภท float32
+	ความสูงเท่ากับ 1280 พิกเซล, ความกว้างเท่ากับ 720 พิกเซล ประกอบด้วย 3 ระนาบ และเป็นข้อมูลประเภท float32
+	ความสูงเท่ากับ 1280 พิกเซล, ความกว้างเท่ากับ 720 พิกเซล ประกอบด้วย 3 ระนาบ และเป็นข้อมูลประเภท float64
+	ความสูงเท่ากับ 720 พิกเซล, ความกว้างเท่ากับ 1280 พิกเซล ประกอบด้วย 3 ระนาบ และเป็นข้อมูลประเภท float64
+
+ข้อที่ 60
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดเป็นคุณสมบัติที่ถูกต้องของ Eigenvalues และ Eigenvectors?
+ลบคำตอบ
+	Eigenvalues ของเมทริกซ์เดิมจะไม่เปลี่ยนแปลงเมื่อทำการ Transpose เมทริกซ์นั้น
+	Eigenvector ของเมทริกซ์หนึ่งๆ สามารถเป็นเวกเตอร์ศูนย์ได้
+	Eigenvalues และ Eigenvectors ใช้ในการแปลงเมทริกซ์หนึ่งๆ ให้เป็นเมทริกซ์ศูนย์
+	Eigenvector ของเมทริกซ์หนึ่งๆ จะเปลี่ยนทิศทางเมื่อถูกคูณด้วย Eigenvalue
+
+ข้อที่ 61
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดคือตัวอย่างของการกำหนดข้อมูลประเภท Dictionary ใน Python ที่ถูกต้อง?
+ลบคำตอบ
+	dict = { "name": "John", "age": 30 }
+	dict = [ "name": "John", "age": 30 ]
+	dict = < "name": "John", "age": 30 >
+	dict = ( "name": "John", "age": 30 )
+
+ข้อที่ 62
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในการสร้าง Sentiment lexicon สำหรับการทำ Lexicon-based sentiment analysis หากไม่ต้องการให้คำคำหนึ่งมีค่าคะแนนความรู้สึก (Polarity score) สูงเกินกว่าที่ควร สัดส่วนการปรากฏคำในข้อใดจำเป็นต้องนำมาใช้ในการคำนวณคะแนนความรู้สึกของคำนั้นด้วย?
+ลบคำตอบ
+	ไม่มีข้อใดถูก
+	สัดส่วนการปรากฏคำในเอกสารเชิงลบ (Negative)
+	สัดส่วนการปรากฏคำในเอกสารที่เป็นกลาง (Neutral)
+	สัดส่วนการปรากฏคำในเอกสารเชิงบวก (Positive)
+
+ข้อที่ 63
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในระบบ RAG ขั้นตอนใดเกิดขึ้นก่อนการส่งข้อมูลให้ LLM สร้างคำตอบ?
+ลบคำตอบ
+	แปลงคำถามเป็นภาษาอังกฤษก่อนประมวลผล
+	สร้าง Summary ของคำถามก่อนส่งให้ LLM
+	Fine-tuning โมเดล LLM ด้วยข้อมูลใหม่
+	ค้นหาเอกสารที่เกี่ยวข้องจาก Knowledge Base แล้วส่งเป็น Context
+	ตรวจสอบ Grammar ของคำถามผู้ใช้
+
+ข้อที่ 64
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Pattern แบบ 'AI suggests, human decides' จัดเป็นรูปแบบการทำงานประเภทใด?
+ลบคำตอบ
+	Static Rule-based Engine
+	Human-in-the-loop
+	Fully Autonomous System
+	Manual Data Entry
+	Database Management System
+
+ข้อที่ 65
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดไม่ใช่ลักษณะของ Volume ของ Big Data 
+ลบคำตอบ
+	ข้อมูลแบบมีโครงสร้างและไม่มีโครงสร้าง
+	จำนวนของข้อมูลที่ถูกสร้างขึ้น
+	การจัดเก็บข้อมูลในตาราง หรือไฟล์
+	ธุรกรรมออนไลน์และออฟไลน์
+
+ข้อที่ 66
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ฟังก์ชันหลัก 4 ประการของ NIST AI RMF (Risk Management Framework) ประกอบด้วยอะไรบ้าง?
+ลบคำตอบ
+	Reach, Impact, Confidence, Effort
+	Input, Processing, Output, Outcome
+	Identify, Protect, Detect, Recover
+	Plan, Do, Check, Act
+	Govern, Map, Measure, Manage
+
+ข้อที่ 67
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+หากต้องการทำ Clustering ด้วยวิธีการแบบ K-Means อย่างมีประสิทธิภาพ ควรคำนึงถึงเรื่องใด?
+ลบคำตอบ
+	การกำหนดค่า K ที่เหมาะสม 
+	ต้องมีการทำ Scaler และ กำจัด Outliers ในชุดข้อมูล
+	การกำหนดจุดเริ่มต้นของตัวแทนแต่ละ Cluster ที่ดี
+	ถูกทุกข้อ
+
+ข้อที่ 68
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด คือ Hypothesis ของ Polynomial Regression Degree = 3
+ลบคำตอบ
+	สมการ h(x) = θ0 + θ1x
+    สมการ h(x) = θ0 + θ1x + θ2x^2
+    สมการ h(x) = θ0 + θ1x + θ2x^2 + θ3x^3
+    สมการ h(x) = θ0 + θ1x + θ2x^2 + θ3x^3 + θ4x^4
+
+ข้อที่ 69
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+จากตัวอย่างได้แสดงผลลัพธ์จากระบบ (System) และมนุษย์ (Reference) ให้คำตอบ ต่อไปนี้
+
+System Summary: the cat was found under the bed
+
+Reference Summary: the cat was under the bed
+
+จงหาค่า ROUGE-N (recall) เมื่อ N=2?
+
+ลบคำตอบ
+	0.86
+	0.73
+	0.67
+	0.80
+
+ข้อที่ 70
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ขั้นตอนที่สำคัญของการทำ Extraction-based Approach?
+ลบคำตอบ
+	(1) ค้นหาคำ วลี ข้อความ ที่สำคัญและคำนวณ (2) เลือก คำ วลี ข้อความ ที่สำคัญ (3) สร้างย่อความ
+	(1) ค้นหาคำ วลี ข้อความ ที่สำคัญ (2) เลือก คำ วลี ข้อความ ที่สำคัญ (3) สร้างย่อความ
+	(1) ตัดคำ (2) แบ่งข้อความ (3) สร้างย่อความ
+	(1) ค้นหาคำ วลี ข้อความ ที่สำคัญ (2) เลือกคำ วลี ข้อความ มาเรียบเรียงใหม่
+
+ข้อที่ 71
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดไม่ถูกต้องเกี่ยวกับ Open Data
+ลบคำตอบ
+	ไม่มีข้อใดถูก
+	Open data คือ ข้อมูลเปิดที่ทุกคนสามารถนำไปใช้ได้โดยอิสระ เช่นการนำไปใช้ การนำกลับมาใช้ใหม่ หรือนำไปเผยแพร่ได้โดยใครก็ตาม
+	Open Data จัดเป็น Publically available data ทั้งหมด แต่ Publically available data ทั้งหมดไม่จัดเป็น Open Data
+	Government data คือข้อมูลจากรัฐบาลและเป็น Open data ทั้งหมด
+
+ข้อที่ 72
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้ แสดงให้เห็นถึงข้อดีของการใช้ Version control ของ GitHub ใน Google Colab ได้ดีที่สุด?
+ลบคำตอบ
+	สมาชิกในทีมหลายคนสามารถแก้ไขส่วนต่างๆ ของ Notebook เดียวกันพร้อมๆ กันได้
+	Notebook จะ Save โดยอัตโนมัติทุกๆ 5 นาที
+	ทีมงานสามารถ Maintain Notebook เวอร์ชันต่างๆ สำหรับการทดลองต่างๆ ได้
+	โปรแกรมเมอร์สามารถ Undo การเปลี่ยนแปลงที่ทำกับ Notebook เมื่อสัปดาห์ที่แล้วได้
+
+ข้อที่ 73
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในมุมมองของ Responsible AI และ Google PAIR การระบุในหน้าจอว่า 'Draft generated from FAQ v3' จัดเป็นการสร้างคุณสมบัติใดให้แก่ระบบ?
+ลบคำตอบ
+	Fairness
+	Accountability
+	Inclusiveness
+	Reliability
+	Transparency & Explanation
+
+ข้อที่ 74 
+Super AI Engineer Exam (SS6) :: multiple_choice  
+
+จากภาพ ค่า k ใดต่อไปนี้ ที่จะให้ความแม่นยำในการตรวจสอบแบบ leave-one-out cross validation ต่ำที่สุด     
+ลบคำตอบ  
+    1  
+    3  
+    2  
+    5
+
+ข้อที่ 75
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เหตุใดจึงต้องใช้เทคนิค RAG แทนที่จะให้ LLM ตอบคำถามโดยตรง?
+ลบคำตอบ
+	LLM ไม่สามารถสร้างข้อความยาวได้
+	LLM ไม่สามารถเข้าใจภาษาธรรมชาติได้ดีพอ
+	LLM ใช้พลังงานในการประมวลผลมากเกินไป
+	LLM อาจสร้างข้อมูลที่ไม่ถูกต้องเมื่อไม่มีแหล่งข้อมูลอ้างอิง
+	LLM ต้องการ Fine-tuning ทุกครั้งก่อนใช้งาน
+
+ข้อที่ 76
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ทำไมการนิยาม Input ให้ชัดเจนจึงสำคัญมากในการ Define โจทย์ AI?
+ลบคำตอบ
+	เพื่อป้องกันไม่ให้ผู้ใช้ป้อนข้อมูลผิดพลาด
+	เพื่อประเมินว่าระบบทำงานบนพื้นฐานของความจริงหรือความฝัน
+	เพื่อให้ทีมกราฟิกออกแบบไอคอนได้ถูกต้อง
+	เพื่อลดค่าใช้จ่ายในการซื้อ Cloud Computing
+
+ข้อที่ 77
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดถูกต้องเกี่ยวกับปัญหา Class Imbalance ใน Machine Learning?
+ลบคำตอบ
+	Class Imbalance สามารถแก้ไขได้โดยการลบตัวอย่างจากคลาสที่มีจำนวนตัวอย่างน้อยกว่า
+	Class Imbalance เกิดขึ้นเมื่อทุกคลาสมีจำนวนตัวอย่างเท่ากัน
+	การใช้เทคนิคการ Oversampling หรือ Undersampling เป็นวิธีที่ใช้แก้ไขปัญหา Class Imbalance
+	Class Imbalance สามารถแก้ไขได้โดยการเพิ่มตัวอย่างจากคลาสที่มีจำนวนตัวอย่างมากกว่า
+
+ข้อที่ 78
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้เป็นตัวอย่างข้อความที่เกี่ยวข้องกับการสรุปความหรือย่อความ
+
+1) Digests (TV Guide)
+
+2) Biography (Resume)
+
+3) Minutes (of a meeting)
+
+4) Previews (of movies)
+
+ลบคำตอบ
+	2), 4)
+	2), 3), 4)
+	1), 2), 3), 4)
+	1), 2), 3)
+
+ข้อที่ 79
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+อะไรคือนิยามการ learning ด้วย data สำหรับ machine ที่ไม่เจาะจงกับ task
+ลบคำตอบ
+	machine ถูกสอนหนังสือ
+	Machine จดจำภาพได้
+	machine ทำงานใน task ที่กำหนดเก่งขึ้น เมื่อเราให้ข้อมูลแก่ machine เทียบกับตอนไม่มีข้อมูล
+	machine ช่วยสอนหนังสือ
+
+ข้อที่ 80
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดคือผลลัพธ์จากการใช้ regular expression ของข้อความต่อไปนี้  “Th[AI]land” .
+ลบคำตอบ
+	ThIland
+	Thland
+	ThaIland
+	ThAiland
+
+ข้อที่ 81
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+การใช้ Deepfake ในการสร้างข่าวปลอมอาจส่งผลกระทบต่อสังคมอย่างไร
+ลบคำตอบ
+	ลดความน่าเชื่อถือของข้อมูลในสังคม
+	เพิ่มความไว้วางใจในสื่อมวลชน
+	ทำให้ผู้คนมีความสุขมากขึ้น
+	สร้างโอกาสในการพัฒนาทางเทคโนโลยี
+
+ข้อที่ 82
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ในระบบ AI Triage รูปแบบ Human-in-the-Loop (HITL) แบบใดที่เหมาะสมที่สุดตามเนื้อหา?
+ลบคำตอบ
+	AI ให้คำแนะนำเบื้องต้น และให้มนุษย์เป็นผู้ยืนยันหรือตัดสินใจในขั้นตอนสุดท้าย
+	มนุษย์ทำงานทั้งหมดและใช้ AI สำหรับเก็บประวัติการทำงานเท่านั้น
+	AI จะทำงานเฉพาะเมื่อมนุษย์ไม่ว่างเท่านั้น
+	ให้ AI ตัดสินใจในเคสที่ยาก และมนุษย์ทำเคสที่ง่าย
+	AI ตัดสินใจและดำเนินการโดยไม่ต้องแจ้งให้มนุษย์ทราบ
+
+ข้อที่ 83
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้ไม่เป็นความจริง
+ลบคำตอบ
+	ภาพดิจิตอลสามารถมีได้มากกว่า 3 ช่องสี
+	ภาพถ่ายดาวเทียมสามารถเก็บได้มากกว่า 3 ช่องสีและมากกว่า 8 bit ต่อช่องสี
+	ภาพ RGB สามารถเก็บได้เพียง 24 bit ต่อจุดภาพเท่านั้น
+	ภาพดิจิตอลสามารถเก็บข้อมูลได้มากกว่า 8 bit ต่อช่องสี
+
+ข้อที่ 84
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้ แสดงจุดประสงค์การทำ Data Discretization ได้ถูกต้องที่สุด
+ลบคำตอบ
+	เพื่อขยายขนาดข้อมูล
+	เพื่อการนำข้อมูลจากหลายๆแหล่ง เข้ามาจัดรูปแบบให้คล้ายกัน เพื่อนำข้อมูลเหล่านั้นไปใช้ประโยชน์
+	เพื่อแปลงแอตทริบิวต์ที่ไม่ต่อเนื่อง (discrete attribute) เป็นแอตทริบิวต์แบบต่อเนื่อง (continuous attribute)
+	เพื่อแปลงแอตทริบิวต์ต่อเนื่อง (continuous attribute) เป็นแอตทริบิวต์ที่ไม่ต่อเนื่อง (discrete attribute)
+
+ข้อที่ 85
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใด "ไม่ใช้" ข้อดีของ Estimation statistics ที่เหนือกว่า Null hypothesis test 
+ลบคำตอบ
+	Estimation statistics ทำงานเร็วกว่า hypothesis test
+	เรารู้ magnitude ความแตกต่างของประชากร ไม่ใช่แค่ yes/no answer แบบ hypothesis test 
+	Estimation statistics เปิดโอกาสให้ผู้วิเคราะห์เห็น insight ของข้อมูลมากกว่า hypothesis test
+	Estimation statistics ให้ข้อมูลละเอียดกว่า null hypothesis test
+
+ข้อที่ 86
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+หากผลการทดสอบ PoC ของระบบ Auto-triage พบว่าความแม่นยำอยู่ที่ 70−84% และต้นทุนดีแต่คุณภาพยังไม่นิ่ง ตามเกณฑ์ Success Criteria ควรตัดสินใจอย่างไร?
+ลบคำตอบ
+	Scale up (ขยายการใช้งานไปยังทุกแผนก)
+	Stop (หยุดโครงการและเผางบทิ้ง)
+	Anonymize (ปกปิดข้อมูลส่วนบุคคล)
+	Pivot (ปรับเปลี่ยนแนวทางหรือแก้ไขก่อน)
+	Go (ไปต่อในระดับ Production ทันที)
+
+ข้อที่ 87
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดคือตัวอย่างของการกำหนดข้อมูลประเภท Tuple ใน Python ที่ถูกต้อง?
+ลบคำตอบ
+	tuple = <1, 2, 3, 4>
+	tuple = {1, 2, 3, 4}
+	tuple = (1, 2, 3, 4)
+	tuple = [1, 2, 3, 4]
+
+ข้อที่ 88
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อความใดต่อไปนี้ พูดถึง Google Colab ได้ถูกต้องที่สุด?
+ลบคำตอบ
+	Google Colab รองรับภาษาโปรแกรมได้ทุกภาษา
+	Google Colab ให้สิทธิ์ในการเข้าถึงทรัพยากรการประมวลผลประสิทธิภาพสูงฟรี
+	Google Colab จะมีการ Optimize code ให้อัตโนมัติ
+	Google Colab มีเครื่องมือสำหรับการวิเคราะห์ข้อมูลขั้นสูงในตัว
+
+ข้อที่ 89
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดต่อไปนี้ถูกต้อง เกี่ยวกับ bias-variance decomposition ระหว่างเทคนิค ridge regression และ ordinary least squares regression
+ลบคำตอบ
+    ridge regression มี Bias และ variance สูงกว่า
+	ridge regression มี Bias และ variance ต่ำกว่า
+	ridge regression มี Bias ต่ำกว่า แต่มี variance สูงกว่า
+	ridge regression มี Bias สูงกว่า และมี variance ต่ำกว่า
+
+ข้อที่ 90
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เทคนิคในต่อไปนี้ใช้สำหรับวิเคราะห์ข้อมูลที่อาจถูกกำหนดให้เป็น “ข้อมูลที่ไม่สอดคล้องกับพฤติกรรมทั่วไปหรือรูปแบบของข้อมูลที่มีอยู่”
+ลบคำตอบ
+	Prediction
+	Classification
+	Evolution Analysis
+	Outlier Analysis
+
+ข้อที่ 91
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+โมเดลในชุดใดต่อไปนี้ ถูกสร้างมาเพื่องาน Generative (ให้ AI มาเขียนต่อจากประโยคเริ่มต้นได้) ทั้งหมด
+ลบคำตอบ
+	DPR, RAG, Longformer
+	BERT, GPT, Google T5
+	GPT, CTRL, Transformer-XL
+	BERT, Roberta, XLM
+
+ข้อที่ 92
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+องค์ประกอบของโมเดลธุรกิจข้อมูลของ Amazon ประกอบไปด้วยอะไรบ้าง
+ลบคำตอบ
+	Information-based differentiation, Information-based delivery network, Information-based brokering
+	ไม่มีข้อใดถูก
+	Information-based differentiation
+	Information-based differentiation, Information-based delivery network
+
+ข้อที่ 93
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ภาษาอังกฤษ (English) ภาษากรีก (Greek) ภาษาเกาหลี (Korean – Hangeul) มีระบบการเขียนแบบใด?
+ลบคำตอบ
+	Alphabets
+	Abjads
+	Abugidas
+	Syllabaries
+
+ข้อที่ 94
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+กราฟแสดงผล Loss และ Accuracy ในการ Train Model Transformer แสดงผลดังต่อไปนี้
+
+
+
+หากเราไม่ต้องการ Train ใหม่ เราควรใช้ Model ที่ได้รับการ Train ณ Epoch ใด เลือกนำไปใช้ใน Production แล้วใช้ได้ผลดีที่สุดเหมาะสมกับข้อมูลนำเข้า (Input) ในทุกสถานการณ์
+
+ลบคำตอบ
+	10
+	0
+	13
+	35
+
+ข้อที่ 95
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+กำหนดให้ภาพ (image) มีขนาด 4×4 พิกเซล และมีค่าความเข้มสี (intensity)ในแต่ละพิกเซลเป็นดังภาพด้านล่างนี้ เมื่อนำไปผ่านตัวกรอง (Filter) ที่กำหนดให้ จงหาค่าความเข้มสีของภาพผลลัพธ์ที่ตำแหน่งพิกเซล (a), (b), (c) และ (d) ตามลำดับภาพ 
+4  1  5  8
+5  2  5  2
+1  1  6  4
+5  4  3  6
+
+        [1  2  1
+1/16  *  2  4  2  
+         1  2  1]
+
+a  b
+c  d
+		
+ลบคำตอบ
+	3,4,3,4
+	3,3,4,4
+	4,4,3,3
+	4,3,4,3
+
+ข้อที่ 96
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ข้อใดไม่ใช่ส่วนประกอบของ Information Flow ในการประมวลผลฐานข้อมูล
+ลบคำตอบ
+	Interactive
+	Clustering
+	Straming
+	Batch
+
+ข้อที่ 97
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Application ใดเหมาะกับการนำ model ประเภท regression ไปประยุกต์ใช้มากที่สุด
+ลบคำตอบ
+	ทำนายปริมาณรังสียูวีในวันรุ่งขึ้น
+	แยกภาพรถเป็นยี่ห้อต่าง ๆ
+	หาหัวข้อที่กำลังเป็นที่พูดถึงจากข้อมูลtwitterในวันที่ผ่านมา
+	เปลี่ยนเสียงพูดเป็นตัวอักษร
+	สรุปข้อมูลลูกค้าบริษัทให้อยู่ในรูปแบบของกราฟ
+	แยกประเภทของจดหมายเพื่อส่งไปยังแผนกที่เกี่ยวข้อง
+
+ข้อที่ 98
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+ปรากฏการณ์ 'Hallucination' ใน Generative AI หมายถึงอะไร?
+ลบคำตอบ
+	การที่ AI ไม่สามารถตอบคำถามที่อยู่นอกเหนือจากคู่มือการใช้งานได้
+	การที่ AI แสดงอคติที่มาจากชุดข้อมูลที่ใช้ในการฝึกฝน
+	การที่ AI ทำงานช้าลงเมื่อได้รับคำสั่งที่ซับซ้อนเกินไป
+	การที่ AI ถูกแฮ็กเพื่อนำข้อมูลส่วนบุคคลออกไปภายนอก
+	การที่ AI สร้างข้อมูลที่ดูน่าเชื่อถือแต่ไม่เป็นความจริง
+
+ข้อที่ 99
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+เพราะเหตุใดการทำ Empathize สำหรับงาน AI จึงมีความซับซ้อนกว่าการออกแบบแอปพลิเคชันทั่วไป?
+ลบคำตอบ
+	เพราะการทำ Empathize เน้นเพียงแค่การเลือกโมเดลที่ทันสมัยที่สุด
+	เพราะ AI ไม่จำเป็นต้องมีส่วนประสานงานผู้ใช้ (UI)
+	เพราะระบบ AI ไม่ส่งผลกระทบต่อบุคคลอื่นนอกเหนือจากผู้ใช้โดยตรง
+	เพราะผู้ใช้ต้องมีความเชื่อใจในระบบที่เหมาะสม (Appropriate Trust) และต้องจัดการกับความไม่แน่นอน
+	เพราะ AI ทำงานได้แม่นยำ 100% เสมอจึงไม่ต้องทดสอบกับคน
+
+ข้อที่ 100
+Super AI Engineer Exam (SS6) :: multiple_choice
+
+Data science ใช้ศาสตร์ไหนเป็นตัวช่วยบ้าง
+ลบคำตอบ
+	Computer science
+	Statistics
+	ถูกทุกข้อ
+	Math
