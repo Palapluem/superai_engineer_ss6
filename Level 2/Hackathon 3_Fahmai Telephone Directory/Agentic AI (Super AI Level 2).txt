@@ -1,0 +1,422 @@
+Agentic AI
+Super AI Engineer Level 2
+Nutchanon Yongsatianchot (Nut)
+1
+
+Workflows
+Workflow
+AI Agents
+Context Engineering
+How to fix your context
+Agent Summary
+2
+
+How can LLMs solve multi-step tasks?
+Workflows are systems where LLMs and tools are orchestrated through predefined code paths.
+Use when you can picture the exact flow or steps that AI should go through to solve a problem, or when your app's UX constrains users to a set of tasks
+Agents are systems where LLMs dynamically direct their own processes and tool usage, maintaining control over how they accomplish tasks.
+Use when you're not sure exactly what task or task parameters you'll give to AI
+
+3
+
+Workflow: Prompt chaining
+
+Split large tasks into smaller, non-parallelizable subtasks
+Optionally do non-LLM processing between each task
+Keep AI focused on one aspect of the overall task
+Input
+Processing Task #1
+Processing Task #2
+Processing Task #3
+Output
+4
+
+Workflow to automate the creation and posting of videos to social media
+Find related trending topics on Tiktok
+Select the most interesting topic
+Research the topic
+Write a script for a short form video
+Use a video model to create a video
+Post the video to social media
+LLM
+5
+
+Workflow #2: Stock News Analyst
+[User: company name, e.g. "NVIDIA"]
+       │
+      ▼
+ Step 1 (Web Search): "Search for latest news about company in the past week"
+       │
+      ▼
+ Step 2 (LLM): "Summarize the top 3 news stories and classify each as positive, negative, or neutral"
+       │
+      ▼
+ Step 3 (LLM): "Based on the summary, write a 3-sentence investment outlook for a beginner investor"
+
+Workflow: Routing
+
+User input goes to a router component first
+The router categorizes the request using an initial LLM call
+Based on the category, the input gets forwarded to one specific processing pipeline
+Each pipeline can have its own workflow, prompts, or tools optimized for that category
+User Input
+Router
+Prompt + LLM
+Prompt + LLM
+Prompt + LLM
+User input only sent to one
+7
+
+Router: "Customer Support Router"
+[User: customer message]
+      ▼
+Classifier: "Classify this message as: billing, technical, or general"
+      │
+      ├─ billing  → "You are a billing specialist. Look up refund policy and help the customer..."
+      ├─ technical → "You are a tech support agent. Troubleshoot step by step..."
+      └─ general  → "You are a friendly FAQ bot. Answer briefly..."
+
+"I was charged twice for my order last Friday" 
+ "My robot vacuum keeps disconnecting from WiFi" 
+ "What are your store hours?"  
+"I want a refund for order #1234"   
+"The app crashes every time I try to update firmware"
+
+Router: "Customer Support Router"
+
+[User: homework question]
+       │
+      ▼
+Classifier: "Classify this question as: math, coding, or essay"
+      │
+      ├─ math   → (Code Interp) "Solve this step by step with Python, show the work"
+      ├─ coding → (LLM) "Explain the concept first, then give code with comments"
+      └─ essay  → (Web Search + LLM) "Search for key facts, then write an outline with sources"
+
+ "Solve the integral of x²·sin(x) dx"        
+ "Write a Python function to check if a string is a palindrome" 
+"Discuss the causes of World War I in 500 words"    
+
+Workflow: Parallelization
+
+Split a single task into multiple sub-tasks 
+Run the sub-tasks in parallel 
+Aggregate the results together - Combine the specialized analyses into a final decision
+The parallelized sub-tasks don't need to be identical - Each can have a specialized prompt, set of tools, or evaluation criteria
+User Task
+Aggregator
+Parallelizable Sub-task
+Parallelizable Sub-task
+Parallelizable Sub-task
+10
+
+Prompt: Analyze the part in the attached image then decide if it would be best to make it out of a metal, polymer, ceramic, or composite.
+Metal criteria
+Polymer criteria
+Ceramic criteria
+Composite criteria
+LLM
+LLM
+LLM
+LLM
+Analysis Result
+Analysis Result
+Analysis Result
+Analysis Result
+LLM
+Final Material Recommendation
+11
+
+Parallel 2: "Product Launch Review"
+[User: product description, e.g. "A smart water bottle that tracks hydration"]
+      │
+      ├─── Agent A (LLM): "List 3 strengths of this product idea"
+      ├─── Agent B (LLM): "List 3 weaknesses or risks"
+      ├─── Agent C (Web Search + LLM): "Search for competing products and list top 3 competitors"
+      │
+     ▼
+Aggregator: "Combine the strengths, weaknesses, and competitor analysis into a 1-page product launch brief"
+"A portable AI tutor device for high school students that costs $99
+"A subscription service that delivers Thai street food ingredients weekly"
+
+Agentic AI
+Workflow
+Agentic AI
+Context Engineering
+How to fix your context
+Agent Summary
+13
+
+Agentic AI: LLM with tools in a loop
+LLM
+Tools
+Environment
+Action
+Feedback
+14
+
+Agent Example
+LLM
+Tools
+Environment
+Action
+Feedback
+Database
+Internet
+List file
+Search file
+Read file
+15
+
+Example: Customer support
+
+https://agent-workshop-iota.vercel.app/ 
+16
+
+Example: Agentic Search
+Let’s LLM search information by itself!
+17
+
+Example: Agentic Search
+
+18
+
+Q: A 30-year-old patient is taking Prozac to treat their depression. They also carry WHIM syndrome and require a treatment for that condition as well. Is Xolremdi suitable for this patient, considering contraindications?
+get_indications: “Xolremdi” 
+get_contraindications: “Xolremdi”
+Indication: “…patients 12+ with WHIM syndrome…”
+Contraindication: “…drugs highly dependent on CYP2D6 for clearance…”              – FDA drug labels
+get_drug_interactions: “Prozac” 
+“Prozac is a potent inhibitor of CYP2D6 pathway... Prozac is metabolized by CYP2D6…” 														    – FDA drug labels
+No, Xolremdi is not suitable for the patient. It is indicated for WHIM but contraindicated with drugs highly dependent on CYP2D6 for clearance. Prozac is metabolized by CYP2D6 and a potent inhibitor of this enzyme pathway. Therefore, there is potential for serious drug interactions.
+19
+
+Example: Coding Agents
+
+Agents are particularly effective for coding because:
+Code solutions are verifiable through automated tests;
+Agents can iterate on solutions using test results as feedback;
+The problem space is well-defined and structured; and
+Output quality can be measured objectively.
+20
+
+Agentic Walkthrough
+https://colab.research.google.com/drive/1VKfrxX5qW1_KAqQlyQ3PvSX86HkkEwjw?usp=sharing 
+21
+
+Example Coding Agent
+https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent 
+PI Coding agent →
+22
+
+https://x.com/Hesamation/status/2017038553058857413 
+23
+
+Example: Claude Code
+24
+
+Model Context Protocol (MCP)
+MCP provide tool schemas and functions already defined for you.
+You can simply add them to your agent.
+25
+
+Skills
+https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills 
+26
+
+Context Engineering
+Workflow
+AI Agents
+Context Engineering
+How to fix your context
+Agent Summary
+27
+
+… However, more tool uses → running out of context
+Context = input (prompts + tool results)
+Context = Working Memory
+Context window is finite! 
+28
+
+Context grows with agents
+
+Manus: Typical task in Manus requires around 50 tool calls
+Example
+
+Anthropic: Production agents often engage in conversations spanning hundreds of turns
+https://www.anthropic.com/engineering/built-multi-agent-research-system 
+
+As context grows, cost and latency also increases.
+30
+
+Context Rot: As context grows, performances drop.
+https://research.trychroma.com/context-rot 
+31
+
+Context Rot
+32
+
+Context Poisoning
+
+Context Poisoning is when a hallucination or other error makes it into the context, where it is repeatedly referenced.
+https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html 
+Gemini 2.5 pro plays pokemon
+
+Context Confusion
+
+Context Confusion is when superfluous content in the context is used by the model to generate a low-quality response.
+If you put something in the context the model has to pay attention to it.
+https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html 
+There can be too many tools
+
+Laban, Philippe, et al. "Llms get lost in multi-turn conversation." 
+
+The sharded prompts yielded dramatically worse results, with an average drop of 39%. And the team tested a range of models – OpenAI’s vaunted o3’s score dropped from 98.1 to 64.1.
+
+Context Clash
+Context Clash is when you accrue new information and tools in your context that conflicts with other information in the context.
+This is a more problematic version of Context Confusion: the bad context here isn’t irrelevant, it directly conflicts with other information in the prompt.
+
+https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html 
+
+Context Distraction
+
+Context Distraction is when a context grows so long that the model over-focuses on the context, neglecting what it learned during training.
+https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html 
+
+Context Distraction → In-context Learning
+https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus 
+
+
+In-context Learning (ICL)
+ICL: The model can learn from the examples you give it, and will detect and pick up any patterns in the text. 
+ICL is highly unpredictable. 
+https://ai.stanford.edu/blog/understanding-incontext/ 
+https://arxiv.org/abs/2202.12837 
+
+Chat History Effect
+In any long conversation, the biggest piece of context you have is your chat history.
+It's large and naturally repetitive, forming a strong pattern. 
+This triggers in-context learning (ICL) and LLMs start to take the chat history as the narration example to follow. 
+This effect is self-reinforcing, which makes it even worse.
+ICL is impossible for the model to resist if the pattern is strong enough.
+For these reasons, you really really don't want to play with a long chat history, and should trim it past maybe ~30 messages or so.
+
+In-context learning is a fundamental LLM behavior. It's extremely low-level, and powers almost everything in LLMs.
+
+Lost in the middle
+https://arxiv.org/abs/2307.03172 
+
+Context fails: Issues as context grows
+
+Context Poisoning is when a hallucination or other error makes it into the context, where it is repeatedly referenced.
+Context Confusion is when superfluous content in the context is used by the model to generate a low-quality response.
+Context Clash is when you accrue new information and tools in your context that conflicts with other information in the context.
+Context Distraction is when a context grows so long that the model over-focuses on the context, neglecting what it learned during training.
+https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html 
+
+“Context engineering” captures the challenges of the moment
+
+https://x.com/tobi/status/1935533422589399127 
+
+https://x.com/karpathy/status/1937902205765607626 
+
+https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-03-own-your-context-window.md 
+
+How to fix your context
+Adapted from https://x.com/RLanceMartin/status/1948441848978309358 
+Workflow
+AI Agents
+Context Engineering
+How to fix your context
+Agent Summary
+
+How to fix your context
+Reduce Context
+Offload context
+Retrieve context 
+Isolate context
+Cache Context
+
+Reduce context
+Summarize agent message history 
+Prune irrelevant parts of message history
+Summarize / prune tool call outputs 
+But, be careful of information loss!!
+
+Offload context: Use the File System as Context
+Use file system for notes
+Use file system (e.g., todo.md) to plan/track progress.
+Use file system read/write token-heavy context.
+Use files for long-term memories.
+
+Retrieve context
+Mix of retrieval methods + re-ranking.
+Systems to assemble retrievals into prompts.
+Retrieve relevant tools based upon tool descriptions.
+
+Isolate Context: Multi-agent search solution
+Lead agent breaks down the question.
+One sub-agent per sub-question.
+Sub-agent returns only key information to the lead agent.
+Agents have tools to search and explore.
+Lead Agent
+Search subagent
+Search subagent
+Search subagent
+55
+Update the figure
+
+Cache Context
+As context grows, you will have to pay more too!
+Cached input tokens for Claude-sonnet 10x cheaper!
+Cache agent instructions, tool descriptions to prefix.
+Add mutable context / recent observations to suffix.
+
+Agent Summary
+Workflow
+AI Agents
+Context Engineering
+How to fix your context
+Agent Summary
+57
+
+Don’t build agents for everything
+58
+
+Why not?
+Agents scale complex and valuable tasks
+Agents are not a drop-in upgrade for every use cases.
+59
+
+Checklist: “Should I build an agent”
+Is the task complex enough?
+No → Workflows
+Yes → Agents
+Is the task valuable enough?
+<$0.1 → Workflows
+>$1 → Agents
+Are all parts of the task doable?
+No → Reduce scope
+Yes → Agents
+What is the cost of error/error discovery?
+High -> Read-only/human-in-the-loop
+Low -> Agents
+60
+
+Why is coding a great agent use case
+Complexity: design-doc to PR ✔
+Value: $$$ ✔
+Viability: Claude is great at coding ✔
+Cost of error: Unit-tests + CI ✔
+61
+
+Summary
+Tool use allows LLM to interact with various applications.
+Workflow is a predetermined LLM system.
+Agentic AI is an LLM with tools in a loop.
+As agents work, context grows. Managing context becomes critical.
+Reliability becomes the critical aspect of agents.
+Evaluating agents is still tricky.
+Human-in-the-loop: Humans should be able to quickly verify agents’ actions.
+62

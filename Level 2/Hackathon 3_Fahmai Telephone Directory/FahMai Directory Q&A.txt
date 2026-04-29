@@ -1,0 +1,137 @@
+SUPERAI LEVEL 2 Minihack
+FahMai Directory Q&A
+Level 2 — RAG / Agentic Tool-Use Competition
+1,995 employees  ·  300 questions  ·  Bilingual TH/EN
+MUST USE  Typhoon v2.5  ONLY
+
+The Challenge
+FahMai (ฟ้าใหม่) — a fictional Thai electronics retailer
+1,995
+Employees in CSV
+300
+Questions to Answer
+19
+Columns per Employee
+The CSV doesn't fit in a typical LLM context window. You need retrieval, filters, or tool-use — not a single-prompt approach.
+⚠️  Model constraint: you MUST ONLY USE Typhoon v2.5 — no GPT, no Claude, no Gemini.
+
+Data Files
+employees.csv — Source of Truth
+Employee ID
+00002699
+Department / Section / Unit
+CEO / CEO-OFF / CEO
+Position (TH + EN)
+ประธานฯ / CEO
+Name (TH + EN)
+วชิร / VACHIR
+Nickname (TH + EN)
+เบอร์รี่ / BERRY
+Email
+VACHIR.CH@FAHMAI.CO.TH
+Phone Ext / Mobile
+73048 / ...
+Office / Branch / Start Year
+BKK-R9 / 2016
+questions.csv — 300 Questions
+id,language,questiong001,en,who is the RETVPg002,th,ใครเป็น OPSVP...
+sample_submission.csv
+id,responseg001,(your answer here)g002,...
+train_labels.json
+Ground truth for 158 public items.Grade locally before submitting.
+
+🌪️
+Typhoon v2.5 ONLY
+All teams must use typhoon-v2.5-30b-a3b-instructvia the OpenTyphoon API or host it yourself. No other LLMs allowed.
+Submissions using non-Typhoon models will be disqualified.
+
+Rules & Team Format
+Team Naming
+การแข่งขันเป็นรูปแบบบ้าน ตั้งชื่อทีมตามรูปแบบที่กำหนด:
+EXP_XX
+Scamper_XX
+XX = หมายเลขทีม
+Team Size
+3-5
+คนต่อทีม
+กฎสำคัญ
+›  สมาชิกในทีมต้องอยู่บ้านเดียวกันเท่านั้น
+
+Evaluation
+Token-Based Pass / Fail
+Each item graded independently. Score = passes / 300.
+must_contain_any_of
+At least one keyword from each group
+must_not_contain
+None of these may appear
+min_items
+At least N employees listed
+exact_count
+Exactly N matches required
+Language Rule
+Each question has a language column (th or en).
+Answer in that language. No mixed questions exist.
+
+th  →  ตอบเป็นภาษาไทย
+en  →  Answer in English
+Wrong language = automatic fail
+Leaderboard Split
+158
+Public LB
+142
+Private LB
+Winners decided by Private LB only.
+Local Grading
+python grade.py submission.csv train_labels.json# Output:Passed: 94/158 = 59.5%Bucket          pass/total  ratenickname_grid    12/17     70.6%refuse           11/15     73.3%...
+
+Refusal Phrases — Must Be Exact
+30 out of 300 questions require refusal. Use the exact canonical phrase or it's a fail.
+Scenario
+Thai Phrase
+English Phrase
+Field not in directory(salary, age...)
+ไม่สามารถให้ข้อมูลนี้ได้
+cannot provide this information
+Person not in directory
+ไม่พบข้อมูล
+no record found
+Speculation / opinion
+ไม่สามารถให้ความเห็นได้
+cannot offer an opinion
+External company
+ไม่ใช่ข้อมูลของฟ้าใหม่
+not a FahMai record
+Prompt injection
+ขอปฏิเสธคำขอ
+request declined
+Field exists but blank
+ไม่มีชื่อเล่นในระบบ
+nickname not listed
+Refusal responses must NOT leak phone extensions or Employee IDs.
+
+Submission Flow
+Your submission.csv
+id,responseg001,The RETVP is Wiriya Chanchai (วิริยะ จันทชัย)g002,OPSVP คือ คึกฤทธิ์ บุษราคัมวงศ์g180,ไม่มีชื่อเล่นในระบบ
+300
+Rows required
+UTF-8
+Encoding
+id,response
+Column format
+1.  Build your pipeline with Typhoon v2.5
+2.  Run on all 300 questions → submission.csv
+3.  Grade locally: python grade.py submission.csv train_labels.json
+4.  Submit to Kaggle → check public leaderboard
+5.  Iterate and improve — final ranking = private LB
+
+🏆
+Good Luck
+Build the best FahMai directory assistant
+1,995
+employees
+300
+questions
+Typhoon
+v2.5 only
+🌪️  Remember: Typhoon v2.5 ONLY
+Kaggle: https://www.kaggle.com/t/b1c3c7fdb3ab4fada6a9844a9f58e294 
