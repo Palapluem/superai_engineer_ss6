@@ -40,6 +40,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def find_base() -> Path:
     candidates = [
+        Path(r"C:\Users\CPE KMUTT\Documents\GitHub\superai_engineer_ss6\Level 2\Hackathon 5_Demand Forecasting Coffee Chain Hackathon\super-ai-engineer-season-6-coffee-chain-hackathon"),
         Path(__file__).resolve().parent / "super-ai-engineer-season-6-coffee-chain-hackathon",
         Path("/kaggle/input/competitions/super-ai-engineer-season-6-coffee-chain-hackathon"),
         Path("/kaggle/input/super-ai-engineer-season-6-coffee-chain-hackathon"),

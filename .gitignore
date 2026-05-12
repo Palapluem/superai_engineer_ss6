@@ -4,3 +4,14 @@ Level 1/Hackathon 2_การแข่งขัน OCR เอกสารผล�
 
 # Gemini CLI
 .gemini/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local Outputs
+eda_additional_outputs/
+.ipynb_checkpoints/
