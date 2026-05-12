@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Demand Forecasting at Scale - ExpresSo NB Hackathon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+/* === BRAND TOKENS - ExpresSo NB cleantech palette === */
+:root {
+  --bg-primary: #001f1c;
+  --bg-gradient: linear-gradient(135deg, #001f1c 0%, #003d3a 45%, #00524d 100%);
+  --card-bg: #00a99d;
+  --card-bg-2: #00ffe0;
+  --card-bg-warm: #f5b840;
+  --text-primary: #f0fbf9;
+  --text-on-card: #001f1c;
+  --text-dim: rgba(240, 251, 249, 0.62);
+  --text-muted: rgba(240, 251, 249, 0.48);
+  --accent: #00ffd0;
+  --accent-soft: rgba(0, 255, 208, 0.12);
+  --rule: rgba(240, 251, 249, 0.14);
+  --confidential: rgba(240, 251, 249, 0.42);
+
+  --font-display: 'Archivo Black', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --title-size: clamp(3rem, 7.2vw, 6.4rem);
+  --h2-size: clamp(2rem, 4.4vw, 3.4rem);
+  --h3-size: clamp(1.3rem, 2.5vw, 1.85rem);
+  --body-size: clamp(1rem, 1.35vw, 1.35rem);
+  --small-size: clamp(0.78rem, 1vw, 1rem);
+  --num-size: clamp(2.8rem, 6.2vw, 5rem);
+
+  --slide-padding: clamp(1.4rem, 4vw, 4rem);
+  --content-gap: clamp(0.6rem, 1.6vw, 1.4rem);
+  --element-gap: clamp(0.3rem, 0.9vw, 0.8rem);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-normal: 0.7s;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* === VIEWPORT-BASE.CSS - mandatory =========================== */
+html, body { height: 100%; overflow-x: hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--bg-gradient);
+}
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 100%;
+  overflow: hidden;
+  padding: var(--slide-padding);
+}
+img, .image-container { max-width: 100%; max-height: min(50vh, 400px); object-fit: contain; }
+
+/* Responsive breakpoints */
+@media (max-height: 700px) {
+  :root {
+    --slide-padding: clamp(0.8rem, 3vw, 2rem);
+    --content-gap: clamp(0.4rem, 1.2vw, 1rem);
+    --title-size: clamp(2rem, 5.4vw, 3.8rem);
+    --h2-size: clamp(1.5rem, 3.6vw, 2.5rem);
+    --body-size: clamp(0.88rem, 1.2vw, 1.15rem);
+    --num-size: clamp(2rem, 4.8vw, 3.6rem);
+  }
+}
+@media (max-height: 600px) {
+  :root {
+    --slide-padding: clamp(0.5rem, 2vw, 1.5rem);
+    --content-gap: clamp(0.3rem, 1vw, 0.7rem);
+    --title-size: clamp(1.6rem, 4.6vw, 2.8rem);
+    --body-size: clamp(0.82rem, 1.1vw, 1rem);
+  }
+  .nav-dots, .keyboard-hint, .decorative { display: none; }
+}
+@media (max-height: 500px) {
+  :root {
+    --title-size: clamp(1.3rem, 3.8vw, 2rem);
+    --h2-size: clamp(1.1rem, 2.8vw, 1.6rem);
+    --body-size: clamp(0.74rem, 0.95vw, 0.9rem);
+  }
+}
+@media (max-width: 600px) {
+  :root { --title-size: clamp(1.7rem, 8vw, 3.2rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.2s !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* === BOLD SIGNAL CHROME - number, breadcrumbs, title, body === */
+.slide-frame {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: clamp(0.6rem, 1.4vw, 1.2rem);
+  padding: var(--slide-padding);
+  padding-bottom: clamp(0.8rem, 2vw, 1.6rem);
+}
+.slide-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.slide-num {
+  font-family: var(--font-display);
+  font-size: var(--num-size);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  text-shadow: 0 0 24px rgba(0, 255, 208, 0.35);
+}
+.slide-num small {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.32em;
+  letter-spacing: 0.18em;
+  display: block;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-top: 0.4em;
+}
+.slide-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: clamp(0.6rem, 1.6vw, 1.4rem);
+  font-size: var(--small-size);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: right;
+  align-self: flex-start;
+}
+.slide-crumbs span { color: var(--text-muted); transition: color 0.3s; }
+.slide-crumbs span.active { color: var(--accent); }
+.slide-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--content-gap);
+  min-height: 0;
+}
+.slide-body h2 {
+  font-family: var(--font-display);
+  font-size: var(--h2-size);
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+  color: var(--text-primary);
+  max-width: 22ch;
+}
+.slide-body h2 .accent { color: var(--accent); }
+.kicker {
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  font-weight: 600;
+}
+.lead { color: var(--text-dim); max-width: 75ch; font-size: clamp(1.05rem, 1.45vw, 1.4rem); }
+.lead strong { color: var(--text-primary); font-weight: 600; }
+
+/* Confidential footer + slide counter */
+.slide-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: clamp(0.7rem, 0.9vw, 0.88rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--confidential);
+  font-weight: 500;
+  padding-top: clamp(0.4rem, 1vw, 0.8rem);
+  border-top: 1px solid var(--rule);
+}
+.slide-bottom .conf::before {
+  content: '◆';
+  margin-right: 0.6em;
+  color: var(--accent);
+  opacity: 0.8;
+}
+.slide-bottom .counter {
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+/* === FOCAL CARDS (Bold Signal signature) === */
+.card {
+  background: var(--card-bg);
+  color: var(--text-on-card);
+  padding: clamp(1rem, 2.5vw, 2rem);
+  border-radius: clamp(8px, 1.2vw, 14px);
+  box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1.2vw, 1rem);
+  position: relative;
+  overflow: hidden;
+}
+.card.warm { background: var(--card-bg-warm); }
+.card.bright { background: var(--card-bg-2); }
+.card .card-label {
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  opacity: 0.72;
+}
+.card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+.card p { font-size: clamp(1rem, 1.3vw, 1.25rem); line-height: 1.45; }
+.card.dark { background: rgba(255, 255, 255, 0.04); color: var(--text-primary); border: 1px solid var(--rule); box-shadow: none; }
+
+/* === GRIDS === */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(0.8rem, 2vw, 1.8rem); align-items: stretch; min-height: 0; }
+.three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.8rem, 2vw, 1.6rem); align-items: stretch; min-height: 0; }
+.col-65-35 { display: grid; grid-template-columns: 1.85fr 1fr; gap: clamp(0.8rem, 2vw, 1.8rem); align-items: stretch; min-height: 0; }
+.col-35-65 { display: grid; grid-template-columns: 1fr 1.85fr; gap: clamp(0.8rem, 2vw, 1.8rem); align-items: stretch; min-height: 0; }
+@media (max-width: 760px) {
+  .two-col, .three-col, .col-65-35, .col-35-65 { grid-template-columns: 1fr; }
+}
+
+/* === LISTS === */
+.tick-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.4rem, 1vh, 0.85rem); }
+.tick-list li {
+  position: relative;
+  padding-left: 1.6em;
+  font-size: var(--body-size);
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+.tick-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.85em;
+  height: 1.5px;
+  background: var(--accent);
+}
+.tick-list li strong { color: var(--accent); font-weight: 600; }
+.tick-list.dim li { color: var(--text-dim); }
+.tick-list.dim li strong { color: var(--text-primary); }
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.5rem, 1vw, 0.85rem);
+}
+.cat-pill {
+  background: rgba(0, 255, 208, 0.06);
+  border: 1px solid rgba(0, 255, 208, 0.28);
+  color: var(--text-primary);
+  padding: clamp(0.5rem, 1.2vw, 0.85rem) clamp(0.6rem, 1.4vw, 1rem);
+  border-radius: 999px;
+  font-size: var(--body-size);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: all 0.4s var(--ease-out-expo);
+}
+.cat-pill.featured {
+  background: var(--card-bg);
+  color: var(--text-on-card);
+  border-color: transparent;
+  font-weight: 600;
+}
+@media (max-width: 760px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* === TABLES (compact + viewport-aware) === */
+.tbl {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: clamp(0.92rem, 1.25vw, 1.2rem);
+  line-height: 1.35;
+}
+.tbl th, .tbl td {
+  text-align: left;
+  padding: clamp(0.45rem, 1vw, 0.85rem) clamp(0.6rem, 1.2vw, 1rem);
+  border-bottom: 1px solid var(--rule);
+}
+.tbl th {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(0.78rem, 0.98vw, 0.95rem);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  border-bottom-color: var(--accent-soft);
+}
+.tbl tbody tr:hover { background: rgba(0, 255, 208, 0.04); }
+.tbl td.mono { font-family: var(--font-mono); font-size: clamp(0.85rem, 1.1vw, 1.05rem); color: var(--text-dim); }
+.tbl td strong { color: var(--accent); font-weight: 600; }
+.tbl-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--rule);
+  border-radius: clamp(8px, 1vw, 12px);
+  padding: clamp(0.6rem, 1.5vw, 1.2rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.tbl-card .tbl { min-height: 0; }
+
+/* === CODE === */
+.code-block {
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: clamp(6px, 0.8vw, 10px);
+  padding: clamp(0.7rem, 1.4vw, 1.1rem) clamp(0.8rem, 1.6vw, 1.3rem);
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  line-height: 1.55;
+  color: var(--text-primary);
+  overflow: auto;
+  max-height: 100%;
+}
+.code-block .kw { color: var(--accent); }
+.code-block .str { color: #ffd28a; }
+.code-block .com { color: var(--text-muted); font-style: italic; }
+.formula {
+  font-family: var(--font-mono);
+  font-size: clamp(1.25rem, 2.1vw, 2rem);
+  background: rgba(0, 0, 0, 0.28);
+  border-left: 3px solid var(--accent);
+  border-radius: clamp(6px, 0.8vw, 10px);
+  padding: clamp(0.8rem, 1.6vw, 1.2rem);
+  color: var(--text-primary);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* === CALLOUTS === */
+.callout {
+  border-left: 3px solid var(--card-bg-warm);
+  background: rgba(245, 184, 64, 0.08);
+  padding: clamp(0.6rem, 1.4vw, 1rem) clamp(0.8rem, 1.6vw, 1.2rem);
+  font-size: var(--body-size);
+  border-radius: 0 clamp(6px, 0.8vw, 10px) clamp(6px, 0.8vw, 10px) 0;
+  color: var(--text-primary);
+}
+.callout.danger { border-left-color: #ff6b6b; background: rgba(255, 107, 107, 0.08); }
+.callout.ok { border-left-color: var(--accent); background: var(--accent-soft); }
+.callout strong { color: var(--accent); }
+.callout.danger strong { color: #ffb8b8; }
+
+.stat-row { display: flex; flex-wrap: wrap; gap: clamp(0.8rem, 2vw, 1.6rem); }
+.stat { display: flex; flex-direction: column; gap: 0.2em; }
+.stat .num {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+  letter-spacing: -0.025em;
+  color: var(--accent);
+  line-height: 1;
+}
+.stat .lbl {
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+}
+
+/* === LOGO === */
+:root { --logo-url: url('data:image/png;base64,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'); }
+.logo-mark, .logo-title, .logo-qa {
+  background-image: var(--logo-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.logo-mark {
+  position: absolute;
+  top: clamp(3.6rem, 6.5vw, 5.5rem);
+  right: clamp(1.4rem, 4vw, 4rem);
+  width: clamp(70px, 8vw, 105px);
+  aspect-ratio: 2 / 1;
+  opacity: 0.78;
+  z-index: 5;
+}
+.logo-title {
+  width: clamp(220px, 24vw, 360px);
+  aspect-ratio: 2 / 1;
+  margin-bottom: clamp(0.5rem, 1.5vh, 1.2rem);
+}
+.logo-qa {
+  width: clamp(140px, 16vw, 220px);
+  aspect-ratio: 2 / 1;
+  margin: 0 auto clamp(0.6rem, 1.5vh, 1.2rem);
+  opacity: 0.85;
+}
+
+/* === TITLE SLIDE === */
+.title-slide .slide-frame {
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.title-hero {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.7rem, 1.6vw, 1.4rem);
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.title-hero .partner {
+  font-size: clamp(0.7rem, 0.95vw, 0.88rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+.title-hero h1 {
+  font-family: var(--font-display);
+  font-size: var(--title-size);
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  color: var(--text-primary);
+  text-shadow: 0 0 60px rgba(0, 255, 208, 0.18);
+}
+.title-hero h1 .accent { color: var(--accent); display: block; }
+.title-hero .sub {
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  color: var(--text-dim);
+  max-width: 60ch;
+  font-weight: 500;
+}
+.title-hero .tagline {
+  font-style: italic;
+  font-size: clamp(0.78rem, 1vw, 0.95rem);
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.title-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2.5vw, 2.4rem);
+  margin-top: clamp(0.6rem, 1.6vh, 1.2rem);
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-dim);
+}
+.title-meta strong { color: var(--accent); font-family: var(--font-display); font-size: 1.2em; letter-spacing: -0.01em; text-transform: none; display: block; margin-bottom: 0.15em; }
+
+/* === Q&A SLIDE === */
+.qa-slide .slide-frame { grid-template-rows: 1fr; align-items: center; }
+.qa-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.6rem, 1.4vh, 1.2rem);
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+}
+.qa-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  text-shadow: 0 0 80px rgba(0, 255, 208, 0.35);
+}
+.qa-hero .qa-sub {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.qa-hero ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  color: var(--text-dim);
+}
+
+/* === ANIMATIONS === */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--duration-normal) var(--ease-out-expo), transform var(--duration-normal) var(--ease-out-expo);
+}
+.slide.visible .reveal { opacity: 1; transform: translateY(0); }
+.slide.visible .reveal.d1 { transition-delay: 0.08s; }
+.slide.visible .reveal.d2 { transition-delay: 0.18s; }
+.slide.visible .reveal.d3 { transition-delay: 0.28s; }
+.slide.visible .reveal.d4 { transition-delay: 0.38s; }
+.slide.visible .reveal.d5 { transition-delay: 0.48s; }
+.slide.visible .reveal.d6 { transition-delay: 0.58s; }
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.45; }
+  50% { transform: translate(40px, -30px) scale(1.1); opacity: 0.6; }
+}
+.atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.atmosphere::before, .atmosphere::after {
+  content: '';
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+.atmosphere::before {
+  background: radial-gradient(circle, rgba(0, 255, 208, 0.18), transparent 60%);
+  top: -20vw;
+  right: -15vw;
+  animation: drift 22s ease-in-out infinite;
+}
+.atmosphere::after {
+  background: radial-gradient(circle, rgba(0, 169, 157, 0.22), transparent 60%);
+  bottom: -25vw;
+  left: -20vw;
+  animation: drift 28s ease-in-out infinite reverse;
+}
+
+/* === PROGRESS BAR === */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 100;
+  width: 0%;
+  transition: width 0.3s var(--ease-out-expo);
+  box-shadow: 0 0 12px rgba(0, 255, 208, 0.5);
+}
+
+/* === NAV DOTS === */
+.nav-dots {
+  position: fixed;
+  right: clamp(0.8rem, 1.4vw, 1.4rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.3rem, 0.6vw, 0.5rem);
+  z-index: 50;
+}
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+.nav-dot.active { background: var(--accent); transform: scale(1.4); box-shadow: 0 0 12px var(--accent); }
+@media (max-width: 760px) { .nav-dots { display: none; } }
+
+/* === KEY HINT === */
+.keyboard-hint {
+  position: fixed;
+  bottom: clamp(0.6rem, 1.2vw, 1rem);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: clamp(0.6rem, 0.75vw, 0.72rem);
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.4em 0.9em;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  pointer-events: none;
+}
+.keyboard-hint kbd {
+  background: rgba(0, 255, 208, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(0, 255, 208, 0.28);
+  border-radius: 4px;
+  padding: 0.05em 0.4em;
+  font-family: inherit;
+  margin: 0 0.2em;
+}
+
+/* === PRINT === */
+@media print {
+  html, body { height: auto; overflow: visible; }
+  .slide { page-break-after: always; height: 100vh; min-height: auto; box-shadow: none; }
+  .nav-dots, .progress-bar, .keyboard-hint { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+<nav class="nav-dots" id="navDots"></nav>
+<div class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>Space</kbd> next · <kbd>Home</kbd>/<kbd>End</kbd></div>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 01 - Title                                                       -->
+<!-- ====================================================================== -->
+<section class="slide title-slide">
+  <div class="atmosphere"></div>
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="title-hero">
+      <div class="logo-title reveal d1" aria-hidden="true"></div>
+      <p class="partner reveal d2">Industry Partner · ExpresSo NB</p>
+      <h1 class="reveal d3">Demand Forecasting <span class="accent">at Scale</span></h1>
+      <p class="sub reveal d4">A Kaggle hackathon for Thailand's largest coffee chain: forecast 20 stores × 7 categories × 61 days × 3 horizons.</p>
+      <p class="tagline reveal d5">"Leading the way to a better world."</p>
+      <div class="title-meta reveal d6">
+        <div><strong>2026-05-15</strong>Submission deadline · 08:00 ICT</div>
+        <div><strong>4–6</strong>Members per team</div>
+        <div><strong>18</strong>Briefing sections</div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">01 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- ====================================================================== -->
+<!-- SLIDE 02 - About ExpresSo NB                                         -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">02<small>About Us</small></div>
+      <div class="slide-crumbs">
+        <span class="active">About</span><span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Corporate innovation arm of PTT Group</p>
+      <h2 class="reveal d2">We build and back <span class="accent">the future</span>.</h2>
+      <div class="three-col">
+        <div class="card reveal d3">
+          <span class="card-label">What we do</span>
+          <h3>Corporate VC &amp; Corporate VB</h3>
+          <p>We invest in high-potential ventures through Corporate Venture Capital and incubate new businesses through Corporate Venture Building.</p>
+        </div>
+        <div class="card warm reveal d4">
+          <span class="card-label">Focus areas</span>
+          <h3>Climate Tech &amp; AI</h3>
+          <p>Deploying capital and builder capacity at the intersection of sustainability and artificial intelligence to drive sustainable growth and innovation.</p>
+        </div>
+        <div class="card bright reveal d5">
+          <span class="card-label">Our mission</span>
+          <h3>Solving for PTT &amp; Building New Businesses</h3>
+          <p>We identify real challenges across PTT Group companies and turn them into new ventures, creating lasting business value for the group.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">02 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 03 - The Problem                                                 -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">03<small>The Problem</small></div>
+      <div class="slide-crumbs">
+        <span class="active">Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">~4,400 stores · two operational decisions every day</p>
+      <h2 class="reveal d2">The forecast drives two critical workflows.</h2>
+      <div class="two-col">
+        <div class="card reveal d3">
+          <span class="card-label">Workflow 01</span>
+          <h3>Inventory optimization</h3>
+          <p>How much of each category does each store need today? Understocking loses revenue. Overstocking creates waste.</p>
+        </div>
+        <div class="card warm reveal d4">
+          <span class="card-label">Workflow 02</span>
+          <h3>Order optimization</h3>
+          <p>Inventory feeds supplier ordering. Forecasts at the right horizon let stores order at the right cadence and quantity.</p>
+        </div>
+      </div>
+      <p class="lead reveal d5">You will build models for <strong>20 representative stores</strong> drawn from the wider network.</p>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">03 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 04 - The Task                                                    -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">04<small>The Task</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span class="active">The task</span><span>Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Forecast units sold · per (store × category × day) · at 3 horizons</p>
+      <h2 class="reveal d2">Three horizons, one window.</h2>
+      <div class="two-col">
+        <div class="reveal d3 tbl-card">
+          <table class="tbl">
+            <thead><tr><th>Horizon</th><th>Use case</th></tr></thead>
+            <tbody>
+              <tr><td><strong>1d</strong> next-day</td><td>Same-day prep, last-minute stock</td></tr>
+              <tr><td><strong>7d</strong> week-ahead</td><td>Weekly supplier ordering cycle</td></tr>
+              <tr><td><strong>1m</strong> month-ahead</td><td>Monthly planning, seasonal positioning</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card bright reveal d4">
+          <span class="card-label">Forecast window</span>
+          <h3>2024-11-01 → 2024-12-31</h3>
+          <p style="font-family:var(--font-mono); font-size: clamp(0.7rem, 0.95vw, 0.9rem); margin-top: 0.3em;">20 stores × 7 categories × 61 days × 3 horizons</p>
+          <p style="font-family:var(--font-display); font-size: clamp(1.4rem, 3vw, 2.2rem); letter-spacing: -0.02em; margin-top: 0.2em;">= 25,620 rows</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">04 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 05 - The 7 Categories                                            -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">05<small>Categories</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span class="active">The task</span><span>Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">From <code style="font-family:var(--font-mono); color:var(--text-primary); background:var(--accent-soft); padding:0.05em 0.4em; border-radius:4px;">PRODUCT.category</code></p>
+      <h2 class="reveal d2">Seven product categories.</h2>
+      <div class="cat-grid">
+        <div class="cat-pill featured reveal d2">Coffee</div>
+        <div class="cat-pill reveal d2">Tea</div>
+        <div class="cat-pill reveal d3">Chocolate &amp; Milk</div>
+        <div class="cat-pill reveal d3">Juice &amp; Smoothie</div>
+        <div class="cat-pill reveal d4">Bakery</div>
+        <div class="cat-pill reveal d4">Savory Bakery</div>
+        <div class="cat-pill reveal d5">Merchandise</div>
+        <div class="cat-pill reveal d5" style="border-style:dashed; opacity:0.45;">7 in total</div>
+      </div>
+      <div class="callout reveal d6"><strong>Forecast at the category level per store.</strong> Not at SKU level. Not aggregated across stores. Each (store, category, day) is its own target.</div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">05 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 06 - Horizon semantics (THE GOTCHA)                              -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num" style="color:var(--card-bg-warm); text-shadow: 0 0 24px rgba(245,184,64,0.4);">06<small style="color:var(--card-bg-warm);">Gotcha №1</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span class="active">The task</span><span>Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1" style="color:var(--card-bg-warm);">Stand on the decision day, not the forecast day</p>
+      <h2 class="reveal d2">Every feature shifts by <span class="accent">≥ <em>h</em> days</span>.</h2>
+      <p class="lead reveal d2" style="font-size:clamp(0.82rem,1.1vw,1.05rem); margin-top:-0.2em;"><strong>Decision day</strong> = the day you run the model and generate predictions &nbsp;·&nbsp; <strong>Forecast date</strong> = the future day you are predicting sales for.</p>
+      <div class="col-65-35">
+
+        <!-- Timeline diagram -->
+        <div class="reveal d3 tbl-card" style="justify-content:center;">
+          <div style="display:flex; flex-direction:column; gap:clamp(0.4rem,1vw,0.75rem); padding:clamp(0.2rem,0.6vw,0.5rem) 0;">
+
+            <!-- Header row -->
+            <div style="display:flex; align-items:center; padding-left:3rem; padding-right:1rem;">
+              <div style="flex:1; font-family:var(--font-mono); font-size:clamp(0.58rem,0.76vw,0.72rem); color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em;">&#8592; past</div>
+              <div style="font-family:var(--font-mono); font-size:clamp(0.58rem,0.76vw,0.72rem); color:var(--accent); letter-spacing:0.05em;">Nov 1 &#9679;</div>
+            </div>
+
+            <!-- 1d row: forbidden = 1/35 -->
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-family:var(--font-mono); font-weight:600; font-size:clamp(0.75rem,1vw,0.95rem); color:var(--accent); width:2.4rem; flex-shrink:0; text-align:right;">1d</span>
+              <div style="flex:1; display:flex; height:clamp(1.6rem,2.4vw,2rem); border-radius:4px; overflow:hidden;">
+                <div style="flex:34; background:rgba(0,255,208,0.1); border:1px solid rgba(0,255,208,0.22); display:flex; align-items:center; padding:0 0.5rem;">
+                  <span style="font-family:var(--font-mono); font-size:clamp(0.58rem,0.74vw,0.7rem); color:var(--text-dim);">&#8804; Oct 31</span>
+                </div>
+                <div style="flex:1; min-width:5px; background:rgba(255,107,107,0.3); border:1px solid rgba(255,107,107,0.5);"></div>
+              </div>
+              <div style="width:0.6rem; height:0.6rem; background:var(--accent); border-radius:50%; flex-shrink:0; box-shadow:0 0 6px rgba(0,255,208,0.55);"></div>
+            </div>
+
+            <!-- 7d row: forbidden = 7/35 -->
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-family:var(--font-mono); font-weight:600; font-size:clamp(0.75rem,1vw,0.95rem); color:var(--accent); width:2.4rem; flex-shrink:0; text-align:right;">7d</span>
+              <div style="flex:1; display:flex; height:clamp(1.6rem,2.4vw,2rem); border-radius:4px; overflow:hidden;">
+                <div style="flex:28; background:rgba(0,255,208,0.1); border:1px solid rgba(0,255,208,0.22); display:flex; align-items:center; padding:0 0.5rem;">
+                  <span style="font-family:var(--font-mono); font-size:clamp(0.58rem,0.74vw,0.7rem); color:var(--text-dim);">&#8804; Oct 25</span>
+                </div>
+                <div style="flex:7; background:rgba(255,107,107,0.3); border:1px solid rgba(255,107,107,0.5); display:flex; align-items:center; justify-content:center;">
+                  <span style="font-family:var(--font-mono); font-size:clamp(0.52rem,0.68vw,0.64rem); color:#ffb8b8;">7d</span>
+                </div>
+              </div>
+              <div style="width:0.6rem; height:0.6rem; background:var(--accent); border-radius:50%; flex-shrink:0; box-shadow:0 0 6px rgba(0,255,208,0.55);"></div>
+            </div>
+
+            <!-- 30d row: forbidden = 30/35 -->
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-family:var(--font-mono); font-weight:600; font-size:clamp(0.75rem,1vw,0.95rem); color:var(--accent); width:2.4rem; flex-shrink:0; text-align:right;">30d</span>
+              <div style="flex:1; display:flex; height:clamp(1.6rem,2.4vw,2rem); border-radius:4px; overflow:hidden;">
+                <div style="flex:5; background:rgba(0,255,208,0.1); border:1px solid rgba(0,255,208,0.22); display:flex; align-items:center; padding:0 0.3rem;">
+                  <span style="font-family:var(--font-mono); font-size:clamp(0.52rem,0.66vw,0.62rem); color:var(--text-dim);">&#8804; Oct 2</span>
+                </div>
+                <div style="flex:30; background:rgba(255,107,107,0.3); border:1px solid rgba(255,107,107,0.5); display:flex; align-items:center; justify-content:center;">
+                  <span style="font-family:var(--font-mono); font-size:clamp(0.58rem,0.74vw,0.7rem); color:#ffb8b8;">&#8592; 30 days forbidden &#8594;</span>
+                </div>
+              </div>
+              <div style="width:0.6rem; height:0.6rem; background:var(--accent); border-radius:50%; flex-shrink:0; box-shadow:0 0 6px rgba(0,255,208,0.55);"></div>
+            </div>
+
+            <!-- Legend -->
+            <div style="display:flex; gap:1.2rem; padding-left:3rem; margin-top:0.1rem;">
+              <span style="display:flex; align-items:center; gap:0.35rem; font-size:clamp(0.56rem,0.72vw,0.68rem); color:var(--text-muted);">
+                <span style="width:0.75rem; height:0.75rem; background:rgba(0,255,208,0.1); border:1px solid rgba(0,255,208,0.22); border-radius:2px; display:inline-block; flex-shrink:0;"></span>
+                Allowed
+              </span>
+              <span style="display:flex; align-items:center; gap:0.35rem; font-size:clamp(0.56rem,0.72vw,0.68rem); color:var(--text-muted);">
+                <span style="width:0.75rem; height:0.75rem; background:rgba(255,107,107,0.3); border:1px solid rgba(255,107,107,0.5); border-radius:2px; display:inline-block; flex-shrink:0;"></span>
+                Forbidden (leakage)
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Leakage check card -->
+        <div class="card warm reveal d4">
+          <span class="card-label">Leakage check</span>
+          <h3>lag_1 in a 7d model = leak.</h3>
+          <p>A 7-day rolling mean of last week's sales in a 30d model = leak. Last week is inside the forbidden window. The window must start at least 30 days back. Judges will check this in code review.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">06 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 07 - Test-window data is intentionally missing                    -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">07<small>Test data</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">You only get train data for time-varying tables</p>
+      <h2 class="reveal d2">Test-window TXN, ORDER, INVENTORY are not distributed.</h2>
+      <div class="two-col">
+        <div class="card dark reveal d3">
+          <span class="card-label" style="color:var(--accent);">Train-period only</span>
+          <h3 style="color:var(--text-primary);">Time-varying tables</h3>
+          <ul class="tick-list" style="margin-top:0.2em;">
+            <li>TRANSACTION · ORDER</li>
+            <li>INVENTORY · CUSTOMER</li>
+          </ul>
+          <span class="card-label" style="color:var(--accent); margin-top:0.4em;">Test-window provided</span>
+          <ul class="tick-list" style="margin-top:0.2em;">
+            <li>PROMOTION · LOCAL_EVENT</li>
+            <li>DATE_DIM · STORE · PRODUCT</li>
+          </ul>
+        </div>
+        <div class="reveal d4" style="display:flex; flex-direction:column; gap:clamp(0.5rem, 1.2vw, 1rem); min-height:0;">
+          <p class="lead">To use within-test-window lag features, you have <strong>two options</strong>:</p>
+          <div class="card bright" style="padding:clamp(0.7rem, 1.6vw, 1.2rem);">
+            <span class="card-label">Option A</span>
+            <h3>Recursive prediction</h3>
+            <p>Feed your own predictions back as lags.</p>
+          </div>
+          <div class="card" style="padding:clamp(0.7rem, 1.6vw, 1.2rem);">
+            <span class="card-label">Option B</span>
+            <h3>Train-only cutoff</h3>
+            <p>Use only data ≤ 2024-10-31 for every forecast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">07 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 08 - Train data                                                  -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">08<small>train/</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">22 months · 2023-01-01 → 2024-10-31 · 670 days</p>
+      <h2 class="reveal d2">Nine tables in <code style="font-family:var(--font-mono); color:var(--accent); background:var(--accent-soft); padding:0.05em 0.4em; border-radius:4px;">train/</code></h2>
+      <div class="reveal d3 tbl-card">
+        <table class="tbl">
+          <thead><tr><th>Table</th><th>What's inside</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">TRANSACTION</td><td>Line-level sales (units, revenue, discount)</td></tr>
+            <tr><td class="mono">ORDER</td><td>Order header (store, date, hour, customer, payment)</td></tr>
+            <tr><td class="mono">INVENTORY</td><td>Daily stock state + <strong>is_stockout</strong></td></tr>
+            <tr><td class="mono">PROMOTION</td><td>Campaign schedule (promo type, discount, BOGO, loyalty, channel flags)</td></tr>
+            <tr><td class="mono">LOCAL_EVENT</td><td>Local events by type (market, cultural, sports, concert, and more)</td></tr>
+            <tr><td class="mono">CUSTOMER</td><td>Member registry</td></tr>
+            <tr><td class="mono">DATE_DIM</td><td>Calendar (holiday, payday, season flags)</td></tr>
+            <tr><td class="mono">STORE</td><td>Store profiles for all 20 stores (type, capacity, hours)</td></tr>
+            <tr><td class="mono">PRODUCT</td><td>Catalog (incl. category)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">08 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 09 - Test data                                                   -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">09<small>test/</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Static lookups only · Nov–Dec 2024</p>
+      <h2 class="reveal d2">What's in <code style="font-family:var(--font-mono); color:var(--accent); background:var(--accent-soft); padding:0.05em 0.4em; border-radius:4px;">test/</code></h2>
+      <div class="two-col">
+        <ul class="tick-list reveal d3">
+          <li><strong>DATE_DIM.csv</strong>: calendar</li>
+          <li><strong>STORE.csv</strong>: unchanged store attributes</li>
+          <li><strong>PRODUCT.csv</strong>: unchanged catalog</li>
+          <li><strong>PROMOTION.csv</strong>: planned promos for Nov–Dec 2024</li>
+          <li><strong>LOCAL_EVENT.csv</strong>: scheduled events for Nov–Dec 2024</li>
+          <li><strong>sample_submission.csv</strong>: 25,620 rows, predictions = 0</li>
+        </ul>
+        <div class="callout danger reveal d4">
+          <strong>Don't reference these.</strong>
+          <p style="margin-top:0.4em;"><code style="font-family:var(--font-mono); color:var(--text-primary);">test/TRANSACTION.csv</code>, <code style="font-family:var(--font-mono); color:var(--text-primary);">test/ORDER.csv</code>, and <code style="font-family:var(--font-mono); color:var(--text-primary);">test/INVENTORY.csv</code> are deliberately omitted. If your notebook references them, the submission is invalidated.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">09 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 10 - Canonical target                                            -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">10<small>The target</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">TXN ⨝ ORDER ⨝ PRODUCT: sum units_sold</p>
+      <h2 class="reveal d2">Build the target from transactions.</h2>
+      <div class="col-65-35">
+        <pre class="code-block reveal d3"><span class="com"># Canonical target for any (store_id, category, date)</span>
+target = (TRANSACTION
+          .merge(ORDER[[<span class="str">"order_id"</span>,<span class="str">"store_id"</span>,<span class="str">"date"</span>]], on=<span class="str">"order_id"</span>)
+          .merge(PRODUCT[[<span class="str">"product_id"</span>,<span class="str">"category"</span>]], on=<span class="str">"product_id"</span>)
+          .groupby([<span class="str">"store_id"</span>,<span class="str">"category"</span>,<span class="str">"date"</span>])[<span class="str">"units_sold"</span>]
+          .sum())</pre>
+        <div style="display:flex; flex-direction:column; gap:clamp(0.5rem, 1.2vw, 0.9rem); min-height:0; justify-content:center;">
+          <div class="callout ok reveal d4"><strong>Zero days count.</strong> Days with no sales = 0 in the target. Submission must include every (store, category, date, h); no missing rows.</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">10 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 11 - Data integrity heads-ups                                    -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">11<small>Heads-up</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Things you'll trip over if you don't read first</p>
+      <h2 class="reveal d2">Five data integrity gotchas.</h2>
+      <ul class="tick-list reveal d3">
+        <li><strong>discount_applied is a percent</strong> (0–100), not a fraction. Verify: <span style="font-family:var(--font-mono); font-size:0.92em; color:var(--text-dim);">revenue ≈ base_price × units × (1 − discount/100)</span></li>
+        <li><strong>INVENTORY.units_sold is noisy</strong>: only ~12% match TXN at SKU/day grain. Use INVENTORY for <em>is_stockout</em> and stock state, not for the target.</li>
+        <li><strong>PROMOTION, LOCAL_EVENT, DATE_DIM</strong>: train and test versions are byte-identical lookups.</li>
+        <li><strong>~60% of orders have customer_id = null</strong> (walk-ins). Structural, not missing data.</li>
+        <li><strong>Test stockout rate is 8.20% vs train 6.58%</strong>: slight drift; plan for it if your model is stockout-aware.</li>
+      </ul>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">11 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 12 - Stockouts                                                   -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">12<small>Stockouts</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span class="active">Data &amp; rules</span><span>Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Predict the recorded value: same definition as training</p>
+      <h2 class="reveal d2">Don't try to <span class="accent">uncensor</span> demand.</h2>
+      <div class="col-65-35">
+        <ul class="tick-list reveal d3">
+          <li>On stockout days, the recorded value is the <strong>truncated quantity</strong> (sales stop when stock = 0).</li>
+          <li>You do <strong>not</strong> need to recover lost demand; the grader compares your predictions to the recorded historical values.</li>
+          <li>Predict the same target the training data shows.</li>
+        </ul>
+        <div class="card warm reveal d4">
+          <span class="card-label">Tip</span>
+          <h3>Down-weight stockouts.</h3>
+          <p>Try sample_weight ≈ 0.3 on stockout rows so the model isn't pulled toward truncated values.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">12 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 13 - MAE                                                         -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">13<small>Metric</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span class="active">Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Lower is better · diagnostics ignored</p>
+      <h2 class="reveal d2">One metric: <span class="accent">MAE</span>.</h2>
+      <div class="formula reveal d3">MAE = (1 / N) · Σ |ŷ − y|</div>
+      <ul class="tick-list reveal d4">
+        <li>Predictions must be <strong>non-negative</strong>; negatives are clipped to 0.</li>
+        <li>Evaluated across all (store × category × forecast_date × horizon) rows.</li>
+        <li>RMSE, R², MAPE may be reported as diagnostics; <strong>only MAE counts</strong> for ranking.</li>
+      </ul>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">13 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 14 - Public / Private LB                                         -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">14<small>Leaderboards</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span class="active">Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Split is by date · not random</p>
+      <h2 class="reveal d2">Public is November. Private is December.</h2>
+      <div class="two-col">
+        <div class="card reveal d3">
+          <span class="card-label">Public · visible during competition</span>
+          <h3>Nov 2024</h3>
+          <p style="font-family:var(--font-mono);">2024-11-01 → 2024-11-30 · 12,600 rows</p>
+        </div>
+        <div class="card warm reveal d4">
+          <span class="card-label">Private · revealed at deadline · final rank</span>
+          <h3>Dec 2024</h3>
+          <p style="font-family:var(--font-mono);">2024-12-01 → 2024-12-31 · 13,020 rows</p>
+        </div>
+      </div>
+      <div class="callout reveal d5"><strong>Trust your CV.</strong> Overfitting to Public (Nov) won't help on Private (Dec). December is held out so late-period drift surfaces only after the deadline.</div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">14 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 15 - Submission format                                           -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">15<small>Format</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span class="active">Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Match sample_submission.csv exactly</p>
+      <h2 class="reveal d2">Two columns. Twenty-five thousand rows.</h2>
+      <div class="col-65-35">
+        <div class="reveal d3 tbl-card">
+          <table class="tbl">
+            <thead><tr><th>Column</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">id</td><td>string</td><td><span style="font-family:var(--font-mono); font-size:0.92em;">{store_id}_{category}_{forecast_date}_{horizon}</span>, e.g. <span style="font-family:var(--font-mono); color:var(--accent);">1_Bakery_2024-11-01_1d</span></td></tr>
+              <tr><td class="mono">units_sold_predicted</td><td>float ≥ 0</td><td>Your forecast</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card bright reveal d4">
+          <span class="card-label">Required row count</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(1.4rem, 2.8vw, 2rem);">25,620</h3>
+          <p style="font-family:var(--font-mono);">20 × 7 × 61 × 3</p>
+        </div>
+      </div>
+      <p class="lead reveal d5">The <code style="font-family:var(--font-mono); color:var(--accent);">id</code> carries store / category / date / horizon; do not include them as separate columns. Multiple submissions allowed; highest-scoring one counts.</p>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">15 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 16 - Compute budget                                              -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">16<small>Compute</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span class="active">Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">Code must run on Google Colab free tier</p>
+      <h2 class="reveal d2">Stay inside the budget.</h2>
+      <div class="three-col">
+        <div class="card dark reveal d3">
+          <span class="card-label">CPU</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(2rem, 3.8vw, 3rem); color:var(--accent);">2 cores</h3>
+        </div>
+        <div class="card dark reveal d4">
+          <span class="card-label">RAM</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(2rem, 3.8vw, 3rem); color:var(--accent);">12 GB</h3>
+        </div>
+        <div class="card dark reveal d5">
+          <span class="card-label">Wall-clock</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(2rem, 3.8vw, 3rem); color:var(--accent);">≤ 2 hr</h3>
+        </div>
+      </div>
+      <p class="lead reveal d6"><strong>GPU is optional</strong>: free Colab GPU is fine to use if available, but not assumed. Exceeding this during the judges' rerun = disqualification.</p>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">16 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 17 - Rules                                                       -->
+<!-- ====================================================================== -->
+<section class="slide">
+  <div class="logo-mark" aria-hidden="true"></div>
+  <div class="slide-frame">
+    <div class="slide-top">
+      <div class="slide-num">17<small>Rules</small></div>
+      <div class="slide-crumbs">
+        <span>Why we forecast</span><span>The task</span><span>Data &amp; rules</span><span class="active">Submission</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <p class="kicker reveal d1">The rule book: short version</p>
+      <h2 class="reveal d2">What you can &amp; can't do.</h2>
+      <div class="reveal d3 tbl-card">
+        <table class="tbl">
+          <tbody>
+            <tr><td><strong>Deadline</strong></td><td>2026-05-15, 08:00 Asia/Bangkok</td></tr>
+            <tr><td><strong>Team size</strong></td><td>4 to 6 members</td></tr>
+            <tr><td><strong>External data</strong></td><td>Allowed if publicly accessible &amp; cited</td></tr>
+            <tr><td><strong>Pre-trained models</strong></td><td>Allowed: must be downloadable from a public source</td></tr>
+            <tr><td><strong>Code submission</strong></td><td>Required: reproducible notebook on Colab free tier</td></tr>
+            <tr><td><strong>Submissions per team</strong></td><td>4 per day · highest score counts</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">17 / 18</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== -->
+<!-- SLIDE 18 - Q & A                                                        -->
+<!-- ====================================================================== -->
+<section class="slide qa-slide">
+  <div class="atmosphere"></div>
+  <div class="slide-frame">
+    <div class="qa-hero">
+      <div class="logo-qa reveal d1" aria-hidden="true"></div>
+      <h1 class="reveal d2">Q &amp; A</h1>
+      <p class="qa-sub reveal d3">Questions?</p>
+      <ul class="reveal d4">
+        <li>Brief · <code style="font-family:var(--font-mono); color:var(--accent);">Competition_Description.md</code></li>
+        <li style="display:flex; align-items:center; gap:1.2rem;">
+          <span style="flex:1;">Kaggle · <a href="https://www.kaggle.com/competitions/super-ai-engineer-season-6-coffee-chain-hackathon" target="_blank" style="color:var(--accent); font-family:var(--font-mono); text-decoration:none; border-bottom:1px solid rgba(0,255,208,0.4);">kaggle.com/competitions/super-ai-engineer-season-6-coffee-chain-hackathon</a></span>
+          <img src="data:image/png;base64,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" alt="QR code for Kaggle competition" style="width:clamp(80px,10vw,120px); height:auto; border-radius:6px; flex-shrink:0;" />
+        </li>
+        <li>Good luck, and read the data first.</li>
+      </ul>
+    </div>
+    <div class="slide-bottom">
+      <span class="conf">Confidential | ExpresSo NB Hackathon Materials · Do not redistribute</span>
+      <span class="counter">18 / 18</span>
+    </div>
+  </div>
+</section>
+
+<script>
+/* ============================================================
+   SLIDE PRESENTATION CONTROLLER
+   - Intersection-observer-based reveal animations
+   - Keyboard nav (arrows, space, page up/down, Home/End)
+   - Click-edge nav, scroll snap, hash sync
+   - Progress bar + nav dots
+   ============================================================ */
+class SlidePresentation {
+  constructor() {
+    this.slides = Array.from(document.querySelectorAll('.slide'));
+    this.total = this.slides.length;
+    this.current = 0;
+    this.progress = document.getElementById('progress');
+    this.navContainer = document.getElementById('navDots');
+
+    this.setupNavDots();
+    this.setupIntersectionObserver();
+    this.setupKeyboardNav();
+    this.setupClickNav();
+    this.syncFromHash();
+  }
+
+  setupNavDots() {
+    this.navContainer.innerHTML = '';
+    this.slides.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'nav-dot';
+      btn.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      btn.addEventListener('click', () => this.goTo(i));
+      this.navContainer.appendChild(btn);
+    });
+  }
+
+  setupIntersectionObserver() {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting && e.intersectionRatio > 0.5) {
+          e.target.classList.add('visible');
+          const idx = this.slides.indexOf(e.target);
+          if (idx >= 0) this.update(idx);
+        }
+      });
+    }, { threshold: [0, 0.5, 1] });
+    this.slides.forEach((s) => obs.observe(s));
+  }
+
+  update(i) {
+    this.current = i;
+    this.progress.style.width = ((i + 1) / this.total) * 100 + '%';
+    this.navContainer.querySelectorAll('.nav-dot').forEach((d, j) => {
+      d.classList.toggle('active', j === i);
+    });
+    if (location.hash !== '#' + (i + 1)) {
+      history.replaceState(null, '', '#' + (i + 1));
+    }
+  }
+
+  goTo(i) {
+    if (i < 0 || i >= this.total) return;
+    this.slides[i].scrollIntoView({ behavior: 'smooth' });
+  }
+
+  setupKeyboardNav() {
+    document.addEventListener('keydown', (e) => {
+      if (e.target.matches('input, textarea, [contenteditable]')) return;
+      switch (e.key) {
+        case 'ArrowRight':
+        case 'ArrowDown':
+        case 'PageDown':
+        case ' ':
+          e.preventDefault();
+          this.goTo(this.current + 1);
+          break;
+        case 'ArrowLeft':
+        case 'ArrowUp':
+        case 'PageUp':
+          e.preventDefault();
+          this.goTo(this.current - 1);
+          break;
+        case 'Home':
+          e.preventDefault();
+          this.goTo(0);
+          break;
+        case 'End':
+          e.preventDefault();
+          this.goTo(this.total - 1);
+          break;
+      }
+    });
+  }
+
+  setupClickNav() {
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('button, a, input, .nav-dot')) return;
+      const x = e.clientX;
+      const w = window.innerWidth;
+      if (x < w * 0.18) this.goTo(this.current - 1);
+      else if (x > w * 0.82) this.goTo(this.current + 1);
+    });
+  }
+
+  syncFromHash() {
+    const m = location.hash.match(/^#(\d+)$/);
+    if (m) {
+      const i = parseInt(m[1], 10) - 1;
+      if (i >= 0 && i < this.total) {
+        setTimeout(() => this.goTo(i), 50);
+      }
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => new SlidePresentation());
+</script>
+</body>
+</html>
