@@ -323,7 +323,7 @@ from tqdm.notebook import tqdm
 from IPython.display import display, HTML
 
 # AutoGluon requires sample_weight as a COLUMN NAME in the DataFrame (not an array)
-EXCLUDE = {"store_id","category","date","units_sold","sample_weight","horizon"}
+EXCLUDE = {"date","units_sold","sample_weight","horizon"}
 MODELS  = {}
 VAL_RESULTS = {}
 LEADERBOARDS = {}
@@ -336,7 +336,10 @@ TIME_LIMIT_RETRAIN = 900  # 15 นาที ต่อ 1 Horizon (สำหรั
 for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
     print(f"\\n{'='*50}\\nTraining AutoGluon — Horizon: {h_str}\\n{'='*50}")
     df = panels[h_str].copy()
-
+    df["store_id"] = df["store_id"].astype(str)
+    df["category"] = df["category"].astype(str)
+    H = HORIZON_MAP[h_str]
+    
     TRAIN   = df[df["date"] < "2023-11-01"].copy()
     VALID   = df[df["date"].between("2023-11-01","2023-12-31")].copy()
     RETRAIN = df[df["date"] <= "2024-10-31"].copy()
@@ -349,6 +352,34 @@ for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
     print(f"  Train rows: {len(TRAIN):,}  |  Valid rows: {len(VALID):,}")
 
     # ── Validation predictor (Time-Machine Split) ────────────────────
+    # เพื่อให้สอดคล้องกับ Test set เราต้องเอาคุณสมบัติที่ Cap ที่ 2023-10-31 สำหรับ VALID
+    VALID_CAPPED = VALID.copy()
+    VALID_CAPPED["decision_date"] = VALID_CAPPED["date"] - pd.to_timedelta(H, unit="D")
+    VALID_CAPPED["anchor_date"]   = VALID_CAPPED["decision_date"].clip(upper=pd.Timestamp("2023-10-31"))
+    
+    # ดึงฟีเจอร์จาก panel ณ วัน anchor_date เพื่อจำลองการทำแท้จริง
+    # แปลง store_id/category ของ df_capped_temp ให้เป็น str
+    df_temp = df.copy()
+    df_temp["store_id"] = df_temp["store_id"].astype(str)
+    df_temp["category"] = df_temp["category"].astype(str)
+    
+    VALID_CAPPED["store_id"] = VALID_CAPPED["store_id"].astype(str)
+    VALID_CAPPED["category"] = VALID_CAPPED["category"].astype(str)
+    
+    merge_cols = list(set(["store_id","category","anchor_date"] + feat_cols))
+    VALID_FEATS = VALID_CAPPED[["store_id","category","date","anchor_date"]].merge(
+        df_temp.rename(columns={"date":"anchor_date"})[merge_cols],
+        on=["store_id","category","anchor_date"],
+        how="left"
+    ).fillna(0)
+    # ใส่ target กลับคืน
+    VALID_FEATS[label_col] = VALID[label_col].values
+
+    # อัปเดตข้อมูล Known-Future ของวันคาดการณ์จริง (forecast_date)
+    fc_cal = df[cal_cols].copy()
+    VALID_FEATS = VALID_FEATS.drop(columns=[c for c in cal_cols if c != "date" and c in VALID_FEATS.columns], errors="ignore")
+    VALID_FEATS = VALID_FEATS.merge(fc_cal, on="date", how="left")
+
     predictor = TabularPredictor(
         label=label_col,
         problem_type="regression",
@@ -359,6 +390,7 @@ for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
         TRAIN[train_cols],
         presets="best_quality",
         time_limit=TIME_LIMIT_VALID,
+        num_gpus=1, # 🚀 เปิดใช้ GPU สำหรับการเทรนความเร็วสูง!
         hyperparameters={
             "GBM": [
                 {"objective": "tweedie", "tweedie_variance_power": 1.1, "extra_trees": False},
@@ -373,13 +405,14 @@ for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
         },
     )
 
-    val_pred = predictor.predict(VALID[feat_cols]).clip(lower=0)
-    val_mae  = (val_pred - VALID[label_col]).abs().mean()
-    print(f"  [Val MAE {h_str}]: {val_mae:.4f}")
+    # ── Evaluate on capped validation set ────────────────────────────
+    val_pred = predictor.predict(VALID_FEATS[feat_cols]).clip(lower=0)
+    val_mae  = (val_pred - VALID_FEATS[label_col]).abs().mean()
     VAL_RESULTS[h_str] = val_mae
+    print(f"  [Val MAE {h_str}]: {val_mae:.4f}")
 
     # Per-model leaderboard (top 5)
-    lb = predictor.leaderboard(VALID[feat_cols + [label_col]], silent=True)
+    lb = predictor.leaderboard(VALID_FEATS[feat_cols + [label_col]], silent=True)
     LEADERBOARDS[h_str] = lb
     print(lb[["model","score_test","score_val"]].head(5).to_string(index=False))
     lb.to_csv(f"leaderboard_{h_str}.csv", index=False)
@@ -396,6 +429,7 @@ for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
         RETRAIN[train_cols],
         presets="best_quality",
         time_limit=TIME_LIMIT_RETRAIN,
+        num_gpus=1, # 🚀 เปิดใช้ GPU สำหรับการเทรนความเร็วสูง!
     )
     MODELS[h_str] = (predictor_full, feat_cols)
     print(f"  Retrain complete")
@@ -443,8 +477,17 @@ for h_str in ["1d","7d","1m"]:
     sub_h = test_meta[test_meta["horizon"] == h_str].copy()
 
     # Merge panel features at anchor_date
+    # เพื่อป้องกันชื่อคอลัมน์ซ้ำซ้อนและเพื่อให้ชนิดข้อมูล (dtype) ตรงกัน
+    panel_temp = panel.copy()
+    panel_temp["store_id"] = panel_temp["store_id"].astype(str)
+    panel_temp["category"] = panel_temp["category"].astype(str)
+    
+    sub_h["store_id"] = sub_h["store_id"].astype(str)
+    sub_h["category"] = sub_h["category"].astype(str)
+    
+    merge_cols = list(set(["store_id","category","anchor_date"] + feat_cols))
     test_rows = sub_h.merge(
-        panel.rename(columns={"date":"anchor_date"})[["store_id","category","anchor_date"] + feat_cols],
+        panel_temp.rename(columns={"date":"anchor_date"})[merge_cols],
         on=["store_id","category","anchor_date"],
         how="left"
     ).fillna(0)
@@ -454,7 +497,12 @@ for h_str in ["1d","7d","1m"]:
     test_rows = test_rows.drop(columns=[c for c in cal_cols if c != "date" and c in test_rows.columns], errors="ignore")
     test_rows = test_rows.merge(fc_cal, on="forecast_date", how="left")
 
+    # บังคับแปลงประเภทของฟีเจอร์ใน test_rows ให้ตรงกับที่โมเดลต้องการ
+    test_rows["store_id"] = test_rows["store_id"].astype(str)
+    test_rows["category"] = test_rows["category"].astype(str)
+
     preds = predictor_full.predict(test_rows[feat_cols]).clip(lower=0)
+    # บันทึกผลลัพธ์โดยอ้างอิงช่วงดัชนีของ horizon นั้น ๆ
     submission.loc[test_meta["horizon"]==h_str, "units_sold_predicted"] = preds.values
 
 submission["units_sold_predicted"] = submission["units_sold_predicted"].fillna(0).clip(lower=0)
@@ -470,4 +518,4 @@ path = os.path.join(
 )
 with open(path, "w", encoding="utf-8") as f:
     json.dump(nb(cells), f, indent=2, ensure_ascii=False)
-print("✅ hackathon-5-autogluon-v2.ipynb generated!")
+print("[SUCCESS] hackathon-5-autogluon-v2.ipynb generated!")
