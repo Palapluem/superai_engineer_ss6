@@ -1,0 +1,120 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║     NB EXPRESSION HACKATHON — EXECUTIVE INTELLIGENCE REPORT         ║
+║                     Demand Forecasting Pipeline v1.0                ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+PIPELINE PERFORMANCE
+─────────────────────────────────────────────────────────────────────
+Model:              LightGBM + Seasonal Baseline Ensemble
+Walk-Forward CV:    5 expanding folds (Apr → Oct 2024)
+Naive Baseline MAE: 11.10
+
+  Horizon 1d  : CV MAE = 8.79  (↓ 20.8% vs naive)
+  Horizon 7d  : CV MAE = 9.21  (↓ 17.0% vs naive)
+  Horizon 30d : CV MAE = 9.82  (↓ 11.5% vs naive)
+
+BUSINESS CONTEXT
+─────────────────────────────────────────────────────────────────────
+Total Historical Revenue:  ฿209.4M
+Avg Daily Revenue:         ฿312.5K
+Stockout Rate:             6.6% of inventory records
+Estimated Lost Revenue:    ฿16.4M
+
+KEY FINDINGS & RECOMMENDATIONS
+─────────────────────────────────────────────────────────────────────
+
+1. DEMAND DRIVERS — HOLIDAY & CALENDAR EFFECTS
+   ▸ Observation:   Holidays generate +45% demand surge across all categories
+   ▸ Evidence:      Statistical uplift: หยุดพิเศษ +45%, Songkran +65%+ spikes
+   ▸ Implication:   Under-stocking on holidays directly causes lost sales
+   ▸ Action:        Pre-order +50% inventory 3 days before every public holiday
+                    Critical holidays: Songkran (Apr 13–15), New Year (Jan 1),
+                    ฉัตรมงคล (May 4), วันแม่ (Aug 12), วันพ่อ (Dec 5)
+
+2. PROMOTION STRATEGY — BUY-1-GET-1 IS THE SUPERWEAPON
+   ▸ Observation:   ซื้อ1แถม1 (Buy1Get1) generates +55% unit lift
+   ▸ Evidence:      vs +15% for ลดราคา, +12% for ชุดคู่ลด
+   ▸ Implication:   Current promo mix under-deploys the highest-uplift tactic
+   ▸ Action:        Concentrate Buy1Get1 campaigns on Coffee & Tea on weekends
+                    Promo halo (+38%) persists 1–3 days post-promo — maintain stock
+
+3. LOCAL EVENTS — STRONGEST EXTERNAL SIGNAL
+   ▸ Observation:   Food festivals drive +132% demand spike
+   ▸ Evidence:      Concert +70%, Music Festival +81%, Sports +45%
+   ▸ Implication:   Stores near event venues are critically under-stocked on event days
+   ▸ Action:        Maintain real-time event calendar integration
+                    Pre-position +100% Coffee/Bakery stock for food_festival events
+                    Alert staffing manager 48h before major events
+
+4. STORE SEGMENTATION — MALL & TOURIST STORES ARE OUTLIERS
+   ▸ Observation:   Mall and tourist stores show 2–3× weekend premium
+   ▸ Evidence:      Store 6 (mall): +103% weekend premium vs weekday baseline
+   ▸ Implication:   Flat inventory/staffing across store types wastes capital
+   ▸ Action:        Adopt store-type-specific replenishment schedules:
+                    - Mall stores: surge 2× Friday/Saturday orders
+                    - University stores: surge Mon–Fri, reduce weekend orders
+                    - Gas station: maintain stable baseline (low volatility)
+
+5. STOCKOUT REDUCTION — ฿16M REVENUE OPPORTUNITY
+   ▸ Observation:   Stockout rate estimated at 6.6%
+   ▸ Evidence:      Inventory model flags 52,939 stockout-days in training data
+   ▸ Implication:   Demand on stockout days is CENSORED — true demand is higher
+   ▸ Action:        Implement dynamic safety stock = rolling_mean_7d × 1.5 × stockout_risk
+                    Prioritize Merchandise and Chocolate & Milk (highest stockout rates)
+
+6. WEEKLY SEASONALITY — THE DOMINANT SIGNAL
+   ▸ Observation:   Lag-7 correlation = 0.83 (strongest single predictor)
+   ▸ Evidence:      PACF shows AR(1) + lag_7 as dominant structure
+   ▸ Implication:   Simple same-day-last-week heuristic captures 80%+ of variance
+   ▸ Action:        Embed weekly pattern awareness into all operational planning tools
+
+7. PAYDAY EFFECT — PREDICTABLE MONTHLY SPIKE
+   ▸ Observation:   Paydays generate +25% demand uplift
+   ▸ Evidence:      15th and 30th of each month show consistent elevation
+   ▸ Implication:   Predictable inventory surge twice per month
+   ▸ Action:        Pre-order +25% on the 13th and 28th of each month
+
+8. NEW YEAR 2025 PREPARATION
+   ▸ Observation:   Dec 31–Jan 1 historically drives extreme demand
+   ▸ Evidence:      New Year holiday + weekend combination for 2025
+   ▸ Implication:   Dec 28–Jan 2 window = highest risk period
+   ▸ Action:        Issue emergency stocking order by Dec 23
+                    Increase Coffee/Tea/Bakery by +60%
+                    Deploy extra staff to top 5 stores (by volume)
+
+MODEL LEAKAGE AUDIT
+─────────────────────────────────────────────────────────────────────
+✓ All lag features shifted ≥ horizon (lag_min = horizon)
+✓ All rolling features shifted ≥ horizon before window application
+✓ Store embedding features computed from train-only data per fold
+✓ No future promotional or event data leaked into features
+✓ Walk-forward CV correctly prevents temporal leakage
+
+SUBMISSION SUMMARY
+─────────────────────────────────────────────────────────────────────
+Forecast period:    2024-11-01 → 2024-12-31 (61 days)
+Dimensions:         20 stores × 7 categories × 61 days × 3 horizons
+Total predictions:  25,620 rows
+Output file:        submission.csv
+
+Category Mean Forecast (1d horizon):
+category
+Bakery              29.2
+Chocolate & Milk    16.9
+Coffee              68.6
+Juice & Smoothie    10.3
+Merchandise          6.4
+Savory Bakery       22.8
+Tea                 35.1
+
+IMPROVEMENT ROADMAP (RANKED BY EXPECTED GAIN)
+─────────────────────────────────────────────────────────────────────
+1. [HIGH]   Add CatBoost model to ensemble (+0.3–0.5 MAE expected)
+2. [HIGH]   Tune ensemble weights via Bayesian optimization on CV
+3. [MEDIUM] Add two-stage model for Store 13 (classifier + regressor)
+4. [MEDIUM] Impute censored stockout demand via survival analysis
+5. [MEDIUM] Add cross-store category features (neighboring store demand)
+6. [LOW]    Hyperparameter search: num_leaves, min_child_samples
+7. [LOW]    Add hour-of-day features from ORDER.hour column
+8. [LOW]    Seasonal decomposition residual features (STL)
