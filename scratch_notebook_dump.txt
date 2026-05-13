@@ -1,0 +1,50 @@
+Cell 0 [markdown]: # ExpresSo Demand Forecasting - Full EDA Notebook\n\nThis notebook combines the original large EDA not
+Cell 1 [code]: # CELL 1: Setup and Load\nimport warnings\nfrom pathlib import Path\n\nimport pandas as pd\nimport numpy 
+Cell 2 [code]: # CELL 2: Helper Functions for Deep-Dive EDA\ndef lift_table(df, flag, by="category", value="units_re
+Cell 3 [markdown]: ## Core Demand Overview\n\nThe first block keeps the original broad EDA view: target distribution, tim
+Cell 4 [code]: # CELL 2 — [CHART 1] Target Distribution\nfig, axes = plt.subplots(1,3,figsize=(16,4))\ndaily["units_s
+Cell 5 [code]: # CELL 3 — [CHART 2] Full Time Series Trend\ndaily_total = daily.groupby("date")["units_sold"].sum()\n
+Cell 6 [code]: # CELL 4 — [CHART 3] Store-level Heatmap\npivot = daily.groupby(["store_id","category"])["units_sold"
+Cell 7 [code]: # CELL 5 — [CHART 4] Calendar Effects\nfig, axes = plt.subplots(2,3,figsize=(18,8))\ndaily.groupby("da
+Cell 8 [code]: # CELL 6 — [NEW CHART 5] Payday Effect by Category\npayday_cat = (daily.groupby(["category","is_payda
+Cell 9 [code]: # CELL 7 — [NEW CHART 6] Rainy Season × Category Interaction\nrain_cat = (daily.groupby(["category","
+Cell 10 [code]: # CELL 8 — [NEW CHART 7] Operating Hours Effect\nstore["open_hour"] = store["open_time"].str.split(":
+Cell 11 [markdown]: ## Calendar Deep Dive\n\nThese additional views use normalized demand (`units_rel`) so we can separate
+Cell 12 [code]: flags = ["is_weekend", "is_holiday", "is_payday", "is_school_break", "is_rainy_season"]\nfig, axes = 
+Cell 13 [code]: holiday_lift = (\n    daily[daily["is_holiday"]]\n    .groupby(["holiday_name", "category"], observed=
+Cell 14 [markdown]: ## Promotion and Event Analysis\n\nThis block keeps the original promotion and event charts, then adds
+Cell 15 [code]: # CELL 9 — [CHART 8] Promotion Analysis\npromo_cat = promo.merge(prod[["product_id","category"]], on=
+Cell 16 [code]: # CELL 10 — [NEW CHART 9] Promo Cannibalization\ndrink_promo = pf_agg[pf_agg["category"].isin(["Coffe
+Cell 17 [code]: # CELL 11 — [CHART 10] Local Events Analysis\nev_daily = event.groupby(["store_id","date"]).agg(\n    
+Cell 18 [code]: # CELL 12 — [NEW CHART 11] Event Type × Category Cross\nev_cat = daily3[daily3["has_event"] == 1].cop
+Cell 19 [code]: promo_daily = expand_promo(promo, prod)\ndaily_promo = daily.merge(promo_daily, on=["store_id", "cate
+Cell 20 [code]: event_daily = (\n    event.groupby(["store_id", "date"], observed=True)\n    .agg(event_count=("event_
+Cell 21 [markdown]: ## Customer, Store, and Operational Behavior\n\nThis section combines store profile, customer structur
+Cell 22 [code]: # CELL 13 — [CHART 12] Customer Analysis\nmember_ord = order.copy()\nmember_ord["is_member_order"] = m
+Cell 23 [code]: # CELL 14 — [NEW CHART 13] Weekend Effect by Neighborhood\nwkd_nbr = (daily.groupby(["neighborhood_ty
+Cell 24 [code]: # CELL 20 — [NEW] Hour of Day Analysis\nif "hour" in order.columns:\n    fig, axes = plt.subplots(1,2,
+Cell 25 [code]: store_profile = (\n    daily.groupby(["store_id", "neighborhood_type"], observed=True)\n    .agg(units
+Cell 26 [code]: hour_profile = (\n    line.groupby(["hour"], observed=True)\n    .agg(orders=("order_id", "nunique"), 
+Cell 27 [markdown]: ## Diagnostics, Seasonal Mix, and Drift\n\nThe final EDA block focuses on autocorrelation, seasonal an
+Cell 28 [code]: # CELL 15 — [CHART 14] Autocorrelation\nts = daily.groupby("date")["units_sold"].sum()\nacf_vals = acf
+Cell 29 [code]: # CELL 16 — [NEW CHART 15] Seasonal & Limited Edition Products\nseasonal_ids = prod[prod["is_seasonal
+Cell 30 [code]: # CELL 17 — [CHART 16] School Break Effect\nsb_cat = (daily.groupby(["category","is_school_break"])["
+Cell 31 [code]: # CELL 18 — [CHART 17] Feature Correlation Matrix\nnum_cols = ["units_sold","is_weekend","is_holiday"
+Cell 32 [code]: # CELL 19: Missing Data Summary\nmiss = pd.DataFrame(\n    {\n        "column": [\n            "TRANSACT
+Cell 33 [code]: sku_summary = (\n    line.groupby(["product_id", "product_name", "category", "serve_type", "base_pric
+Cell 34 [code]: inventory = pd.read_csv(TRAIN / "INVENTORY.csv", parse_dates=["date"])\ntxn_sku_day = (\n    line.grou
+Cell 35 [code]: feature_map = pd.DataFrame(\n    [\n        ["lag/rolling", "lag_7/14/28/35/60/90, rolling shifted by 
+Cell 36 [code]: # CELL 20: EDA Summary\nprint("\n" + "=" * 70)\nprint("EDA COMPLETE - Combined Chart Set")\nprint("Clas
+Cell 37 [markdown]: ## AutoGluon TimeSeries Forecasting Pipeline\n\nThis Kaggle-ready notebook uses AutoGluon TimeSeries a
+Cell 38 [code]: # CELL 21: Shared Modeling Setup and Competition Config\nimport subprocess\nimport sys\nfrom pathlib im
+Cell 39 [code]: # CELL 22: Feature Engineering Helpers\nKEYS = ["store_id", "category", "date"]\nSTORE_KEY = ["store_i
+Cell 40 [code]: # CELL 23: Build Full Known-Future Panel and Historical Tables\ndef build_model_assets(train_end):\n  
+Cell 41 [markdown]: ## AutoGluon TimeSeries Model Pipeline\n\nPrimary modeling path using `autogluon.timeseries.TimeSeries
+Cell 42 [code]: # CELL 28: AutoGluon TimeSeries Setup\n# Kaggle sometimes ships a newer pyarrow where PyExtensionType
+Cell 43 [code]: # CELL 29: Build TimeSeriesDataFrame, Static Features, and Known Covariates\nrequired_ts_objects = ["
+Cell 44 [code]: # CELL 29B: Horizon leakage checks\ndef horizon_leakage_checks(horizon_data, horizon_cutoffs):\n    ro
+Cell 45 [code]: # CELL 30: Train or Load AutoGluon TimeSeriesPredictor\ndef load_existing_ts_predictor(model_path):\n 
+Cell 46 [code]: # CELL 31: Generate Submission from AutoGluon TimeSeries Forecasts\npred_frames = []\nfor h, predictor
+Cell 47 [code]: # CELL 32: validation_and_yoy_diagnostics\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom
+Cell 48 [code]: # ensemble_weights_cell — WeightedEnsemble Weight Inspector\n# ──────────────────────────────────────
+Cell 49 [code]: # yoy_blend_post_process — YoY Blended Submission (Post-Processing in Notebook)\n# ──────────────────
