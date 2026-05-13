@@ -329,8 +329,8 @@ VAL_RESULTS = {}
 LEADERBOARDS = {}
 
 # ⏳ ตั้งค่าเวลาในการรัน (ยิ่งนาน โมเดลยิ่งแม่นยำขึ้น เพราะมีเวลาสร้าง Ensemble หลายชั้น)
-TIME_LIMIT_VALID = 3600   # 1 ชั่วโมง ต่อ 1 Horizon (สำหรับ Validation)
-TIME_LIMIT_RETRAIN = 3600 # 1 ชั่วโมง ต่อ 1 Horizon (สำหรับ Retrain ข้อมูลทั้งหมด)
+TIME_LIMIT_VALID = 900    # 15 นาที ต่อ 1 Horizon (สำหรับ Validation)
+TIME_LIMIT_RETRAIN = 900  # 15 นาที ต่อ 1 Horizon (สำหรับ Retrain ข้อมูลทั้งหมด)
 
 # ใช้ tqdm เพื่อแสดง Progress Bar
 for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
