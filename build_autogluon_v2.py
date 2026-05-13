@@ -26,12 +26,7 @@ pd.set_option("display.max_columns", 200)
 
 code("""\
 # ─── Paths ──────────────────────────────────────────────────────────
-CANDIDATES = [
-    Path("/kaggle/input/super-ai-engineer-season-6-coffee-chain-hackathon"),
-    Path("/content/super-ai-engineer-season-6-coffee-chain-hackathon"),
-    Path(r"c:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 5_Demand Forecasting Coffee Chain Hackathon\\super-ai-engineer-season-6-coffee-chain-hackathon"),
-]
-DATA_DIR = next((p for p in CANDIDATES if (p / "train").exists()), CANDIDATES[0])
+DATA_DIR = Path("/kaggle/input/competitions/super-ai-engineer-season-6-coffee-chain-hackathon")
 TR, TE = DATA_DIR / "train", DATA_DIR / "test"
 print("Data:", DATA_DIR)
 
@@ -324,12 +319,21 @@ for h_str in ["1d","7d","1m"]:
 md("## AutoGluon Training — Time-Machine Split (Jan-Oct 2023 → Nov-Dec 2023)"),
 
 code("""\
+from tqdm.notebook import tqdm
+from IPython.display import display, HTML
+
 # AutoGluon requires sample_weight as a COLUMN NAME in the DataFrame (not an array)
 EXCLUDE = {"store_id","category","date","units_sold","sample_weight","horizon"}
 MODELS  = {}
 VAL_RESULTS = {}
+LEADERBOARDS = {}
 
-for h_str in ["1d","7d","1m"]:
+# ⏳ ตั้งค่าเวลาในการรัน (ยิ่งนาน โมเดลยิ่งแม่นยำขึ้น เพราะมีเวลาสร้าง Ensemble หลายชั้น)
+TIME_LIMIT_VALID = 3600   # 1 ชั่วโมง ต่อ 1 Horizon (สำหรับ Validation)
+TIME_LIMIT_RETRAIN = 3600 # 1 ชั่วโมง ต่อ 1 Horizon (สำหรับ Retrain ข้อมูลทั้งหมด)
+
+# ใช้ tqdm เพื่อแสดง Progress Bar
+for h_str in tqdm(["1d","7d","1m"], desc="Training Horizons"):
     print(f"\\n{'='*50}\\nTraining AutoGluon — Horizon: {h_str}\\n{'='*50}")
     df = panels[h_str].copy()
 
@@ -339,8 +343,7 @@ for h_str in ["1d","7d","1m"]:
 
     feat_cols = [c for c in df.columns if c not in EXCLUDE]
     label_col = "units_sold"
-    weight_col = "sample_weight"
-    train_cols = feat_cols + [label_col, weight_col]
+    train_cols = feat_cols + [label_col]  # sample_weight not supported in this AG version
 
     print(f"  Features: {len(feat_cols)}")
     print(f"  Train rows: {len(TRAIN):,}  |  Valid rows: {len(VALID):,}")
@@ -348,14 +351,14 @@ for h_str in ["1d","7d","1m"]:
     # ── Validation predictor (Time-Machine Split) ────────────────────
     predictor = TabularPredictor(
         label=label_col,
+        problem_type="regression",
         eval_metric="mean_absolute_error",
         path=f"ag_v2_{h_str}",
-        verbosity=2,
+        verbosity=1, # ลดความรกของ Log ระหว่างรัน
     ).fit(
         TRAIN[train_cols],
-        sample_weight=weight_col,           # pass column NAME, not array
         presets="best_quality",
-        time_limit=3600,
+        time_limit=TIME_LIMIT_VALID,
         hyperparameters={
             "GBM": [
                 {"objective": "tweedie", "tweedie_variance_power": 1.1, "extra_trees": False},
@@ -377,6 +380,7 @@ for h_str in ["1d","7d","1m"]:
 
     # Per-model leaderboard (top 5)
     lb = predictor.leaderboard(VALID[feat_cols + [label_col]], silent=True)
+    LEADERBOARDS[h_str] = lb
     print(lb[["model","score_test","score_val"]].head(5).to_string(index=False))
     lb.to_csv(f"leaderboard_{h_str}.csv", index=False)
 
@@ -384,14 +388,14 @@ for h_str in ["1d","7d","1m"]:
     print("  Retraining on full data...")
     predictor_full = TabularPredictor(
         label=label_col,
+        problem_type="regression",
         eval_metric="mean_absolute_error",
         path=f"ag_v2_{h_str}_full",
         verbosity=0,
     ).fit(
         RETRAIN[train_cols],
-        sample_weight=weight_col,           # pass column NAME
         presets="best_quality",
-        time_limit=1800,
+        time_limit=TIME_LIMIT_RETRAIN,
     )
     MODELS[h_str] = (predictor_full, feat_cols)
     print(f"  Retrain complete")
@@ -399,6 +403,18 @@ for h_str in ["1d","7d","1m"]:
 print("\\n=== Validation Summary ===")
 for h, v in VAL_RESULTS.items():
     print(f"  {h}: MAE = {v:.4f}")
+
+# 📊 แสดง Benchmark Table
+html_out = "<h2>🏆 AutoGluon Benchmark Table</h2>"
+for h, lb in LEADERBOARDS.items():
+    html_out += f"<h3>Horizon: {h} (Best MAE: {abs(lb['score_test'].iloc[0]):.4f})</h3>"
+    # แปลงคะแนนลบของ AutoGluon กลับเป็นบวกเพื่อให้อ่านง่าย
+    display_lb = lb[["model", "score_test", "score_val", "fit_time", "pred_time_test"]].copy()
+    display_lb["score_test"] = display_lb["score_test"].abs()
+    display_lb["score_val"] = display_lb["score_val"].abs()
+    display_lb = display_lb.rename(columns={"score_test": "Test MAE", "score_val": "Val MAE"})
+    html_out += display_lb.head(5).to_html(index=False, classes="table table-striped table-hover")
+display(HTML(html_out))
 """),
 
 md("## Inference + Submission"),
