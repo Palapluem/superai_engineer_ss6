@@ -1,0 +1,708 @@
+=== Cell 0 ===
+# Exploratory Data Analysis (EDA) - Pure Analytics Notebook
+This notebook contains 100% Exploratory Data Analysis. All modeling and feature engineering logic has been stripped to provide a clean analytical environment. Charts are curated and sequentially numbered to remove redundancy, and all insights are formatted for professional review.
+
+
+=== Cell 3 ===
+## Section 1: Core Demand & Time Series Baseline
+
+
+=== Cell 4 ===
+### Chart 1: Target Distribution
+
+**Description:**
+A set of histograms displaying the frequency distribution of the primary target variables, particularly the daily units sold.
+
+**Actionable Insight:**
+Understanding the skewness of the target variable is critical. If units sold is heavily right-skewed with a long tail of high-volume outliers, traditional mean-squared-error (MSE) models will over-predict low-volume days. A log-transformation objective may be required.
+
+
+=== Cell 6 ===
+### Chart 2: Full Time Series Trend
+
+**Description:**
+A continuous line plot charting the aggregate daily units sold across the entire historical data window.
+
+**Actionable Insight:**
+Exposes the macro trend of the business. If the overall trajectory is flat but features high volatility spikes, the model must rely heavily on external covariates (holidays, promos) rather than autoregressive baseline drift.
+
+
+=== Cell 8 ===
+### Chart 3: Autocorrelation (ACF) of Daily Demand
+
+**Description:**
+A correlogram mapping the statistical correlation between today's sales and sales from previous days.
+
+**Actionable Insight:**
+Mathematically proves the presence of cyclical patterns. Strong correlations at Lag 7 and Lag 14 dictate that the most powerful predictive features for any tree-based model will be the exact sales volume from one and two weeks prior.
+
+
+=== Cell 10 ===
+### Chart 4: Average Daily Revenue (Day vs Month Heatmap)
+
+**Description:**
+A 2D calendar heatmap plotting the month on one axis and the day of the month on the other, colored by average revenue.
+
+**Actionable Insight:**
+Visually exposes macro calendar patterns. If the bottom rows (days 28-31) are significantly brighter, it proves a systemic end-of-month spending surge that a time-series model must capture via specific calendar features.
+
+
+=== Cell 12 ===
+### Chart 5: Revenue Volatility by Store
+
+**Description:**
+A horizontal bar chart ranking every store based on the standard deviation of its daily revenue.
+
+**Actionable Insight:**
+Stores with extreme volatility are the primary source of Mean Absolute Error (MAE). Identifying these stores allows for the training of specialized, robust sub-models just for the highly volatile branches.
+
+
+=== Cell 14 ===
+## Section 2: Calendar & Weather Effects
+
+
+=== Cell 15 ===
+### Chart 6: Calendar Effects Overview
+
+**Description:**
+Boxplots aggregating sales by day of the week to isolate calendar-driven seasonality.
+
+**Actionable Insight:**
+Human consumption of coffee is habitual. Identifying which day of the week represents the global peak allows the model to assign high-weight autoregressive lags to capture weekly repeating patterns.
+
+
+=== Cell 17 ===
+### Chart 6.5: 90-Day 'Bridge Holiday' Exodus
+
+**Description:**
+A 90-day time-series (April - June) tracking an Office store versus a Residential store. Gray dashed lines indicate Public Holidays.
+
+**Actionable Insight (Product/Solution Opportunity):**
+When a holiday falls on a Wednesday or Thursday, the adjacent Friday becomes a 'Bridge Holiday'. The chart proves that Office branch sales completely die on these Fridays (as workers take leave), while Residential sales boom. The solution is a **'Smart Holiday Staff Roster'** that detects Bridge Holidays and automatically slashes staff and fresh pastry inventory at Office branches, reallocating them to Residential branches.
+
+
+=== Cell 19 ===
+### Chart 7: Day-of-Week Volatility by Store
+
+**Description:**
+A boxplot distribution of daily revenue across the 7 days of the week for a sample of stores, heavily emphasizing the variance.
+
+**Actionable Insight:**
+Shows which days are highly unpredictable. If Friday has massive variance, the model's confidence interval for Fridays must be widened. Predictability is not uniform across the week.
+
+
+=== Cell 21 ===
+### Chart 8: Impact of Rainy Season by Neighborhood
+
+**Description:**
+An interaction plot demonstrating how the Rainy Season alters the volume of sales across different store neighborhood types.
+
+**Actionable Insight:**
+Weather acts as an asymmetric substitute driver. Rain might cripple foot-traffic at Tourist locations while boosting Office locations. The model needs an interaction term to avoid applying a universal weather penalty.
+
+
+=== Cell 23 ===
+### Chart 9: Serve Type Performance in Rainy Season
+
+**Description:**
+A clustered bar chart comparing the average daily units sold of Hot vs. Iced vs. Frappe beverages, toggled by the rainy season flag.
+
+**Actionable Insight:**
+Weather drastically alters the product mix. While overall sales might drop during rain, Hot beverages spike. An AutoGluon model predicting at the Product Level needs the Serve_Type x Rainy_Season interaction to shift volume accurately.
+
+
+=== Cell 25 ===
+### Chart 9.5: 90-Day Weather Disruption Dynamics (Drive-Through vs Transit)
+
+**Description:**
+A 90-day time-series focusing on the Peak Rainy Season (August 1 - October 31, 2023). This chart contrasts the daily revenue of a typical Drive-Through store against a Walk-in Transit store, with blue shaded regions indicating the active rainy season block.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This is the foundation for a **'Weather-Adaptive Supply Routing System'**. Basic bar charts show overall weather penalties, but this time-series visually proves demand transfer. Notice how Transit store revenue drops during prolonged rain blocks, while Drive-Through revenue simultaneously spikes as customers refuse to walk in the rain. By feeding weather forecasts into the ML model, the business can automatically reroute fresh pastry deliveries from Transit branches to Drive-Through branches, preventing waste and capturing the transferred demand.
+
+
+=== Cell 27 ===
+### Chart 10: Payday Splurge Effect by Neighborhood
+
+**Description:**
+A barplot comparing average daily revenue on regular days versus Paydays, split geographically.
+
+**Actionable Insight:**
+The Payday effect is drastically amplified in Office and Hospital locations compared to Transit locations. A generic payday feature will incorrectly boost predictions for all stores equally.
+
+
+=== Cell 29 ===
+### Chart 11: School Break Effect
+
+**Description:**
+An assessment of demand shifts during official school holiday periods.
+
+**Actionable Insight:**
+School breaks alter the geographic distribution of demand. Stores near universities will see structural crashes, while mall stores will see sustained elevated baselines. This requires a School_Break x Store_Location interaction.
+
+
+=== Cell 31 ===
+### Chart 12: Weekend Revenue Uplift % by Neighborhood
+
+**Description:**
+A bar chart isolating the percentage revenue multiplier achieved on weekends relative to the weekday baseline.
+
+**Actionable Insight:**
+Office locations suffer a massive negative uplift on weekends, while Tourist locations experience positive uplift. Applying a raw weekend feature destroys accuracy without interacting it with the store's geography.
+
+
+=== Cell 33 ===
+### Chart 12.5: 90-Day Time-Series Dynamics (Paydays & School Breaks)
+
+**Description:**
+A highly detailed 90-day time-series slice (March 1 - May 31, 2024) tracking the daily revenue of 20 distinct store branches, color-coded by their neighborhood type. Vertical dashed lines represent Paydays, and the red shaded regions highlight the massive Thai Summer School Break.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This is the ultimate operational view. Notice how University stores (and some Transit) crash into the red zone during the School Break, while Mall/Residential stores might remain stable or rise. By clustering these 20 stores based on their visual waveform, you can build a **'Dynamic Roster Product'** (shifting baristas from University branches to Mall branches during mid-March to May) or an **'Automated Inventory Rebalancer'** (cutting pastry orders for University branches by 60% before the red zone hits). Furthermore, Payday spikes (blue lines) prove that short-term promotions should be targeted exclusively around the 1st and 16th to maximize the FOMO effect when customers have high purchasing power.
+
+
+=== Cell 35 ===
+## Section 3: Promotions & Cannibalization
+
+
+=== Cell 37 ===
+### Chart 13: Units Sold by Promotion Type
+
+**Description:**
+A comparative boxplot mapping the daily volume of items sold against the specific type of promotion active on that day.
+
+**Actionable Insight:**
+Not all promotions are created equal. Buy One Get One (BOGO) heavily inflates the units sold target variable but halves the average unit revenue. Recognizing which promo mechanic yields the highest raw volume lift is essential for accurate demand planning.
+
+
+=== Cell 39 ===
+### Chart 14: Average Units Sold by Discount Tier
+
+**Description:**
+A barplot grouping active promotions into distinct percentage-off buckets to observe the corresponding sales volume.
+
+**Actionable Insight:**
+Identifies the psychological discount sweet spot. In many environments, a minor 10% discount creates the exact same customer urgency as a massive 30% discount. The model needs to learn these non-linear thresholds to avoid over-forecasting deep discounts.
+
+
+=== Cell 41 ===
+### Chart 15: Distribution of Applied Discounts (%)
+
+**Description:**
+A density histogram mapping the exact frequency of varying discount depths applied across all historical transactions.
+
+**Actionable Insight:**
+Reveals the organization's pricing strategy. If the vast majority of discounts are clustered tightly around 10%, the model will struggle to extrapolate the demand curve if an unprecedented 40% discount is applied in the test set.
+
+
+=== Cell 43 ===
+### Chart 16: Promotion Lift by Day of Week
+
+**Description:**
+A line plot illustrating the average units sold grouped by the day of the week, with separate trend lines for promotional vs. non-promotional days.
+
+**Actionable Insight:**
+Highlights the mid-week magic. Running a promotion on a saturated Saturday often yields a tiny marginal lift. Conversely, Thursday promotions might double normal volume.
+
+
+=== Cell 45 ===
+### Chart 16.5: 90-Day Promotion Fatigue & Baseline Bleed
+
+**Description:**
+A 90-day time-series for a store running consecutive promotions. Yellow blocks indicate active promotion periods.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This reveals the 'Coupon Clipper' effect. The first promo generates a massive spike. However, notice how the baseline sales *between* the later promos begin to drop below the historical average. Customers are being trained to wait for discounts. The solution is a **'Promo Cooldown Recommender'**—an ML module that enforces a mandatory 21-day cool-down period between heavy discounts to protect organic baseline revenue.
+
+
+=== Cell 47 ===
+### Chart 17: Impact of Marketing Channels
+
+**Description:**
+A bar chart analyzing the volume lift driven strictly by the communication medium used to advertise the promotion.
+
+**Actionable Insight:**
+Just having a discount isn't enough; customers must know about it. If Social Media drives significantly higher volume than Email, we must treat the social campaign binary flag as a high-weight modifier.
+
+
+=== Cell 49 ===
+### Chart 18: Promo Responsiveness by Neighborhood
+
+**Description:**
+A barplot comparing how different geographic store locations react to active promotions versus baseline days.
+
+**Actionable Insight:**
+Office workers might buy coffee regardless of price, showing low price sensitivity. Conversely, university students might aggressively hoard products during promo days.
+
+
+=== Cell 51 ===
+### Chart 19: Bakery Sales when Coffee is on Promo (Cannibalization)
+
+**Description:**
+A boxplot testing cross-category elasticity by plotting Bakery sales specifically on days when Coffee is heavily discounted.
+
+**Actionable Insight:**
+If discounting Coffee increases Bakery sales, it is a Halo Effect. If Bakery sales plummet, it is Cannibalization. The model must map these cross-elastic dependencies to avoid overestimating total store revenue.
+
+
+=== Cell 53 ===
+### Chart 19.5: 90-Day Promotion Halo vs Cannibalization Dynamics
+
+**Description:**
+A 90-day time-series isolating a single high-performing store. It plots two distinct lines: total units of Coffee sold versus total units of Bakery items sold. Yellow shaded regions indicate periods when a major Coffee discount was active.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This visualizes the core logic needed for a **'Smart Bundle Recommendation Engine'**. When a Coffee promotion launches (yellow zone), the coffee line spikes. But does the Bakery line rise with it (Halo Effect), or stay flat/drop (Cannibalization)? If bakery sales fail to scale during a coffee traffic surge, the store is bleeding potential margin. The solution is an ML model that explicitly detects these dead zones and automatically triggers 'Bundle Deals' (e.g., Buy Coffee, get Croissant 50% off) exclusively on those dates to force cross-selling.
+
+
+=== Cell 55 ===
+## Section 4: Local Events & Store Operations
+
+
+=== Cell 56 ===
+### Chart 20: Local Event Impact by Category
+
+**Description:**
+A bar chart detailing how local events alter the sales volume of specific product categories disproportionately.
+
+**Actionable Insight:**
+A massive public event might cause a 200% spike in grab-and-go Beverages but entirely cannibalize Dine-in Bakery items because the store is too crowded to sit down. This proves that Event_Active must be multiplied by Category in the modeling phase.
+
+
+=== Cell 58 ===
+### Chart 21: Revenue Distribution by Local Event Type
+
+**Description:**
+A boxplot analyzing the direct monetary impact of specific localized events taking place near the store.
+
+**Actionable Insight:**
+Certain events attract massive crowds but zero customers (e.g., marathons blocking road access), while others (e.g., Food Festivals) drive massive foot traffic. The event type categorical variable is highly predictive of anomalous daily spikes.
+
+
+=== Cell 60 ===
+### Chart 21.5: 90-Day Local Event Demand Shock & Hangover
+
+**Description:**
+A 90-day time-series for a specific store that hosted a major local event. The red dashed lines pinpoint the exact dates the event took place, plotting the raw units sold before, during, and after the shock.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This graph reveals the exact anatomy of an anomaly, justifying an **'Event-Driven Inventory Buffer Model'**. While basic models see a single spike, this time-series exposes both the 'Demand Shock' (a massive single-day spike causing stockouts) and the critical 'Hangover Effect' (sales plunging below baseline the day after because inventory is depleted or customers hoarded goods). A successful product must run an isolated forecasting module specifically for event days to inject a calculated safety buffer, preventing the post-event hangover.
+
+
+=== Cell 62 ===
+### Chart 22: Store Revenue vs Capacity
+
+**Description:**
+A bubble scatterplot mapping physical seating capacity against gross revenue, with the bubble size representing the total staff count.
+
+**Actionable Insight:**
+Examines operational efficiency boundaries. Does a massive seating area guarantee high revenue, or do tiny, heavily-staffed transit kiosks outperform them? This highlights the non-linear relationship between physical assets and demand throughput.
+
+
+=== Cell 64 ===
+### Chart 23: Staff Efficiency vs Store Age
+
+**Description:**
+A regression plot analyzing the relationship between how long a store has been open and the average revenue generated per staff member.
+
+**Actionable Insight:**
+Do mature stores operate more smoothly, or do brand-new Grand Opening stores enjoy higher hype? If older stores are systematically more efficient, store age becomes a critical continuous feature for forecasting.
+
+
+=== Cell 66 ===
+### Chart 24: Staff Stress Index vs Basket Size
+
+**Description:**
+A regression plot showing the mathematical relationship between the Stress Index (Orders / Staff Count) and Average Basket Size.
+
+**Actionable Insight:**
+Proves that rushed service reduces upsells. When a single barista is overwhelmed, they do not have the time to ask 'Would you like a croissant?', causing units-per-order to plummet. This caps maximum theoretical store revenue during peak rushes.
+
+
+=== Cell 68 ===
+### Chart 25: Daily Order Volume (Drive-Through vs Standard)
+
+**Description:**
+A boxplot contrasting the total daily order throughput between branches equipped with a Drive-Through window versus standard walk-in cafes.
+
+**Actionable Insight:**
+Drive-Through stores have a vastly higher theoretical capacity ceiling during rush hour because they process cars and walk-ins simultaneously. Models should inherently allow higher maximum predictions for these stores.
+
+
+=== Cell 70 ===
+### Chart 26: Operating Hours Effect
+
+**Description:**
+An analysis correlating a store's total daily sales capacity against its designated operating hours.
+
+**Actionable Insight:**
+Stores with extended operating hours inherently possess a higher throughput ceiling. If operating hours change over time, the historical baseline must be normalized to prevent the model from misinterpreting a revenue jump as structural demand growth.
+
+
+=== Cell 72 ===
+## Section 5: Customer Retention & Demographics
+
+
+=== Cell 73 ===
+### Chart 27: Total Revenue by Membership
+
+**Description:**
+A pie chart illustrating the macroeconomic revenue split between Walk-in customers and registered Members.
+
+**Actionable Insight:**
+Understanding the baseline share of wallet reveals if our business is heavily reliant on a small pool of loyalists or sustained by high-volume foot traffic. Member Sales represent stable demand, whereas Walk-in Sales are highly volatile.
+
+
+=== Cell 75 ===
+### Chart 28: Order Frequency by Hour of Day
+
+**Description:**
+A line plot displaying the total number of unique orders placed throughout the 24-hour cycle, separated by membership status.
+
+**Actionable Insight:**
+Members often exhibit sharp spikes during morning commutes, while walk-ins might drive afternoon/weekend volume. This variance strongly suggests creating an 'is_morning_rush' interaction feature.
+
+
+=== Cell 77 ===
+### Chart 28.5: 90-Day Temperature-Driven Category Crossover
+
+**Description:**
+A 90-day time-series transitioning from February to May (heading into the extreme Thai Summer). It compares 'Coffee' units vs 'Juice & Smoothie' units. The red zone marks Peak Summer.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Observe the specific week where the Juice/Smoothie line surges upwards and crosses the baseline. This proves temperature alters the category mix. The solution is a **'Climate-Triggered Packaging Rebalance'**—an automated supply chain rule that triggers a 300% increase in orders for clear plastic cups and dome lids exactly two weeks before this historical crossover, preventing catastrophic stockouts of cold packaging.
+
+
+=== Cell 79 ===
+### Chart 29: Category Preference Share
+
+**Description:**
+A 100% stacked bar chart that normalizes the volume of products sold within each category, split by membership status.
+
+**Actionable Insight:**
+Reveals if Members lean more heavily towards high-margin Coffee or add-on Bakery items. If Walk-ins rarely buy Merchandise, inventory forecasting models must dynamically weigh Walk-in foot traffic predictions strictly towards beverage supplies.
+
+
+=== Cell 81 ===
+### Chart 30: Monthly Active Users (MAU) Trend
+
+**Description:**
+A chronological bar chart plotting the number of unique customers engaging with the brand every month.
+
+**Actionable Insight:**
+Identifies macro-level business health. If MAU is steadily growing, baseline sales predictions for future horizons must be naturally elevated regardless of promotions or seasons, reflecting the growing customer pool.
+
+
+=== Cell 83 ===
+### Chart 31: Customer Cohort Retention Heatmap
+
+**Description:**
+A triangular heatmap tracking groups of customers based on the month they made their first purchase.
+
+**Actionable Insight:**
+A massive drop-off in Month 2 indicates poor onboarding. Consistent long-term retention allows us to mathematically calculate Customer Lifetime Value (LTV) and predict stable future revenue streams.
+
+
+=== Cell 85 ===
+### Chart 32: Customer LTV by Home Neighborhood
+
+**Description:**
+A boxplot evaluating the Lifetime Value of customers grouped by the primary neighborhood type they reside or work in.
+
+**Actionable Insight:**
+Helps identify the geographic source of high-value customers. If customers living near Hospitals have exceptionally high LTVs, any new store opened near a hospital should mathematically expect a higher baseline revenue curve.
+
+
+=== Cell 87 ===
+### Chart 33: Avg LTV by Registration Year (Vintage)
+
+**Description:**
+A bar chart comparing the Lifetime Value of Early Adopter customers versus newly acquired customers.
+
+**Actionable Insight:**
+Reveals if the customer base is degrading in quality. If older cohorts spend significantly more per month than new cohorts, long-term revenue growth is highly vulnerable to early-adopter churn.
+
+
+=== Cell 89 ===
+### Chart 34: Cross-Store Shopping Behavior
+
+**Description:**
+A distribution bar chart counting how many distinct store branches a single customer visits.
+
+**Actionable Insight:**
+Measures brand loyalty versus location loyalty. If a massive segment visits 3+ stores, it implies that localized marketing campaigns will cannibalize sales from neighboring stores, creating a Spillover Effect.
+
+
+=== Cell 91 ===
+### Chart 35: Lorenz Curve (Revenue Concentration)
+
+**Description:**
+A cumulative distribution curve ranking all customers by total spend and plotting the cumulative percentage of revenue they generate.
+
+**Actionable Insight:**
+Proves the Pareto Principle (80/20 rule). If the curve is extremely bowed, a tiny fraction of customers generate the vast majority of income. The forecasting model must be hyper-sensitive to the behavior of this micro-population.
+
+
+=== Cell 93 ===
+### Chart 35.5: 90-Day Weekend Micro-Migration (Residential vs Mall)
+
+**Description:**
+A 90-day time-series plotting an Urban Residential store against a Mall store. Yellow shaded regions highlight Weekends.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This graph shows perfectly inverse demand waves. Residential peaks on weekdays and crashes on weekends, while Mall stores explode on weekends. The solution is a **'Dynamic Part-Time Roster'**—an automated HR system that shares a pool of baristas, assigning them to Residential branches Monday-Friday, and shifting them to Mall branches Saturday-Sunday to optimize labor costs.
+
+
+=== Cell 95 ===
+### Chart 36: Active Whales Over Time
+
+**Description:**
+A line plot isolating the monthly engagement exclusively for the Top 5% highest-spending Whale customers.
+
+**Actionable Insight:**
+Losing a single Whale can crash a store's daily revenue average. Tracking their churn rate alerts us to structural demand shifts that general models might mistake as ordinary seasonal dips.
+
+
+=== Cell 97 ===
+### Chart 36.5: 90-Day Payday Splurge Behavior (Luxury vs Necessity)
+
+**Description:**
+A 90-day time-series comparing the sales of 'Merchandise' (Luxury) vs 'Coffee' (Necessity), with vertical lines marking Paydays.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Notice how Coffee sales are relatively stable across the month, but Merchandise sales experience violent spikes **exactly on Paydays**. This proves that marketing budgets for Tumblers and Premium items are wasted mid-month. The solution is **'Targeted FOMO Marketing'**—an automated ad engine that only deploys merchandise ads 48 hours around Payday to maximize ROI.
+
+
+=== Cell 99 ===
+## Section 6: Product & Inventory Dynamics
+
+
+=== Cell 100 ===
+### Chart 37: Category Co-occurrence Heatmap
+
+**Description:**
+A matrix heatmap visualizing Market Basket Analysis. The numbers indicate how often two distinct product categories are purchased in the same order.
+
+**Actionable Insight:**
+Critical for cross-selling strategies. If Coffee and Bakery have massive co-occurrence, a stockout in Bakery will heavily depress Coffee sales, meaning inventory forecasts must be mathematically coupled.
+
+
+=== Cell 102 ===
+### Chart 38: Seasonal vs Regular Item Sales
+
+**Description:**
+A 7-Day Moving Average line plot tracking the lifecycle of Seasonal/Limited Time menu items versus permanent fixtures.
+
+**Actionable Insight:**
+Seasonal items defy standard autoregressive patterns; they launch with a massive spike and exhibit exponential decay. Forecasting these items requires unique features such as 'days_since_launch'.
+
+
+=== Cell 104 ===
+### Chart 39: Macro Trend - Average Price Per Unit
+
+**Description:**
+A time-series line plot tracking the global average revenue generated per single unit sold over the entire historical window.
+
+**Actionable Insight:**
+Acts as an indicator of menu inflation. If this line trends upwards steadily, any future horizon predictions must apply this inflationary multiplier to raw unit forecasts to predict accurate gross revenue.
+
+
+=== Cell 106 ===
+### Chart 40: Stockout Duration Distribution
+
+**Description:**
+A histogram charting the consecutive number of days a specific item remains in a Stockout state before being replenished.
+
+**Actionable Insight:**
+Exposes severe supply chain bottlenecks. If items typically stay stocked out for 4-5 days, the forecasting model must zero out predictions for several days following an initial stockout flag.
+
+
+=== Cell 108 ===
+### Chart 41: Stockout Rate by Neighborhood
+
+**Description:**
+A bar chart representing the percentage of total operational days that stores in different neighborhoods experience inventory shortages.
+
+**Actionable Insight:**
+Highlights locations with systemic logistical failures. Consistently high stockout rates artificially depress historical units sold labels, meaning the true unconstrained demand for these locations is much higher.
+
+
+=== Cell 110 ===
+### Chart 42: Coffee Sales vs Merchandise Stockout
+
+**Description:**
+A boxplot analyzing whether daily Coffee sales fluctuate when the Merchandise category is actively out of stock.
+
+**Actionable Insight:**
+Tests for the Substitution Effect. If a customer walks in to buy a mug but it's out of stock, do they buy an expensive coffee out of frustration? If they do, Merchandise stockout becomes a positive predictive feature for Coffee.
+
+
+=== Cell 112 ===
+### Chart 42.5: 90-Day Stockout Death Spiral (Cross-Selling Contagion)
+
+**Description:**
+A 90-day time-series of total store revenue, overlaid with red shaded blocks indicating days where a 'Core Coffee' item was completely out of stock.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This graph reveals the 'Contagion Effect'. When a core item stocks out, it doesn't just reduce sales for that item—total revenue plummets because customers walk out without buying their usual bakery cross-sells. The solution is a **'Stockout Contagion Alert System'** that prioritizes emergency restocking based on an item's cross-selling weight, not just its individual sales volume.
+
+
+=== Cell 114 ===
+## Section 7: Unexpected Tabular Insights (Data Anomalies)
+
+
+=== Cell 115 ===
+### Table 1: Stores with Negative Promotion Lift
+
+**Description:**
+A heatmap table listing the specific Store IDs where running an active promotion paradoxically resulted in a NEGATIVE percentage lift in units sold compared to their non-promo baseline.
+
+**Actionable Insight:**
+Utterly counter-intuitive. This indicates stores where promotions either attract terrible cherry-picker customers who buy only loss-leaders, or where the promo mechanics actively confuse the local demographic. The business should immediately halt promotions at these branches.
+
+
+=== Cell 117 ===
+### Table 2: High-Value Nomadic Customers
+
+**Description:**
+A table identifying ultra-high-value Whale customers who spend massive amounts of money, but exhibit zero geographic loyalty (visiting 5 or more distinct store branches).
+
+**Actionable Insight:**
+These customers are likely corporate couriers or regional sales reps. Because they are location-agnostic, their demand cannot be forecasted by looking at a single store's history. They act as nomadic demand shocks across the network.
+
+
+=== Cell 119 ===
+### Table 3: Products with Phantom Stock
+
+**Description:**
+A table filtering for the ultimate anomaly: Products that the system claims have plenty of Closing Stock (>10 units), but generated exactly ZERO sales across multiple days.
+
+**Actionable Insight:**
+This is a massive red flag for dirty data or severe operational failure. It strongly suggests the inventory system is lying (phantom stock). For ML, we must force predictions to 0 for these specific ghost items regardless of stock levels.
+
+
+=== Cell 121 ===
+### Table 4: Category Purchase Breakdown
+
+**Description:**
+A cross-tabular percentage breakdown comparing the exact product categories purchased by the Top 1% of Spenders versus the Bottom 99% of regular customers.
+
+**Actionable Insight:**
+Whales do not just buy more of the same things; they buy different things. If Whales disproportionately buy Merchandise while regular users buy iced coffee, predicting Merchandise spikes requires predicting Whale foot traffic, not just general weather patterns.
+
+
+=== Cell 123 ===
+### Table 5: Stores that Profit from the Rain
+
+**Description:**
+A table isolating the mutated, counter-intuitive store locations that paradoxically generate higher revenue when the Rainy Season hits.
+
+**Actionable Insight:**
+Standard models apply a negative Rain Penalty to forecasting. However, this table proves some enclosed Mega-Malls or Drive-Throughs actually thrive when it rains. Feeding a specific interaction feature to AutoGluon allows it to selectively flip the weather penalty into a weather bonus for these specific branches.
+
+
+=== Cell 125 ===
+## Section 8: Advanced Composite Insights & Actionable AI Solutions (Reference Quality)
+This section introduces 10 highly complex, multi-panel composite visualizations designed to match enterprise analytics standards. Each uncovers a distinct operational bottleneck to justify automated AI products.
+
+
+=== Cell 126 ===
+### Chart 43: S5: Price Elasticity & Margin Burn Dynamics (Dual-Panel Line + Heatmap)
+
+**Description:**
+A dual-panel visualization. The top panel shows the weekly revenue lift across stores. The bottom panel is a heatmap of Store ID vs Week starting date, colored by the average discount applied.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This visualization reveals 'Margin Burn Addiction'. Notice how certain stores (e.g., in Mall and Tourist areas) glow heavily in the discount heatmap, but their revenue line in the top panel remains flat. They are cannibalizing their own organic baseline by constantly offering discounts. The solution is an **'Elasticity-Driven Discount Cap Engine'**—an AI pricing module that automatically cuts promotional spend in non-responsive branches to protect EBITDA.
+
+
+=== Cell 128 ===
+### Chart 44: S6: Day-of-Week Product Mix Shifts across 20 Branches (Small Multiples)
+
+**Description:**
+A small-multiples grid of 20 subplots (one for each store). Each subplot displays stacked bar charts of units sold from Monday to Sunday, stacked by product category. Dashed lines mark each branch's peak day.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This reveals 'Structural Capacity Bottlenecks'. Notice how University and Residential stores peak on weekends, but their beverage-to-bakery mix shifts dramatically compared to weekdays. In contrast, Office stores collapse on weekends. The solution is an **'Automated Roster & Restocking Engine'** that reallocates espresso machine maintenance and fresh pastry deliveries based on each individual branch's day-of-week category mix.
+
+
+=== Cell 130 ===
+### Chart 45: S7: Customer Retention vs One-off Seasonal Adoption (Horizontal Stacked Bars)
+
+**Description:**
+Horizontal stacked bar charts comparing customer personas. The left panel shows active retained customers, while the right panel shows churned customers (inactive > 60 days). Segments represent product category spending shares, with percentage labels embedded inside the bars.
+
+**Actionable Insight (Product/Solution Opportunity):**
+This chart reveals 'The Seasonal Hype Trap'. Proves that churned customers heavily over-indexed on one-off promotional items (like Seasonal Drinks and Merchandise) but never built habit-forming behaviors around core Coffee. The solution is a **'Core Habit Nudge Engine'**—an automated CRM rule that detects customers buying one-off items and triggers a drip campaign offering rewards specifically for regular espresso drinks.
+
+
+=== Cell 132 ===
+### Chart 46: S8: Local Event Cannibalization Timeline (Time-Series Overlays)
+
+**Description:**
+A dual-panel time series. The top panel plots the 7-day moving average revenue of Mall vs Urban Residential branches, overlaid with star markers for Local Events. The bottom panel shows stacked bars of Walk-in vs Promotional revenue during those events.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Proves the 'Cannibalization Effect'. When a massive Local Event happens at a Mall store (indicated by black star markers), nearby Residential store sales drop significantly. The solution is an **'Event-Aware Geo-Targeting Roster'**—automatically adjusting staff rosters to shift employees from Residential branches to Mall branches during major event days.
+
+
+=== Cell 134 ===
+### Chart 47: S9: Stockout Contagion & Customer Forgiveness Lag (Dual-Panel)
+
+**Description:**
+The top panel shows the 7-day moving average basket size (units per order). The bottom panel is a heatmap of stockout rates across different product categories over time.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Reveals the 'Customer Forgiveness Lag'. Notice how when Coffee Beans experience a stockout spike (red zone in heatmap), the average basket size drops immediately. However, after restocking occurs, basket size takes **5 full days to recover**. Customers lost trust and shopped elsewhere. The solution is an **'Emergency Restock Contagion System'** that flags core items with high cross-selling elasticity for immediate courier fulfillment.
+
+
+=== Cell 136 ===
+### Chart 48: S10: Staff Stress & Order Concentration by Neighborhood (Small Multiples)
+
+**Description:**
+A grid of subplots by Neighborhood type. Displays stacked bar charts of Monday to Sunday order volumes, stacked by Order Size Tiers (Small: 1 item, Medium: 2-3 items, Large: 4+ items).
+
+**Actionable Insight (Product/Solution Opportunity):**
+Reveals 'Barista Exhaustion Thresholds'. Notice how Transit and Office stores have massive volume, but mostly Small orders. In contrast, Residential and Tourist branches experience heavy spikes of Large (4+ items) orders on weekends. The solution is a **'Dynamic Preparation Queue AI'** that routes large orders to a secondary espresso workstation during weekend peaks to prevent line abandonment.
+
+
+=== Cell 138 ===
+### Chart 49: S11: Cross-Store Habit Evolution by Registration Vintage (Horizontal Stacked Bars)
+
+**Description:**
+Horizontal stacked bars split into Weekday transactions (left) and Weekend transactions (right). Bars represent Customer Registration Year (Vintage). Segments represent visits to Neighborhood types.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Reveals 'Weekend Suburban Nomadism'. Notice how older vintages (2022) shift their transactions heavily from Office/Transit on weekdays to Mall/Residential on weekends. The solution is a **'Cross-Store Habit Booster'**—a CRM rule that automatically sends promotional Drive-Through vouchers on Friday afternoons to existing Office branch members.
+
+
+=== Cell 140 ===
+### Chart 50: S12: Monsoon Disruption vs Drive-Through Resilience (Time-Series Overlays)
+
+**Description:**
+The top panel shows total daily revenue with blue diamond markers for Rainy Season Peak days. The bottom panel displays stacked bars of units sold via Drive-Through stores vs Standard stores.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Reveals 'Weather Hedging Resilience'. Notice how on heavy rain days (blue diamonds), Standard store sales plummet, but Drive-Through store sales actually spike. The solution is a **'Weather-Triggered Drive-Through Roster'** that automatically shifts baristas to Drive-Through windows during storm forecasts to capture stranded commuters.
+
+
+=== Cell 142 ===
+### Chart 51: S13: Bakery Inventory Holding vs Wastage Risk (Dual-Panel)
+
+**Description:**
+The top panel shows average daily closing stock of Bakery items across stores. The bottom panel is a heatmap of Bakery Stockout/Wastage severity across stores over time.
+
+**Actionable Insight (Product/Solution Opportunity):**
+Reveals 'Perishable Buffer Mismanagement'. Notice how Office stores maintain high stock levels on Fridays (top panel) but experience severe wastage spikes on weekends. The solution is an **'AI Perishable Rebalancer'** that automatically throttles fresh pastry deliveries to Office branches on Friday mornings.
+
+
+=== Cell 144 ===
+### Chart 52: S14: The 4-Day Holiday Bridge Exodus Grid (Multi-Facet Grid)
+
+**Description:**
+A 4-quadrant FacetGrid comparing Office, Mall, Urban Residential, and Tourist stores during a major 4-day long holiday bridge (April 12 - April 16). Stacked bars display daily revenue by product category.
+
+**Actionable Insight (Product/Solution Opportunity):**
+The absolute ultimate proof of 'Holiday Bridge Nomadism'. During the Songkran 4-day bridge, Office store sales drop to zero, Residential stores remain flat, but Mall and Tourist stores explode. The solution is a **'National Holiday Logistics Protocol'**—freezing suburban deliveries and rerouting all backup inventory and mobile barista kiosks directly to Mall and Tourist hubs.
+
+
