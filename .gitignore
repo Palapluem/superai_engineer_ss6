@@ -16,3 +16,6 @@ __pycache__/
 # Local Outputs
 eda_additional_outputs/
 .ipynb_checkpoints/
+
+# Prevent accidental commits of the large Week 4 PDF
+Level 2/เอกสารการเรียนการสอน/Week 4/18052025/ช่วงเย็น/Demand Forecasting.pdf
