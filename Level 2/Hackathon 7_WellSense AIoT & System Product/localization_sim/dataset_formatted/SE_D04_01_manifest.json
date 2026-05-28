@@ -1,0 +1,31 @@
+{
+  "source_file": "outputs\\simulated_nano_packets.csv",
+  "sample_count": 314,
+  "source_columns": [
+    "time_ms",
+    "ax",
+    "ay",
+    "az",
+    "gx",
+    "gy",
+    "gz",
+    "distance_mm",
+    "distance_valid"
+  ],
+  "detected_units": {
+    "accel": "mps2",
+    "gyro": "rad_s"
+  },
+  "subject_group": "SE",
+  "subject_group_name": "elderly",
+  "activity_group": "adl",
+  "activity_code": "D04",
+  "activity_name": "normal_walk",
+  "activity_name_th": "เดินปกติ",
+  "trial_id": "01",
+  "outputs": {
+    "paper_6ch": "dataset_formatted\\SE_D04_01_dataset_6ch.txt",
+    "preprocessed_csv": "dataset_formatted\\SE_D04_01_preprocessed.csv"
+  },
+  "paper_6ch_format": "ax_mg,ay_mg,az_mg,gx_deg_s,gy_deg_s,gz_deg_s;"
+}

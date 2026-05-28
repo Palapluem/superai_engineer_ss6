@@ -1,0 +1,7 @@
+{
+  "gps_accuracy": 0.875,
+  "imu_rule_accuracy": 1.0,
+  "imu_ml_cv_accuracy": 0.94,
+  "imu_ml_f1": 0.9415,
+  "fusion_accuracy": 1.0
+}

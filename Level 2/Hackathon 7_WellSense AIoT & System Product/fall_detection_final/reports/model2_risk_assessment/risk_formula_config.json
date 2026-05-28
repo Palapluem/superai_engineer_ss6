@@ -1,0 +1,271 @@
+{
+  "note": "Model 2 uses domain-informed proxy targets, not clinical ground-truth future fall outcomes. Use it as mobility risk assessment for prototype testing.",
+  "risk_target_formula": {
+    "model2_risk_target": "max(0.6 * feature_risk_score + 0.4 * activity_prior_score, 0.95 * activity_prior_score)",
+    "level_thresholds": {
+      "low": "< 0.33",
+      "medium": "0.33 - < 0.66",
+      "high": ">= 0.66"
+    }
+  },
+  "class_risk_prior": {
+    "standing": 0.05,
+    "lying_down": 0.05,
+    "normal_walk": 0.18,
+    "corrected_walking": 0.2,
+    "elderly_pick_up_object": 0.38,
+    "limping_walk": 0.48,
+    "stand_sit_alternating": 0.52,
+    "gradual_fall": 0.86,
+    "slow_collapse_fall": 0.82,
+    "sideways_fall": 0.92,
+    "backward_fall": 0.92
+  },
+  "category_risk_prior": {
+    "static_activity": 0.05,
+    "activity": 0.32,
+    "fall": 0.86
+  },
+  "feature_groups": {
+    "gait_motion": {
+      "weight": 0.22,
+      "features": {
+        "svm_std": 1.0,
+        "svm_dev_mean": 0.8,
+        "jerk_mean": 1.0,
+        "jerk_std": 0.8,
+        "jerk_max": 1.0,
+        "jerk_energy": 0.7,
+        "jerk_sparsity": 0.5
+      }
+    },
+    "rotation_balance": {
+      "weight": 0.2,
+      "features": {
+        "omega_mean": 1.0,
+        "omega_std": 0.8,
+        "omega_max": 1.0,
+        "angular_impulse": 0.8,
+        "high_rot_n": 0.8
+      }
+    },
+    "posture_transition": {
+      "weight": 0.2,
+      "features": {
+        "theta_std": 0.7,
+        "theta_range": 1.0,
+        "KII_mean": 0.8,
+        "KII_std": 0.6,
+        "KII_max": 0.8
+      }
+    },
+    "impact_event": {
+      "weight": 0.25,
+      "aggregation": "max",
+      "features": {
+        "GSI": 1.0,
+        "fcri": 1.0,
+        "free_fall_n": 0.8,
+        "impact_n": 0.8
+      }
+    },
+    "physio_stress": {
+      "weight": 0.13,
+      "features": {
+        "hr_delta": 0.6,
+        "hr_spike": 0.8,
+        "hr_accel": 0.6,
+        "osi": 0.8,
+        "css_max": 0.6,
+        "css_mean": 0.6,
+        "spo2_min": -0.7
+      }
+    }
+  },
+  "normalizer": {
+    "svm_mean": {
+      "low": 0.9791,
+      "high": 1.111605
+    },
+    "svm_std": {
+      "low": 0.0052,
+      "high": 0.923415
+    },
+    "svm_max": {
+      "low": 0.999885,
+      "high": 4.2496
+    },
+    "svm_min": {
+      "low": 0.1974,
+      "high": 0.9799
+    },
+    "jerk_mean": {
+      "low": 0.45885499999999996,
+      "high": 9.88965
+    },
+    "jerk_std": {
+      "low": 0.244385,
+      "high": 16.654574999999998
+    },
+    "jerk_max": {
+      "low": 1.1051,
+      "high": 84.3275
+    },
+    "jerk_min": {
+      "low": 0.0404,
+      "high": 1.500000000000001
+    },
+    "KII_mean": {
+      "low": 0.46615,
+      "high": 42.18204038669017
+    },
+    "KII_std": {
+      "low": 0.24838000000000002,
+      "high": 73.61332999999985
+    },
+    "KII_max": {
+      "low": 1.1268,
+      "high": 410.5644
+    },
+    "KII_min": {
+      "low": 0.053745000000000015,
+      "high": 6.411615768729435
+    },
+    "omega_mean": {
+      "low": 0.25037,
+      "high": 87.1699
+    },
+    "omega_std": {
+      "low": 0.1059,
+      "high": 105.26732499999999
+    },
+    "omega_max": {
+      "low": 0.5072,
+      "high": 316.6212599999995
+    },
+    "omega_min": {
+      "low": 0.0374,
+      "high": 11.381944999999995
+    },
+    "theta_mean": {
+      "low": 8.017785,
+      "high": 106.3454647009446
+    },
+    "theta_std": {
+      "low": 0.83329,
+      "high": 37.30961999999995
+    },
+    "theta_max": {
+      "low": 10.20969,
+      "high": 164.7798711587869
+    },
+    "theta_min": {
+      "low": 4.2462,
+      "high": 99.3308
+    },
+    "theta_range": {
+      "low": 3.57765,
+      "high": 138.42549999999991
+    },
+    "jerk_energy": {
+      "low": 0.273955,
+      "high": 4691.8375
+    },
+    "free_fall_n": {
+      "low": 0.0,
+      "high": 11.0
+    },
+    "impact_n": {
+      "low": 0.0,
+      "high": 6.0
+    },
+    "high_rot_n": {
+      "low": 0.0,
+      "high": 13.0
+    },
+    "svm_dev_mean": {
+      "low": 0.0089,
+      "high": 0.53694
+    },
+    "press_delta": {
+      "low": -0.007,
+      "high": 0.007
+    },
+    "mic_p2p_max": {
+      "low": 552.12,
+      "high": 2407.6
+    },
+    "mic_p2p_mean": {
+      "low": 262.54125,
+      "high": 657.7
+    },
+    "GSI": {
+      "low": 0.02232724024401653,
+      "high": 0.9857
+    },
+    "jerk_sparsity": {
+      "low": 0.0,
+      "high": 0.1
+    },
+    "angular_impulse": {
+      "low": 0.50085,
+      "high": 174.34
+    },
+    "press_slope": {
+      "low": -0.001364,
+      "high": 0.00129515
+    },
+    "hr_mean": {
+      "low": 0.0,
+      "high": 125.4
+    },
+    "hr_max": {
+      "low": 0.0,
+      "high": 130.7
+    },
+    "hr_delta": {
+      "low": 0.0,
+      "high": 13.1
+    },
+    "hr_spike": {
+      "low": 0.0,
+      "high": 7.0
+    },
+    "spo2_min": {
+      "low": 0.0,
+      "high": 97.6
+    },
+    "spo2_mean": {
+      "low": 0.0,
+      "high": 98.1
+    },
+    "rmssd": {
+      "low": 0.0,
+      "high": 39.32599999999999
+    },
+    "sdnn": {
+      "low": 0.0,
+      "high": 20.63
+    },
+    "hr_accel": {
+      "low": -4.189049999999999,
+      "high": 6.478
+    },
+    "osi": {
+      "low": 0.0,
+      "high": 2.232
+    },
+    "css_max": {
+      "low": 0.0,
+      "high": 0.3257199999999999
+    },
+    "css_mean": {
+      "low": 0.0,
+      "high": 0.26687999999999984
+    },
+    "fcri": {
+      "low": 0.0,
+      "high": 25.655724999999993
+    }
+  }
+}

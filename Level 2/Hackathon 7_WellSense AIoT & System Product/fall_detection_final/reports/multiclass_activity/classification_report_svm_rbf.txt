@@ -1,0 +1,17 @@
+                        precision    recall  f1-score   support
+
+         backward_fall     0.8162    0.6894    0.7475       161
+     corrected_walking     0.4000    0.5000    0.4444        12
+elderly_pick_up_object     0.5000    0.6154    0.5517        13
+          gradual_fall     0.8000    0.8000    0.8000         5
+          limping_walk     0.6154    0.5000    0.5517        16
+            lying_down     1.0000    1.0000    1.0000         3
+           normal_walk     0.5000    0.3333    0.4000         6
+         sideways_fall     0.7312    0.8447    0.7839       161
+    slow_collapse_fall     1.0000    1.0000    1.0000        38
+ stand_sit_alternating     1.0000    1.0000    1.0000        11
+              standing     1.0000    0.5000    0.6667         2
+
+              accuracy                         0.7664       428
+             macro avg     0.7602    0.7075    0.7224       428
+          weighted avg     0.7740    0.7664    0.7654       428

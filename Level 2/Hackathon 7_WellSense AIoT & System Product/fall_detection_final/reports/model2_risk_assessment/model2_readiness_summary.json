@@ -1,0 +1,73 @@
+{
+  "data_path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 7_WellSense AIoT & System Product\\fall_detection_final\\windows_all.csv",
+  "model_path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 7_WellSense AIoT & System Product\\fall_detection_final\\models\\model2_risk_assessment\\model2_risk_bundle.joblib",
+  "rows": 2138,
+  "feature_count_expected_by_model": 46,
+  "feature_count_present": 46,
+  "feature_count_numeric": 46,
+  "class_count_all_match_image": true,
+  "missing_features": [],
+  "non_numeric_features": [],
+  "features_with_null": [
+    {
+      "feature": "svm_dev_mean",
+      "null_count": 338
+    }
+  ],
+  "window_timing": {
+    "median_window_seconds": 1.95,
+    "median_stride_seconds": 0.5
+  },
+  "benchmark": [
+    {
+      "batch_size": 1,
+      "repeats": 100,
+      "mean_batch_ms": 77.02975601190701,
+      "median_batch_ms": 76.5425501158461,
+      "p95_batch_ms": 78.71741496492177,
+      "mean_per_window_ms": 77.02975601190701,
+      "median_per_window_ms": 76.5425501158461,
+      "windows_per_second_mean": 12.98199620216145
+    },
+    {
+      "batch_size": 10,
+      "repeats": 100,
+      "mean_batch_ms": 76.92728699417785,
+      "median_batch_ms": 76.45849999971688,
+      "p95_batch_ms": 79.5047698309645,
+      "mean_per_window_ms": 7.692728699417785,
+      "median_per_window_ms": 7.645849999971688,
+      "windows_per_second_mean": 129.99288536922975
+    },
+    {
+      "batch_size": 50,
+      "repeats": 100,
+      "mean_batch_ms": 76.39176500029862,
+      "median_batch_ms": 76.48889999836683,
+      "p95_batch_ms": 78.97494004573673,
+      "mean_per_window_ms": 1.5278353000059723,
+      "median_per_window_ms": 1.5297779999673367,
+      "windows_per_second_mean": 654.5208112393337
+    },
+    {
+      "batch_size": 100,
+      "repeats": 100,
+      "mean_batch_ms": 81.32828700356185,
+      "median_batch_ms": 77.25575007498264,
+      "p95_batch_ms": 104.44850001949817,
+      "mean_per_window_ms": 0.8132828700356185,
+      "median_per_window_ms": 0.7725575007498264,
+      "windows_per_second_mean": 1229.5844863377042
+    },
+    {
+      "batch_size": 2138,
+      "repeats": 20,
+      "mean_batch_ms": 100.8004349656403,
+      "median_batch_ms": 98.74734980985522,
+      "p95_batch_ms": 111.0372798750177,
+      "mean_per_window_ms": 0.04714706967522933,
+      "median_per_window_ms": 0.04618678662762171,
+      "windows_per_second_mean": 21210.22593532237
+    }
+  ]
+}

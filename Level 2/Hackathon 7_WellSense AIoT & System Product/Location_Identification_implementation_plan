@@ -1,0 +1,82 @@
+# Location Identification — Implementation Plan
+
+## ภาพรวม
+
+ทีม proof ว่าจะใช้ **GPS มือถือเป็น Primary** และใช้ **Gyro/IMU เป็น Fallback** สำหรับระบุตำแหน่ง
+แผนนี้จะทดสอบ **ทั้งสองแนวทาง** พร้อม benchmark เปรียบเทียบ
+
+---
+
+## สถาปัตยกรรม Dual-Mode Location System
+
+```
+[GPS มือถือ] ─── มี GPS signal ──→ GPS Geofence Zone Classifier
+                                        ↓
+[IMU Gyro]  ─── ไม่มี GPS / indoor →  IMU Activity-Zone Classifier
+                                        ↓
+                              [Fused Location Output]
+                                 zone_id, zone_name,
+                                 confidence, source
+```
+
+---
+
+## แผน 2 โมดูล
+
+### Module A: GPS Geofencing (Primary)
+- **Input**: lat, lon จาก GPS มือถือ (ผ่าน HTTP API / Serial)
+- **Logic**: ตรวจว่าพิกัดอยู่ใน "zone" ไหน โดยใช้ polygon/radius
+- **Output**: zone_name เช่น "bedroom", "bathroom", "outdoor", "unknown"
+- **ความแม่น**: สูง (ขึ้นอยู่กับ GPS accuracy ~3–10 m)
+- **ทดสอบ**: Simulate coordinates ใน/นอก zone → ตรวจ classification
+
+### Module B: IMU Zone Classifier (Fallback)
+- **Input**: IMU features จาก `windows_combined.csv` (46 features ที่มีอยู่แล้ว)
+- **Logic**: Map กิจกรรม → Zone โดยใช้ Rule-based + ML
+  - `lying_down` → bedroom
+  - `standing` + `normal_walk` + low jerk → living room / corridor
+  - `fall` classes → anywhere (high-risk zone)
+  - `elderly_pick_up_object` → kitchen / living room
+  - `limping_walk` → corridor / outdoor
+- **ทดสอบ**: train zone classifier บน windows_combined.csv + cross-validate
+
+### Module C: Fusion Logic
+- ถ้า GPS available AND confidence > 0.7 → ใช้ GPS
+- ถ้าไม่มี GPS signal (indoor loss) → fallback IMU
+- Output รวม: `{"zone": "bedroom", "source": "gps", "confidence": 0.92}`
+
+---
+
+## ไฟล์ที่จะสร้าง
+
+| ไฟล์ | หน้าที่ |
+|---|---|
+| `location_gps_geofence.py` | GPS zone classifier + simulate test |
+| `location_imu_zone.py` | IMU-based zone classifier + train + evaluate |
+| `location_fusion.py` | รวม GPS + IMU + output unified result |
+| `test_location_all.py` | รัน test ทั้งหมดและเปรียบเทียบ |
+
+---
+
+## Verification Plan
+
+1. **GPS Module**: Simulate 20 GPS coordinates ทั้งใน/นอก zone → ดู accuracy
+2. **IMU Module**: Cross-validate zone classifier บน windows_combined.csv → F1 score
+3. **Fusion**: ทดสอบ scenario: GPS present, GPS lost, GPS recovered
+
+---
+
+## Open Questions
+
+> [!IMPORTANT]
+> **ทีมใช้ GPS จากมือถือผ่านช่องทางไหน?**
+> - HTTP REST API (มือถือ expose endpoint)?
+> - Bluetooth Serial?
+> - WebSocket?
+> - Manual input จาก Dashboard?
+> 
+> แผนนี้จะ simulate ก่อน รอทราบ protocol จริงค่อย integrate
+
+> [!NOTE]
+> **Zone definition**: ตอนนี้ใช้ zone สมมุติ (bedroom/bathroom/kitchen/outdoor)
+> ทีม Hardware/Product ต้องกำหนด lat/lon จริงของสถานที่ทดสอบ

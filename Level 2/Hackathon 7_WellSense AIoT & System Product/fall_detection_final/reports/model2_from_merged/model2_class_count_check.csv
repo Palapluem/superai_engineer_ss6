@@ -1,0 +1,12 @@
+﻿category,class_en,thai_name,expected_count_from_image,actual_count_in_windows_all,difference,match
+fall,slow_collapse_fall,ล้มแบบค่อยๆทรุด,189,100,-89,False
+fall,gradual_fall,ค่อยๆล้ม,25,53,28,False
+fall,sideways_fall,ล้มข้าง,806,0,-806,False
+fall,backward_fall,ล้มไปด้านหลัง,805,0,-805,False
+activity,normal_walk,เดินปกติ,29,61,32,False
+activity,limping_walk,เดินกระเพก,80,163,83,False
+activity,corrected_walking,คนแก่เดิน,59,121,62,False
+activity,stand_sit_alternating,ลุกยืนสลับนั่ง,56,115,59,False
+activity,elderly_pick_up_object,คนแก่จับของระหว่างทาง,63,128,65,False
+static_activity,standing,ยืน,9,20,11,False
+static_activity,lying_down,นอน,17,37,20,False

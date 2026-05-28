@@ -1,0 +1,150 @@
+{
+  "files": {
+    "windows_all.csv": {
+      "rows": 2138,
+      "columns": 55,
+      "class_en_unique_non_null": 11,
+      "class_en_missing": 0,
+      "class_en_counts": {
+        "sideways_fall": 806,
+        "backward_fall": 805,
+        "slow_collapse_fall": 189,
+        "limping_walk": 80,
+        "elderly_pick_up_object": 63,
+        "corrected_walking": 59,
+        "stand_sit_alternating": 56,
+        "normal_walk": 29,
+        "gradual_fall": 25,
+        "lying_down": 17,
+        "standing": 9
+      },
+      "class_unique_non_null": 8,
+      "class_missing": 1800,
+      "class_counts": {
+        "nan": 1800,
+        "limping_walk": 80,
+        "elderly_pick_up_object": 63,
+        "corrected_walking": 59,
+        "stand_sit_alternating": 56,
+        "normal_walk": 29,
+        "gradual_fall": 25,
+        "lying_down": 17,
+        "standing": 9
+      },
+      "category_unique_non_null": 3,
+      "category_missing": 0,
+      "category_counts": {
+        "fall": 1825,
+        "activity": 287,
+        "static_activity": 26
+      },
+      "label_unique_non_null": 2,
+      "label_missing": 0,
+      "label_counts": {
+        "1": 1825,
+        "0": 313
+      }
+    },
+    "windows_extracted.csv": {
+      "rows": 338,
+      "columns": 53,
+      "class_en_unique_non_null": 8,
+      "class_en_missing": 0,
+      "class_en_counts": {
+        "limping_walk": 80,
+        "elderly_pick_up_object": 63,
+        "corrected_walking": 59,
+        "stand_sit_alternating": 56,
+        "normal_walk": 29,
+        "gradual_fall": 25,
+        "lying_down": 17,
+        "standing": 9
+      },
+      "class_unique_non_null": 8,
+      "class_missing": 0,
+      "class_counts": {
+        "limping_walk": 80,
+        "elderly_pick_up_object": 63,
+        "corrected_walking": 59,
+        "stand_sit_alternating": 56,
+        "normal_walk": 29,
+        "gradual_fall": 25,
+        "lying_down": 17,
+        "standing": 9
+      },
+      "category_unique_non_null": 3,
+      "category_missing": 0,
+      "category_counts": {
+        "activity": 287,
+        "static_activity": 26,
+        "fall": 25
+      },
+      "label_unique_non_null": 2,
+      "label_missing": 0,
+      "label_counts": {
+        "0": 313,
+        "1": 25
+      }
+    },
+    "joined_imu_windows.csv": {
+      "rows": 1800,
+      "columns": 78,
+      "class_en_unique_non_null": 1,
+      "class_en_missing": 0,
+      "class_en_counts": {
+        "slow_collapse_fall": 1800
+      },
+      "category_unique_non_null": 1,
+      "category_missing": 0,
+      "category_counts": {
+        "fall": 1800
+      }
+    },
+    "merged_dataset_full.csv": {
+      "rows": 9860,
+      "columns": 106,
+      "class_en_unique_non_null": 11,
+      "class_en_missing": 0,
+      "class_en_counts": {
+        "limping_walk": 1631,
+        "elderly_pick_up_object": 1284,
+        "slow_collapse_fall": 1237,
+        "corrected_walking": 1214,
+        "stand_sit_alternating": 1153,
+        "sideways_fall": 806,
+        "backward_fall": 805,
+        "normal_walk": 618,
+        "gradual_fall": 538,
+        "lying_down": 371,
+        "standing": 203
+      },
+      "class_unique_non_null": 3,
+      "class_missing": 8060,
+      "class_counts": {
+        "nan": 8060,
+        "ล้มข้าง": 806,
+        "ล้มไปด้านหลัง": 805,
+        "ล้มแบบค่อยๆทรุด": 189
+      },
+      "category_unique_non_null": 3,
+      "category_missing": 0,
+      "category_counts": {
+        "activity": 5900,
+        "fall": 3386,
+        "static_activity": 574
+      },
+      "label_unique_non_null": 1,
+      "label_missing": 8060,
+      "label_counts": {
+        "nan": 8060,
+        "1.0": 1800
+      }
+    }
+  },
+  "main_findings": [
+    "windows_all.csv has all 11 class_en classes but is strongly imbalanced.",
+    "joined_imu_windows.csv has only slow_collapse_fall, so it should not be used as a general multiclass training file.",
+    "windows_extracted.csv contains only original windows and is missing slow_collapse_fall, sideways_fall, and backward_fall.",
+    "The class column in windows_all.csv has many missing values, but class_en is complete and should be used as the canonical class column."
+  ]
+}

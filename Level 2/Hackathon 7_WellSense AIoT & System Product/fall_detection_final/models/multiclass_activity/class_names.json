@@ -1,0 +1,13 @@
+[
+  "backward_fall",
+  "corrected_walking",
+  "elderly_pick_up_object",
+  "gradual_fall",
+  "limping_walk",
+  "lying_down",
+  "normal_walk",
+  "sideways_fall",
+  "slow_collapse_fall",
+  "stand_sit_alternating",
+  "standing"
+]

@@ -1,0 +1,41 @@
+WellSense localization demo report
+===================================
+
+Can it work tonight?: YES - prototype/demo ready
+
+What works
+- Known room map + known start coordinate produces an x,y estimate over time.
+- Modulino Movement IMU provides motion/turning cues without double-integrating acceleration.
+- Modulino Distance provides absolute correction events when a wall/object is in front of the user.
+- x,y estimates are combined with gait windows to create a risk heatmap for dashboard use.
+
+Current run
+- Packets: 314
+- Duration: 31.3 s
+- Valid ToF readings: 71 (22.6%)
+- ToF corrections used: 69 (22.0%)
+- Moving packet ratio: 89.8%
+- Final confidence: 0.82
+- Latest estimated position: (1.50, 0.99) m
+
+Gait risk windows
+- Windows: 11
+- Mean gait risk score: 0.19
+- Medium/high windows: 0/0
+
+Top risk heatmap cells
+- (3.25, 3.75) m: score=0.40, level=medium, dwell=2.6s, gait=0.24, env=0.25
+- (0.75, 0.75) m: score=0.36, level=medium, dwell=3.0s, gait=0.17, env=0.00
+- (1.25, 3.75) m: score=0.36, level=medium, dwell=2.5s, gait=0.25, env=0.00
+- (3.25, 0.75) m: score=0.30, level=low, dwell=3.2s, gait=0.00, env=0.00
+- (1.25, 3.25) m: score=0.25, level=low, dwell=1.0s, gait=0.31, env=0.00
+
+Known limitations / blockers
+- It needs a known start coordinate and heading, or a dashboard/manual reset step.
+- Heading drifts when gyro bias changes; a future version should use a particle filter and map constraints.
+- Distance correction only happens when the forward-facing ToF sees a mapped wall/object within range.
+- Sensor placement should be near waist/L4-L5 for gait features; wrist/hand mounting changes thresholds.
+- Real-home accuracy depends on an up-to-date room layout and obstacle map.
+
+Recommended demo sentence
+This is a prevention pipeline: the device estimates indoor x,y, extracts gait risk, and turns repeated risky movement near mapped obstacles into a caregiver heatmap.
