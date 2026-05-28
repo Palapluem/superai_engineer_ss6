@@ -11,6 +11,11 @@ import joblib
 import numpy as np
 import pandas as pd
 
+from model2_risk_common import (
+    RiskTargetConfig,
+    apply_conservative_risk_guard,
+    compute_component_scores,
+)
 
 EXPECTED_CLASS_COUNTS = {
     "slow_collapse_fall": {
@@ -174,19 +179,30 @@ def prepare_model_input(df: pd.DataFrame, feature_cols: list[str]) -> pd.DataFra
     return model_input[feature_cols]
 
 
-def run_once(bundle: dict[str, Any], X: pd.DataFrame) -> tuple[np.ndarray, np.ndarray | None]:
+def run_once(
+    bundle: dict[str, Any],
+    X: pd.DataFrame,
+    raw_df: pd.DataFrame | None = None,
+) -> tuple[np.ndarray, np.ndarray | None]:
     risk_regressor = bundle["risk_regressor"]
     high_risk_classifier = bundle.get("high_risk_classifier")
     risk_score = np.clip(risk_regressor.predict(X), 0.0, 1.0)
     high_risk_probability = None
     if high_risk_classifier is not None and hasattr(high_risk_classifier, "predict_proba"):
         high_risk_probability = high_risk_classifier.predict_proba(X)[:, 1]
+    if raw_df is not None and "normalizer" in bundle:
+        component_scores = compute_component_scores(raw_df, bundle["normalizer"])
+        risk_score, _ = apply_conservative_risk_guard(
+            risk_score, component_scores, raw_df, RiskTargetConfig()
+        )
+        risk_score = risk_score.to_numpy()
     return risk_score, high_risk_probability
 
 
 def benchmark_inference(
     bundle: dict[str, Any],
     model_input: pd.DataFrame,
+    raw_df: pd.DataFrame,
     repeats: int,
     batch_sizes: list[int] | None = None,
 ) -> pd.DataFrame:
@@ -196,13 +212,14 @@ def benchmark_inference(
     rows: list[dict[str, Any]] = []
     for batch_size in batch_sizes:
         X_batch = model_input.iloc[:batch_size].copy()
-        run_once(bundle, X_batch)
+        raw_batch = raw_df.iloc[:batch_size].copy()
+        run_once(bundle, X_batch, raw_batch)
 
         timings_ms: list[float] = []
         local_repeats = repeats if batch_size <= 100 else max(10, repeats // 5)
         for _ in range(local_repeats):
             start = time.perf_counter()
-            run_once(bundle, X_batch)
+            run_once(bundle, X_batch, raw_batch)
             elapsed_ms = (time.perf_counter() - start) * 1000.0
             timings_ms.append(elapsed_ms)
 
@@ -252,7 +269,7 @@ def main() -> None:
 
     class_counts = check_class_counts(df)
     feature_completeness = check_feature_completeness(df, feature_cols)
-    benchmark = benchmark_inference(bundle, model_input, repeats=args.repeats)
+    benchmark = benchmark_inference(bundle, model_input, df, repeats=args.repeats)
     window_timing = estimate_window_duration(df)
 
     class_counts.to_csv(

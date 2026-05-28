@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -10,10 +11,16 @@ import numpy as np
 import pandas as pd
 
 from model2_risk_common import (
+    RiskTargetConfig,
+    apply_conservative_risk_guard,
     compute_component_scores,
     compute_feature_risk_score,
+    high_risk_alert_from_outputs,
     risk_level_from_score,
 )
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 
 def parse_args() -> argparse.Namespace:
@@ -52,14 +59,17 @@ def main() -> None:
         model_input[col] = np.nan
     model_input = model_input[feature_cols]
 
-    predicted_score = np.clip(risk_regressor.predict(model_input), 0.0, 1.0)
+    raw_predicted_score = np.clip(risk_regressor.predict(model_input), 0.0, 1.0)
     if high_risk_classifier is not None and hasattr(high_risk_classifier, "predict_proba"):
         high_risk_probability = high_risk_classifier.predict_proba(model_input)[:, 1]
     else:
-        high_risk_probability = predicted_score
+        high_risk_probability = raw_predicted_score
 
     component_scores = compute_component_scores(df, normalizer)
     feature_rule_score = compute_feature_risk_score(component_scores)
+    predicted_score, guard_info = apply_conservative_risk_guard(
+        raw_predicted_score, component_scores, df, RiskTargetConfig()
+    )
 
     meta_cols = [
         col
@@ -76,14 +86,21 @@ def main() -> None:
         if col in df.columns
     ]
     output = df[meta_cols].reset_index(drop=True).copy()
-    output["model2_risk_score"] = predicted_score
+    output["raw_model2_risk_score"] = raw_predicted_score
+    output["model2_risk_score"] = predicted_score.to_numpy()
     output["model2_high_risk_probability"] = high_risk_probability
     output["model2_risk_level"] = [
         risk_level_from_score(float(score)) for score in predicted_score
     ]
+    output["model2_alert"] = [
+        high_risk_alert_from_outputs(float(score), float(probability))
+        for score, probability in zip(predicted_score, high_risk_probability)
+    ]
     output["rule_feature_risk_score"] = feature_rule_score.to_numpy()
     for col in component_scores.columns:
         output[f"component_{col}"] = component_scores[col].to_numpy()
+    for col in guard_info.columns:
+        output[col] = guard_info[col].to_numpy()
     output["model2_regressor"] = bundle.get("best_regressor_name", "")
     output["model2_classifier"] = bundle.get("best_classifier_name", "")
 

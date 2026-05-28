@@ -22,52 +22,52 @@
     {
       "batch_size": 1,
       "repeats": 100,
-      "mean_batch_ms": 77.02975601190701,
-      "median_batch_ms": 76.5425501158461,
-      "p95_batch_ms": 78.71741496492177,
-      "mean_per_window_ms": 77.02975601190701,
-      "median_per_window_ms": 76.5425501158461,
-      "windows_per_second_mean": 12.98199620216145
+      "mean_batch_ms": 102.67721000360325,
+      "median_batch_ms": 100.39949987549335,
+      "p95_batch_ms": 123.94548497395589,
+      "mean_per_window_ms": 102.67721000360325,
+      "median_per_window_ms": 100.39949987549335,
+      "windows_per_second_mean": 9.739259568553791
     },
     {
       "batch_size": 10,
       "repeats": 100,
-      "mean_batch_ms": 76.92728699417785,
-      "median_batch_ms": 76.45849999971688,
-      "p95_batch_ms": 79.5047698309645,
-      "mean_per_window_ms": 7.692728699417785,
-      "median_per_window_ms": 7.645849999971688,
-      "windows_per_second_mean": 129.99288536922975
+      "mean_batch_ms": 105.54522599559277,
+      "median_batch_ms": 101.10730002634227,
+      "p95_batch_ms": 139.0551549498923,
+      "mean_per_window_ms": 10.554522599559277,
+      "median_per_window_ms": 10.110730002634227,
+      "windows_per_second_mean": 94.74611386418907
     },
     {
       "batch_size": 50,
       "repeats": 100,
-      "mean_batch_ms": 76.39176500029862,
-      "median_batch_ms": 76.48889999836683,
-      "p95_batch_ms": 78.97494004573673,
-      "mean_per_window_ms": 1.5278353000059723,
-      "median_per_window_ms": 1.5297779999673367,
-      "windows_per_second_mean": 654.5208112393337
+      "mean_batch_ms": 100.92011702014133,
+      "median_batch_ms": 100.9990000165999,
+      "p95_batch_ms": 120.267930009868,
+      "mean_per_window_ms": 2.018402340402827,
+      "median_per_window_ms": 2.019980000331998,
+      "windows_per_second_mean": 495.4413597243565
     },
     {
       "batch_size": 100,
       "repeats": 100,
-      "mean_batch_ms": 81.32828700356185,
-      "median_batch_ms": 77.25575007498264,
-      "p95_batch_ms": 104.44850001949817,
-      "mean_per_window_ms": 0.8132828700356185,
-      "median_per_window_ms": 0.7725575007498264,
-      "windows_per_second_mean": 1229.5844863377042
+      "mean_batch_ms": 104.28105999249965,
+      "median_batch_ms": 99.9768499750644,
+      "p95_batch_ms": 132.21846487140283,
+      "mean_per_window_ms": 1.0428105999249966,
+      "median_per_window_ms": 0.999768499750644,
+      "windows_per_second_mean": 958.946907589858
     },
     {
       "batch_size": 2138,
       "repeats": 20,
-      "mean_batch_ms": 100.8004349656403,
-      "median_batch_ms": 98.74734980985522,
-      "p95_batch_ms": 111.0372798750177,
-      "mean_per_window_ms": 0.04714706967522933,
-      "median_per_window_ms": 0.04618678662762171,
-      "windows_per_second_mean": 21210.22593532237
+      "mean_batch_ms": 134.84200498787686,
+      "median_batch_ms": 128.58725001569837,
+      "p95_batch_ms": 172.542805026751,
+      "mean_per_window_ms": 0.06306922590639703,
+      "median_per_window_ms": 0.06014370908124339,
+      "windows_per_second_mean": 15855.593367899119
     }
   ]
 }

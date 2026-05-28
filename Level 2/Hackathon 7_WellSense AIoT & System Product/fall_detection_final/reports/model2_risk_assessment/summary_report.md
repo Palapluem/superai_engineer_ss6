@@ -19,9 +19,9 @@ Model 2 is a mobility risk assessment layer. It is not the Model 1 fall/no-fall 
 
 ## Risk Level Counts
 
-- `high`: 1825
-- `medium`: 224
-- `low`: 89
+- `low`: 1259
+- `medium`: 575
+- `high`: 304
 
 ## Best Models
 
@@ -32,16 +32,16 @@ Model 2 is a mobility risk assessment layer. It is not the Model 1 fall/no-fall 
 
 |       mae |      rmse |       r2 | model                            |   train_rows |   test_rows |
 |----------:|----------:|---------:|:---------------------------------|-------------:|------------:|
-| 0.0298234 | 0.0702853 | 0.909554 | random_forest_regressor          |         1692 |         446 |
-| 0.0331653 | 0.0784819 | 0.887228 | hist_gradient_boosting_regressor |         1692 |         446 |
-| 0.0342284 | 0.0672617 | 0.917168 | ridge_regressor                  |         1692 |         446 |
+| 0.0288831 | 0.0658998 | 0.875918 | random_forest_regressor          |         1692 |         446 |
+| 0.0304612 | 0.0680897 | 0.867534 | hist_gradient_boosting_regressor |         1692 |         446 |
+| 0.0418576 | 0.0651946 | 0.878559 | ridge_regressor                  |         1692 |         446 |
 
 ## Classifier Comparison
 
-|   accuracy |   balanced_accuracy |   f1 |   precision |   recall |   roc_auc | model                          |   train_rows |   test_rows |
-|-----------:|--------------------:|-----:|------------:|---------:|----------:|:-------------------------------|-------------:|------------:|
-|          1 |                   1 |    1 |           1 |        1 |         1 | random_forest_classifier       |         1692 |         446 |
-|          1 |                   1 |    1 |           1 |        1 |         1 | logistic_regression_classifier |         1692 |         446 |
+|   accuracy |   balanced_accuracy |      f1 |   precision |   recall |   roc_auc | model                          |   train_rows |   test_rows |
+|-----------:|--------------------:|--------:|------------:|---------:|----------:|:-------------------------------|-------------:|------------:|
+|   1        |            1        | 1       |     1       |        1 |         1 | random_forest_classifier       |         1692 |         446 |
+|   0.993274 |            0.996134 | 0.97479 |     0.95082 |        1 |         1 | logistic_regression_classifier |         1692 |         446 |
 
 ## Main Artifacts
 
