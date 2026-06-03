@@ -1,0 +1,16 @@
+﻿artifact_type,renderer_template_id,artifacts,pages,extensions
+bank_statement,bank_statement_bbl,96,670,.png
+bank_statement,bank_statement_kbank,120,1201,.png
+bank_statement,bank_statement_scb,120,843,.png
+e7_banner,e7_banner_modern_flat,4,4,.png
+receipt,receipt_thermal,563,563,.png
+t2_doc,t2_doc_audit_report,2,2,.pdf
+t2_doc,t2_doc_email_discrete,12,12,.pdf
+t2_doc,t2_doc_memo_announcement,28,28,.pdf
+t2_doc,t2_doc_policy_doc,12,12,.pdf
+t2_doc,t2_doc_training_material,5,5,.pdf
+t2_doc,t2_doc_vendor_contract,22,22,.pdf
+t3_doc,t3_doc_lease,10,10,.png
+t3_doc,t3_doc_termination,1,1,.png
+vendor_invoice,vendor_invoice_a4,792,792,.png
+warranty_form,warranty_form_a4,1963,1963,.png

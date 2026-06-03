@@ -1,0 +1,11 @@
+﻿check,count
+actual render files,6128
+page references in sidecars,6128
+unique page references,6128
+orphan render files,0
+missing referenced renders,0
+duplicate referenced paths,0
+sample submission rows,3750
+sidecar artifacts,3750
+submission IDs missing sidecars,0
+sidecar IDs missing submission rows,0

@@ -16,3 +16,20 @@ __pycache__/
 # Local Outputs
 eda_additional_outputs/
 .ipynb_checkpoints/
+
+# Hackathon 8 heavy local datasets/renders
+Level 2/Hackathon 8_FahMai The Finale/**/renders/
+Level 2/Hackathon 8_FahMai The Finale/**/render/
+Level 2/Hackathon 8_FahMai The Finale/**/fahmai_renders_with_json/
+
+# Hackathon 8 OCR generated checkpoints and diagnostic outputs
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/fast_*/
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/audits/**
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/PaddleOCR.csv
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/*.stdout.log
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/*.stderr.log
+Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/submission_OCR_fast_partial*
+!Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/audits/
+!Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/audits/image_grounded/
+!Level 2/Hackathon 8_FahMai The Finale/**/ocr_outputs/audits/image_grounded/manual_ground_truth_annotations.csv
+!Level 2/Hackathon 8_FahMai The Finale/super-ai-engineer-season-6-fah-mai-the-finale-ocr/ocr_outputs/fahmai_ocr_csv_repro_package.zip

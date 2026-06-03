@@ -1,0 +1,4 @@
+﻿resolution_type,routing_destination,claim_reason,claims,rendered_claims,render_pct
+approved,fahmai_cs,vendor batch defect (V-004-MON-BATCH-2567-Q4-001) — AW-MN-001 ArcWave ProView 27 4K monitor,35,0,0.0
+pending,fahmai_cs,defect,3913,1963,50.16611295681063
+pending,novatech_service,battery swelling concern — NT-LT-001 (pre-recall signal),25,0,0.0

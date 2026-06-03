@@ -1,0 +1,7 @@
+﻿bank,page_role,width,height,pages,accounts,statements,example_path
+BBL,header,1240,520,96,4,96,renders/bank_statement/2024-01/BS-BBL-OPER-2567-01_header.png
+KBank,header,2966,839,120,5,120,renders/bank_statement/2024-01/BS-KBANK-OPER-2567-01_header.png
+SCB,header,1240,520,120,5,120,renders/bank_statement/2024-01/BS-OPER-BKK-EMSP-2567-01_header.png
+BBL,transactions,1240,1234,574,4,96,renders/bank_statement/2024-01/BS-BBL-OPER-2567-01_transactions_p1.png
+KBank,transactions,2968,2850,1081,5,120,renders/bank_statement/2024-01/BS-KBANK-OPER-2567-01_transactions_p1.png
+SCB,transactions,1240,1234,723,5,120,renders/bank_statement/2024-01/BS-OPER-BKK-EMSP-2567-01_transactions_p1.png

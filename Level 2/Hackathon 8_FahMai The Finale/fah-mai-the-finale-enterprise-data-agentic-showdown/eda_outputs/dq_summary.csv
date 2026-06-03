@@ -1,0 +1,4 @@
+﻿signal,rows,distinct_business_keys
+FACT_VENDOR_PAYMENT duplicate vendor_invoice_id rows,2,1
+FACT_PROMO_REDEMPTION duplicate txn_id rows,8,4
+FACT_SALES non-null retry_idempotency_marker rows,0,0

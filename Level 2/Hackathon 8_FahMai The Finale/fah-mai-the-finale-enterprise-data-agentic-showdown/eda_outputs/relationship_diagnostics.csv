@@ -1,0 +1,2 @@
+﻿domain,child_table,child_column,parent_table,parent_column,child_rows,non_null_child_rows,matched_rows,unmatched_rows,coverage_pct,parent_key_unique,status
+inventory,FACT_INVENTORY_MOVEMENT,related_txn_id,FACT_SALES,txn_id,310827,309617,304817,4800,98.44969752952841,True,partial_match

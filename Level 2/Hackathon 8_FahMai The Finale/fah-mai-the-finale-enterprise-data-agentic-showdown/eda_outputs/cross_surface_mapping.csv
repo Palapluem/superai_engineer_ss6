@@ -1,0 +1,9 @@
+﻿mapping,source_rows,matched_rows,note,coverage_pct
+receipt render -> FACT_SALES.txn_id,563,563,RC-{txn_id}.png,100.0
+vendor_invoice render -> FACT_VENDOR_PAYMENT.vendor_invoice_id,792,792,VI-{vendor_invoice_id}.png,100.0
+warranty_form render -> FACT_WARRANTY_CLAIM.claim_id,1963,1963,claim ID derived from filename date and suffix,100.0
+T2 PDF -> T2_DOC_INVENTORY.doc_id,81,81,{doc_id}.pdf,100.0
+FACT_CS_INTERACTION.chat_session_id -> LINE OA doc,3375,3375,{chat_session_id}.md,100.0
+FACT_SALES_LINE_ITEM.pos_log_line_id -> POS file,160321,160321,filename:lineN,100.0
+FACT_SALES.web_log_line_id -> web JSONL file,8963,8963,filename:lineN,100.0
+bank statement account-month -> FACT_BANK_TRANSACTION account-month,336,336,filename-derived account and month,100.0

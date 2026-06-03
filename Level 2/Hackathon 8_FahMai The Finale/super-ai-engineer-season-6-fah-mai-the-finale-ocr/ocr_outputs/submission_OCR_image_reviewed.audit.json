@@ -1,0 +1,22 @@
+{
+  "base_submission": "C:\\fahmai_ocr_data\\ocr_outputs\\submission_OCR_fast_partial.csv",
+  "annotations": "C:\\fahmai_ocr_data\\ocr_outputs\\audits\\image_grounded\\manual_ground_truth_annotations.csv",
+  "output": "C:\\fahmai_ocr_data\\ocr_outputs\\submission_OCR_image_reviewed.csv",
+  "safety": {
+    "required_status": "verified_from_image",
+    "public_render_path_required": false,
+    "peer_submission_read": false,
+    "grader_only_provenance_read": false,
+    "enterprise_tables_read": false
+  },
+  "annotation_rows": 18,
+  "verified_rows_applied": 18,
+  "ignored_unverified_status_rows": 0,
+  "changed_fields": 1,
+  "unchanged_fields": 17,
+  "intentional_blank_fields": 0,
+  "applied_by_prefix": {
+    "BS": 16,
+    "VI": 2
+  }
+}

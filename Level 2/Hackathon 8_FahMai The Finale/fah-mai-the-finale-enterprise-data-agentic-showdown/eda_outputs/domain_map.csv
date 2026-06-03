@@ -1,0 +1,9 @@
+﻿domain,tables,docs,renders,logs,primary_use
+Sales,"FACT_SALES, FACT_SALES_LINE_ITEM","LINE OA, OPS reports",receipt,"pos_*.tsv, web_*.jsonl","orders, basket totals, channels, payments"
+Finance,"FACT_BANK_TRANSACTION, FACT_VENDOR_PAYMENT, FACT_PAYROLL, DIM_BANK_ACCOUNT","memo, LINE Works, FIN close reports","bank_statement, vendor_invoice",paywise_fee_log_*.csv,"cash flow, reconciliation, approvals"
+Customer Service,"FACT_CS_INTERACTION, DIM_CUSTOMER",chat_line_oa,warranty_form,,customer cases and chat evidence
+Returns and Warranty,"FACT_RETURN, FACT_REFUND_PAID, FACT_WARRANTY_CLAIM","policy KB, memo","warranty_form, receipt",,"refunds, claims, policy checks"
+Inventory,"FACT_INVENTORY_MOVEMENT, FACT_INVENTORY_MONTHLY_SNAPSHOT, DIM_PRODUCT",product KB,,pos_*.tsv,stock movement and month-end positions
+Promotion,"DIM_PROMO_CAMPAIGN, dim_promo_mechanic, FACT_PROMO_REDEMPTION",memo,e7_banner,web_*.jsonl,campaign performance and phantom redemption analysis
+Policy and Approval,"DIM_POLICY_VERSION, dim_signing_authority_ladder, DIM_POSITION_LEVEL","policy KB, memo","t2_doc, t3_doc",,date-aware policy and signing authority
+Shipping,"FACT_SHIPPING, DIM_VENDOR",shipping policy KB,,,delivery fulfillment

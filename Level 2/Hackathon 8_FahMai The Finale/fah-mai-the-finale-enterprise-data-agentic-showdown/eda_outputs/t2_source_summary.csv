@@ -1,0 +1,7 @@
+﻿doc_kind,template_name,source_table,documents,min_issue_date,max_issue_date
+memo_announcement,memo_announcement,T2_DOC_INVENTORY,28,2024-01-08,2025-12-20
+vendor_contract,vendor_contract,DIM_VENDOR_CONTRACT_VERSION,22,2024-01-01,2025-12-01
+policy_doc,policy_doc,DIM_POLICY_VERSION,12,2024-01-01,2025-06-01
+email_discrete,email_discrete,T2_DOC_INVENTORY,12,2024-02-12,2025-12-05
+training_material,training_material,T2_DOC_INVENTORY,5,2024-01-15,2025-09-15
+audit_report,audit_report,T2_DOC_INVENTORY,2,2024-12-20,2025-12-20
