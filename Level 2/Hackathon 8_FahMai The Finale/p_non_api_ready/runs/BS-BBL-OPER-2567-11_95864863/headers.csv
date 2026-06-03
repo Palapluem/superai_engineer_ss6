@@ -1,0 +1,2 @@
+﻿artifact_id,bank,family,account_id,account_number,account_number_raw,account_number_score,account_role,currency
+BS-BBL-OPER-2567-11,sparse_bbl_direct,sparse_bbl_direct,BBL-OPER,003-1-00001-3,003-1-00001-3,0.9969,SAVINGS,THB

@@ -1,0 +1,35 @@
+{
+  "endpoint": "http://swarm-manager.modelharbor.com:57444/ocr",
+  "request_id": "BS-BBL-OPER-2567-01",
+  "files": [
+    {
+      "role": "header",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-01\\BS-BBL-OPER-2567-01_header.png",
+      "bytes": 94230,
+      "base64_chars": 125640,
+      "mime_type": "image/png",
+      "sha256": "4046a408104478b8b6ce56d1b4c6d66ba316526b025757d05db48c55adeb6397"
+    },
+    {
+      "role": "transaction_1",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-01\\BS-BBL-OPER-2567-01_transactions_p1.png",
+      "bytes": 99249,
+      "base64_chars": 132332,
+      "mime_type": "image/png",
+      "sha256": "0a90ca6da44fe09e4fdda56d27cc20652aa4db97d3a0a1dc82a169edd98fbba3"
+    }
+  ],
+  "summary": {
+    "http_status": 200,
+    "elapsed_seconds": 0.2,
+    "id": "BS-BBL-OPER-2567-01",
+    "answer_type": "dict",
+    "answer_fields": 0,
+    "answer_preview": {}
+  },
+  "response": {
+    "id": "BS-BBL-OPER-2567-01",
+    "answer": {}
+  },
+  "raw_response": "{\"id\":\"BS-BBL-OPER-2567-01\",\"answer\":{}}"
+}

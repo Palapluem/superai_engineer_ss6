@@ -1,0 +1,2 @@
+﻿artifact_id,bank,family,account_id,account_number,account_role,currency,page,row_index,business_event_date,effective_time,transaction_type,direction,amount_thb,balance_after_thb,channel,description,date_raw,amount_raw,balance_raw,description_raw,parse_status
+BS-BBL-OPER-2567-11,sparse_bbl_direct,sparse_bbl_direct,BBL-OPER,003-1-00001-3,SAVINGS,THB,1,0,05-11-24,,Withdrawal,,"500,000.00","2,500,000.00",,โอนเงิน K PLUS,05-11-24,,"2, 500, 000.00",TAULOU,ok

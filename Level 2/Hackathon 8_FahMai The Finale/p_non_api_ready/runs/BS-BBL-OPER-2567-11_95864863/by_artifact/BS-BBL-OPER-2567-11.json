@@ -1,0 +1,60 @@
+{
+  "record": {
+    "artifact_id": "BS-BBL-OPER-2567-11",
+    "layout": "sparse_bbl_direct",
+    "checkpoint_version": 2,
+    "engine": "paddle_crop_recognition",
+    "model": "en_PP-OCRv5_mobile_rec",
+    "account_id": "BBL-OPER",
+    "account_number": "003-1-00001-3",
+    "account_number_raw": "003-1-00001-3",
+    "account_number_score": 0.9969,
+    "elapsed_seconds": 1.069,
+    "opening_balance": "3,000,000.00",
+    "level_render_paths": {
+      "1": "C:\\Users\\CPEKMU~1\\AppData\\Local\\Temp\\bank_ocr_upload_sibpkb94\\BS-BBL-OPER-2567-11_transactions_p1.png"
+    },
+    "rows": [
+      {
+        "slot_id": "BT-202411-764314082696",
+        "level": 1,
+        "physical_page": 1,
+        "visual_row": 1,
+        "row_index": 0,
+        "account_id": "BBL-OPER",
+        "business_event_date": "05-11-24",
+        "transaction_type": "Withdrawal",
+        "amount_thb": "500,000.00",
+        "balance_after_thb": "2,500,000.00",
+        "description": "โอนเงิน K PLUS",
+        "opening_balance_raw": "3, 000,000.00",
+        "opening_balance_score": 0.8783,
+        "date_raw": "05-11-24",
+        "date_score": 0.9569,
+        "balance_raw": "2, 500, 000.00",
+        "balance_score": 0.9441,
+        "description_raw": "TAULOU",
+        "description_score": 0.6743,
+        "fallback_reasons": [],
+        "fallback_actions": [
+          "amount_from_balance_delta"
+        ]
+      }
+    ],
+    "fallback_rows": 0,
+    "errors": []
+  },
+  "answer": {
+    "L0_account_id": "BBL-OPER",
+    "L0_bank": "BBL",
+    "L0_account_number": "003-1-00001-3",
+    "L0_account_role": "SAVINGS",
+    "L0_currency": "THB",
+    "L1_BT-202411-764314082696_business_event_date": "05-11-24",
+    "L1_BT-202411-764314082696_transaction_type": "Withdrawal",
+    "L1_BT-202411-764314082696_amount_thb": "500,000.00",
+    "L1_BT-202411-764314082696_balance_after_thb": "2,500,000.00",
+    "L1_BT-202411-764314082696_description": "โอนเงิน K PLUS",
+    "L1_BT-202411-764314082696_account_id": "BBL-OPER"
+  }
+}

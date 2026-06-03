@@ -1,0 +1,4 @@
+INFO:     127.0.0.1:60313 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49861 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49868 - "POST /ocr HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62847 - "POST /ocr HTTP/1.1" 200 OK

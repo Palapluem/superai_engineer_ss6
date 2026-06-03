@@ -1,0 +1,2 @@
+﻿artifact_id,engine,layout,elapsed_seconds,rows,fallback_rows,errors
+BS-BBL-OPER-2567-11,paddle_crop_recognition,sparse_bbl_direct,1.755,1,0,[]

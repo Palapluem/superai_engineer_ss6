@@ -1,0 +1,16 @@
+{
+  "input_dir": "C:\\Users\\CPEKMU~1\\AppData\\Local\\Temp\\bank_ocr_upload_8czl6sxm",
+  "output_dir": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\p_non_api_ready\\runs\\BS-BBL-OPER-2567-11_34a82664",
+  "template_path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\p_non_api_ready\\submission_template_OCR.csv",
+  "device": "gpu:0",
+  "artifact_count": 1,
+  "artifacts": [
+    "BS-BBL-OPER-2567-11"
+  ],
+  "errors": {
+    "BS-BBL-OPER-2567-11": [
+      "No module named 'paddleocr'"
+    ]
+  },
+  "elapsed_seconds": 0.651
+}

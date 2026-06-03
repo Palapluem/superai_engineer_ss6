@@ -1,0 +1,23 @@
+{
+  "record": {
+    "artifact_id": "BS-BBL-OPER-2567-11",
+    "engine": "paddle_crop_recognition",
+    "rows": [],
+    "errors": [
+      "No module named 'paddleocr'"
+    ]
+  },
+  "answer": {
+    "L0_account_id": "",
+    "L0_bank": "",
+    "L0_account_number": "",
+    "L0_account_role": "",
+    "L0_currency": "",
+    "L1_BT-202411-764314082696_business_event_date": "",
+    "L1_BT-202411-764314082696_transaction_type": "",
+    "L1_BT-202411-764314082696_amount_thb": "",
+    "L1_BT-202411-764314082696_balance_after_thb": "",
+    "L1_BT-202411-764314082696_description": "",
+    "L1_BT-202411-764314082696_account_id": ""
+  }
+}

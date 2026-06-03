@@ -1,0 +1,17 @@
+{
+  "answers": {
+    "BS-BBL-OPER-2567-11": {
+      "L0_account_id": "BBL-OPER",
+      "L0_bank": "BBL",
+      "L0_account_number": "003-1-00001-3",
+      "L0_account_role": "SAVINGS",
+      "L0_currency": "THB",
+      "L1_BT-202411-764314082696_business_event_date": "05-11-24",
+      "L1_BT-202411-764314082696_transaction_type": "Withdrawal",
+      "L1_BT-202411-764314082696_amount_thb": "500,000.00",
+      "L1_BT-202411-764314082696_balance_after_thb": "2,500,000.00",
+      "L1_BT-202411-764314082696_description": "โอนเงิน K PLUS",
+      "L1_BT-202411-764314082696_account_id": "BBL-OPER"
+    }
+  }
+}

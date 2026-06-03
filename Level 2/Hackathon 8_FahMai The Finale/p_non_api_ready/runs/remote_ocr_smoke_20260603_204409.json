@@ -1,0 +1,63 @@
+{
+  "endpoint": "http://127.0.0.1:8000/ocr",
+  "request_id": "BS-BBL-OPER-2567-11",
+  "files": [
+    {
+      "role": "header",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-11\\BS-BBL-OPER-2567-11_header.png",
+      "bytes": 93148,
+      "base64_chars": 124200,
+      "mime_type": "image/png",
+      "sha256": "781b100e495c41f029e4bdddd42f7de71db9b479fc7283936031ef01c5e8162c"
+    },
+    {
+      "role": "transaction_1",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-11\\BS-BBL-OPER-2567-11_transactions_p1.png",
+      "bytes": 99759,
+      "base64_chars": 133012,
+      "mime_type": "image/png",
+      "sha256": "58a3177a1181c80efcc6a709d5ab648617f8522e40ae23472f495121b4c72a9e"
+    }
+  ],
+  "summary": {
+    "http_status": 200,
+    "elapsed_seconds": 0.804,
+    "id": "BS-BBL-OPER-2567-11",
+    "answer_type": "dict",
+    "answer_fields": 11,
+    "nonempty_fields": 0,
+    "min_answer_fields": 1,
+    "min_nonempty_fields": 0,
+    "passed": true,
+    "answer_preview": {
+      "L0_account_id": "",
+      "L0_bank": "",
+      "L0_account_number": "",
+      "L0_account_role": "",
+      "L0_currency": "",
+      "L1_BT-202411-764314082696_business_event_date": "",
+      "L1_BT-202411-764314082696_transaction_type": "",
+      "L1_BT-202411-764314082696_amount_thb": "",
+      "L1_BT-202411-764314082696_balance_after_thb": "",
+      "L1_BT-202411-764314082696_description": "",
+      "L1_BT-202411-764314082696_account_id": ""
+    }
+  },
+  "response": {
+    "id": "BS-BBL-OPER-2567-11",
+    "answer": {
+      "L0_account_id": "",
+      "L0_bank": "",
+      "L0_account_number": "",
+      "L0_account_role": "",
+      "L0_currency": "",
+      "L1_BT-202411-764314082696_business_event_date": "",
+      "L1_BT-202411-764314082696_transaction_type": "",
+      "L1_BT-202411-764314082696_amount_thb": "",
+      "L1_BT-202411-764314082696_balance_after_thb": "",
+      "L1_BT-202411-764314082696_description": "",
+      "L1_BT-202411-764314082696_account_id": ""
+    }
+  },
+  "raw_response": "{\"id\":\"BS-BBL-OPER-2567-11\",\"answer\":{\"L0_account_id\":\"\",\"L0_bank\":\"\",\"L0_account_number\":\"\",\"L0_account_role\":\"\",\"L0_currency\":\"\",\"L1_BT-202411-764314082696_business_event_date\":\"\",\"L1_BT-202411-764314082696_transaction_type\":\"\",\"L1_BT-202411-764314082696_amount_thb\":\"\",\"L1_BT-202411-764314082696_balance_after_thb\":\"\",\"L1_BT-202411-764314082696_description\":\"\",\"L1_BT-202411-764314082696_account_id\":\"\"}}"
+}

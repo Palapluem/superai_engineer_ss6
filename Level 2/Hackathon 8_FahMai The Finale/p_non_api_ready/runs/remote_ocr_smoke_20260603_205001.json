@@ -1,0 +1,63 @@
+{
+  "endpoint": "http://127.0.0.1:8000/ocr",
+  "request_id": "BS-BBL-OPER-2567-11",
+  "files": [
+    {
+      "role": "header",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-11\\BS-BBL-OPER-2567-11_header.png",
+      "bytes": 93148,
+      "base64_chars": 124200,
+      "mime_type": "image/png",
+      "sha256": "781b100e495c41f029e4bdddd42f7de71db9b479fc7283936031ef01c5e8162c"
+    },
+    {
+      "role": "transaction_1",
+      "path": "C:\\Users\\CPE KMUTT\\Documents\\GitHub\\superai_engineer_ss6\\Level 2\\Hackathon 8_FahMai The Finale\\super-ai-engineer-season-6-fah-mai-the-finale-ocr\\fahmai_renders_with_json\\renders\\bank_statement\\2024-11\\BS-BBL-OPER-2567-11_transactions_p1.png",
+      "bytes": 99759,
+      "base64_chars": 133012,
+      "mime_type": "image/png",
+      "sha256": "58a3177a1181c80efcc6a709d5ab648617f8522e40ae23472f495121b4c72a9e"
+    }
+  ],
+  "summary": {
+    "http_status": 200,
+    "elapsed_seconds": 18.008,
+    "id": "BS-BBL-OPER-2567-11",
+    "answer_type": "dict",
+    "answer_fields": 11,
+    "nonempty_fields": 11,
+    "min_answer_fields": 1,
+    "min_nonempty_fields": 1,
+    "passed": true,
+    "answer_preview": {
+      "L0_account_id": "BBL-OPER",
+      "L0_bank": "BBL",
+      "L0_account_number": "003-1-00001-3",
+      "L0_account_role": "SAVINGS",
+      "L0_currency": "THB",
+      "L1_BT-202411-764314082696_business_event_date": "05-11-24",
+      "L1_BT-202411-764314082696_transaction_type": "Withdrawal",
+      "L1_BT-202411-764314082696_amount_thb": "500,000.00",
+      "L1_BT-202411-764314082696_balance_after_thb": "2,500,000.00",
+      "L1_BT-202411-764314082696_description": "โอนเงิน K PLUS",
+      "L1_BT-202411-764314082696_account_id": "BBL-OPER"
+    }
+  },
+  "response": {
+    "id": "BS-BBL-OPER-2567-11",
+    "answer": {
+      "L0_account_id": "BBL-OPER",
+      "L0_bank": "BBL",
+      "L0_account_number": "003-1-00001-3",
+      "L0_account_role": "SAVINGS",
+      "L0_currency": "THB",
+      "L1_BT-202411-764314082696_business_event_date": "05-11-24",
+      "L1_BT-202411-764314082696_transaction_type": "Withdrawal",
+      "L1_BT-202411-764314082696_amount_thb": "500,000.00",
+      "L1_BT-202411-764314082696_balance_after_thb": "2,500,000.00",
+      "L1_BT-202411-764314082696_description": "โอนเงิน K PLUS",
+      "L1_BT-202411-764314082696_account_id": "BBL-OPER"
+    }
+  },
+  "raw_response": "{\"id\":\"BS-BBL-OPER-2567-11\",\"answer\":{\"L0_account_id\":\"BBL-OPER\",\"L0_bank\":\"BBL\",\"L0_account_number\":\"003-1-00001-3\",\"L0_account_role\":\"SAVINGS\",\"L0_currency\":\"THB\",\"L1_BT-202411-764314082696_business_event_date\":\"05-11-24\",\"L1_BT-202411-764314082696_transaction_type\":\"Withdrawal\",\"L1_BT-202411-764314082696_amount_thb\":\"500,000.00\",\"L1_BT-202411-764314082696_balance_after_thb\":\"2,500,000.00\",\"L1_BT-202411-764314082696_description\":\"โอนเงิน K PLUS\",\"L1_BT-202411-764314082696_account_id\":\"BBL-OPER\"}}"
+}
