@@ -42,6 +42,12 @@ codex exec --sandbox workspace-write --cd "C:\Users\CPE KMUTT\Documents\GitHub\s
 - Runtime เป้าหมาย: [Kaggle / Colab / Local]
 - Dataset link/path: [ใส่ link หรือ path dataset]
 - Statement/path โจทย์: [ใส่รายละเอียดโจทย์ หรือ path ไฟล์โจทย์]
+- Problem instruction paste zone:
+  """
+  [แปะ instruction/statement ของโจทย์จริงทั้งหมดตรงนี้]
+  [เช่น background, task, input files, output format, metric, rules, constraints, leaderboard note]
+  [ถ้ามีหลายหน้า/หลาย section ให้แปะให้ครบ อย่าสรุปเองก่อน]
+  """
 - Output notebook path: [เช่น Level 2/Hackathon 9_5 Domains Hackathon/workspace/<domain>/<name>.ipynb]
 - Output submission path: [เช่น .../submission.csv หรือ /kaggle/working/submission.csv]
 - Metric ที่ใช้วัดผล: [accuracy / F1 / RMSE / MAE / mAP / BLEU / WER / custom]
@@ -51,6 +57,10 @@ codex exec --sandbox workspace-write --cd "C:\Users\CPE KMUTT\Documents\GitHub\s
 - Reference เก่า:
   - ใช้ SS5 เป็นหลักจาก `Level 2/Hackathon 9_5 Domains Hackathon/Preparation`
   - ใช้ SS4 เป็น reference รองถ้าหา pattern จาก SS5 ไม่เจอ
+- Notebook style reference:
+  - ให้รูปแบบ Markdown, ลำดับหัวข้อ, และโครง code cell ใกล้เคียงกับ notebook ใน `Level 1/Hackathon 4_5 Domains Hackathon`
+  - ใช้ style แบบ Level 1: title cell -> `# 1. Setup & Imports` -> `# 2. Data Loading & Initial Inspection` -> preprocessing/feature/model -> evaluation -> `# 6. Prediction & Submission Generation`
+  - Markdown อธิบายเป็นภาษาไทยกระชับเหมือน notebook Level 1 และ code แยก cell เป็นขั้นตอน ไม่ยัดทุกอย่างใน cell เดียว
 
 สิ่งที่ต้องการ:
 1. อ่านโจทย์และ dataset/sample submission
@@ -328,6 +338,16 @@ Baseline ที่ต้องมี:
 Notebook requirements:
 - ชื่อไฟล์: [output notebook path]
 - มี markdown title, task summary, metric, data paths
+- ใช้รูปแบบการเขียน Markdown และ code organization เหมือน notebook ตัวอย่างใน `Level 1/Hackathon 4_5 Domains Hackathon`
+- โครงหัวข้อควรใกล้เคียง Level 1:
+  1. `# 1. Setup & Imports`
+  2. `# 2. Data Loading & Initial Inspection`
+  3. `# 3. Data Preprocessing` หรือ domain-specific preparation
+  4. `# 4. Feature Engineering / Model Preparation`
+  5. `# 5. Model Training & Evaluation`
+  6. `# 6. Prediction & Submission Generation`
+- ทุก major section ต้องมี Markdown ภาษาไทยสั้น ๆ อธิบายว่า cell ถัดไปทำอะไรและทำเพื่ออะไร
+- Code style ให้เหมือน Level 1: ใช้ config/path cell ชัดเจน, `display(...)`/`print(...)` ตรวจ shape/head/value_counts, ใช้ `tqdm` เมื่อ loop ยาว, และเซฟ submission ตอนท้ายพร้อม print path
 - มี config cell รวม path/seed/runtime
 - มี cells:
   1. install/import
@@ -538,4 +558,3 @@ Reference:
 - path ต้องเหมาะกับ Kaggle/Colab ตามที่ระบุ
 - ถ้าไม่มั่นใจอย่าเดา ให้ inspect ไฟล์จริงก่อน
 ```
-
