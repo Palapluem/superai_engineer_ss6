@@ -157,6 +157,25 @@ cd "C:\Users\CPE KMUTT\Documents\GitHub\superai_engineer_ss6\Level 2\Hackathon 9
 ใช้ $post-mortem เขียน root cause analysis จาก repro, cause, fix, validation
 ```
 
+## Prompt Templates For 5 Domains
+
+ไฟล์ prompt พร้อมใช้สำหรับ Codex CLI ในวันสอบอยู่ที่:
+
+- `5_DOMAIN_PROMPT_HACK_1.md`
+- `5_DOMAIN_PROMPT_HACK_2.md`
+- `5_DOMAIN_PROMPT_HACK_3.md`
+- `5_DOMAIN_PROMPT_HACK_4.md`
+- `5_DOMAIN_PROMPT_HACK_5.md`
+
+ในไฟล์นั้นมี:
+
+- master prompt สำหรับเริ่มโจทย์ใหม่
+- resource block สำหรับใส่ dataset link/path, statement, runtime, output path
+- prompt แยก 5 domains: Data Science, Computer Vision, IoT, Signal Processing, NLP
+- prompt สำหรับสร้าง Kaggle/Colab notebook
+- prompt สำหรับตรวจ submission ก่อนส่งด้วย `$scrutinize`
+- prompt สำหรับ debug ด้วย `$debug-mantra`
+
 ## Notes For Claude Skills In Codex
 
 Codex ใช้ skill ที่มีโครง `SKILL.md` พร้อม YAML frontmatter `name` และ `description` ได้เหมือนกัน ถ้า skill ไม่มีคำสั่งเฉพาะ Claude หรือ script ที่ผูกกับ `~/.claude` โดยตรง
