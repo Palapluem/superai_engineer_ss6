@@ -1,0 +1,32 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 33,
+  "crop": "100exam_crops/q033/question_full.png",
+  "text": "ข้อใดเป็นความแดกต่างที่ชัดเจนระหว่าง single document summarization กับ mu\nข้อที33\nsummarizatian?",
+  "lines": [
+    {
+      "text": "ข้อใดเป็นความแดกต่างที่ชัดเจนระหว่าง single document summarization กับ mu",
+      "conf": 0.5235967626907151,
+      "x0": 160.0,
+      "y0": 35.0,
+      "x1": 937.0,
+      "y1": 79.0
+    },
+    {
+      "text": "ข้อที33",
+      "conf": 0.8828038174128057,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "summarizatian?",
+      "conf": 0.7822326877696509,
+      "x0": 164.0,
+      "y0": 78.0,
+      "x1": 334.0,
+      "y1": 104.0
+    }
+  ]
+}

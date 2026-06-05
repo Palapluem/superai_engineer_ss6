@@ -1,0 +1,99 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 71,
+  "crop": "exam03/question_crops/q071/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 35,
+      "y": 61,
+      "cy": 66,
+      "blue": 0,
+      "dark": 3,
+      "mean": 227.900826446281
+    },
+    {
+      "x": 35,
+      "y": 93,
+      "cy": 97,
+      "blue": 0,
+      "dark": 6,
+      "mean": 230.59504132231405
+    },
+    {
+      "x": 35,
+      "y": 124,
+      "cy": 129,
+      "blue": 0,
+      "dark": 2,
+      "mean": 227.49586776859505
+    },
+    {
+      "x": 35,
+      "y": 155,
+      "cy": 160,
+      "blue": 0,
+      "dark": 0,
+      "mean": 227.44628099173553
+    }
+  ],
+  "text": "วา]ฺสัญญาณฮนคใดคอไปนีเป็นสัญญาณฮนค continuous และ nonpenodic.\ndiscrete time fourier series (dtes]\nfourier seres ifs)\nfourier transform เfา\ndiscrete\nfoungr transfom {วtก\ntima",
+  "lines": [
+    {
+      "text": "วา]ฺสัญญาณฮนคใดคอไปนีเป็นสัญญาณฮนค continuous และ nonpenodic.",
+      "conf": 0.10909015580714056,
+      "x0": 22.0,
+      "y0": 22.0,
+      "x1": 438.0,
+      "y1": 48.0
+    },
+    {
+      "text": "discrete time fourier series (dtes]",
+      "conf": 0.27519712481032016,
+      "x0": 81.0,
+      "y0": 57.0,
+      "x1": 277.0,
+      "y1": 77.0
+    },
+    {
+      "text": "fourier seres ifs)",
+      "conf": 0.4123616433790953,
+      "x0": 83.0,
+      "y0": 89.0,
+      "x1": 185.0,
+      "y1": 107.0
+    },
+    {
+      "text": "fourier transform เfา",
+      "conf": 0.14230830835238747,
+      "x0": 83.0,
+      "y0": 121.0,
+      "x1": 207.0,
+      "y1": 141.0
+    },
+    {
+      "text": "discrete",
+      "conf": 0.6371452868615181,
+      "x0": 81.0,
+      "y0": 151.0,
+      "x1": 131.0,
+      "y1": 171.0
+    },
+    {
+      "text": "foungr transfom {วtก",
+      "conf": 0.511718637697205,
+      "x0": 159.0,
+      "y0": 151.0,
+      "x1": 297.0,
+      "y1": 171.0
+    },
+    {
+      "text": "tima",
+      "conf": 0.6507852673530579,
+      "x0": 128.10862680139027,
+      "y0": 151.27613156968445,
+      "x1": 163.89137319860973,
+      "y1": 171.72386843031555
+    }
+  ]
+}

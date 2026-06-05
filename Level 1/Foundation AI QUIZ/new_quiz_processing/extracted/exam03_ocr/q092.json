@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 92,
+  "crop": "exam03/question_crops/q092/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 35,
+      "y": 65,
+      "cy": 69,
+      "blue": 0,
+      "dark": 3,
+      "mean": 231.19834710743802
+    },
+    {
+      "x": 34,
+      "y": 97,
+      "cy": 102,
+      "blue": 0,
+      "dark": 8,
+      "mean": 226.41322314049586
+    },
+    {
+      "x": 34,
+      "y": 128,
+      "cy": 133,
+      "blue": 0,
+      "dark": 6,
+      "mean": 225.32231404958677
+    },
+    {
+      "x": 35,
+      "y": 160,
+      "cy": 164,
+      "blue": 0,
+      "dark": 3,
+      "mean": 229.38842975206612
+    }
+  ],
+  "text": "วดิต]ฺฺขอโดคอไปนิ้กลาวใดภกค้องสำพรับการห่า product sprint ระหว่าง data scientist และ data engineer\nา.สม\ndata scientist และ data engineer รวมกันหำความเช้าใจบ้อมุล\ndata scientist ..ละ data engineer ร่วมกันทำา modaling\ndata sciantist และ data engineer รวมกันประเม็นผลโมเดล\ndata scientist และ data engineer รวมกันทาความเขาใจธรกิจ",
+  "lines": [
+    {
+      "text": "วดิต]ฺฺขอโดคอไปนิ้กลาวใดภกค้องสำพรับการห่า product sprint ระหว่าง data scientist และ data engineer",
+      "conf": 0.1001155940036657,
+      "x0": 20.0,
+      "y0": 26.0,
+      "x1": 586.0,
+      "y1": 50.0
+    },
+    {
+      "text": "า.สม",
+      "conf": 0.046115580946207047,
+      "x0": 868.0081183353142,
+      "y0": 31.2073760108954,
+      "x1": 908.9918816646858,
+      "y1": 45.7926239891046
+    },
+    {
+      "text": "data scientist และ data engineer รวมกันหำความเช้าใจบ้อมุล",
+      "conf": 0.3736943504465518,
+      "x0": 83.0,
+      "y0": 61.0,
+      "x1": 399.0,
+      "y1": 81.0
+    },
+    {
+      "text": "data scientist ..ละ data engineer ร่วมกันทำา modaling",
+      "conf": 0.2923940354960021,
+      "x0": 81.0,
+      "y0": 93.0,
+      "x1": 369.0,
+      "y1": 113.0
+    },
+    {
+      "text": "data sciantist และ data engineer รวมกันประเม็นผลโมเดล",
+      "conf": 0.5161707155268312,
+      "x0": 80.0,
+      "y0": 122.0,
+      "x1": 384.0,
+      "y1": 146.0
+    },
+    {
+      "text": "data scientist และ data engineer รวมกันทาความเขาใจธรกิจ",
+      "conf": 0.4161780894714669,
+      "x0": 80.0,
+      "y0": 154.0,
+      "x1": 396.0,
+      "y1": 178.0
+    }
+  ]
+}

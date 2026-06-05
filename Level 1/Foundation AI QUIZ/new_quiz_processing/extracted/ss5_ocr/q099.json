@@ -1,0 +1,106 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 99,
+  "crop": "ss5/question_crops/q099/question_full.png",
+  "selected_index": null,
+  "selected_scores": [],
+  "text": "จงจับคู่คาทีมีความเกียวข้องก้นต่อไปนี้ให้ภูกต้อง\nข้าที่ 99\nrdbms\nmysol, mssol server\ntabular key val\ncassandra, hbase\ngraph db\nneo4], orientdb\nkey val cache\nmemcached, coherence\ndoc. db\nmongodb, couchdb",
+  "lines": [
+    {
+      "text": "จงจับคู่คาทีมีความเกียวข้องก้นต่อไปนี้ให้ภูกต้อง",
+      "conf": 0.36673980188054356,
+      "x0": 92.0,
+      "y0": 18.0,
+      "x1": 377.0,
+      "y1": 47.0
+    },
+    {
+      "text": "ข้าที่ 99",
+      "conf": 0.3026357513290557,
+      "x0": 28.0,
+      "y0": 20.0,
+      "x1": 76.0,
+      "y1": 44.0
+    },
+    {
+      "text": "rdbms",
+      "conf": 0.9599141412285276,
+      "x0": 362.0,
+      "y0": 84.0,
+      "x1": 424.0,
+      "y1": 108.0
+    },
+    {
+      "text": "mysol, mssol server",
+      "conf": 0.7556561821230375,
+      "x0": 904.0,
+      "y0": 84.0,
+      "x1": 1072.0,
+      "y1": 108.0
+    },
+    {
+      "text": "tabular key val",
+      "conf": 0.5103931843233205,
+      "x0": 336.0,
+      "y0": 176.0,
+      "x1": 450.0,
+      "y1": 202.0
+    },
+    {
+      "text": "cassandra, hbase",
+      "conf": 0.8991035588837916,
+      "x0": 923.0,
+      "y0": 177.0,
+      "x1": 1053.0,
+      "y1": 197.0
+    },
+    {
+      "text": "graph db",
+      "conf": 0.5641338965136825,
+      "x0": 354.0,
+      "y0": 268.0,
+      "x1": 430.0,
+      "y1": 294.0
+    },
+    {
+      "text": "neo4], orientdb",
+      "conf": 0.8250449981266105,
+      "x0": 924.0,
+      "y0": 268.0,
+      "x1": 1048.0,
+      "y1": 292.0
+    },
+    {
+      "text": "key val cache",
+      "conf": 0.4931415082860358,
+      "x0": 340.0,
+      "y0": 360.0,
+      "x1": 446.0,
+      "y1": 386.0
+    },
+    {
+      "text": "memcached, coherence",
+      "conf": 0.6837990442583797,
+      "x0": 898.0,
+      "y0": 360.0,
+      "x1": 1076.0,
+      "y1": 384.0
+    },
+    {
+      "text": "doc. db",
+      "conf": 0.6078934197201742,
+      "x0": 360.0,
+      "y0": 452.0,
+      "x1": 424.0,
+      "y1": 476.0
+    },
+    {
+      "text": "mongodb, couchdb",
+      "conf": 0.6445023766923151,
+      "x0": 910.0,
+      "y0": 452.0,
+      "x1": 1064.0,
+      "y1": 478.0
+    }
+  ]
+}

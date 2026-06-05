@@ -1,0 +1,45 @@
+{
+  "verified_unique_count": 255,
+  "duplicate_count": 36,
+  "all_source_unique_estimate": 638,
+  "all_source_duplicate_threshold": 0.85,
+  "all_source_likely_duplicate_count": 17,
+  "all_source_summary": {
+    "SS5": {
+      "new_or_unmatched": 95,
+      "likely_duplicate": 5
+    },
+    "Exam02": {
+      "new_or_unmatched": 96,
+      "likely_duplicate": 4
+    },
+    "Exam03": {
+      "new_or_unmatched": 100,
+      "likely_duplicate": 0
+    },
+    "100Exam": {
+      "new_or_unmatched": 92,
+      "likely_duplicate": 8
+    }
+  },
+  "sources": {
+    "SuperAI SS6_Foundation AI QUIZ.pdf": 100,
+    "SuperAI SS5_Foundation AI QUIZ.pdf OCR/crop appendix": 100,
+    "ข้อสอบชุด1.pdf": 91,
+    "[เฉลย] ข้อสอบ แยกหมวด.pdf": 100,
+    "Exam02.pdf OCR/crop appendix": 100,
+    "Exam03.pdf OCR/crop appendix": 100,
+    "100Exam_Lv1.pdf OCR/crop appendix": 100,
+    "test_korka_compressed.pdf title index": 105,
+    "Quiz-92 score.docx/pdf": "answer-audit resource, not a separate full question set",
+    "รวมข้อสอบSS6.txt": "text source for SS6 questions"
+  },
+  "ss5_likely_duplicate_count": 2,
+  "exam02_likely_duplicate_count": 0,
+  "exam03_likely_duplicate_count": 0,
+  "100exam_likely_duplicate_count": 3,
+  "known_source_corrections": [
+    "K1-035",
+    "K1-047"
+  ]
+}

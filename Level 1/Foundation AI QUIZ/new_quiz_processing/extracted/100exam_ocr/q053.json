@@ -1,0 +1,16 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 53,
+  "crop": "100exam_crops/q053/question_full.png",
+  "text": "ข้อที 53",
+  "lines": [
+    {
+      "text": "ข้อที 53",
+      "conf": 0.7354600059647479,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    }
+  ]
+}

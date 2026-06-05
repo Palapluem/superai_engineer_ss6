@@ -1,0 +1,99 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 37,
+  "crop": "exam03/question_crops/q037/question_full.png",
+  "selected_index": 1,
+  "selected_scores": [
+    {
+      "x": 75,
+      "y": 31,
+      "cy": 36,
+      "blue": 0,
+      "dark": 35,
+      "mean": 191.06611570247935
+    },
+    {
+      "x": 33,
+      "y": 64,
+      "cy": 69,
+      "blue": 0,
+      "dark": 2,
+      "mean": 224.78512396694214
+    },
+    {
+      "x": 33,
+      "y": 95,
+      "cy": 100,
+      "blue": 0,
+      "dark": 0,
+      "mean": 225.70247933884298
+    },
+    {
+      "x": 33,
+      "y": 127,
+      "cy": 132,
+      "blue": 0,
+      "dark": 1,
+      "mean": 224.41322314049586
+    },
+    {
+      "x": 34,
+      "y": 160,
+      "cy": 164,
+      "blue": 0,
+      "dark": 3,
+      "mean": 227.84297520661158
+    }
+  ],
+  "text": "สำหรับผุทีสนฺโจการแปลภาษาจากภาะาไทยเป็นภาษาลาว วิธีใดเปินวิธ์การแปลภาษาทีเหมาะสม\nเอที37\ndirect machine trenslation\nexample based machine translation\ntransfer based machins traาs ation\nnaura/ maching translation",
+  "lines": [
+    {
+      "text": "สำหรับผุทีสนฺโจการแปลภาษาจากภาะาไทยเป็นภาษาลาว วิธีใดเปินวิธ์การแปลภาษาทีเหมาะสม",
+      "conf": 0.15779184658687123,
+      "x0": 70.0,
+      "y0": 24.0,
+      "x1": 553.0,
+      "y1": 48.0
+    },
+    {
+      "text": "เอที37",
+      "conf": 0.12101338057813232,
+      "x0": 27.0,
+      "y0": 29.0,
+      "x1": 61.0,
+      "y1": 43.0
+    },
+    {
+      "text": "direct machine trenslation",
+      "conf": 0.4251860210941619,
+      "x0": 81.0,
+      "y0": 59.0,
+      "x1": 233.0,
+      "y1": 79.0
+    },
+    {
+      "text": "example based machine translation",
+      "conf": 0.4275716768821575,
+      "x0": 79.0,
+      "y0": 91.0,
+      "x1": 281.0,
+      "y1": 111.0
+    },
+    {
+      "text": "transfer based machins traาs ation",
+      "conf": 0.21645071057623402,
+      "x0": 79.0,
+      "y0": 123.0,
+      "x1": 279.0,
+      "y1": 143.0
+    },
+    {
+      "text": "naura/ maching translation",
+      "conf": 0.3014876124714399,
+      "x0": 79.0,
+      "y0": 155.0,
+      "x1": 237.0,
+      "y1": 175.0
+    }
+  ]
+}

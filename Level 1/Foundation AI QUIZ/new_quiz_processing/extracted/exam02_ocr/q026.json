@@ -1,0 +1,115 @@
+{
+  "source": "EXAM02.pdf",
+  "number": 26,
+  "crop": "exam02/question_crops/q026/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "x": 33,
+      "y": 111,
+      "cy": 116,
+      "blue": 0,
+      "dark": 1,
+      "mean": 225.63636363636363
+    },
+    {
+      "x": 33,
+      "y": 146,
+      "cy": 151,
+      "blue": 0,
+      "dark": 0,
+      "mean": 225.3801652892562
+    },
+    {
+      "x": 33,
+      "y": 182,
+      "cy": 187,
+      "blue": 0,
+      "dark": 2,
+      "mean": 224.5785123966942
+    },
+    {
+      "x": 33,
+      "y": 218,
+      "cy": 223,
+      "blue": 91,
+      "dark": 26,
+      "mean": 181.22314049586777
+    }
+  ],
+  "text": "ในการทำ topic modeling ด้วยวิธี latent dirichlet allocation (lda) มิการสมมุดิและคำนวณหาคาการแจกแ.จง\nออที26\n:บฝ่าลอบ\n(distribution) พลายประเภท.เพิวทาพัวขวทิเหมาะสมของเอกสาร การแจงแจกในข์อใดทิสามารถรไดจากเอกสารใน\nทันทิ (observed)?\nword distribution for a topic\nper-topic word distributions\ntopic distribution for a document\nword distribution for a document",
+  "lines": [
+    {
+      "text": "ในการทำ topic modeling ด้วยวิธี latent dirichlet allocation (lda) มิการสมมุดิและคำนวณหาคาการแจกแ.จง",
+      "conf": 0.2640912023168251,
+      "x0": 74.0,
+      "y0": 26.0,
+      "x1": 710.0,
+      "y1": 52.0
+    },
+    {
+      "text": "ออที26",
+      "conf": 0.24393568463346235,
+      "x0": 19.0,
+      "y0": 27.0,
+      "x1": 63.0,
+      "y1": 47.0
+    },
+    {
+      "text": ":บฝ่าลอบ",
+      "conf": 0.15136292074960186,
+      "x0": 863.0,
+      "y0": 33.0,
+      "x1": 911.0,
+      "y1": 47.0
+    },
+    {
+      "text": "(distribution) พลายประเภท.เพิวทาพัวขวทิเหมาะสมของเอกสาร การแจงแจกในข์อใดทิสามารถรไดจากเอกสารใน",
+      "conf": 0.2977863974126052,
+      "x0": 73.0,
+      "y0": 48.0,
+      "x1": 720.0,
+      "y1": 72.0
+    },
+    {
+      "text": "ทันทิ (observed)?",
+      "conf": 0.679656698575807,
+      "x0": 74.0,
+      "y0": 70.0,
+      "x1": 188.0,
+      "y1": 94.0
+    },
+    {
+      "text": "word distribution for a topic",
+      "conf": 0.5287911101582933,
+      "x0": 84.0,
+      "y0": 106.0,
+      "x1": 270.0,
+      "y1": 130.0
+    },
+    {
+      "text": "per-topic word distributions",
+      "conf": 0.6986814000088856,
+      "x0": 86.0,
+      "y0": 142.0,
+      "x1": 266.0,
+      "y1": 166.0
+    },
+    {
+      "text": "topic distribution for a document",
+      "conf": 0.4016974792938581,
+      "x0": 86.0,
+      "y0": 178.0,
+      "x1": 302.0,
+      "y1": 202.0
+    },
+    {
+      "text": "word distribution for a document",
+      "conf": 0.6542311124903337,
+      "x0": 85.0,
+      "y0": 215.0,
+      "x1": 301.0,
+      "y1": 235.0
+    }
+  ]
+}

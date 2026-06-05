@@ -1,0 +1,115 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 29,
+  "crop": "exam03/question_crops/q029/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 30,
+      "y": 84,
+      "cy": 89,
+      "blue": 0,
+      "dark": 3,
+      "mean": 225.17355371900825
+    },
+    {
+      "x": 30,
+      "y": 116,
+      "cy": 121,
+      "blue": 0,
+      "dark": 4,
+      "mean": 225.76859504132233
+    },
+    {
+      "x": 30,
+      "y": 148,
+      "cy": 153,
+      "blue": 0,
+      "dark": 4,
+      "mean": 226.900826446281
+    },
+    {
+      "x": 30,
+      "y": 180,
+      "cy": 184,
+      "blue": 0,
+      "dark": 2,
+      "mean": 229.17355371900825
+    }
+  ],
+  "text": "โมการหำ topic moceling ค่วยวิธี latent dirichlet allocation (lda) มิการสมมุติและคำนวณฺหาคาการแจกแจง (cistrisution)\nยaที29\"\nสมศายาม\nหลายประเภทเพือพาหัวย้อทีเพมาะสมของเอกสาร การแจงแจกโนขอโลทสามารภรุ.ค์จาภเอกสารในทันที fobserved)?\nword cistribution fcr a topic\nword distrbution for\ncccumant\nfer topic werd distributions\ntopic distnbution for a document",
+  "lines": [
+    {
+      "text": "โมการหำ topic moceling ค่วยวิธี latent dirichlet allocation (lda) มิการสมมุติและคำนวณฺหาคาการแจกแจง (cistrisution)",
+      "conf": 0.17192471395797673,
+      "x0": 66.0,
+      "y0": 27.0,
+      "x1": 704.0,
+      "y1": 52.0
+    },
+    {
+      "text": "ยaที29\"",
+      "conf": 0.08495642411577899,
+      "x0": 17.0,
+      "y0": 29.0,
+      "x1": 59.0,
+      "y1": 47.0
+    },
+    {
+      "text": "สมศายาม",
+      "conf": 0.056621455733480965,
+      "x0": 875.0,
+      "y0": 35.0,
+      "x1": 917.0,
+      "y1": 47.0
+    },
+    {
+      "text": "หลายประเภทเพือพาหัวย้อทีเพมาะสมของเอกสาร การแจงแจกโนขอโลทสามารภรุ.ค์จาภเอกสารในทันที fobserved)?",
+      "conf": 0.19259399188834064,
+      "x0": 68.0,
+      "y0": 47.0,
+      "x1": 658.0,
+      "y1": 71.0
+    },
+    {
+      "text": "word cistribution fcr a topic",
+      "conf": 0.3729499189948653,
+      "x0": 79.0,
+      "y0": 81.0,
+      "x1": 241.0,
+      "y1": 101.0
+    },
+    {
+      "text": "word distrbution for",
+      "conf": 0.5364229669206996,
+      "x0": 77.0,
+      "y0": 111.0,
+      "x1": 201.0,
+      "y1": 131.0
+    },
+    {
+      "text": "cccumant",
+      "conf": 0.6451212134720123,
+      "x0": 207.0,
+      "y0": 115.0,
+      "x1": 269.0,
+      "y1": 131.0
+    },
+    {
+      "text": "fer topic werd distributions",
+      "conf": 0.5385294713697915,
+      "x0": 79.0,
+      "y0": 145.0,
+      "x1": 237.0,
+      "y1": 165.0
+    },
+    {
+      "text": "topic distnbution for a document",
+      "conf": 0.36412503350781217,
+      "x0": 76.0,
+      "y0": 174.0,
+      "x1": 268.0,
+      "y1": 198.0
+    }
+  ]
+}

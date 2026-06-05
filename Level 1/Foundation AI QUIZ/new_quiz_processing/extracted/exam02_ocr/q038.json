@@ -1,0 +1,99 @@
+{
+  "source": "EXAM02.pdf",
+  "number": 38,
+  "crop": "exam02/question_crops/q038/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "x": 33,
+      "y": 66,
+      "cy": 71,
+      "blue": 0,
+      "dark": 0,
+      "mean": 225.97520661157026
+    },
+    {
+      "x": 33,
+      "y": 102,
+      "cy": 107,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.32231404958677
+    },
+    {
+      "x": 33,
+      "y": 138,
+      "cy": 143,
+      "blue": 96,
+      "dark": 27,
+      "mean": 180.50413223140495
+    },
+    {
+      "x": 33,
+      "y": 174,
+      "cy": 179,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.23140495867767
+    }
+  ],
+  "text": "สำหรับผูที่สมใจการแปลภาษาจากกาษาไหแเป็นภาษาลาว ายใดเป็นวิธการแปลภาษาที่เทบาะสบ\nปอฟ38\nอบฝ่าคอบ\ndirect machine translation\ntransfer based machine translation\nexample based machine translation\nneural machine translation",
+  "lines": [
+    {
+      "text": "สำหรับผูที่สมใจการแปลภาษาจากกาษาไหแเป็นภาษาลาว ายใดเป็นวิธการแปลภาษาที่เทบาะสบ",
+      "conf": 0.11947001938943408,
+      "x0": 74.0,
+      "y0": 22.0,
+      "x1": 620.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ปอฟ38",
+      "conf": 0.1680833657240951,
+      "x0": 19.0,
+      "y0": 25.0,
+      "x1": 63.0,
+      "y1": 45.0
+    },
+    {
+      "text": "อบฝ่าคอบ",
+      "conf": 0.49740659615999194,
+      "x0": 861.0,
+      "y0": 29.0,
+      "x1": 911.0,
+      "y1": 43.0
+    },
+    {
+      "text": "direct machine translation",
+      "conf": 0.830844364755772,
+      "x0": 87.0,
+      "y0": 63.0,
+      "x1": 257.0,
+      "y1": 83.0
+    },
+    {
+      "text": "transfer based machine translation",
+      "conf": 0.6845955068795483,
+      "x0": 87.0,
+      "y0": 99.0,
+      "x1": 309.0,
+      "y1": 119.0
+    },
+    {
+      "text": "example based machine translation",
+      "conf": 0.9306452483093798,
+      "x0": 86.0,
+      "y0": 134.0,
+      "x1": 314.0,
+      "y1": 158.0
+    },
+    {
+      "text": "neural machine translation",
+      "conf": 0.8208945002916979,
+      "x0": 87.0,
+      "y0": 171.0,
+      "x1": 261.0,
+      "y1": 191.0
+    }
+  ]
+}

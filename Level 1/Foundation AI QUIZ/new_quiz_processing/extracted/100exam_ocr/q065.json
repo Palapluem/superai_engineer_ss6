@@ -1,0 +1,40 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 65,
+  "crop": "100exam_crops/q065/question_full.png",
+  "text": "ภาพนี่เป็นหนึ่งในขั้นตอนของเทคนิค surface reconstruction แบบใด\nข่อที 65\nตา\npoisson surface reconstruction",
+  "lines": [
+    {
+      "text": "ภาพนี่เป็นหนึ่งในขั้นตอนของเทคนิค surface reconstruction แบบใด",
+      "conf": 0.5214672556943587,
+      "x0": 159.0,
+      "y0": 31.0,
+      "x1": 811.0,
+      "y1": 75.0
+    },
+    {
+      "text": "ข่อที 65",
+      "conf": 0.8130387783382377,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "ตา",
+      "conf": 0.2578886291099511,
+      "x0": 168.0,
+      "y0": 96.0,
+      "x1": 410.0,
+      "y1": 320.0
+    },
+    {
+      "text": "poisson surface reconstruction",
+      "conf": 0.8058516376999384,
+      "x0": 181.0,
+      "y0": 363.0,
+      "x1": 499.0,
+      "y1": 399.0
+    }
+  ]
+}

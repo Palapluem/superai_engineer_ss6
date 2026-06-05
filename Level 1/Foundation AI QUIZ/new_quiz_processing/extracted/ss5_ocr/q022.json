@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 22,
+  "crop": "ss5/question_crops/q022/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.320987654321
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.01234567901236
+    },
+    {
+      "y": 155,
+      "dark": 28,
+      "mean": 164.3827160493827
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.2962962962963
+    }
+  ],
+  "text": "ข้อใดเปืนข้อแตกต่างทีสาคัญที่สุดระหว่าง jupyter notebook และ google colab\nข้าที่22\nลบค่ำตอบ\njupyter notebook รองรับเฉพาะภาษา python ในขณะที google colab รองรับหลายภาษา\njupyter notebook ต้องเสียค่าใข้จ่าย ส่วน google colab ใช้งานไค้ฟรีเท่านั้น\njupyter notebook ท่างานบนเครืองคอมพิวเตอร์ของผู่ใช้ ส่วน google colab ทำงานบนระบบคลาวด์\njupyter notebook มีฟีเจอร์ interactive output ในขณะที่ google colab ไม่มี",
+  "lines": [
+    {
+      "text": "ข้อใดเปืนข้อแตกต่างทีสาคัญที่สุดระหว่าง jupyter notebook และ google colab",
+      "conf": 0.6455878896730322,
+      "x0": 89.0,
+      "y0": 17.0,
+      "x1": 596.0,
+      "y1": 49.0
+    },
+    {
+      "text": "ข้าที่22",
+      "conf": 0.6691479378850177,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่ำตอบ",
+      "conf": 0.6097268963133436,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "jupyter notebook รองรับเฉพาะภาษา python ในขณะที google colab รองรับหลายภาษา",
+      "conf": 0.45269190566731743,
+      "x0": 102.0,
+      "y0": 60.0,
+      "x1": 676.0,
+      "y1": 90.0
+    },
+    {
+      "text": "jupyter notebook ต้องเสียค่าใข้จ่าย ส่วน google colab ใช้งานไค้ฟรีเท่านั้น",
+      "conf": 0.6063705972973278,
+      "x0": 101.0,
+      "y0": 99.0,
+      "x1": 590.0,
+      "y1": 131.0
+    },
+    {
+      "text": "jupyter notebook ท่างานบนเครืองคอมพิวเตอร์ของผู่ใช้ ส่วน google colab ทำงานบนระบบคลาวด์",
+      "conf": 0.37002060476102117,
+      "x0": 102.0,
+      "y0": 142.0,
+      "x1": 728.0,
+      "y1": 172.0
+    },
+    {
+      "text": "jupyter notebook มีฟีเจอร์ interactive output ในขณะที่ google colab ไม่มี",
+      "conf": 0.4568825516636672,
+      "x0": 101.0,
+      "y0": 181.0,
+      "x1": 610.0,
+      "y1": 213.0
+    }
+  ]
+}

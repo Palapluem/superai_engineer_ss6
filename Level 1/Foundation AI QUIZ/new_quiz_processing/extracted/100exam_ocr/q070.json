@@ -1,0 +1,56 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 70,
+  "crop": "100exam_crops/q070/question_full.png",
+  "text": "mse คืออะไร\nข้อที 70\nminimum signal energy\nmean squared error\nminimum signal error\nmean squared energy",
+  "lines": [
+    {
+      "text": "mse คืออะไร",
+      "conf": 0.9304298094883067,
+      "x0": 163.0,
+      "y0": 37.0,
+      "x1": 299.0,
+      "y1": 75.0
+    },
+    {
+      "text": "ข้อที 70",
+      "conf": 0.6435049583818631,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "minimum signal energy",
+      "conf": 0.844276680839726,
+      "x0": 180.0,
+      "y0": 103.0,
+      "x1": 434.0,
+      "y1": 146.0
+    },
+    {
+      "text": "mean squared error",
+      "conf": 0.9770344806474736,
+      "x0": 181.0,
+      "y0": 169.0,
+      "x1": 395.0,
+      "y1": 207.0
+    },
+    {
+      "text": "minimum signal error",
+      "conf": 0.7277253789435582,
+      "x0": 181.0,
+      "y0": 233.0,
+      "x1": 413.0,
+      "y1": 273.0
+    },
+    {
+      "text": "mean squared energy",
+      "conf": 0.8997668718282619,
+      "x0": 181.0,
+      "y0": 297.0,
+      "x1": 418.0,
+      "y1": 341.0
+    }
+  ]
+}

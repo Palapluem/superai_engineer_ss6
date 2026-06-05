@@ -1,0 +1,56 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 91,
+  "crop": "100exam_crops/q091/question_full.png",
+  "text": "clustering ถือเป็น machine learning ประเภทใด?\nข้อที91\nreinforcement learning\nsupervised learning\nไม่มีข้อใดถูก\nunsupervised learning",
+  "lines": [
+    {
+      "text": "clustering ถือเป็น machine learning ประเภทใด?",
+      "conf": 0.5101657926256219,
+      "x0": 158.0,
+      "y0": 32.0,
+      "x1": 644.0,
+      "y1": 81.0
+    },
+    {
+      "text": "ข้อที91",
+      "conf": 0.8743705052866215,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 138.0,
+      "y1": 70.0
+    },
+    {
+      "text": "reinforcement learning",
+      "conf": 0.8662794120216196,
+      "x0": 178.0,
+      "y0": 97.0,
+      "x1": 434.0,
+      "y1": 145.0
+    },
+    {
+      "text": "supervised learning",
+      "conf": 0.4564223189993642,
+      "x0": 177.0,
+      "y0": 161.0,
+      "x1": 397.0,
+      "y1": 209.0
+    },
+    {
+      "text": "ไม่มีข้อใดถูก",
+      "conf": 0.8268757040036334,
+      "x0": 176.0,
+      "y0": 224.0,
+      "x1": 309.0,
+      "y1": 269.0
+    },
+    {
+      "text": "unsupervised learning",
+      "conf": 0.6874907331553071,
+      "x0": 178.0,
+      "y0": 291.0,
+      "x1": 422.0,
+      "y1": 336.0
+    }
+  ]
+}

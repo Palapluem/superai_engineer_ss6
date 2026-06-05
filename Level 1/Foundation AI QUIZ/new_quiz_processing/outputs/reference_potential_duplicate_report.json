@@ -1,0 +1,51 @@
+{
+  "SS5": [
+    {
+      "ss5": "SS5-040",
+      "best_match": "K1-024",
+      "best_unique_id": "U123",
+      "score": 0.969,
+      "ss5_hint": "เหตุใดเมือนำ pca ไปประยุกต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงทีหลากหลาย เมือการเลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใข้แล้วก ลับไค้ประสิทธิภาพสูง",
+      "matched_question": "เหตุใดเมื่อน่า PCA ไปประยุคต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลาย เมื่อการ เลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง"
+    },
+    {
+      "ss5": "SS5-069",
+      "best_match": "K1-029",
+      "best_unique_id": "U128",
+      "score": 0.955,
+      "ss5_hint": "ในการทคสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก confusion matrix แสดงให้เห็นว่ามี false alarm (false positive) สูงมาก แต่ค่า miss (false negative) ตำจากสถานการณ์นี้ ข้อใดเปินการแปลความหมายและข้อเสนอแนะที่เหมาะสมทีสุด",
+      "matched_question": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก Confusion Matrix แสดงให้เห็นว่ามี False Alarm (False Positive) สูงมาn uain Miss (False Negative) Rin จากสถานการณ์นี้ ข้อใดเป็นการแปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด"
+    }
+  ],
+  "Exam02": [],
+  "Exam03": [],
+  "100Exam": [
+    {
+      "ref": "100EX-022",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "CAT-060",
+      "best_unique_id": "U213",
+      "score": 0.926,
+      "hint": "max pooling layer สามารถเพิ่มความลึกของโครงข่ายได่โดยไม่เพิ่มจานวนพารามิเต ข่อที 22 (trainable parameter)",
+      "matched_question": "Max pooling layer สามารถเพิ่มความลึกของโครงข่ายได้โดยไม่เพิ่มจำนวนพารามิเตอร์ที่ต้องฝึกฝน (Trainable parameter)"
+    },
+    {
+      "ref": "100EX-035",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "K1-091",
+      "best_unique_id": "U189",
+      "score": 0.916,
+      "hint": "transfer learning แบ่งการเรียนรูเป็น 2 ครั้ง คือ pre-training และ post -training ข้อที 35 true",
+      "matched_question": "Transfer Learning แบ่งการเรียนรู้เป็น 2 ครั้ง คือ Pre-traingและ Post-training"
+    },
+    {
+      "ref": "100EX-086",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "CAT-027",
+      "best_unique_id": "U254",
+      "score": 0.903,
+      "hint": "ท่าไมในการออกแบบระบบ microservice ถึงควรจะหลีกเลียงการสื่อสารระหว่าง seri ข้อที 86 synchronous",
+      "matched_question": "ในการออกแบบระบบ microservice ถึงควรจะหลีกเลี่ยงการสื่อสารระหว่าง service แบบ Synchronous"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 31,
+  "crop": "exam03/question_crops/q031/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 27,
+      "y": 65,
+      "cy": 70,
+      "blue": 0,
+      "dark": 7,
+      "mean": 225.97520661157026
+    },
+    {
+      "x": 27,
+      "y": 96,
+      "cy": 101,
+      "blue": 0,
+      "dark": 2,
+      "mean": 225.82644628099175
+    },
+    {
+      "x": 27,
+      "y": 129,
+      "cy": 133,
+      "blue": 0,
+      "dark": 5,
+      "mean": 228.88429752066116
+    },
+    {
+      "x": 27,
+      "y": 160,
+      "cy": 165,
+      "blue": 0,
+      "dark": 3,
+      "mean": 226.32231404958677
+    }
+  ],
+  "text": "aท31) ข่อใคจัดเปืน named entity ประเภท organization ทั่งหยด?\ngthic group. spcrt organization\nmilitar. geopolitical entity (gpe)\ncompany. fggion\ngcvernment. acdres5",
+  "lines": [
+    {
+      "text": "aท31) ข่อใคจัดเปืน named entity ประเภท organization ทั่งหยด?",
+      "conf": 0.1433546940888109,
+      "x0": 12.0,
+      "y0": 26.0,
+      "x1": 370.0,
+      "y1": 52.0
+    },
+    {
+      "text": "gthic group. spcrt organization",
+      "conf": 0.5245044384121236,
+      "x0": 72.0,
+      "y0": 60.0,
+      "x1": 256.0,
+      "y1": 84.0
+    },
+    {
+      "text": "militar. geopolitical entity (gpe)",
+      "conf": 0.22236557693341502,
+      "x0": 73.0,
+      "y0": 93.0,
+      "x1": 259.0,
+      "y1": 113.0
+    },
+    {
+      "text": "company. fggion",
+      "conf": 0.38835390745613807,
+      "x0": 75.0,
+      "y0": 125.0,
+      "x1": 177.0,
+      "y1": 145.0
+    },
+    {
+      "text": "gcvernment. acdres5",
+      "conf": 0.2513308225355342,
+      "x0": 77.0,
+      "y0": 159.0,
+      "x1": 199.0,
+      "y1": 175.0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 64,
+  "crop": "100exam_crops/q064/question_full.png",
+  "text": "ภาพใดคือตัวอย่างของ implicit surface reconstruction\nข้อที 64",
+  "lines": [
+    {
+      "text": "ภาพใดคือตัวอย่างของ implicit surface reconstruction",
+      "conf": 0.6089029544579817,
+      "x0": 161.0,
+      "y0": 37.0,
+      "x1": 691.0,
+      "y1": 79.0
+    },
+    {
+      "text": "ข้อที 64",
+      "conf": 0.9427648115819057,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    }
+  ]
+}

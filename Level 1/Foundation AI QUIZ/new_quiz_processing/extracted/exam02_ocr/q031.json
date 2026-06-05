@@ -1,0 +1,107 @@
+{
+  "source": "EXAM02.pdf",
+  "number": 31,
+  "crop": "exam02/question_crops/q031/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "x": 30,
+      "y": 89,
+      "cy": 94,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.1818181818182
+    },
+    {
+      "x": 30,
+      "y": 125,
+      "cy": 130,
+      "blue": 0,
+      "dark": 1,
+      "mean": 226.4297520661157
+    },
+    {
+      "x": 30,
+      "y": 160,
+      "cy": 165,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.0082644628099
+    },
+    {
+      "x": 30,
+      "y": 196,
+      "cy": 201,
+      "blue": 92,
+      "dark": 25,
+      "mean": 182.58677685950414
+    }
+  ],
+  "text": "ทากเราทาการดัดคาด่วย markov model ข้อโดคือแบบจ่าลอง2 คาดิคค่อ bigram.) ที่เปินไปได้ของประโยค\nออที31\nสมฝาสอบ\ncodisnowhere\npcod) pais) pno) prwaere)\npwhere) p(n0 | whfre) pais | no) prgod |is no)\npcod) pfis | cod) pno | god is) pwhere | god is no)\npcod) puis | god) pno |is) powhere | no)",
+  "lines": [
+    {
+      "text": "ทากเราทาการดัดคาด่วย markov model ข้อโดคือแบบจ่าลอง2 คาดิคค่อ bigram.) ที่เปินไปได้ของประโยค",
+      "conf": 0.15374308824451108,
+      "x0": 72.0,
+      "y0": 23.0,
+      "x1": 686.0,
+      "y1": 52.0
+    },
+    {
+      "text": "ออที31",
+      "conf": 0.5106278321329595,
+      "x0": 17.0,
+      "y0": 27.0,
+      "x1": 61.0,
+      "y1": 47.0
+    },
+    {
+      "text": "สมฝาสอบ",
+      "conf": 0.15490116625177872,
+      "x0": 863.0,
+      "y0": 33.0,
+      "x1": 913.0,
+      "y1": 47.0
+    },
+    {
+      "text": "codisnowhere",
+      "conf": 0.6549737190841811,
+      "x0": 72.0,
+      "y0": 49.0,
+      "x1": 188.0,
+      "y1": 69.0
+    },
+    {
+      "text": "pcod) pais) pno) prwaere)",
+      "conf": 0.262068848489084,
+      "x0": 82.0,
+      "y0": 82.0,
+      "x1": 278.0,
+      "y1": 106.0
+    },
+    {
+      "text": "pwhere) p(n0 | whfre) pais | no) prgod |is no)",
+      "conf": 0.14785445807028344,
+      "x0": 82.0,
+      "y0": 118.0,
+      "x1": 414.0,
+      "y1": 144.0
+    },
+    {
+      "text": "pcod) pfis | cod) pno | god is) pwhere | god is no)",
+      "conf": 0.21572329490537231,
+      "x0": 82.0,
+      "y0": 154.0,
+      "x1": 456.0,
+      "y1": 178.0
+    },
+    {
+      "text": "pcod) puis | god) pno |is) powhere | no)",
+      "conf": 0.10055367988000602,
+      "x0": 82.0,
+      "y0": 190.0,
+      "x1": 374.0,
+      "y1": 214.0
+    }
+  ]
+}

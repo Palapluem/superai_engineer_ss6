@@ -1,0 +1,177 @@
+{
+  "threshold": 0.85,
+  "all_source_unique_estimate": 638,
+  "summary": {
+    "SS5": {
+      "new_or_unmatched": 95,
+      "likely_duplicate": 5
+    },
+    "Exam02": {
+      "new_or_unmatched": 96,
+      "likely_duplicate": 4
+    },
+    "Exam03": {
+      "new_or_unmatched": 100,
+      "likely_duplicate": 0
+    },
+    "100Exam": {
+      "new_or_unmatched": 92,
+      "likely_duplicate": 8
+    }
+  },
+  "duplicates": [
+    {
+      "ref": "SS5-014",
+      "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+      "best_match": "K1-060",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.899,
+      "hint": "ในการพัฒนาโมเดล al เพือวิเคราะห์ความคิดเห็นของลูกค้าจากรีวิวสินค้าออนไลน์ ประเภทของการเรียนรู้ของเครือง (machine learning) ที่เหมาะสมที่สุดคือ อะไร unsupervised learning",
+      "matched_text": "ในการพัฒนาโมเดล AI เพื่อวิเคราะห์ความคิดเห็นของลูกค้ารีวิวสินค้าออนไลน์ ประเภทของ การเรียนรู้ของเครื่อง (Machine Learning) ที่เหมาะสมที่สุดคืออะไร"
+    },
+    {
+      "ref": "SS5-040",
+      "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+      "best_match": "K1-024",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.969,
+      "hint": "เหตุใดเมือนำ pca ไปประยุกต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงทีหลากหลาย เมือการเลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใข้แล้วก ลับไค้ประสิทธิภาพสูง",
+      "matched_text": "เหตุใดเมื่อน่า PCA ไปประยุคต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลาย เมื่อการ เลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง"
+    },
+    {
+      "ref": "SS5-069",
+      "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+      "best_match": "K1-029",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.955,
+      "hint": "ในการทคสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก confusion matrix แสดงให้เห็นว่ามี false alarm (false positive) สูงมาก แต่ค่า miss (false negative) ตำจากสถานการณ์นี้ ข้อใดเปินการแปลความหมายและข้อเสนอแนะที่เหมาะสมทีสุด",
+      "matched_text": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก Confusion Matrix แสดงให้เห็นว่ามี False Alarm (False Positive) สูงมาn uain Miss (False Negative) Rin จากสถานการณ์นี้ ข้อใดเป็นการแปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด"
+    },
+    {
+      "ref": "SS5-078",
+      "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+      "best_match": "K1-027",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.859,
+      "hint": "จุดก่าเนิด (0,0) ของระบบทพิกัด image pixel coordinate system อยู่ในต่าแหน่งใด ลบค่ำตอบ ซ้ายล่าง",
+      "matched_text": "จุดกำเนิด (0,0) ของระบบพิกัด Image pixel coordinate systemอยู่ในตำแหน่งใด"
+    },
+    {
+      "ref": "SS5-097",
+      "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+      "best_match": "CAT-023",
+      "best_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+      "score": 0.898,
+      "hint": "ตัวชี้วัดแบบใดสามารกแสดงประสิทธิภาพของโมเดล image classification ได้ bleu r2 score",
+      "matched_text": "ตัวชี้วัดแบบใดสามารถแสดงประสิทธิภาพของโมเดล Image classification ได้"
+    },
+    {
+      "ref": "E02-012",
+      "source": "Exam02.pdf",
+      "best_match": "K1-047",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.879,
+      "hint": "โคดชอใดเป็นคาสั่งทิใช้แบ่งข้อมูลออกเปืน 2 ส่วน โดยให้ส่วนข้อมูลเทรนมีขนาดเปิน 80% ของข้อมูลทั่งทมด zอฟ 12 ลบฝาคอบ",
+      "matched_text": "โค้ดข้อใดเป็นคำสั่งที่ใช้แบ่งข้อมูลลออกเป็น 2 ส่วน โดยให้ส่วนข้อมูลเทรนมีขนาดเป็น 80% ของข้อมูลทั้งหมด"
+    },
+    {
+      "ref": "E02-071",
+      "source": "Exam02.pdf",
+      "best_match": "K1-081",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.85,
+      "hint": "ข้อไนดอไปนิ้กล่าวไม่ถูกด้องเกี่ยวกับ independent component analysis aica) zอฬ71 ฉบค่าคลบ",
+      "matched_text": "ข้อในต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Independent Component Analysis (ICA)"
+    },
+    {
+      "ref": "E02-086",
+      "source": "Exam02.pdf",
+      "best_match": "CAT-027",
+      "best_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+      "score": 0.898,
+      "hint": "ทำไมในการออกแบบระับบ microservice ถึงควรจะหลิกเลี่ยงการสือสารระทว่าง service แบบ synchronous เอฟ8 อบฝ่าออบ",
+      "matched_text": "ในการออกแบบระบบ microservice ถึงควรจะหลีกเลี่ยงการสื่อสารระหว่าง service แบบ Synchronous"
+    },
+    {
+      "ref": "E02-100",
+      "source": "Exam02.pdf",
+      "best_match": "SS6-079",
+      "best_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+      "score": 0.887,
+      "hint": "เอะไรคือนิยามการ learning ด้วย data สำหรับ machine ที่ไมเจาะจงกับ task ขอท ion ฉบค่าคอบ",
+      "matched_text": "อะไรคือนิยามการ learning ด้วย data สำหรับ machine ที่ไม่เจาะจงกับ task"
+    },
+    {
+      "ref": "100EX-022",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "CAT-060",
+      "best_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+      "score": 0.926,
+      "hint": "max pooling layer สามารถเพิ่มความลึกของโครงข่ายได่โดยไม่เพิ่มจานวนพารามิเต ข่อที 22 (trainable parameter)",
+      "matched_text": "Max pooling layer สามารถเพิ่มความลึกของโครงข่ายได้โดยไม่เพิ่มจำนวนพารามิเตอร์ที่ต้องฝึกฝน (Trainable parameter)"
+    },
+    {
+      "ref": "100EX-027",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "SS6-005",
+      "best_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+      "score": 0.891,
+      "hint": "ข้อใดเป็นเว็บไซต์ของศูนย์กลางข้อมลเปิดภาครัฐ (open government data) จัดการ ข้อที27 รัฐบาลดิจิทัล (องค์การมหาชน)",
+      "matched_text": "ข้อใดเป็นเว็บไซต์ของศูนย์กลางข้อมูลเปิดภาครัฐ (Open Government Data) จัดการโดยสำนักงานพัฒนารัฐบาลดิจิทัล (องค์การมหาชน)"
+    },
+    {
+      "ref": "100EX-034",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "E03-036",
+      "best_source": "Exam03.pdf",
+      "score": 0.87,
+      "hint": "การเรียนรู้ครังที 2 ของ bert จะทาการปรับเปลียน weight ในทุก layer ของ bert ข้อที 34 true",
+      "matched_text": "กการเรียนรูครังท์ 2 ของ 3ert จะทาการปรับเปลียน weight ในทุก lsyer ของ beft model กอที36 trug"
+    },
+    {
+      "ref": "100EX-035",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "K1-091",
+      "best_source": "ข้อสอบชุด1.pdf",
+      "score": 0.916,
+      "hint": "transfer learning แบ่งการเรียนรูเป็น 2 ครั้ง คือ pre-training และ post -training ข้อที 35 true",
+      "matched_text": "Transfer Learning แบ่งการเรียนรู้เป็น 2 ครั้ง คือ Pre-traingและ Post-training"
+    },
+    {
+      "ref": "100EX-068",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "E03-067",
+      "best_source": "Exam03.pdf",
+      "score": 0.86,
+      "hint": "วิธีการสร้าง virtual influencer สามารถแบ่งออกได้หลักๆกีแบบ ข้อที 68 3 วิธีการสร้าง virtual influencer สามารถแบ่งออกได้หลักๆกีแบบ\nข้อที 68\n3\n5\n2",
+      "matched_text": "วิธีการสร้าง virtua. iniluencer สามารแแบ่งออกไลหลักๆกิแบบ iaที 67 วิธีการสร้าง virtua. iniluencer สามารแแบ่งออกไลหลักๆกิแบบ\niaที 67"
+    },
+    {
+      "ref": "100EX-083",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "CAT-073",
+      "best_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+      "score": 0.851,
+      "hint": "ประเภทของคาทีเหมาะสมสำหรับระบบสังเคราะห์เสียงคือ ต้องมีจานวน part-of- tagg ข่อที 83 true",
+      "matched_text": "ประเภทของคำที่เหมาะสมสำหรับระบบสังเคราะห์เสียงคือต้องมีจำนวน part of tagging ที่มากที่สุด"
+    },
+    {
+      "ref": "100EX-086",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "CAT-027",
+      "best_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+      "score": 0.903,
+      "hint": "ท่าไมในการออกแบบระบบ microservice ถึงควรจะหลีกเลียงการสื่อสารระหว่าง seri ข้อที 86 synchronous",
+      "matched_text": "ในการออกแบบระบบ microservice ถึงควรจะหลีกเลี่ยงการสื่อสารระหว่าง service แบบ Synchronous"
+    },
+    {
+      "ref": "100EX-097",
+      "source": "100Exam_Lv1.pdf",
+      "best_match": "SS6-090",
+      "best_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+      "score": 0.888,
+      "hint": "เทคนิคในต่อไปนี้ใช้สาหรับวิเคราะห์ข้อมลที่อาจถกก่าหนดให้เป็น \"ข้อมลที่ไม่สอดคล์ ข้อที 97 ทั่วไปหรือรูปแบบของข้อมูลที่มือยู่\"",
+      "matched_text": "เทคนิคใดต่อไปนี้ใช้สำหรับวิเคราะห์ข้อมูลที่อาจถูกกำหนดให้เป็นข้อมูลที่ไม่สอดคล้องกับพฤติกรรมทั่วไปหรือรูปแบบของข้อมูลที่มีอยู่"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 91,
+  "crop": "exam03/question_crops/q091/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "x": 37,
+      "y": 52,
+      "cy": 57,
+      "blue": 0,
+      "dark": 0,
+      "mean": 225.29752066115702
+    },
+    {
+      "x": 37,
+      "y": 84,
+      "cy": 89,
+      "blue": 0,
+      "dark": 0,
+      "mean": 225.12396694214877
+    },
+    {
+      "x": 37,
+      "y": 116,
+      "cy": 121,
+      "blue": 0,
+      "dark": 0,
+      "mean": 227.4297520661157
+    },
+    {
+      "x": 37,
+      "y": 147,
+      "cy": 152,
+      "blue": 79,
+      "dark": 33,
+      "mean": 183.43801652892563
+    }
+  ],
+  "text": "ขอโดกล่าวถุกล้อง เกียวภับ regression และ classification?\nเอพีด1\nทั้ง regression และ classificaticn มี target เปินคัวเลข\nregression มี target เป็นทมวคหมฺ(classes) แค classification มี target เปินคัวเลข\nทั่ง regression และ chassification มี target เป็นหมวดหม (classes)\nregression มี targe: เป็นค้ว.ลข แด้ classification มี่ target เป็นหมวลหมู (ciasses)",
+  "lines": [
+    {
+      "text": "ขอโดกล่าวถุกล้อง เกียวภับ regression และ classification?",
+      "conf": 0.5572623910650224,
+      "x0": 72.0,
+      "y0": 14.0,
+      "x1": 376.0,
+      "y1": 40.0
+    },
+    {
+      "text": "เอพีด1",
+      "conf": 0.046601292539190785,
+      "x0": 27.0,
+      "y0": 19.0,
+      "x1": 63.0,
+      "y1": 33.0
+    },
+    {
+      "text": "ทั้ง regression และ classificaticn มี target เปินคัวเลข",
+      "conf": 0.4711254337763528,
+      "x0": 82.0,
+      "y0": 46.0,
+      "x1": 366.0,
+      "y1": 70.0
+    },
+    {
+      "text": "regression มี target เป็นทมวคหมฺ(classes) แค classification มี target เปินคัวเลข",
+      "conf": 0.15318450501284622,
+      "x0": 84.0,
+      "y0": 78.0,
+      "x1": 506.0,
+      "y1": 102.0
+    },
+    {
+      "text": "ทั่ง regression และ chassification มี target เป็นหมวดหม (classes)",
+      "conf": 0.2850478468213181,
+      "x0": 82.0,
+      "y0": 108.0,
+      "x1": 428.0,
+      "y1": 135.0
+    },
+    {
+      "text": "regression มี targe: เป็นค้ว.ลข แด้ classification มี่ target เป็นหมวลหมู (ciasses)",
+      "conf": 0.14358759220813852,
+      "x0": 84.0,
+      "y0": 139.0,
+      "x1": 504.0,
+      "y1": 166.0
+    }
+  ]
+}

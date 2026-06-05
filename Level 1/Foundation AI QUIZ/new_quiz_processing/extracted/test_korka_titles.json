@@ -1,0 +1,422 @@
+[
+  {
+    "page": 1,
+    "title": "ข้อใดต่อไปนี้ไม่ถูกต้อง เมื่อกล่าวถึงการเขียนโปรแกรม if"
+  },
+  {
+    "page": 1,
+    "title": "Pandas เป็น Library หนึ่งที่สำคัญของ Python ข้อใดไม่ใช่จุดเด่นของ"
+  },
+  {
+    "page": 1,
+    "title": "Pandas Library"
+  },
+  {
+    "page": 1,
+    "title": "ผลลัพธ์ของโปรแกรมคือข้อใด"
+  },
+  {
+    "page": 2,
+    "title": "คำสั่งใดใช้ส่ง Signal ไปยัง Process"
+  },
+  {
+    "page": 2,
+    "title": "ข้อใดไม่ถูกต้อง เกี่ยวกับการใช้งาน Notebook ใน kaggle?"
+  },
+  {
+    "page": 2,
+    "title": "ข้อใดไม่ถูกต้องเกี่ยวกับ Session storage บน Colab"
+  },
+  {
+    "page": 2,
+    "title": "หากต้องการสร้าง branch ที่ชื่อ dev ต้องใช่คำสั่งใด"
+  },
+  {
+    "page": 3,
+    "title": "ข้อใดไม่ใช่ประโยชน์ของ PCA"
+  },
+  {
+    "page": 3,
+    "title": "จำแนกประเภทข้อมูล เมื่อ x เป็น input และ y เป็นคลาส"
+  },
+  {
+    "page": 3,
+    "title": "เมทริกซ์ C หากคำนวณ C^(½) ข้อใดไม่เกี่ยว"
+  },
+  {
+    "page": 3,
+    "title": "ข้อใดไม่ใช่คุณสมบัติของ Bootstrap Sampling"
+  },
+  {
+    "page": 4,
+    "title": "สร้าง Object Detection ไม่ควรใช้ model อะไร"
+  },
+  {
+    "page": 4,
+    "title": "ข้อแตกต่างเรื่อง bias-variance ของ L2 และ OLS"
+  },
+  {
+    "page": 4,
+    "title": "ตอบ bias สูงกว่า, variance ต่ำกว่า"
+  },
+  {
+    "page": 4,
+    "title": "หาจุด Centroid ของ K-mean clustering"
+  },
+  {
+    "page": 5,
+    "title": "ข้อใดถูกเกี่ยวกับ Bias Variance ใน classical ML"
+  },
+  {
+    "page": 5,
+    "title": "ตอบ โมเดลซับซ้อน เพราะ Variance สูง (Bias สูง = Underfit)"
+  },
+  {
+    "page": 5,
+    "title": "Partially mapped cross over"
+  },
+  {
+    "page": 5,
+    "title": "นักศึกษาทุกคนที่เรียน superAI แล้วจะเก่ง"
+  },
+  {
+    "page": 5,
+    "title": "สิ่งจำเป็นสำหรับการนำ pre-trained model มาใช้"
+  },
+  {
+    "page": 6,
+    "title": "ข้อใดจริง เมื่อไม่กำหนด Activation ให้กับ layers ใน Keras"
+  },
+  {
+    "page": 6,
+    "title": "ผลการทำงานของ tf.Gradient() -> dz/dy=2y=2(x^2)=2(3*3)=18,"
+  },
+  {
+    "page": 6,
+    "title": "dz/dx=4(x^3)=4(3^3)=4(27)=108"
+  },
+  {
+    "page": 6,
+    "title": "MLP ไม่จัดอยู่ใน deep learning"
+  },
+  {
+    "page": 7,
+    "title": "สร้าง Multiple Linear Regression แบบ dummy variable เพื่อทำนาย"
+  },
+  {
+    "page": 7,
+    "title": "เงินเดือนของ Data Scientist"
+  },
+  {
+    "page": 7,
+    "title": "ทำไมภาษาไทยเป็นคำโดด (analytic language)"
+  },
+  {
+    "page": 7,
+    "title": "ภาษาพม่า เขมร ลาว มีระบบเขียนแบบใด"
+  },
+  {
+    "page": 7,
+    "title": "พัฒนาระบบช่วยคัดกรองอาการผู้ป่วยในโรงพยาบาล ด้วย named entity"
+  },
+  {
+    "page": 7,
+    "title": "การระบุขอบเขตหรือการตัดคำ (word segmentation) จัดเป็นปัญหาในระดับใด"
+  },
+  {
+    "page": 7,
+    "title": "ทางภาษาศาสตร์"
+  },
+  {
+    "page": 8,
+    "title": "ตอบ morphology (ติ้กผิด)"
+  },
+  {
+    "page": 8,
+    "title": "Corpus ไทย -> ตอบ d e f g h i"
+  },
+  {
+    "page": 8,
+    "title": "Covid-19 ตีตวามเชื่อมโยงข่อมูล ->ตอบ discource"
+  },
+  {
+    "page": 8,
+    "title": "Preprocessing สำหรับข้อความไทย แบ่งข้อความออกเป็น “คำ”"
+  },
+  {
+    "page": 8,
+    "title": "Writting system"
+  },
+  {
+    "page": 9,
+    "title": "nlp"
+  },
+  {
+    "page": 9,
+    "title": "ตีความหมาย จากความรู้พื้นฐานทางโลก"
+  },
+  {
+    "page": 9,
+    "title": "WangchanBERTa"
+  },
+  {
+    "page": 9,
+    "title": "BERT ถาม TRUE/FALSE"
+  },
+  {
+    "page": 10,
+    "title": "ขั้นตอนเตรียมข้อมูลฝึกสอน Neural Machine Translation"
+  },
+  {
+    "page": 10,
+    "title": "แปลจากไทยไปลาว วิธีไหนดีสุด"
+  },
+  {
+    "page": 10,
+    "title": "แขนกลหุ่นยนต์ สัญลักษณ์ที่กำหนด"
+  },
+  {
+    "page": 11,
+    "title": "ข้อใดกล่าวไม่ถูกต้อง -> 40. ถูกแล้ว"
+  },
+  {
+    "page": 11,
+    "title": "41. ตอบ Node “mqtt out” เทียบเท่ากับเป็น Subscriber"
+  },
+  {
+    "page": 11,
+    "title": "เพราะ mqtt out คือตัวส่ง Subscriber คือตัวรับ"
+  },
+  {
+    "page": 11,
+    "title": "Close loop control system"
+  },
+  {
+    "page": 12,
+    "title": "วงจรดิจิตอล"
+  },
+  {
+    "page": 12,
+    "title": "Output ของไมโครคอนโทรลเลอร์"
+  },
+  {
+    "page": 12,
+    "title": "ข้อไหนถูกต้องสุด"
+  },
+  {
+    "page": 12,
+    "title": "ถูกต้องเกี่ยวกับ baud rate"
+  },
+  {
+    "page": 12,
+    "title": "ถูกต้องเกี่ยวกับ Node-RED -> ตอบ ทุกๆ Node จะต้องมีจุดเชื่อมต่อเสมอ"
+  },
+  {
+    "page": 13,
+    "title": "หุ่นยนต์เคลื่อนที่ หากต้องการตรวจวัดระยะทางหรือระยะห่างของวัตถุ ควรตั้งเซนเซอร์แบ"
+  },
+  {
+    "page": 13,
+    "title": "บใด"
+  },
+  {
+    "page": 13,
+    "title": "Embedding System คือ …"
+  },
+  {
+    "page": 13,
+    "title": "การคำนวณจาก End-effector ของแขนกล เพื่อหาAngel of Joint เรียก"
+  },
+  {
+    "page": 13,
+    "title": "Corner Detection -> R ของ M1 = 3480, M2 = 3020"
+  },
+  {
+    "page": 13,
+    "title": "ตอบ M1 คล้ายกว่า เพราะค่า R ของ M1 = 3480"
+  },
+  {
+    "page": 14,
+    "title": "สกัดคุณลักษณะรูปร่าง"
+  },
+  {
+    "page": 14,
+    "title": "สกัดคุณลักษณะพื้นผิวของรูปภาพ"
+  },
+  {
+    "page": 15,
+    "title": "ปรับความสว่างภาพ"
+  },
+  {
+    "page": 15,
+    "title": "รวมภาพ"
+  },
+  {
+    "page": 15,
+    "title": "ฟังก์ชันอ่านรูปภาพ"
+  },
+  {
+    "page": 15,
+    "title": "หา Gradient ด้วย Sobel Filter"
+  },
+  {
+    "page": 16,
+    "title": "เมทริกซ์ของการไล่ระดับสี = Gradient Matrix"
+  },
+  {
+    "page": 16,
+    "title": "###"
+  },
+  {
+    "page": 16,
+    "title": "การจัดเก็บข้อมูลพิกเซลในภาพ"
+  },
+  {
+    "page": 17,
+    "title": "โมเดลที่เหมาะกับงานพิมพ์"
+  },
+  {
+    "page": 17,
+    "title": "Implicit surface reconstruction"
+  },
+  {
+    "page": 17,
+    "title": "3D local descriptors"
+  },
+  {
+    "page": 18,
+    "title": "Influencer"
+  },
+  {
+    "page": 18,
+    "title": "Sampling frequency"
+  },
+  {
+    "page": 18,
+    "title": "สัญญาณชีพหัวใจ"
+  },
+  {
+    "page": 18,
+    "title": "แปลง time domain signal -> fourier signal -> ตอบ jw + 2"
+  },
+  {
+    "page": 19,
+    "title": "Formant ที่พบได้ในสัญญาณ"
+  },
+  {
+    "page": 19,
+    "title": "X(n) -> S1 -> S2 -> Y(n)###"
+  },
+  {
+    "page": 19,
+    "title": "Spectrogram"
+  },
+  {
+    "page": 19,
+    "title": "> ตอบ ไม่มีถูก"
+  },
+  {
+    "page": 19,
+    "title": "การเลือก localization ของ STFT"
+  },
+  {
+    "page": 20,
+    "title": "DFT คือ"
+  },
+  {
+    "page": 20,
+    "title": "มอเตอร์ไฟฟ้า แนวแกนใด"
+  },
+  {
+    "page": 20,
+    "title": "ถอดความเสียงอัตโนมัติ"
+  },
+  {
+    "page": 20,
+    "title": "observation probability"
+  },
+  {
+    "page": 21,
+    "title": "Language ใน Classic ASR ประกอบด้วย language model กับ"
+  },
+  {
+    "page": 21,
+    "title": "Pronunciation dictionary -> ตอบ True"
+  },
+  {
+    "page": 21,
+    "title": "ปีเกิดของ ระบบรู้จำเสียงพูด"
+  },
+  {
+    "page": 21,
+    "title": "เปรียบเทียบสัดส่วนจำนวนนักเรียนชายเเละหญืงของนักเรียนเเต่ละระดับชั้น ม.1-ม.6"
+  },
+  {
+    "page": 21,
+    "title": "สถาปัตยกรรม Docker"
+  },
+  {
+    "page": 22,
+    "title": "Microservice ควรใช้อะไรเป็นตัวกลาง"
+  },
+  {
+    "page": 22,
+    "title": "Data sci ช่วยอะไร"
+  },
+  {
+    "page": 22,
+    "title": "ถูกต้องเกี่ยวกับ SQL และ NoSQL"
+  },
+  {
+    "page": 22,
+    "title": "ไม่ใช่ของ Big Data Framework Provider -> ตอบ infrastructure"
+  },
+  {
+    "page": 22,
+    "title": "ตำแหน่งที่ตั้งของข้อมูล"
+  },
+  {
+    "page": 22,
+    "title": "ถูกต้องเกี่ยวกับ Clustering"
+  },
+  {
+    "page": 23,
+    "title": "Key ที่สำคัญของห่วงโซ่คุณค่าโมเดลธุรกิจ"
+  },
+  {
+    "page": 23,
+    "title": "Logistic regression"
+  },
+  {
+    "page": 23,
+    "title": "Data Discretization"
+  },
+  {
+    "page": 23,
+    "title": "Null Hypothesis Test"
+  },
+  {
+    "page": 24,
+    "title": "องค์ประกอบของโมเดลธุรกิจข้อมูล -> ตอบ 3 อันล่าง"
+  },
+  {
+    "page": 24,
+    "title": "Volume ของ Big Data"
+  },
+  {
+    "page": 24,
+    "title": "Metric วัดประสิทธิภาพของ Regression Model"
+  },
+  {
+    "page": 24,
+    "title": "Causal inference"
+  },
+  {
+    "page": 24,
+    "title": "ความสัมพันธ์ระหว่าง single dependent/independent variable"
+  },
+  {
+    "page": 25,
+    "title": "อาททำเอง รอบแรก"
+  }
+]

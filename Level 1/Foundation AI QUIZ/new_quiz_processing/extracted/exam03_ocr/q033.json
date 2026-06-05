@@ -1,0 +1,123 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 33,
+  "crop": "exam03/question_crops/q033/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 27,
+      "y": 99,
+      "cy": 104,
+      "blue": 0,
+      "dark": 2,
+      "mean": 225.77685950413223
+    },
+    {
+      "x": 28,
+      "y": 131,
+      "cy": 135,
+      "blue": 0,
+      "dark": 0,
+      "mean": 231.22314049586777
+    },
+    {
+      "x": 27,
+      "y": 163,
+      "cy": 168,
+      "blue": 0,
+      "dark": 4,
+      "mean": 227.45454545454547
+    },
+    {
+      "x": 27,
+      "y": 194,
+      "cy": 199,
+      "blue": 0,
+      "dark": 5,
+      "mean": 225.5785123966942
+    }
+  ],
+  "text": "มพี3ฏจากข้อความเคอไปนี่ จัดเปิน nlp application ใด\nccntextual pclanity of a\ndetermining the attituce of\nwriter with respect to some topic cfthe overal\nspeaker or\ndacument .\nsentiment analysis\nlanguage identificstion\nreacability assessment\ngenre classification",
+  "lines": [
+    {
+      "text": "มพี3ฏจากข้อความเคอไปนี่ จัดเปิน nlp application ใด",
+      "conf": 0.14826513694962123,
+      "x0": 16.0,
+      "y0": 24.0,
+      "x1": 312.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ccntextual pclanity of a",
+      "conf": 0.2405842939908992,
+      "x0": 555.0,
+      "y0": 45.0,
+      "x1": 683.0,
+      "y1": 65.0
+    },
+    {
+      "text": "determining the attituce of",
+      "conf": 0.4447162100670853,
+      "x0": 69.0,
+      "y0": 47.0,
+      "x1": 223.0,
+      "y1": 67.0
+    },
+    {
+      "text": "writer with respect to some topic cfthe overal",
+      "conf": 0.37817911012933547,
+      "x0": 299.0,
+      "y0": 47.0,
+      "x1": 549.0,
+      "y1": 65.0
+    },
+    {
+      "text": "speaker or",
+      "conf": 0.8019716151578826,
+      "x0": 229.0,
+      "y0": 49.0,
+      "x1": 293.0,
+      "y1": 67.0
+    },
+    {
+      "text": "dacument .",
+      "conf": 0.35613320260435327,
+      "x0": 67.0,
+      "y0": 67.0,
+      "x1": 133.0,
+      "y1": 83.0
+    },
+    {
+      "text": "sentiment analysis",
+      "conf": 0.8524920650077102,
+      "x0": 75.0,
+      "y0": 97.0,
+      "x1": 181.0,
+      "y1": 115.0
+    },
+    {
+      "text": "language identificstion",
+      "conf": 0.5049859222803585,
+      "x0": 74.0,
+      "y0": 126.0,
+      "x1": 208.0,
+      "y1": 150.0
+    },
+    {
+      "text": "reacability assessment",
+      "conf": 0.533980295487255,
+      "x0": 73.0,
+      "y0": 159.0,
+      "x1": 205.0,
+      "y1": 179.0
+    },
+    {
+      "text": "genre classification",
+      "conf": 0.5788014789382186,
+      "x0": 75.0,
+      "y0": 189.0,
+      "x1": 185.0,
+      "y1": 209.0
+    }
+  ]
+}

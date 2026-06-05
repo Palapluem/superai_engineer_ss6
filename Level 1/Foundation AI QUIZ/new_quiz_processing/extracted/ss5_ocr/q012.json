@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 12,
+  "crop": "ss5/question_crops/q012/question_full.png",
+  "selected_index": 2,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 114,
+      "dark": 22,
+      "mean": 164.0493827160494
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.34567901234567
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "ข้อใดอธิบายการทางานของ bootstrap sampling ได้ถูกต้อง\nข้อที่12\nลบค่าตอบ\nwithout sampling\nsample without replacement\nsample with replacement\nsample with replacement multiple times",
+  "lines": [
+    {
+      "text": "ข้อใดอธิบายการทางานของ bootstrap sampling ได้ถูกต้อง",
+      "conf": 0.2728517922962675,
+      "x0": 88.0,
+      "y0": 15.0,
+      "x1": 466.0,
+      "y1": 53.0
+    },
+    {
+      "text": "ข้อที่12",
+      "conf": 0.45301110221173463,
+      "x0": 28.0,
+      "y0": 20.0,
+      "x1": 76.0,
+      "y1": 44.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8885155989419051,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "without sampling",
+      "conf": 0.632731808427373,
+      "x0": 102.0,
+      "y0": 58.0,
+      "x1": 237.0,
+      "y1": 90.0
+    },
+    {
+      "text": "sample without replacement",
+      "conf": 0.6353302164174194,
+      "x0": 104.0,
+      "y0": 104.0,
+      "x1": 314.0,
+      "y1": 130.0
+    },
+    {
+      "text": "sample with replacement",
+      "conf": 0.6256159218780069,
+      "x0": 104.0,
+      "y0": 144.0,
+      "x1": 290.0,
+      "y1": 170.0
+    },
+    {
+      "text": "sample with replacement multiple times",
+      "conf": 0.6790801750517904,
+      "x0": 104.0,
+      "y0": 186.0,
+      "x1": 394.0,
+      "y1": 212.0
+    }
+  ]
+}

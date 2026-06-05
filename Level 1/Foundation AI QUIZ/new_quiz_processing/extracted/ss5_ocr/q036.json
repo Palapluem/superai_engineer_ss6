@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 36,
+  "crop": "ss5/question_crops/q036/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.320987654321
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.01234567901236
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.09876543209876
+    },
+    {
+      "y": 196,
+      "dark": 31,
+      "mean": 164.2716049382716
+    }
+  ],
+  "text": "กระบวนสำหรับการแปลง occupancy grid ของ implicit function ไปเปิน surface เรียกว่ากระบวนการอะไร\nข้าที่36\nลบค่าตอบ\ndelaunay triangulation\npoisson reconstruction\nball pivoting\nmarching cubes",
+  "lines": [
+    {
+      "text": "กระบวนสำหรับการแปลง occupancy grid ของ implicit function ไปเปิน surface เรียกว่ากระบวนการอะไร",
+      "conf": 0.31931263380031544,
+      "x0": 92.0,
+      "y0": 18.0,
+      "x1": 752.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ข้าที่36",
+      "conf": 0.5961289153650294,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.5370023584441311,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "delaunay triangulation",
+      "conf": 0.7921149363623982,
+      "x0": 103.0,
+      "y0": 61.0,
+      "x1": 274.0,
+      "y1": 90.0
+    },
+    {
+      "text": "poisson reconstruction",
+      "conf": 0.9629221751791573,
+      "x0": 104.0,
+      "y0": 104.0,
+      "x1": 272.0,
+      "y1": 128.0
+    },
+    {
+      "text": "ball pivoting",
+      "conf": 0.49784482033968225,
+      "x0": 104.0,
+      "y0": 142.0,
+      "x1": 200.0,
+      "y1": 172.0
+    },
+    {
+      "text": "marching cubes",
+      "conf": 0.8285553583397091,
+      "x0": 103.0,
+      "y0": 180.0,
+      "x1": 224.0,
+      "y1": 212.0
+    }
+  ]
+}

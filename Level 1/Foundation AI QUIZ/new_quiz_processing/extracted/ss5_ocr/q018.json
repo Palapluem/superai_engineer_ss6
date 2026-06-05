@@ -1,0 +1,95 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 18,
+  "crop": "ss5/question_crops/q018/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.28395061728395
+    },
+    {
+      "y": 155,
+      "dark": 26,
+      "mean": 164.1604938271605
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "การท่ำ hash แบบ sha256 ดีกว่าการท่า hash แบบ encryption/ decryption อย่างไร ?\nข้าที่ 18\nลบค่าตอบ\nhash แบบ sha256 ปลอคภัยกว่า encryption/ decryption เสมอ\nตรวจจับการเปลียนแปลงข้อมูลไค้ดีกว่า encryption/ decryption\nhash แบบ sha256\nhash แบบ sha256 เร็วคว่า encryption/ decryption\nhash แบบ sha256 ใข้พลังงานในการประมวลผลน้อยกว่า encryption / decryption เสมอ",
+  "lines": [
+    {
+      "text": "การท่ำ hash แบบ sha256 ดีกว่าการท่า hash แบบ encryption/ decryption อย่างไร ?",
+      "conf": 0.30282640868565286,
+      "x0": 92.0,
+      "y0": 18.0,
+      "x1": 638.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ข้าที่ 18",
+      "conf": 0.5484806312297071,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8885155989419051,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "hash แบบ sha256 ปลอคภัยกว่า encryption/ decryption เสมอ",
+      "conf": 0.4118615313982893,
+      "x0": 104.0,
+      "y0": 62.0,
+      "x1": 520.0,
+      "y1": 90.0
+    },
+    {
+      "text": "ตรวจจับการเปลียนแปลงข้อมูลไค้ดีกว่า encryption/ decryption",
+      "conf": 0.5027126770212087,
+      "x0": 233.0,
+      "y0": 99.0,
+      "x1": 632.0,
+      "y1": 132.0
+    },
+    {
+      "text": "hash แบบ sha256",
+      "conf": 0.6137362638063686,
+      "x0": 104.0,
+      "y0": 102.0,
+      "x1": 238.0,
+      "y1": 128.0
+    },
+    {
+      "text": "hash แบบ sha256 เร็วคว่า encryption/ decryption",
+      "conf": 0.623606967163527,
+      "x0": 104.0,
+      "y0": 143.0,
+      "x1": 449.0,
+      "y1": 171.0
+    },
+    {
+      "text": "hash แบบ sha256 ใข้พลังงานในการประมวลผลน้อยกว่า encryption / decryption เสมอ",
+      "conf": 0.58605000713607,
+      "x0": 104.0,
+      "y0": 182.0,
+      "x1": 656.0,
+      "y1": 212.0
+    }
+  ]
+}

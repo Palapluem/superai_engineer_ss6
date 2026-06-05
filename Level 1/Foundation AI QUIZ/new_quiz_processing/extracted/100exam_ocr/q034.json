@@ -1,0 +1,48 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 34,
+  "crop": "100exam_crops/q034/question_full.png",
+  "text": "การเรียนรู้ครังที 2 ของ bert จะทาการปรับเปลียน weight ในทุก layer ของ bert\nข้อที 34\ntrue\nfalse\nbidirectional encoder representations from transformers",
+  "lines": [
+    {
+      "text": "การเรียนรู้ครังที 2 ของ bert จะทาการปรับเปลียน weight ในทุก layer ของ bert",
+      "conf": 0.29964206085090955,
+      "x0": 156.0,
+      "y0": 28.0,
+      "x1": 930.0,
+      "y1": 83.0
+    },
+    {
+      "text": "ข้อที 34",
+      "conf": 0.496522952681548,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "true",
+      "conf": 0.961737334728241,
+      "x0": 182.0,
+      "y0": 106.0,
+      "x1": 246.0,
+      "y1": 138.0
+    },
+    {
+      "text": "false",
+      "conf": 0.6692962243939073,
+      "x0": 182.0,
+      "y0": 170.0,
+      "x1": 252.0,
+      "y1": 202.0
+    },
+    {
+      "text": "bidirectional encoder representations from transformers",
+      "conf": 0.9373670194190644,
+      "x0": 191.0,
+      "y0": 230.0,
+      "x1": 761.0,
+      "y1": 267.0
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 52,
+  "crop": "exam03/question_crops/q052/question_full.png",
+  "selected_index": 1,
+  "selected_scores": [
+    {
+      "x": 71,
+      "y": 31,
+      "cy": 36,
+      "blue": 0,
+      "dark": 35,
+      "mean": 197.54545454545453
+    },
+    {
+      "x": 31,
+      "y": 61,
+      "cy": 66,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.0
+    },
+    {
+      "x": 31,
+      "y": 92,
+      "cy": 97,
+      "blue": 0,
+      "dark": 3,
+      "mean": 226.78512396694214
+    },
+    {
+      "x": 31,
+      "y": 124,
+      "cy": 129,
+      "blue": 0,
+      "dark": 1,
+      "mean": 226.98347107438016
+    },
+    {
+      "x": 31,
+      "y": 154,
+      "cy": 159,
+      "blue": 0,
+      "dark": 1,
+      "mean": 225.28099173553719
+    }
+  ],
+  "text": "aหี52] ขอใดถุกคองท์สุค\naot ประคอบค้วย harcware software. connectivity. data analytics และ intglligence\nalot คือ ภารควบคุม embedded system ด้วยระบบอัจฉรียะ\nal และ lot คองเช็อมค่อกันคายระบบ intemet เทานัน\nlot ประกอบค่วย aardware แ.ละ softwate",
+  "lines": [
+    {
+      "text": "aหี52] ขอใดถุกคองท์สุค",
+      "conf": 0.058620251433141556,
+      "x0": 18.0,
+      "y0": 24.0,
+      "x1": 160.0,
+      "y1": 48.0
+    },
+    {
+      "text": "aot ประคอบค้วย harcware software. connectivity. data analytics และ intglligence",
+      "conf": 0.332551652828476,
+      "x0": 79.0,
+      "y0": 57.0,
+      "x1": 517.0,
+      "y1": 78.0
+    },
+    {
+      "text": "alot คือ ภารควบคุม embedded system ด้วยระบบอัจฉรียะ",
+      "conf": 0.4494543572814811,
+      "x0": 78.0,
+      "y0": 86.0,
+      "x1": 372.0,
+      "y1": 110.0
+    },
+    {
+      "text": "al และ lot คองเช็อมค่อกันคายระบบ intemet เทานัน",
+      "conf": 0.5070270792918975,
+      "x0": 79.0,
+      "y0": 119.0,
+      "x1": 341.0,
+      "y1": 139.0
+    },
+    {
+      "text": "lot ประกอบค่วย aardware แ.ละ softwate",
+      "conf": 0.3149385129347571,
+      "x0": 75.0,
+      "y0": 149.0,
+      "x1": 289.0,
+      "y1": 169.0
+    }
+  ]
+}

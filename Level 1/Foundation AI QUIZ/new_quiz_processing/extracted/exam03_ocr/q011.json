@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 11,
+  "crop": "exam03/question_crops/q011/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 31,
+      "y": 64,
+      "cy": 68,
+      "blue": 0,
+      "dark": 2,
+      "mean": 230.21487603305786
+    },
+    {
+      "x": 30,
+      "y": 95,
+      "cy": 100,
+      "blue": 0,
+      "dark": 1,
+      "mean": 225.28099173553719
+    },
+    {
+      "x": 30,
+      "y": 127,
+      "cy": 132,
+      "blue": 0,
+      "dark": 2,
+      "mean": 224.91735537190084
+    },
+    {
+      "x": 31,
+      "y": 159,
+      "cy": 163,
+      "blue": 0,
+      "dark": 3,
+      "mean": 230.1404958677686
+    }
+  ],
+  "text": "เฬี11\nเมือโจหย์ของเราเปินการ maximizg function แบบมีบอแม่เราค้องพึจารณาฟังก์ชันโล\nlaplacian fnction\nlegendr= function\nlebesgue function\nlagrangian function",
+  "lines": [
+    {
+      "text": "เฬี11",
+      "conf": 0.3446649099083035,
+      "x0": 21.0,
+      "y0": 29.0,
+      "x1": 57.0,
+      "y1": 45.0
+    },
+    {
+      "text": "เมือโจหย์ของเราเปินการ maximizg function แบบมีบอแม่เราค้องพึจารณาฟังก์ชันโล",
+      "conf": 0.19596418087951423,
+      "x0": 68.0,
+      "y0": 29.0,
+      "x1": 491.0,
+      "y1": 47.0
+    },
+    {
+      "text": "laplacian fnction",
+      "conf": 0.4407732600897509,
+      "x0": 77.0,
+      "y0": 59.0,
+      "x1": 183.0,
+      "y1": 79.0
+    },
+    {
+      "text": "legendr= function",
+      "conf": 0.3919210366830441,
+      "x0": 75.0,
+      "y0": 88.0,
+      "x1": 184.0,
+      "y1": 115.0
+    },
+    {
+      "text": "lebesgue function",
+      "conf": 0.815253286764935,
+      "x0": 77.0,
+      "y0": 123.0,
+      "x1": 183.0,
+      "y1": 143.0
+    },
+    {
+      "text": "lagrangian function",
+      "conf": 0.7830773709878706,
+      "x0": 76.0,
+      "y0": 152.0,
+      "x1": 194.0,
+      "y1": 176.0
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 100,
+  "crop": "exam03/question_crops/q100/question_full.png",
+  "selected_index": 1,
+  "selected_scores": [
+    {
+      "x": 29,
+      "y": 62,
+      "cy": 67,
+      "blue": 78,
+      "dark": 33,
+      "mean": 183.06611570247935
+    },
+    {
+      "x": 29,
+      "y": 93,
+      "cy": 98,
+      "blue": 0,
+      "dark": 1,
+      "mean": 226.3801652892562
+    },
+    {
+      "x": 29,
+      "y": 125,
+      "cy": 130,
+      "blue": 0,
+      "dark": 5,
+      "mean": 226.30578512396696
+    },
+    {
+      "x": 29,
+      "y": 157,
+      "cy": 162,
+      "blue": 0,
+      "dark": 5,
+      "mean": 225.36363636363637
+    }
+  ],
+  "text": "clustering ถือเป็น machine leaming ประเภหใa?\nอาที 1od\nunsupervised learning\nreinforrement leaming\nsupenised learning\nไไม่มีข่อโคลุก",
+  "lines": [
+    {
+      "text": "clustering ถือเป็น machine leaming ประเภหใa?",
+      "conf": 0.30394171836643785,
+      "x0": 65.0,
+      "y0": 23.0,
+      "x1": 324.0,
+      "y1": 48.0
+    },
+    {
+      "text": "อาที 1od",
+      "conf": 0.09467972456395192,
+      "x0": 17.0,
+      "y0": 27.0,
+      "x1": 61.0,
+      "y1": 43.0
+    },
+    {
+      "text": "unsupervised learning",
+      "conf": 0.7123428879155556,
+      "x0": 75.0,
+      "y0": 57.0,
+      "x1": 206.0,
+      "y1": 81.0
+    },
+    {
+      "text": "reinforrement leaming",
+      "conf": 0.5315852207622682,
+      "x0": 77.0,
+      "y0": 91.0,
+      "x1": 211.0,
+      "y1": 111.0
+    },
+    {
+      "text": "supenised learning",
+      "conf": 0.3915273286311678,
+      "x0": 75.0,
+      "y0": 121.0,
+      "x1": 191.0,
+      "y1": 141.0
+    },
+    {
+      "text": "ไไม่มีข่อโคลุก",
+      "conf": 0.5155761757780579,
+      "x0": 73.0,
+      "y0": 149.0,
+      "x1": 146.0,
+      "y1": 174.0
+    }
+  ]
+}

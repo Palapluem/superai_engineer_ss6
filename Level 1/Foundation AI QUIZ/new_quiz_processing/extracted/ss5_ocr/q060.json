@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 60,
+  "crop": "ss5/question_crops/q060/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.07407407407408
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.320987654321
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.01234567901236
+    },
+    {
+      "y": 196,
+      "dark": 28,
+      "mean": 164.3827160493827
+    }
+  ],
+  "text": "ข้อใดไม่ใช่ขั้นตอนของ pca algorithm\nข้าที่ 6d\nลบค่ำตอบ\nselecting eigenvectors\ndecomposing eigenvectors and eigenvalue\nprojection on principal subspace\ncalculating maximum coefficients",
+  "lines": [
+    {
+      "text": "ข้อใดไม่ใช่ขั้นตอนของ pca algorithm",
+      "conf": 0.8218556819217838,
+      "x0": 90.0,
+      "y0": 18.0,
+      "x1": 336.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ข้าที่ 6d",
+      "conf": 0.533340796220781,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่ำตอบ",
+      "conf": 0.6398919922404107,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "selecting eigenvectors",
+      "conf": 0.6689834150359673,
+      "x0": 104.0,
+      "y0": 62.0,
+      "x1": 270.0,
+      "y1": 90.0
+    },
+    {
+      "text": "decomposing eigenvectors and eigenvalue",
+      "conf": 0.8569596098906184,
+      "x0": 104.0,
+      "y0": 104.0,
+      "x1": 416.0,
+      "y1": 130.0
+    },
+    {
+      "text": "projection on principal subspace",
+      "conf": 0.8330318539123456,
+      "x0": 104.0,
+      "y0": 144.0,
+      "x1": 340.0,
+      "y1": 170.0
+    },
+    {
+      "text": "calculating maximum coefficients",
+      "conf": 0.7504507663876796,
+      "x0": 104.0,
+      "y0": 184.0,
+      "x1": 350.0,
+      "y1": 212.0
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 56,
+  "crop": "exam03/question_crops/q056/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 34,
+      "y": 63,
+      "cy": 67,
+      "blue": 0,
+      "dark": 3,
+      "mean": 227.98347107438016
+    },
+    {
+      "x": 33,
+      "y": 94,
+      "cy": 99,
+      "blue": 0,
+      "dark": 4,
+      "mean": 226.02479338842974
+    },
+    {
+      "x": 33,
+      "y": 126,
+      "cy": 131,
+      "blue": 0,
+      "dark": 3,
+      "mean": 224.6198347107438
+    },
+    {
+      "x": 33,
+      "y": 158,
+      "cy": 163,
+      "blue": 0,
+      "dark": 5,
+      "mean": 225.20661157024793
+    }
+  ],
+  "text": "zaห 56\nไการปรับความสว่างของภาพ คอง.บวิธีการประมวลแบบใล\nlogical operations\nimage segmentation\nhistogram equalization\ncolor image processing",
+  "lines": [
+    {
+      "text": "zaห 56",
+      "conf": 0.022419184506251293,
+      "x0": 21.0,
+      "y0": 25.0,
+      "x1": 63.0,
+      "y1": 45.0
+    },
+    {
+      "text": "ไการปรับความสว่างของภาพ คอง.บวิธีการประมวลแบบใล",
+      "conf": 0.19738668860869557,
+      "x0": 69.0,
+      "y0": 27.0,
+      "x1": 355.0,
+      "y1": 47.0
+    },
+    {
+      "text": "logical operations",
+      "conf": 0.4802545706056044,
+      "x0": 79.0,
+      "y0": 59.0,
+      "x1": 187.0,
+      "y1": 79.0
+    },
+    {
+      "text": "image segmentation",
+      "conf": 0.6867639399920006,
+      "x0": 81.0,
+      "y0": 91.0,
+      "x1": 199.0,
+      "y1": 111.0
+    },
+    {
+      "text": "histogram equalization",
+      "conf": 0.41734952157474736,
+      "x0": 79.0,
+      "y0": 123.0,
+      "x1": 213.0,
+      "y1": 143.0
+    },
+    {
+      "text": "color image processing",
+      "conf": 0.7373636594633111,
+      "x0": 78.0,
+      "y0": 152.0,
+      "x1": 216.0,
+      "y1": 176.0
+    }
+  ]
+}

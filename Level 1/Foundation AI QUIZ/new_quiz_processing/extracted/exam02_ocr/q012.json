@@ -1,0 +1,163 @@
+{
+  "source": "EXAM02.pdf",
+  "number": 12,
+  "crop": "exam02/question_crops/q012/question_full.png",
+  "selected_index": 2,
+  "selected_scores": [
+    {
+      "x": 33,
+      "y": 77,
+      "cy": 82,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.3801652892562
+    },
+    {
+      "x": 33,
+      "y": 134,
+      "cy": 139,
+      "blue": 92,
+      "dark": 25,
+      "mean": 182.29752066115702
+    },
+    {
+      "x": 33,
+      "y": 191,
+      "cy": 196,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.48760330578511
+    },
+    {
+      "x": 33,
+      "y": 247,
+      "cy": 252,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.52892561983472
+    }
+  ],
+  "text": "โคดชอใดเป็นคาสั่งทิใช้แบ่งข้อมูลออกเปืน 2 ส่วน โดยให้ส่วนข้อมูลเทรนมีขนาดเปิน 80% ของข้อมูลทั่งทมด\nzอฟ 12\nลบฝาคอบ\nfrom sklearn model selection import train_test spli:\nix_train., y_train, ix_test., y_test\ntrain_test _split( ix, y. train_size=0.80)\nfrom sklearn model selection import train_tes:_split\nix_train., ix_test., y_train., y_test\ntrain_test_split{ ix. y. test_size=0.20)\nfrom sklearn.model selection import train_tes: split\nx_train., x_test., y_train., y_test\ntrain_test_split{ ix. y. train_size=0.20)\nfrom sklearn model selection import train_test split\nix train., y_train, ix_test., y_test\ntrain_test _split( ix. y. test_size=0.80)",
+  "lines": [
+    {
+      "text": "โคดชอใดเป็นคาสั่งทิใช้แบ่งข้อมูลออกเปืน 2 ส่วน โดยให้ส่วนข้อมูลเทรนมีขนาดเปิน 80% ของข้อมูลทั่งทมด",
+      "conf": 0.21604028902847672,
+      "x0": 73.0,
+      "y0": 22.0,
+      "x1": 688.0,
+      "y1": 52.0
+    },
+    {
+      "text": "zอฟ 12",
+      "conf": 0.1867296418894949,
+      "x0": 19.0,
+      "y0": 27.0,
+      "x1": 63.0,
+      "y1": 47.0
+    },
+    {
+      "text": "ลบฝาคอบ",
+      "conf": 0.6127955671200324,
+      "x0": 861.0,
+      "y0": 31.0,
+      "x1": 911.0,
+      "y1": 45.0
+    },
+    {
+      "text": "from sklearn model selection import train_test spli:",
+      "conf": 0.33929337392913733,
+      "x0": 84.0,
+      "y0": 61.0,
+      "x1": 412.0,
+      "y1": 87.0
+    },
+    {
+      "text": "ix_train., y_train, ix_test., y_test",
+      "conf": 0.1696768429768333,
+      "x0": 84.0,
+      "y0": 82.0,
+      "x1": 271.0,
+      "y1": 108.0
+    },
+    {
+      "text": "train_test _split( ix, y. train_size=0.80)",
+      "conf": 0.47365397017038946,
+      "x0": 278.0,
+      "y0": 82.0,
+      "x1": 508.0,
+      "y1": 108.0
+    },
+    {
+      "text": "from sklearn model selection import train_tes:_split",
+      "conf": 0.36173593153029776,
+      "x0": 86.0,
+      "y0": 118.0,
+      "x1": 412.0,
+      "y1": 142.0
+    },
+    {
+      "text": "ix_train., ix_test., y_train., y_test",
+      "conf": 0.254540647225027,
+      "x0": 84.0,
+      "y0": 138.0,
+      "x1": 270.0,
+      "y1": 164.0
+    },
+    {
+      "text": "train_test_split{ ix. y. test_size=0.20)",
+      "conf": 0.40589976060420974,
+      "x0": 276.0,
+      "y0": 138.0,
+      "x1": 502.0,
+      "y1": 164.0
+    },
+    {
+      "text": "from sklearn.model selection import train_tes: split",
+      "conf": 0.368840244481288,
+      "x0": 84.0,
+      "y0": 176.0,
+      "x1": 412.0,
+      "y1": 200.0
+    },
+    {
+      "text": "x_train., x_test., y_train., y_test",
+      "conf": 0.4516034507913867,
+      "x0": 84.0,
+      "y0": 194.0,
+      "x1": 270.0,
+      "y1": 222.0
+    },
+    {
+      "text": "train_test_split{ ix. y. train_size=0.20)",
+      "conf": 0.42859627948477325,
+      "x0": 278.0,
+      "y0": 196.0,
+      "x1": 508.0,
+      "y1": 222.0
+    },
+    {
+      "text": "from sklearn model selection import train_test split",
+      "conf": 0.4772774425611529,
+      "x0": 84.0,
+      "y0": 231.0,
+      "x1": 412.0,
+      "y1": 257.0
+    },
+    {
+      "text": "ix train., y_train, ix_test., y_test",
+      "conf": 0.2593604796899968,
+      "x0": 84.0,
+      "y0": 252.0,
+      "x1": 270.0,
+      "y1": 278.0
+    },
+    {
+      "text": "train_test _split( ix. y. test_size=0.80)",
+      "conf": 0.30268642806258844,
+      "x0": 276.0,
+      "y0": 252.0,
+      "x1": 502.0,
+      "y1": 278.0
+    }
+  ]
+}

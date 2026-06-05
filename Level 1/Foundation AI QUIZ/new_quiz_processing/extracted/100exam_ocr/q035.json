@@ -1,0 +1,40 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 35,
+  "crop": "100exam_crops/q035/question_full.png",
+  "text": "transfer learning แบ่งการเรียนรูเป็น 2 ครั้ง คือ pre-training และ post -training\nข้อที 35\ntrue\nfalse",
+  "lines": [
+    {
+      "text": "transfer learning แบ่งการเรียนรูเป็น 2 ครั้ง คือ pre-training และ post -training",
+      "conf": 0.3202511845042826,
+      "x0": 160.0,
+      "y0": 30.0,
+      "x1": 921.0,
+      "y1": 82.0
+    },
+    {
+      "text": "ข้อที 35",
+      "conf": 0.6163569299282717,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "true",
+      "conf": 0.9176954627037048,
+      "x0": 180.0,
+      "y0": 106.0,
+      "x1": 246.0,
+      "y1": 138.0
+    },
+    {
+      "text": "false",
+      "conf": 0.6180671429964701,
+      "x0": 182.0,
+      "y0": 170.0,
+      "x1": 250.0,
+      "y1": 202.0
+    }
+  ]
+}

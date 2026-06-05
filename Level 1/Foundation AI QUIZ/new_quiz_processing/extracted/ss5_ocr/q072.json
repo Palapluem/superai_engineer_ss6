@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 72,
+  "crop": "ss5/question_crops/q072/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.01234567901236
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.09876543209876
+    },
+    {
+      "y": 155,
+      "dark": 31,
+      "mean": 164.2716049382716
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.22222222222223
+    }
+  ],
+  "text": "key ที่สาคัญของห่วงโซคุณค่าของโมเดลธุรกิจข้อมูลได้แก่อะไรบ้าง\nข้งที่ 72\nลบคำตอบ\nbig data information flow, service use, embedded systems\nbig data information flow, service use, hardware components\nbig data information flow, service use, software tools and algorithm transfer\nbig data information flow, service use, service provider",
+  "lines": [
+    {
+      "text": "key ที่สาคัญของห่วงโซคุณค่าของโมเดลธุรกิจข้อมูลได้แก่อะไรบ้าง",
+      "conf": 0.5336613146387876,
+      "x0": 92.0,
+      "y0": 18.0,
+      "x1": 485.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ข้งที่ 72",
+      "conf": 0.3708320859017492,
+      "x0": 28.0,
+      "y0": 20.0,
+      "x1": 76.0,
+      "y1": 44.0
+    },
+    {
+      "text": "ลบคำตอบ",
+      "conf": 0.8484923696929787,
+      "x0": 1295.0,
+      "y0": 25.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "big data information flow, service use, embedded systems",
+      "conf": 0.46184912208759504,
+      "x0": 104.0,
+      "y0": 62.0,
+      "x1": 524.0,
+      "y1": 88.0
+    },
+    {
+      "text": "big data information flow, service use, hardware components",
+      "conf": 0.6154754473598807,
+      "x0": 104.0,
+      "y0": 101.0,
+      "x1": 546.0,
+      "y1": 130.0
+    },
+    {
+      "text": "big data information flow, service use, software tools and algorithm transfer",
+      "conf": 0.5614130937913592,
+      "x0": 104.0,
+      "y0": 144.0,
+      "x1": 650.0,
+      "y1": 172.0
+    },
+    {
+      "text": "big data information flow, service use, service provider",
+      "conf": 0.4386070665602789,
+      "x0": 104.0,
+      "y0": 185.0,
+      "x1": 500.0,
+      "y1": 212.0
+    }
+  ]
+}

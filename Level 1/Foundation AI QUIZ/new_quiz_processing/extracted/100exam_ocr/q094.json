@@ -1,0 +1,56 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 94,
+  "crop": "100exam_crops/q094/question_full.png",
+  "text": "regression ถือเป็น machine learning ประเภทใด?\nข้อที 94\nsupervised learning\nreinforcement learning\nunsupervised learning\nไม่มีข้อใดถูก",
+  "lines": [
+    {
+      "text": "regression ถือเป็น machine learning ประเภทใด?",
+      "conf": 0.5641761002952407,
+      "x0": 159.0,
+      "y0": 32.0,
+      "x1": 652.0,
+      "y1": 81.0
+    },
+    {
+      "text": "ข้อที 94",
+      "conf": 0.453567162031034,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "supervised learning",
+      "conf": 0.7028173122293373,
+      "x0": 178.0,
+      "y0": 99.0,
+      "x1": 396.0,
+      "y1": 143.0
+    },
+    {
+      "text": "reinforcement learning",
+      "conf": 0.8495821074910663,
+      "x0": 178.0,
+      "y0": 162.0,
+      "x1": 434.0,
+      "y1": 211.0
+    },
+    {
+      "text": "unsupervised learning",
+      "conf": 0.5421430578960219,
+      "x0": 178.0,
+      "y0": 226.0,
+      "x1": 423.0,
+      "y1": 275.0
+    },
+    {
+      "text": "ไม่มีข้อใดถูก",
+      "conf": 0.9568013003024592,
+      "x0": 178.0,
+      "y0": 292.0,
+      "x1": 309.0,
+      "y1": 333.0
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 48,
+  "crop": "exam03/question_crops/q048/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 34,
+      "y": 59,
+      "cy": 64,
+      "blue": 0,
+      "dark": 0,
+      "mean": 227.54545454545453
+    },
+    {
+      "x": 34,
+      "y": 91,
+      "cy": 96,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.6694214876033
+    },
+    {
+      "x": 34,
+      "y": 123,
+      "cy": 128,
+      "blue": 0,
+      "dark": 2,
+      "mean": 227.94214876033058
+    },
+    {
+      "x": 34,
+      "y": 154,
+      "cy": 159,
+      "blue": 0,
+      "dark": 4,
+      "mean": 227.3305785123967
+    }
+  ],
+  "text": "aan48] ย็อโลกล่าวถกต้อง\nembedded system เป็น computing system ทีมีย้อจากัดดาม cวu เท่านัน\nccmputing system คือ comวuter pc\ncomputer mainframe และ computer notebook เหานัน\nembedged system ไมจ็คอยู่หมวดมมู่ของ computing system\nccmputing system ประกอบควยพน่วยรับข์อมุลฺหน่วยประมวณ.ผลฺพนวยความจ่าและหน่วยส่งออกซ์อมุลเท่",
+  "lines": [
+    {
+      "text": "aan48] ย็อโลกล่าวถกต้อง",
+      "conf": 0.10059171300463098,
+      "x0": 20.0,
+      "y0": 22.0,
+      "x1": 168.0,
+      "y1": 46.0
+    },
+    {
+      "text": "embedded system เป็น computing system ทีมีย้อจากัดดาม cวu เท่านัน",
+      "conf": 0.35227739397281094,
+      "x0": 80.0,
+      "y0": 52.0,
+      "x1": 460.0,
+      "y1": 78.0
+    },
+    {
+      "text": "ccmputing system คือ comวuter pc",
+      "conf": 0.805342479797949,
+      "x0": 77.0,
+      "y0": 85.0,
+      "x1": 282.0,
+      "y1": 111.0
+    },
+    {
+      "text": "computer mainframe และ computer notebook เหานัน",
+      "conf": 0.4789970169026613,
+      "x0": 287.0,
+      "y0": 87.0,
+      "x1": 581.0,
+      "y1": 107.0
+    },
+    {
+      "text": "embedged system ไมจ็คอยู่หมวดมมู่ของ computing system",
+      "conf": 0.1617729314733912,
+      "x0": 78.0,
+      "y0": 115.0,
+      "x1": 402.0,
+      "y1": 142.0
+    },
+    {
+      "text": "ccmputing system ประกอบควยพน่วยรับข์อมุลฺหน่วยประมวณ.ผลฺพนวยความจ่าและหน่วยส่งออกซ์อมุลเท่",
+      "conf": 0.1332415858263493,
+      "x0": 78.0,
+      "y0": 148.0,
+      "x1": 610.0,
+      "y1": 172.0
+    }
+  ]
+}

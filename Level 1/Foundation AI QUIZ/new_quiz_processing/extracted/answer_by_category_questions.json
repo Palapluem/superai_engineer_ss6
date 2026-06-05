@@ -1,0 +1,3472 @@
+[
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 46,
+    "source_id": "CAT-046",
+    "category": "Mathematics for ai",
+    "question": "ทุกคนชอบ AI แปลได้ว่า",
+    "options": [
+      {
+        "label": "1",
+        "text": "∀𝑥 𝐿𝑜𝑣𝑒(𝑥, 𝐴𝐼)",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "¬∃𝑥 ¬𝐿𝑜𝑣𝑒(𝑥, 𝐴𝐼)",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "1 และ 2 ถูก",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "1 และ 2 ผิด",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "∀𝑥 𝐿𝑜𝑣𝑒(𝑥, 𝐴𝐼)",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 1,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 62,
+    "source_id": "CAT-062",
+    "category": "Mathematics for ai",
+    "question": "เหตุใดการอัพเดทความรู้ใน Bayesian inference จึงมีประโยชน์",
+    "options": [
+      {
+        "label": "1",
+        "text": "เพราะช่วยในการปรับปรุงความน่าจะเป็นของเหตุการณ์ตามข้อมูลใหม่",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "เพราะช่วยในการสร้างข้อมูลใหม่จากความรู้เดิม",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เพราะช่วยในการลดความซับซ้อนของปัญหา",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "เพราะช่วยในการเพิ่มความน่าจะเป็นของเหตุการณ์ที่ไม่เกิดขึ้น",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "เพราะช่วยในการปรับปรุงความน่าจะเป็นของเหตุการณ์ตามข้อมูลใหม่",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 1,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 68,
+    "source_id": "CAT-068",
+    "category": "Mathematics for ai",
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Kullback-Leibler (KL) divergence?",
+    "options": [
+      {
+        "label": "1",
+        "text": "KL divergence มีค่าอยู่ระหว่าง 0 และ 1",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "𝐷𝐾𝐿(𝑃||𝑄) = 𝐷𝐾𝐿(𝑄||𝑃)",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "𝐷𝐾𝐿(𝑃 ||𝑄) ≠ 𝐷𝐾𝐿(𝑄||𝑃) ∑𝑃(𝑥)𝑙𝑜𝑔𝑃(𝑥)",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "𝐷𝐾𝐿(𝑃||𝑄) ≠ 𝑄(𝑥) 𝑥",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "𝐷𝐾𝐿(𝑃 ||𝑄) ≠ 𝐷𝐾𝐿(𝑄||𝑃)",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 1,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 75,
+    "source_id": "CAT-075",
+    "category": "Mathematics for ai",
+    "question": "จากชนิดของโมเดลตามรูปแบบของการอธิบายความเข้าใจ a)Closed-form expression b)None Closed-form expression c)Statistical model พิจารณาโมเดลต่างๆที่กำหนดให้ 1)การคำนวณวิถีโคจรของวัตถุ (x, y) ถูกคำนวณโดยใช้สมการเคลื่อนที่ภายใต้แรงโน้มถ่วงคงที่: 2 และ 𝑦= 𝑣0𝑡 𝑠𝑖𝑛(θ) − 12𝑔𝑡 𝑥 = 𝑣0𝑡 𝑐𝑜𝑠(θ) 2)ระบบบำรุงรักษาเชิงพยากรณ์ใช้วิธีการทางสถิติและข้อมูลจากเซนเซอร์ในการประเมินอายุการใช้งานที่ เหลือของเครื่องจักรโดยรวมถึงความไม่แน่นอนในการพยากรณ์ด้วย 3)การแก้ระบบสมการเชิงอนุพันธ์สามัญ (ODEs) ที่แสดงการเคลื่อนที่ของลูกตุ้มถูกหามาโดยใช้วิธีการอินทิเกร ตเชิงตัวเลข โจทย์ทำการจับคู่ชนิดของโมเดลตามรูปแบบของการอธิบายความเข้าใจให้กับโมเดล 1, 2, และ 3 ให้ถูกต้องตาม ลำดับ",
+    "options": [
+      {
+        "label": "1",
+        "text": "a c b",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "a b c",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "b b c",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ไม่มีข้อถูก",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "a c b",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 2,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 86,
+    "source_id": "CAT-086",
+    "category": "Mathematics for ai",
+    "question": "สมมติว่า ใน ANOVA ถูกปฏิเสธหมายความว่าอย่างไร 𝐻0",
+    "options": [
+      {
+        "label": "1",
+        "text": "ค่าเฉลี่ยของทุกกลุ่มเท่ากัน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "มีความแปรปรวนของกลุ่มหนึ่งที่แตกต่างจากความแปรปรวนของกลุ่มอื่นๆ",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ความแปรปรวนของทุกกลุ่มเท่ากัน",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "มีค่าเฉลี่ยของกลุ่มหนึ่งที่แตกต่างจากค่าเฉลี่ยของกลุ่มอื่นๆ",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "มีค่าเฉลี่ยของกลุ่มหนึ่งที่แตกต่างจากค่าเฉลี่ยของกลุ่มอื่นๆ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 2,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 89,
+    "source_id": "CAT-089",
+    "category": "Mathematics for ai",
+    "question": "กำหนดให้ X เป็น Matrix ที่มีขนาด d x n แล้วขนาดของ XXT ตรงกับข้อใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Matrix ขนาด dxd",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Matrix ขนาด dxn",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Matrix ขนาด nxd",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Matrix ขนาด nxn",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Matrix ขนาด dxd",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 2,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 78,
+    "source_id": "CAT-078",
+    "category": "Basic Python for AI",
+    "question": "จากตัวแปรที่ประกาศด้านล่างนิพจน์ใดให้ค่า True m = 5 n = “Hel” i = “HelHel” p = 8 q = 3",
+    "options": [
+      {
+        "label": "1",
+        "text": "(q>0) and (q<m-p)",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "(p>0) or not (p<=0) or (n*q ==n+i)",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "not (m>len(n))",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "len(n+i) > q**2",
+        "is_answer": false
+      },
+      {
+        "label": "5",
+        "text": "not (n == i) and not (p > 0)",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "(p>0) or not (p<=0) or (n*q ==n+i)",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 3,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 99,
+    "source_id": "CAT-099",
+    "category": "Basic Python for AI",
+    "question": "จาก code ด้านล่างฟังก์ชัน calculate_area จะคำนวณพื้นที่ของรูปสี่เหลี่ยมผืนผ้าและคืนค่าผลลัพธ์ข้อใดถูก ต้อง def caluculate_area(width, height): return width * height area = calculate_area(5, 10)",
+    "options": [
+      {
+        "label": "1",
+        "text": "ฟังก์ชัน calculate_area คืนค่าผลลัพธ์เป็นผลคูณ width และ height",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ฟังก์ชัน calculate_area คืนค่าผลรวมของ width และ height",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ฟังก์ชัน calculate_area ไม่คืนค่าใดๆ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ฟังก์ชัน calculate_area คืนค่าผลหารของ width และ height",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ฟังก์ชัน calculate_area คืนค่าผลลัพธ์เป็นผลคูณ width และ height",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 3,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 33,
+    "source_id": "CAT-033",
+    "category": "Data Science",
+    "question": "จงจับคู่คำที่มีความเกี่ยวข้องกันต่อไปนี้ให้ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Key-val cache a. Neo4J, OrientDB ->5",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Tabular key-val b. Memcahed, Coherence ->1",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Doc. DB c. MySQL, MSSQL Server -> 4",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "RDBMS d. MongoDB, CouchDB -> 3",
+        "is_answer": true
+      },
+      {
+        "label": "5",
+        "text": "Graph DB e. Cassandra, HBase -> 2",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "5",
+    "answer": "Graph DB e. Cassandra, HBase -> 2",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 4,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 42,
+    "source_id": "CAT-042",
+    "category": "Data Science",
+    "question": "Category Comparison เหมาะสำหรับการแสดงข้อมูลแบบใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "ข้อมูลที่มีการเชื่อมโยงกัน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ข้อมูลที่ต้องการแสดงความสัมพันธ์",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ข้อมูลที่มีการเปรียบเทียบ",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "ข้อมูลที่ต้องการแสดงความถี่",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "ข้อมูลที่มีการเปรียบเทียบ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 4,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 48,
+    "source_id": "CAT-048",
+    "category": "Data Science",
+    "question": "ข้อความต่อไปนี้เกี่ยวข้องกับ Data Types และ Database จงเลือกคำให้เหมาะสมกับข้อความเหล่านี้ (1) โครงสร้างเรียบง่ายมนุษย์สามารถอ่านและเขียนได้โดยไม่ต้องใช้เครื่องมือพิเศษใช้พื้นที่ เก็บน้อยเหมาะสำหรับการส่งผ่านข้อมูลบนอินเทอร์เน็ตรองรับภาษาโปรแกรมหลากหลายภาษาเหมาะสำหรับการ พัฒนาเว็ปแอฟพลิเคชัน (2) เป็นภาษาที่ถูกออกแบบมาเพื่อจัดการกับฐานข้อมูลโดยเฉพาะใช้งานได้กับระบบฐานข้อมูล แบบเชิงสัมพันธ์เรียนรู้และใช้งานได้ง่ายโดยใช้คำศัพท์ภาษาอังกฤษทั่วไป (3) ถูกออกแบบมาเพื่อรองรับข้อมูลที่มีรูปแบบหลากหลายเหมาะสำหรับข้อมูลที่ไม่มีโครงสร้าง ตายตัวหรือโครงสร้างที่เปลี่ยนแปลงอยู่เสมอและสามารถปรับขนาดได้ง่ายเหมาะสำหรับการใช้งานกับแอปพลิ เคชันสมัยใหมม่ที่มีการใช้งานข้อมูลจำนวนมาก",
+    "options": [
+      {
+        "label": "1",
+        "text": "SQL, JSON, SQL",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "JSON, SQL, NoSQL",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "SQL, JSON, NoSQL",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "JSON, JSON, SQL",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "JSON, SQL, NoSQL",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 4,
+    "figures": [
+      "answer_by_category_figures/q048/figure_1.png",
+      "answer_by_category_figures/q048/figure_2.png",
+      "answer_by_category_figures/q048/figure_3.png"
+    ]
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 45,
+    "source_id": "CAT-045",
+    "category": "Data Science",
+    "question": "ขั้นตอนใดไม่เกี่ยวข้องกับ Five Laws of Data-Ink",
+    "options": [
+      {
+        "label": "1",
+        "text": "Maximize the Data-Ink Ratio",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Data Design",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Erase non-data-ink",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Revise and edit",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Data Design",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 5,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 50,
+    "source_id": "CAT-050",
+    "category": "Data Science",
+    "question": "ข้อใดไม่ใช่ความสำคัญของ Data Visualization",
+    "options": [
+      {
+        "label": "1",
+        "text": "ช่วยในการทำ Presentation ที่สวยงาม",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ช่วยให้กลุ่มเป้าหมายได้รับข้อมูลที่ถูกต้องเหมือนกัน",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ช่วยในการตัดสินใจในการดำเนินงาน",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ช่วยให้เห็นรูปแบบในข้อมูลที่มีความซับซ้อน",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ช่วยในการทำ Presentation ที่สวยงาม",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 5,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 65,
+    "source_id": "CAT-065",
+    "category": "Data Science",
+    "question": "ข้อมูลราคาหุ้นควร Visualize แบบใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Distribution",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Flows",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Trends",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Correlations",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Trends",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 5,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 81,
+    "source_id": "CAT-081",
+    "category": "Data Science",
+    "question": "ข้อใดต่อไปนี้กล่าวได้ถูกต้องสำหรับการทำ Product sprint ระหว่าง Data Scientist และ Data Engineer",
+    "options": [
+      {
+        "label": "1",
+        "text": "Data scientist และ Data Engineer ร่วมกันทำ Modeling",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Data scientist และ Data Engineer ร่วมกันประเมินผลโมเดล",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Data scientist และ Data Engineer ร่วมกันทำความเข้าใจธุรกิจ",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Data scientist และ Data Engineer ร่วมกันทำความเข้าใจข้อมูล",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Data scientist และ Data Engineer ร่วมกันทำความเข้าใจธุรกิจ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 5,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 96,
+    "source_id": "CAT-096",
+    "category": "Data Science",
+    "question": "การที่จะเข้าใจเกี่ยวกับศาสตร์ Data Science ได้ดีจะต้องมีความรู้เรื่องใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Computer science",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Math and Statistics",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Business intelligence",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ทั้ง Math and statistics, Computer science และ Business intelligence",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ทั้ง Math and statistics, Computer science และ Business intelligence",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 5,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 7,
+    "source_id": "CAT-007",
+    "category": "Classical machine learning",
+    "question": "เหตุใด KNN จึงไม่ถูกพิจารณาเป็น Unsupervised learning",
+    "options": [
+      {
+        "label": "1",
+        "text": "KNN ต้องการข้อมูลที่มีการ Label เพื่อใช้ในการโหวตคำตอบ",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "KNN ใช้กระบวนการหาความคล้ายคลึงในข้อมูล input เพื่อการจำแนกประเภท",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "KNN มีการใช้พารามิเตอร์ K ในการกำหนดจำนวนของเพื่อนบ้านที่ใกล้ที่สุด",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "KNN ไม่สามารถใช้ในการจัดกลุ่มข้อมูลได้",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "KNN ต้องการข้อมูลที่มีการ Label เพื่อใช้ในการโหวตคำตอบ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 6,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 8,
+    "source_id": "CAT-008",
+    "category": "Classical machine learning",
+    "question": "จากกราฟแสดง local minima กี่ตำแหน่ง",
+    "options": [
+      {
+        "label": "1",
+        "text": "4",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "2",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "1",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "3",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "4",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 6,
+    "figures": [
+      "answer_by_category_figures/q008/figure_1.png"
+    ]
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 13,
+    "source_id": "CAT-013",
+    "category": "Classical machine learning",
+    "question": "โมเดลใดถือว่าใช้วิธีการ Bagging method",
+    "options": [
+      {
+        "label": "1",
+        "text": "Decision Tree",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Random Forest",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "ไม่ข้อใดถูก",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Extremely Randomized Trees",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Random Forest",
+    "answer_note": "source page has no highlight for this item; filled from standard Bagging-method answer",
+    "highlighted_body": [],
+    "page": 6,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 31,
+    "source_id": "CAT-031",
+    "category": "Classical machine learning",
+    "question": "Decision Model ที่เป็น Sequence model มีอะไรบ้าง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Markov Decision Process (MDP)",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Conditional Random Fields (CRF)",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Hidden Markov Model (HMM)",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 6,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 32,
+    "source_id": "CAT-032",
+    "category": "Classical machine learning",
+    "question": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศผลลัพธ์จาก Confusion Matrix แสดงให้ เห็นว่ามี False Alarm (False Positive) สูงมากแต่ค่า Miss (False Negative) ตำ่จากสถานการณ์นี้ข้อใดเป็นการ แปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "ระบบมีความไว (Sensitivity) สูงเกินไปควรปรับลดความไวลงเพื่อลด False Alarm แม้อาจทำให้ Miss เพิ่มขึ้นบ้าง",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ควรเพิ่มจำนวนข้อมูล normal ในชุดข้อมูลฝึกฝนเพื่อให้ระบบเรียนรู้รูปแบบปกติได้ดีขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ระบบทำงานได้ดีแล้วเพราะสามารถตรวจจับความผิดปกติได้เกือบทั้งหมดไม่จำเป็นต้องปรับปรุง",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ควรเปลี่ยนไปใช้ deep learning-base approach เพราะวิธีปัจจุบันไม่สามารถจัดการกับความซับซ้อนของ ข้อมูลได้",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ระบบมีความไว (Sensitivity) สูงเกินไปควรปรับลดความไวลงเพื่อลด False Alarm แม้อาจทำให้ Miss เพิ่มขึ้นบ้าง",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 7,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 36,
+    "source_id": "CAT-036",
+    "category": "Classical machine learning",
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Validation set",
+    "options": [
+      {
+        "label": "1",
+        "text": "Validation set เป็นข้อมูลที่ใช้สำหรับฝึกโมเดลเพื่อปรับ Learning parameter",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Validation set เป็นชุดข้อมูลที่ใช้เพื่อทดสอบโมเดลที่แม่นยำกว่า Test set",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Validation set ใช้ในการปรับค่า Hyperparameters ของโมเดล",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Validation set เป็นชุดข้อมูลที่ไม่เคยถูกใช้ในกระบวนการฝึกและทดสอบโมเดลเลย",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Validation set ใช้ในการปรับค่า Hyperparameters ของโมเดล",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 7,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 58,
+    "source_id": "CAT-058",
+    "category": "Classical machine learning",
+    "question": "MSE คืออะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "Mean Squared Error",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Minimum Signal Energy",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Minimum Signal Error",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Mean Squared Energy",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Mean Squared Error",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 7,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 70,
+    "source_id": "CAT-070",
+    "category": "Classical machine learning",
+    "question": "ข้อใดไม่ใช่ประโยชน์ของ PCA",
+    "options": [
+      {
+        "label": "1",
+        "text": "สร้าง features ชุดใหม่ที่ uncorrelated กัน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ลดมิติของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "สร้าง features ชุดใหม่ที่ independent กัน",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "ลด noise",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "สร้าง features ชุดใหม่ที่ independent กัน",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 7,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 72,
+    "source_id": "CAT-072",
+    "category": "Classical machine learning",
+    "question": "Library ใดที่สามารถช่วยในการสร้าง Decision Tree ได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "opencv",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "pandas",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "numpy",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "scikit-learn",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "scikit-learn",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 7,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 88,
+    "source_id": "CAT-088",
+    "category": "Classical machine learning",
+    "question": "ข้อใดอธิบายการทำงานของ Bootstrap sampling ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Sample without replacement",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Sample with replacement multiple times",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Without sampling",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Sample with replacement",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Sample with replacement multiple times",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 8,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 92,
+    "source_id": "CAT-092",
+    "category": "Classical machine learning",
+    "question": "ข้อใดคือความสัมพันธ์ระหว่าง exploration และ exploitation",
+    "options": [
+      {
+        "label": "1",
+        "text": "Exploration และ exploitation มากเกินไปจะทำให้อัลกอริทึมไม่สามารถหาผลลัพธ์ได้เลย",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Exploration มากเกินไปอาจทำให้อัลกอริทึมพลาดโซลูซันที่ดีที่สุดในขณะที่ exploitation มากเกินไปอาจ ทำให้อัลกอริทึมติดอยู่ในผลลัพธ์ท้องถิ่น",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Exploration และ exploitation มากเกินไปจะทำให้อัลกอริธึมทำงานช้าลง",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Exploration มากเกินไปอาจทำให้อัลกอริทึมติดอยู่ในผลลัพธ์ท้องถิ่นในขณะที่ exploitation มากเกินไป อาจทำให้อัลกอริทึมพลาดโซลูซันที่ดีที่สุด",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Exploration มากเกินไปอาจทำให้อัลกอริทึมพลาดโซลูซันที่ดีที่สุดในขณะที่ exploitation มากเกินไปอาจ ทำให้อัลกอริทึมติดอยู่ในผลลัพธ์ท้องถิ่น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 8,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 94,
+    "source_id": "CAT-094",
+    "category": "Classical machine learning",
+    "question": "ในการพัฒนาโมเดล AI เพื่อวิเคราะห์ความคิดเห็นของลูกค้าจากรีวิวสินค้าออนไลน์ประเภทของการเรียนรู้ของ เครื่อง (machine learning) ที่เหมาะสมที่สุดคืออะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "Semi-supervised Learning",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Supervised Learning",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Unsupervised Learning",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Reinforcement Learning",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Supervised Learning",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 8,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 4,
+    "source_id": "CAT-004",
+    "category": "Deep learning",
+    "question": "ส่วนประกอบหลักของ Sequence to Sequence Model คืออะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "Fully Connected Layer และ Activation Function",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Attention Mechanism และ Transformer",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Encoder และ Decoder",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Convolutional Layer และ Pooling Layer",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Encoder และ Decoder",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 9,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 6,
+    "source_id": "CAT-006",
+    "category": "Deep learning",
+    "question": "Transfer Learning คือการส่งต่อองค์ความรู้การเรียนรู้ระหว่าง Model 2 Model ที่แก้ไขปัญหาที่แตกต่างแต่ เกี่ยวข้องกันถูกหรือไม่",
+    "options": [
+      {
+        "label": "1",
+        "text": "True",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "False",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "True",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 9,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 10,
+    "source_id": "CAT-010",
+    "category": "Deep learning",
+    "question": "ข้อใดกล่าวถึงความแตกต่างระหว่าง LeakyReLU และ ReLU ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "เมื่อ input มีค่าเป็นลบการใช้ LeakyReLU ได้ค่า output ที่มีความชันขนาดเล็กแต่การใช้ ReLU ได้ค่า output ที่มีความชันเป็นศูนย์",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "เมื่อ input เป็นค่าใดๆการใช้ LeakyReLU ได้ค่า output เป็นบวกเสมอแต่การใช้ ReLU ได้ค่า output เป็นลบเสมอ",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เมื่อ input มีค่าเป็นลบการใช้ LeakyReLU ได้ค่า output ที่มีความชันเป็นศูนย์แต่การใช้ ReLU ได้ค่า output ที่มีความชันขนาดเล็ก",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "เมื่อ input มีค่าเพิ่มขึ้นการใช้ LeakyReLU ได้ค่า output ลดลงแต่การใช้ ReLU ได้ค่า output เพิ่มขึ้น",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "เมื่อ input มีค่าเป็นลบการใช้ LeakyReLU ได้ค่า output ที่มีความชันขนาดเล็กแต่การใช้ ReLU ได้ค่า output ที่มีความชันเป็นศูนย์",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 9,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 30,
+    "source_id": "CAT-030",
+    "category": "Deep learning",
+    "question": "Softmax คืออะไรและถูกนำไปใช้งานอย่างไรในด้านวิทยาการคอมพิวเตอร์",
+    "options": [
+      {
+        "label": "1",
+        "text": "Softmax เป็นฟังก์ชันที่ใช้แปลงค่าจำนวนจริงชุดหนึ่งให้เป็นค่าความน่าจะเป็นโดยค่าทั้งหมดจะรวมกันได้ 1 และค่าที่มากที่สุดจะสอดคล้องกับคลาสที่มีความน่าจะเป็นสูงสุดใช้ในงานจำแนกประเภทเช่นการจำแนก ภาพและข้อความ",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Softmax เป็นอัลกอริทึมสำหรับการลดขนาดข้อมูลโดยใช้ในการประมวลผลภาพและเสียงใช้ในงานลด ข้อมูลรบกวนและ feature extraction",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Softmax เป็นฟังก์ชันที่ใช้ในการวัดความคล้ายคลึงกันระหว่างเวกเตอร์สองตัวใช้ในการค้นหาข้อมูลและการ แนะนำ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Softmax เป็นวิธีการหนึ่งในการปรับปรุงประสิทธิภาพของ neural network โดยใช้ในการปรับค่าน้ำหนัก ของแต่ละ node ใน network",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Softmax เป็นฟังก์ชันที่ใช้แปลงค่าจำนวนจริงชุดหนึ่งให้เป็นค่าความน่าจะเป็นโดยค่าทั้งหมดจะรวมกันได้ 1 และค่าที่มากที่สุดจะสอดคล้องกับคลาสที่มีความน่าจะเป็นสูงสุดใช้ในงานจำแนกประเภทเช่นการจำแนก ภาพและข้อความ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 9,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 53,
+    "source_id": "CAT-053",
+    "category": "Deep learning",
+    "question": "ข้อใดเป็นเหตุผลที่ Perceptron ไม่สามารถแก้ปัญหา XOR ได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "เนื่องจากการปรับค่า Hyperparameters ที่ไม่เหมาะสม",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Perceptron ไม่เรียนรู้ข้อมูลแบบเชิงเส้นได้",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เนื่องจากใช้ฟังก์ชันกระตุ้นแบบ ReLU",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "XOR ไม่ใช่ปัญหาแบบเชิงเส้นแต่ Perceptron แก้ได้เฉพาะปัญหาแบบเชิงเส้น",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "XOR ไม่ใช่ปัญหาแบบเชิงเส้นแต่ Perceptron แก้ได้เฉพาะปัญหาแบบเชิงเส้น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 55,
+    "source_id": "CAT-055",
+    "category": "Deep learning",
+    "question": "ข้ามก่อน : กำหนดรูปเริ่มต้น 2 รูปถามหาผลัพธ์ของการดำเนินการตาม XOR",
+    "options": [],
+    "answer_label": "unknown",
+    "answer": "ไม่มีเฉลยในไฟล์ [เฉลย] ข้อสอบ แยกหมวด.pdf (source ระบุว่า 'ข้ามก่อน')",
+    "answer_note": "source skipped this image-XOR question",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 56,
+    "source_id": "CAT-056",
+    "category": "Deep learning",
+    "question": "การทำ Hash แบบ SHA256 ดีกว่าการทำ Hash แบบ Encryption/Decryption อย่างไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "Hash แบบ SHA256 เร็วกว่า Encryption/Decryption",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Hash แบบ SHA256 ตรวจจับการเปลี่ยนแปลงข้อมูลได้ดีกว่า Encryption/Decryption",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Hash แบบ SHA256 ปลอดภัยกว่า Encryption/Decryption เสมอ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Hash แบบ SHA256 ใช้พลังงานในการประมวลผลน้อยกว่า Encryption/Decryption เสมอ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Hash แบบ SHA256 ตรวจจับการเปลี่ยนแปลงข้อมูลได้ดีกว่า Encryption/Decryption",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 60,
+    "source_id": "CAT-060",
+    "category": "Deep learning",
+    "question": "Max pooling layer สามารถเพิ่มความลึกของโครงข่ายได้โดยไม่เพิ่มจำนวนพารามิเตอร์ที่ต้องฝึกฝน (Trainable parameter)",
+    "options": [
+      {
+        "label": "1",
+        "text": "True",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "False",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "True",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 61,
+    "source_id": "CAT-061",
+    "category": "Deep learning",
+    "question": "ข้อใดมีผลกับการออกแบบ GA ที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Encoding",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Cross over",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Mutation",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Encoding",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Encoding",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 63,
+    "source_id": "CAT-063",
+    "category": "Deep learning",
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Max Pooling",
+    "options": [
+      {
+        "label": "1",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการเพิ่มขนาดของข้อมูลนำเข้าโดยการเพิ่มข้อมูลซ้ำในแต่ละกลุ่มของ ข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการสกัดข้อมูลที่มีค่าเฉลี่ยสูงสุดในแต่ละกลุ่มของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้การลดขนาดของข้อมูลนำเข้าโดยการเลือกค่ามากสุดในแต่ละกลุ่มของ ข้อมูล",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้การทำให้ข้อมูลนำเข้าเป็นเชิงเส้น",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Max Pooling เป็นกระบวนการที่ใช้การลดขนาดของข้อมูลนำเข้าโดยการเลือกค่ามากสุดในแต่ละกลุ่มของ ข้อมูล",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 10,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 64,
+    "source_id": "CAT-064",
+    "category": "Deep learning",
+    "question": "ข้อใดเป็นเป้าหมายหลักของการควบคุมแรงกดดันการคัดเลือก (Selection Pressure)",
+    "options": [
+      {
+        "label": "1",
+        "text": "เพื่อเร่งกระบวนการวิวัฒนาการ",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เพื่อเพิ่มความหลากหลายในประชากร",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เพื่อหาคำตอบที่เหมาะสมที่สุดอย่างมีประสิทธิภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 11,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 66,
+    "source_id": "CAT-066",
+    "category": "Deep learning",
+    "question": "ข้อใดอธิบายถึงความแตกต่างระหว่าง Convolution layer และ Fully-connected layer ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Convolution layer ใช้กับข้อมูลที่ไม่มีโครงสร้างเชิงพื้นที่ในขณะที่ Fully-connected layer มักใช้กับ ข้อมูลที่มีโครงสร้าง",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เมื่อขนาดของมิติข้อมูลใหญ่ขึ้นจำนวนพารามิเตอร์ของ Fully-connected layer มีขนาดเท่าเดิมแต่จำนวน พารามิเตอร์ของ Convolution layer จะเพิ่มขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Fully-connected layer มักใช้ในการลดขนาดของข้อมูลลงในขณะที่ Convolution layer มักใช้ในการ ขยายขนาดของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "เมื่อขนาดของมิติข้อมูลใหญ่ขึ้นจำนวนพารามิเตอร์ของ Convolution layer มีขนาดเท่าเดิมแต่จำนวนพารา มิเตอร์ของ Fully-connected layer จะเพิ่มขึ้น",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "เมื่อขนาดของมิติข้อมูลใหญ่ขึ้นจำนวนพารามิเตอร์ของ Convolution layer มีขนาดเท่าเดิมแต่จำนวนพารา มิเตอร์ของ Fully-connected layer จะเพิ่มขึ้น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 11,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 67,
+    "source_id": "CAT-067",
+    "category": "Deep learning",
+    "question": "เมื่อพิจารณาความสามารถในการแข่งขันและการพัฒนาอย่างยั่งยืน (Competitiveness and Sustainability Development) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์ข้อใดกล่าวไม่ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "ปัญญาประดิษฐ์ควรนำมาใช้ในการกำหนดชะตาชีวิตของมนุษย์",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ปัญญาประดิษฐ์ควรใช้งานเพื่อเพิ่มความสามารถในการแข่งขันและสร้างความเจริญให้กับมนุษย์สังคม ประเทศภูมิภาคและโลกที่เป็นธรรม",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ปัญญาประดิษฐ์ควรสร้างและใช้งานเพื่อสร้างประโยชน์และความผาสุกให้แก่มนุษย์สังคมเศรษฐกิจและ สิ่งแวดล้อมอย่างยั่งยืน",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ปัญญาประดิษฐ์ควรได้รับการวิจัยและพัฒนาอย่างต่อเนื่องเพื่อให้มนุษย์เกิดการสร้างสรรค์นวัตกรรมและ อุตสาหกรรมใหม่",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ปัญญาประดิษฐ์ควรนำมาใช้ในการกำหนดชะตาชีวิตของมนุษย์",
+    "answer_note": "",
+    "highlighted_body": [
+      "Development) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์ข้อใดกล่าวไม่ถูกต้อง"
+    ],
+    "page": 11,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 71,
+    "source_id": "CAT-071",
+    "category": "Deep learning",
+    "question": "จากโค้ดต่อไปนี้คำสั่ง layer.Flatten ทำหน้าที่อะไร from tensorflow.keras.applications.vgg16 import VGG16 vgg = VGG16(include_top=False, weights=’imagenet’) # fit input x_in = layers.Input(shape=(32, 32, 1) x = layers.Conv2D(3, 1)(x_in) x = vgg(x) # fit output x = layers.Flatten()(x) x = layers.Dense(10, activation=’softmax’)(x) model = keras.Model(x_in, x) model.summary()",
+    "options": [
+      {
+        "label": "1",
+        "text": "แปลงข้อมูลจาก multi-dimensions ให้เป็น vector",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "แปลงข้อมูลให้มีจำนวน output เท่ากับ 10",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เพิ่มจำนวนช่องสีให้เข้ากับ weights ที่ใช้งาน",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "แปลงข้อมูล multi-layer ให้เป็น a layer",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "แปลงข้อมูลจาก multi-dimensions ให้เป็น vector",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 12,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 97,
+    "source_id": "CAT-097",
+    "category": "Deep learning",
+    "question": "ข้อใดจัดเป็นขั้นตอนหลักที่ใช้ในการปรับปรุงคำตอบในแต่ละ generation และ genetic algorithm",
+    "options": [
+      {
+        "label": "1",
+        "text": "Selection, crossover, evaluation, replacement",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Initialization, selection, crossover, mutation, evaluation, replacement",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Initialization, crossover, mutation, fitness, evaluation, replacement",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Selection, crossover, mutation, evolution, replacement",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Initialization, selection, crossover, mutation, evaluation, replacement",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 12,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 1,
+    "source_id": "CAT-001",
+    "category": "computer vision and image processing",
+    "question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Float32",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Float64",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "UINT8",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 13,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 2,
+    "source_id": "CAT-002",
+    "category": "computer vision and image processing",
+    "question": "วิธีการใดที่ Flatten histogram ได้มากที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Histogram equalization",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Contrast Limited Adaptive Histogram equalization",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Pixel sorting",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Local intensity distribution equalization",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Histogram equalization",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 13,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 3,
+    "source_id": "CAT-003",
+    "category": "computer vision and image processing",
+    "question": "ปัญหาของการนำ PCA มาใช้กับการรู้จำรูปภาพที่มีขนาดใหญ่คือ Computational complexity เกิดความ ซับซ้อนในการคำนวณจะแก้ปัญหานั้นได้อย่างไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "แก้ปัญหาโดยนำข้อมูลมาผ่าน Gaussian filters เพื่อข้อมูลจะลด noise ลงโดยยังคงขนาดของภาพเช่นเดิม",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "แก้ปัญหาโดยสุ่มข้อมูลบางรูปภาพมาใช้ในการคำนวณเพราะบางรูปภาพอาจไม่จำเป็นในการ Training Model",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "แก้ปัญหาโดย resize ขนาดของรูปภาพลงเพราะพิกเซลที่อยู่ใกล้กันมีค่าที่คล้ายกัน",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "แก้ปัญหาโดยทำข้อมูลให้เป็น Identity matrix ก่อนเพื่อลดความซำ้ซ้อนข้อมูล",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "แก้ปัญหาโดย resize ขนาดของรูปภาพลงเพราะพิกเซลที่อยู่ใกล้กันมีค่าที่คล้ายกัน",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 13,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 9,
+    "source_id": "CAT-009",
+    "category": "computer vision and image processing",
+    "question": "ภาพ Uneven lighting สามารถแก้ปัญหาได้ด้วยวิธีการใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Erosion",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Gaussian filter",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Dilation",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Contrast Limited Adaptive Histogram Equalization",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Contrast Limited Adaptive Histogram Equalization",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 13,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 11,
+    "source_id": "CAT-011",
+    "category": "computer vision and image processing",
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Point cloud",
+    "options": [
+      {
+        "label": "1",
+        "text": "การเก็บข้อมูลแบบ Organized point cloud นั้นจุดที่อยู่ใกล้กันจะถูกเก็บในตำแหน่งอาร์เรย์ที่ใกล้กัน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "จะใช้แสดงตำแหน่งทั้งภายในโครงสร้างของวัตถุและพื้นผิวของวัตถุได้",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "การเก็บข้อมูลแบบ Unorganized point cloud นั้นจุดที่อยู่ใกล้กันอาจถูกเก็บในตำแหน่งอาร์เรย์ที่ห่างกัน ได้",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "คือเช็ตของ Point ที่ถูกนำเสนอจุดด้วยพิกัดในรูปแบบ 3D คือ (x, y, z)",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "จะใช้แสดงตำแหน่งทั้งภายในโครงสร้างของวัตถุและพื้นผิวของวัตถุได้",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 13,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 12,
+    "source_id": "CAT-012",
+    "category": "computer vision and image processing",
+    "question": "ในการพัฒนาระบบตรวจจับความผิดปกติสำหรับภาพถ่ายทางการแพทย์คุณกำลังพิจารณาระหว่างการใช้ Autoencoder ธรรมดาและ Variational Antoencoder (VAE) ข้อใดต่อไปนี้เป็นเหตุผลที่สนับสนุนการเลือกใช้ VAE มากที่สุดในกรณีนี้",
+    "options": [
+      {
+        "label": "1",
+        "text": "VAE ใช้เวลาในการฝึกฝนน้อยกว่า Autoencoder ธรรมดาเหมาะสำหรับข้อมูลขนาดใหญ่",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "VAE สามารถจำแนกประเภทของความผิดปกติได้โดยอัตโนมัติโดยไม่ต้องมีข้อมูลฝึกฝน",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "VAE สามารถสร้างภาพใหม่ที่มีความคมชัดสูงกว่า Autoencoder ธรรมดา",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "VAE มีความสามรถในการควบคุม latent space ได้ดีกว่าทำให้รักษาข้อมูลคุณลักษณะได้ดีขึ้น",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "VAE มีความสามรถในการควบคุม latent space ได้ดีกว่าทำให้รักษาข้อมูลคุณลักษณะได้ดีขึ้น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 14,
+    "source_id": "CAT-014",
+    "category": "computer vision and image processing",
+    "question": "ข้อใดจัดเป็น Deep learning framework สำหรับงานด้าน Image processing",
+    "options": [
+      {
+        "label": "1",
+        "text": "Tensorflow",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Caffe",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ONNX",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 17,
+    "source_id": "CAT-017",
+    "category": "computer vision and image processing",
+    "question": "ในกระบวนการแปลงภาพเป็นภาพดิจิทัล Sampling หมายถึงข้อใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "กระบวนการกำหนดตำแหน่งข้อมูลบนภาพที่ต่อเนื่องเป็นข้อมูลแบบไม่ต่อเนื่องเพื่อบันทึกค่าแสง",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "การลดสัญญาณรบกวนในภาพโดยการกำจัดจุดดำและจุดขาวที่ไม่ต้องการ",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "การเพิ่มความคมชัดของภาพโดยการใช้ Filter ที่เหมาะสม",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "การแปลงค่าสีของภาพที่มีค่าต่อเนื่องให้เป็นระดับสีเพื่อบันทึกในคอมพิวเตอร์",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "กระบวนการกำหนดตำแหน่งข้อมูลบนภาพที่ต่อเนื่องเป็นข้อมูลแบบไม่ต่อเนื่องเพื่อบันทึกค่าแสง",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 20,
+    "source_id": "CAT-020",
+    "category": "computer vision and image processing",
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Feature matching สามารถเปรียบเทียบกันโดยใช้ Histogram ของ Keypoint ที่ต้องการ",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Point matching สามารถเปรียบเทียบกันโดยใช้พิกัด 3 มิติของ Keypoint ที่ต้องการ",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Keypoint ใน point cloud หนี่งสามารถตรวจสอบว่าเป็น Keypoint ในอีก Point cloud หนึ่งได้โดยใช้ Transformation matrix ในการคำนวณ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Keypoint ทุกคู่ที่ได้จากการดำเนินการ Matching จะถูกนำมาใช้ในการคำนวณหา Transformation matrix",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Keypoint ทุกคู่ที่ได้จากการดำเนินการ Matching จะถูกนำมาใช้ในการคำนวณหา Transformation matrix",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 23,
+    "source_id": "CAT-023",
+    "category": "computer vision and image processing",
+    "question": "ตัวชี้วัดแบบใดสามารถแสดงประสิทธิภาพของโมเดล Image classification ได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "Bleu",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Mean Squared Error",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "R2 score",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Confusion Matrix",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Confusion Matrix",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 24,
+    "source_id": "CAT-024",
+    "category": "computer vision and image processing",
+    "question": "วัตถุประสงค์ของการทำ Perspective Transform คืออะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "ทำให้ภาพชัดเจนขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ย่อขยายภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เปลี่ยนมุมมองของกล้องที่ถ่ายภาพ",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "หมุนภาพ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "เปลี่ยนมุมมองของกล้องที่ถ่ายภาพ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 14,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 25,
+    "source_id": "CAT-025",
+    "category": "computer vision and image processing",
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Feature descriptor",
+    "options": [
+      {
+        "label": "1",
+        "text": "Feature descriptor ที่ดีต้องยังคงบอกคุณสมบัติลักษณะของจุด Keypoint ได้แม้ค่า Resolution จะ เปลี่ยนไป",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Global feature descriptor จะนำจุดใน Point cloud ทุกจุดมาใช้พิจารณาลักษณะของจุด Keypoint",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Feature descriptor ที่ดีต้องยังคงบอกคุณสมบัติลักษณะของจุด Keypoint ได้แม้จะมีสัญญาณรบกวนของ ภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Local feature descriptor จะนำจุด 3 จุดที่อยู่ตำแหน่งรอบๆของจุด Keypoint มาใช้พิจารณาลักษณะของ จุด Keypoint",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Local feature descriptor จะนำจุด 3 จุดที่อยู่ตำแหน่งรอบๆของจุด Keypoint มาใช้พิจารณาลักษณะของ จุด Keypoint",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 15,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 29,
+    "source_id": "CAT-029",
+    "category": "computer vision and image processing",
+    "question": "จุดกำเนิด (0, 0) ของระบบพิกัด Image pixel coordinate system อยู่ในตำแหน่งใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "ซ้ายบน",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ซ้ายล่าง",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ขวาล่าง",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ขวาบน",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "ซ้ายบน",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 15,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 39,
+    "source_id": "CAT-039",
+    "category": "computer vision and image processing",
+    "question": "วิธีการประมวลใดที่ใช้ในการรวมภาพเข้าด้วยกัน",
+    "options": [
+      {
+        "label": "1",
+        "text": "Gaussian Filter",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Average Filter",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Arithmetic Operations",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Laplacian",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Arithmetic Operations",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 15,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 40,
+    "source_id": "CAT-040",
+    "category": "computer vision and image processing",
+    "question": "การหาพื้นที่ของวัตถุเป้าหมายในภาพจัดเป็นงานประเภทใดในด้าน Computer Vision",
+    "options": [
+      {
+        "label": "1",
+        "text": "Object Detection",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Segmentation",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Classification",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Regression",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Segmentation",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 15,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 41,
+    "source_id": "CAT-041",
+    "category": "computer vision and image processing",
+    "question": "ข้อใดกล่าวไม่ถูกต้องเกี่ยวกับคำสั่งต่อไปนี้ image = np.ones([8, 8, 3], np.uint8)*255",
+    "options": [
+      {
+        "label": "1",
+        "text": "เป็นภาพสีโหมด RGB",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ทุกพิเซลมีค่าเป็น 1",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "เป็นภาพสีขาว",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ภาพมีขนาด 8x8 พิกเซล",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "ทุกพิเซลมีค่าเป็น 1",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 15,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 43,
+    "source_id": "CAT-043",
+    "category": "computer vision and image processing",
+    "question": "ถ้าต้องการสร้าง Object Detection model ด้วย CNN based algorithm ไม่จะควรใช้ Model ใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "YOLO",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "R-CNN",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "SSD",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "EfficientNet",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "EfficientNet",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 16,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 44,
+    "source_id": "CAT-044",
+    "category": "computer vision and image processing",
+    "question": "ภาพวัตถุที่ได้จากหลักการของ Pinhole camera มีลักษณะตรงตามข้อใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "ภาพสลับกลับด้านในแนวนอน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ภาพมี Distortion เกิดขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ภาพมี Noise เกิดขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ภาพสลับกลับด้านในแนวตั้ง",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ภาพสลับกลับด้านในแนวตั้ง",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 16,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 49,
+    "source_id": "CAT-049",
+    "category": "computer vision and image processing",
+    "question": "เหตุใดเมื่อนำ PCA ไปประยุกต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลายเมื่อการเลือกค่า eigenventors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง",
+    "options": [
+      {
+        "label": "1",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูงมีค่า Variance ของแสงมาก",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูงทำให้ลด Dimension ได้มาก",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูงมีค่า Mean ของแสงมาก",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูงมีค่า Noise มาก",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูงมีค่า Variance ของแสงมาก",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 16,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 52,
+    "source_id": "CAT-052",
+    "category": "computer vision and image processing",
+    "question": "การระบุจำนวนคนในรูปภาพจัดเป็นงานประเภทใดในด้าน Computer Vision",
+    "options": [
+      {
+        "label": "1",
+        "text": "Segmentation",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Classification",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Object Detection",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Regression",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Object Detection",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 16,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 77,
+    "source_id": "CAT-077",
+    "category": "computer vision and image processing",
+    "question": "ข้อมูลภาพแบบ UINT8 ที่มีค่า RGB เท่ากับ 255, 255, 255 จะมีสีอะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "ดำ",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "แดง",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เขียว",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ขาว",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ขาว",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 16,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 5,
+    "source_id": "CAT-005",
+    "category": "Natural Language Processing (NLP)",
+    "question": "ข้อใดเกี่ยวข้องกับกระบวนการ Intent classification น้อยที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "การเพิ่มความสามารถในการประมวลผลข้อมูลภาพที่มีความละเอียดสูง",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "การช่วยให้ระบบสามารถแยกแยะประเภทของข้อมูลจากผู้ใช้ได้ดีขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "การปรับปรุงประสบการณ์ของผู้ใช้ในการโต้ตอบกับระบบ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "การทำให้ระบบตอบสนองต่อคำสั่งของผู้ใช้ได้อย่างแม่นยำ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "การเพิ่มความสามารถในการประมวลผลข้อมูลภาพที่มีความละเอียดสูง",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 17,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 16,
+    "source_id": "CAT-016",
+    "category": "Natural Language Processing (NLP)",
+    "question": "ภาษาไทยใช้ระบบการเขียนแบบใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Alphabets",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Abjads",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Alternative scripts",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Abugidas",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Abugidas",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 17,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 18,
+    "source_id": "CAT-018",
+    "category": "Natural Language Processing (NLP)",
+    "question": "สำหรับผู้ที่สนใจการแปลภาษาไทยเป็นภาษาลาววิธีใดเป็นวิธีการแปลภาษาที่เหมาะสม",
+    "options": [
+      {
+        "label": "1",
+        "text": "Neural Machine Translation",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Direct Machine Translation",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Example based Machine Translation",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Transfer based Machine Translation",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Neural Machine Translation",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 17,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 22,
+    "source_id": "CAT-022",
+    "category": "Natural Language Processing (NLP)",
+    "question": "ข้อใดต่อไปนี้ไม่ใช่ข้อดีของการใช้ Text enrichment ในการทำ text processing",
+    "options": [
+      {
+        "label": "1",
+        "text": "ช่วยปรับปรุงประสิทธิภาพของโมเดล",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เพิ่มความหลากหลายของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "ลดปัญหา overfitting",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ลดเวลาในการประมวลผลข้อมูล",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ลดเวลาในการประมวลผลข้อมูล",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 17,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 54,
+    "source_id": "CAT-054",
+    "category": "Natural Language Processing (NLP)",
+    "question": "โครงสร้างของ Neural Network แบบใดเหมาะสมกับการแปลภาษา",
+    "options": [
+      {
+        "label": "1",
+        "text": "Encoder",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Feedforward neural network",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Encoder-Decoder",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Decoder",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Encoder-Decoder",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 17,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 74,
+    "source_id": "CAT-074",
+    "category": "Natural Language Processing (NLP)",
+    "question": "หน้าที่ของคำ part-of-speech-tagging ช่วยให้การประมวลผลภาษาธรรมชาติดีขึ้นอย่างไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "การระบุหน้าที่ของคำช่วยในการแยกแยะระหว่างคำที่มีความหมายเหมือนกันในภาษาต่างๆทำให้การแปล ภาษาถูกต้องมากขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "การระบุหน้าที่ของคำช่วยให้การจัดกลุ่มคำตามประเภทของคำ (เช่นนาม, กริยา) สามารถทำได้อย่างถูกต้อง ซึ่งทำให้การแปลถูกต้องมากขึ้น",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "การระบุหน้าที่ของคำช่วยในการสร้างโมเดลการสร้างประโยคใหม่โดยการใช้เทคนิคการสร้างประโยคจาก ชุดข้อมูลที่มีอยู่",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "การระบุหน้าที่ของคำช่วยในการจัดลำดับคำให้เหมาะสมในประโยคที่ต้องการแปลเป็นภาษาต่างๆซึ่งทำให้ การสร้างคำตอบที่ถูกต้องมากขึ้น",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "การระบุหน้าที่ของคำช่วยให้การจัดกลุ่มคำตามประเภทของคำ (เช่นนาม, กริยา) สามารถทำได้อย่างถูกต้อง ซึ่งทำให้การแปลถูกต้องมากขึ้น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 18,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 76,
+    "source_id": "CAT-076",
+    "category": "Natural Language Processing (NLP)",
+    "question": "ภาษาใดต่อไปนี้ใช้ระบบการเขียนแบบ Alphabets",
+    "options": [
+      {
+        "label": "1",
+        "text": "ภาษาอารบิก, ภาษาฮิบรู, ภาษาแอราเมอิก",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ภาษาโรมัน, ภาษาอาร์มีเนีย, ภาษากรีก",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "ภาษาเชโรกี, อักษรครี, ฮิรางานะ(ญี่ปุ่น)",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ภาษาพม่า, ภาษาไทย, ภาษาทมิฬ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "ภาษาโรมัน, ภาษาอาร์มีเนีย, ภาษากรีก",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 18,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 79,
+    "source_id": "CAT-079",
+    "category": "Natural Language Processing (NLP)",
+    "question": "จากตัวอย่างข้อความในเอกสารต่อไปนี้คำใดบ้างที่มีนัยสำคัญตามการคำนวณแบบ TF-IDF เมื่อ TF คืออัตราส่วนของจำนวนคำที่ปรากฏในเอกสารที่มีต่อจำนวนคำทั้งหมดในเอกสารนั้น และ IDF คืออัตราส่วนของจำนวนคำที่ปรากฏในเอกสารทั้งหมดที่มีต่อจำนวนเอกสารทั้งหมด Document1: The car is driven on the road. Document2: The truck is driven on the highway.",
+    "options": [
+      {
+        "label": "1",
+        "text": "Car, truck, road, highway",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "The, car, the, road, The truck, The highway",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "The, is, on, the, driven",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Is, driven, on",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "Car, truck, road, highway",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 18,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 82,
+    "source_id": "CAT-082",
+    "category": "Natural Language Processing (NLP)",
+    "question": "กำหนดข้อมูลคำศัพท์ใน Pronunciation Dictionary ดังนี้ การ k a n^ กาน k a n^ บาร b a n^ บาน b a n^ บ้าน b a n^ การบ้าน k a n^ b a n^ หากระบบรู้จำในส่วนของโมเดล Acoustic ทำนายว่าลำดับของหน่วยเสียงเป็น k a n^ b a n^ กำหนดข้อความดังต่อไปนี้ จากลำดับของหน่วยเสียงและข้อมูลคำศัพท์ใน Pronuncation Dictionary ข้อใดระบุข้อความทั้งหมดที่ระบบ สามารถทำนายได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "การบ้าน",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "กานบ้าน",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "บ้านการ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "การบ้าน",
+        "is_answer": false
+      },
+      {
+        "label": "1",
+        "text": "1 2 3 และ 4",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "4",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "1 และ 2 และ 4",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "1 และ 2",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "1 และ 2 และ 4",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 19,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 83,
+    "source_id": "CAT-083",
+    "category": "Natural Language Processing (NLP)",
+    "question": "กระบวนการ Word embedding คืออะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "กระบวนการวิเคราะห์ความถี่ของคำในเอกสาร",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "กระบวนการแปลงตัวอักษรทุกตัวในคำให้เป็นเวกเตอร์ของตัวเลขที่มี dimension เท่ากันทุกตัว",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "กระบวนการแปลงคำให้เป็นเวกเตอร์ของตัวเลขที่มี dimension เท่ากันทุกตัวเพื่อใช้ในการประมวลผลภาษา ธรรมชาติ",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "กระบวนการจัดกลุ่มคำที่มีความหมายเหมือนกันเข้าด้วยกัน",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "กระบวนการแปลงคำให้เป็นเวกเตอร์ของตัวเลขที่มี dimension เท่ากันทุกตัวเพื่อใช้ในการประมวลผลภาษา ธรรมชาติ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 19,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 47,
+    "source_id": "CAT-047",
+    "category": "Signal Processing",
+    "question": "การแทนลำดับข้อมูลนำเข้า (input sequence) ในข้อใดหากนำไปสร้างระบบสังเคราะห์เสียงแล้วจะมีความถูก ต้องและเป็นธรรมชาติมากกว่าข้ออื่น",
+    "options": [
+      {
+        "label": "1",
+        "text": "สัญลักษณ์แทนการออกเสียง (Phoneme)",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "ชนิดของคำ (Part of Speech)",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "จำนวนของพยางค์ในแต่ละคำ",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ตัวอักษร (Character)",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "สัญลักษณ์แทนการออกเสียง (Phoneme)",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 20,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 73,
+    "source_id": "CAT-073",
+    "category": "Signal Processing",
+    "question": "ประเภทของคำที่เหมาะสมสำหรับระบบสังเคราะห์เสียงคือต้องมีจำนวน part of tagging ที่มากที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "True",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "False",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "2",
+    "answer": "False",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 20,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 84,
+    "source_id": "CAT-084",
+    "category": "Signal Processing",
+    "question": "ข้อมูลใดไม่ใช่ข้อมูลนำเข้าหลักที่ต้องใช้ในการสร้างโมเดล FastPitch -Signal",
+    "options": [
+      {
+        "label": "1",
+        "text": "Pitch",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Duration",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Energy",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Mel-spectrogram",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Mel-spectrogram",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 20,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 95,
+    "source_id": "CAT-095",
+    "category": "Signal Processing",
+    "question": "กำหนดข้อมูลความต้นฉบับและข้อความที่ทำนายจากระบบรู้จำเสียงพูดดังนี้ Target Tokens: [“ชอบ”, “กิน”, “ไก่ทอด”, “และ”, “ส้มตำ”] Generated Tokens: [“ชอบ”, “กิน”, “กลิ่น”, “ไก่ทอด”, “ส้มตำ”, “มา”] จงคำนวณค่า WER (Word Error Rate) จากสูตรดังต่อไปนี้ 𝑊𝐸𝑅 =𝑆+𝐼+𝐷 𝑁 โดยที่ S คือจำนวนคำที่แทนที่กัน (คำที่แตกต่างกันระหว่างประโยคเป้าหมายและประโยคที่สร้างขึ้น D คือจำนวนคำที่ลบออก (คำที่ขาดหายจากประโยคที่สร้างขึ้น) I คือจำนวนคำที่เพิ่มเข้าไป (คำที่มีเพิ่มเข้ามาในประโยคที่สร้างขึ้น) N คือจำนวนทั้งหมดในประโยคเป้าหมาย",
+    "options": [
+      {
+        "label": "1",
+        "text": "2/5",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "4/5",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "1/5",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "3/5",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "3/5",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 20,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 100,
+    "source_id": "CAT-100",
+    "category": "Signal Processing",
+    "question": "คำสั่งใดใช้ส่ง Signal ไปยัง process",
+    "options": [
+      {
+        "label": "1",
+        "text": "killall",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "pkill",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "kill",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 21,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 19,
+    "source_id": "CAT-019",
+    "category": "iOT",
+    "question": "ส่วนประกอบของหุ่นยนต์กลุ่มใดที่ช่วยให้หุ่นยนต์ปรับตัวเข้ากับการเปลี่ยนแปลงของสภาพแวดล้อมรอบๆตัว และสามารถทำงานได้อย่างแม่นยำทีสุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Processor, Mechanism, and Electronics",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Control, Electronics, and Sensing",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Algorithm, Control, and Sensing",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Processor, Algorithm, and Mechanism",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Control, Electronics, and Sensing",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 22,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 34,
+    "source_id": "CAT-034",
+    "category": "iOT",
+    "question": "ข้อดีไม่ใช่ข้อดีของ Virtual Influence",
+    "options": [
+      {
+        "label": "1",
+        "text": "Control risk over bad behaviours",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Challenges with authenticity",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Low cost",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "No regulations",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Challenges with authenticity",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 22,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 35,
+    "source_id": "CAT-035",
+    "category": "iOT",
+    "question": "ข้อใดไม่จัดเป็นอุปกรณ์สำหรับใช้ในการพัฒนา IoT",
+    "options": [
+      {
+        "label": "1",
+        "text": "Arduino Board",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Raspberry Pi",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Mainboard",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "ESP8266",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Mainboard",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 22,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 51,
+    "source_id": "CAT-051",
+    "category": "iOT",
+    "question": "การเชื่อมต่อแบบใดไม่จัดอยู่ในรูป Wireless Communication",
+    "options": [
+      {
+        "label": "1",
+        "text": "PLC",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Bluetooth",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Cellular",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Wifi",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "PLC",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 22,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 59,
+    "source_id": "CAT-059",
+    "category": "iOT",
+    "question": "ระบบควมคุมแบบปิด (Close Loop Control System) ข้อใดถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "ระบบควบคุมแบบปิดจะทำงานได้ในระบบที่อยู่ภายในอาคารเท่านั้น",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ระบบควบคุมแบบปิดต้องการตัวป้อนกลับ (Feedback) เพื่อคำนวณผลที่เปลี่ยนแปลง",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "ระบบควบคุมแบบปิดไม่ต้องการเซนเซอร์แต่ใช้ตัวประมวลผลหลักทำงานแบบซ้ำ (Looping)",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ระบบควบคุมแบบปิดเป็นการควบคุมเฉพาะสิ่งรบกวน (Disturbance) ที่เกิดขึ้นจากการทำงาน",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "ระบบควบคุมแบบปิดต้องการตัวป้อนกลับ (Feedback) เพื่อคำนวณผลที่เปลี่ยนแปลง",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 22,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 80,
+    "source_id": "CAT-080",
+    "category": "iOT",
+    "question": "ข้อใดต่อไปนี้จัดเป็นอุปกรณ์ Smart IoT",
+    "options": [
+      {
+        "label": "1",
+        "text": "หลอดไฟ, นาฬิกาอนาล็อก, โทรศัพท์แบบมีสาย",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เทอร์โมสตัทแบบตั้งโปรแกรมได้, หุ่นยนต์ดูดฝุ่น, ตู้เย็นอัจฉริยะ",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "ลำโพงอัจฉริยะ, กริ่งประตูอัจฉริยะ, ทีวี",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "สมาร์ตโฟน, โน้ตบุ๊ก, คอมพิวเตอร์ตั้งโต๊ะ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "เทอร์โมสตัทแบบตั้งโปรแกรมได้, หุ่นยนต์ดูดฝุ่น, ตู้เย็นอัจฉริยะ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 85,
+    "source_id": "CAT-085",
+    "category": "iOT",
+    "question": "เทคโนโลยีมอเตอร์ประเภทใดใช้แม่เหล็กถาวรในการผลิต",
+    "options": [
+      {
+        "label": "1",
+        "text": "มอเตอร์ซิงโครนัสรีลักแตนซ์ / Synchronous Reluctance (SyncRM)",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "มอเตอร์ดีซีไร้แปลงถ่าน / Brushless DC Motor",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "มอเตอร์สวิตซ์รีลักแตนซ์ / Switched Reluctance (SR) Motor",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "มอเตอร์เหนี่ยวนำ / Induction Motors",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "มอเตอร์ดีซีไร้แปลงถ่าน / Brushless DC Motor",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 87,
+    "source_id": "CAT-087",
+    "category": "iOT",
+    "question": "ส่วนประกอบใดที่ทำให้ IoT แตกต่างจาก Embedded system",
+    "options": [
+      {
+        "label": "1",
+        "text": "Software",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Hardware",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "AI",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Connectivity",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Connectivity",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 90,
+    "source_id": "CAT-090",
+    "category": "iOT",
+    "question": "ข้อใดคือภาษาคอมพิวเตอร์ที่ใช้กับ Embedded board",
+    "options": [
+      {
+        "label": "1",
+        "text": "HTML, PerL, Verilog",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Assembly, LabView, SQL",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "C, JavaScript, Python",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Arduino, C++, Rust",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "Arduino, C++, Rust",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 91,
+    "source_id": "CAT-091",
+    "category": "iOT",
+    "question": "หุ่นยนต์ชนิดที่ติดตั้งอยู่กับที่ (Fixed robot) ประเภทใดที่เหมาะสมสำหรับกระบวนการผลิตที่ต้องอาศัยการ เคลื่อนไหวที่แม่นยำในพื้นที่แนวตั้งที่จำกัดทำงานด้วยความเร็วสูงและสามารถจัดการกับ Payload ที่หลากหลายได้",
+    "options": [
+      {
+        "label": "1",
+        "text": "SCARA robot",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "Parallel robot",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Cartesian robot",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Spine robot",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "SCARA robot",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 98,
+    "source_id": "CAT-098",
+    "category": "iOT",
+    "question": "ข้อใดกล่าวถึงโครงสร้างโปรแกรมภาษา C ที่ใช้กับ Arduino ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "1",
+        "text": "ฟังก์ชัน begin() ฟังก์ชัน cycle()",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "ฟังก์ชัน setup() ฟังก์ชัน loop()",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "ฟังก์ชัน initialize() ฟังก์ชัน run()",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ฟังก์ชัน start() ฟังก์ชัน repeat()",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "ฟังก์ชัน setup() ฟังก์ชัน loop()",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 23,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 37,
+    "source_id": "CAT-037",
+    "category": "Colab/Kaggle/Github",
+    "question": "จุดประสงค์หลักของการ Run คำสั่ง !chmod 600 ~/.kaggle/kaggle.json ใน Google Colab Notebook คือ อะไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "เพื่อติดตั้ง Kaggle library",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เพื่อสร้าง Token ของ Kaggle API ใหม่",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เพื่อดาวน์โหลด Datasets จาก Kaggle",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "เพื่อแก้ไข Permission ของไฟล์",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "เพื่อแก้ไข Permission ของไฟล์",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 24,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 57,
+    "source_id": "CAT-057",
+    "category": "Colab/Kaggle/Github",
+    "question": "ข้อใดถูกต้องเกี่ยวกับการตั้งค่า Kaggle Notebook?",
+    "options": [
+      {
+        "label": "1",
+        "text": "เลือกเปิด/ปิด Accelerator ได้",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "เลือกภาษาที่ใช้เขียน code ได้",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "เลือกเปิด/ปิด Internet ได้",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ถูกทุกข้อ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 24,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 69,
+    "source_id": "CAT-069",
+    "category": "Colab/Kaggle/Github",
+    "question": "ข้อใดต่อไปนี้แสดงให้เห็นถึงข้อดีของการใช้ Version control ของ GitHub ใน Google Colab ได้ดีที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "Notebook จะ Save โดยอัตโนมัติทุกๆ 5 นาที",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "สมาชิกในทีมหลายคนสามารถแก้ไขส่วนต่างๆของ Notebook เดียวกันพร้อมๆกันได้",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "โปรแกรมเมอร์สามารถ Undo การเปลี่ยนแปลงที่ทำกับ Notebook เมื่อสัปดาห์ที่แล้วได้",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ทีมงานสามารถ Maintain Notebook เวอร์ชันต่างๆสำหรับการทดลองต่างๆได้",
+        "is_answer": true
+      }
+    ],
+    "answer_label": "4",
+    "answer": "ทีมงานสามารถ Maintain Notebook เวอร์ชันต่างๆสำหรับการทดลองต่างๆได้",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 24,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 93,
+    "source_id": "CAT-093",
+    "category": "Colab/Kaggle/Github",
+    "question": "ในการใช้งาน Google Colab เพื่อเขียนโค้ด Python และต้องการติดตั้งไลบรารีเพิ่มเติมที่ไม่ได้อยู่ในระบบ คำสั่งใดต่อไปนี้ถูกต้องและเหมาะสมที่สุด",
+    "options": [
+      {
+        "label": "1",
+        "text": "!pip install <ชื่อไลบรารี>",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "from google.colab import <ชื่อไลบรารี>",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "import <ชื่อไลบรารี>",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "%install <ชื่อไลบรารี>",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "1",
+    "answer": "!pip install <ชื่อไลบรารี>",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 24,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 28,
+    "source_id": "CAT-028",
+    "category": "Docker",
+    "question": "ข้อดีของ Docker ที่แตกต่างจาก Virtual Machine อย่างไร",
+    "options": [
+      {
+        "label": "1",
+        "text": "Docker มีความปลอดภัยสูงกว่า Virtual Machine",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Docker สามารถรันโปรแกรมต่าง OS ได้แต่ Virtual Machine ไม่สามารถทำได้",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "Docker ใช้ทรัพยากรน้อยกว่า Virtual Machine",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "Docker รันโปรแกรมได้แต่ Virtual Machine ไม่สามารถทำได้",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "Docker ใช้ทรัพยากรน้อยกว่า Virtual Machine",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 25,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 38,
+    "source_id": "CAT-038",
+    "category": "Docker",
+    "question": "หากต้องการดู log การทำงานภายใต้ container id a036be7f4862 ที่ถูกสร้างให้ทำงานด้วยคำสั่ง docker run -P nginx:alpine จะสามารถดูได้โดยใช้คำสั่งใด",
+    "options": [
+      {
+        "label": "1",
+        "text": "docker log nigix:alpine",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "docker logs a036be7f4862",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Docker log a036be7f4862",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "ไม่ต้องทำอะไรเพราะ log จะแสดงที่หน้าจออัตโนมัติ",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "docker logs a036be7f4862",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 25,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 15,
+    "source_id": "CAT-015",
+    "category": "Microservice",
+    "question": "ในการพัฒนาระบบในรูปแบบ Microservice ข้อมูลใดไม่ควรจัดเก็บอยู่ในข้อมูล Logging เพื่อใช้ในการตรวจ สอบย้อนหลัง",
+    "options": [
+      {
+        "label": "1",
+        "text": "Log การ Authentication ในการเรียกใช้ Microservice",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "Load ของ CPU",
+        "is_answer": true
+      },
+      {
+        "label": "3",
+        "text": "Exception Log",
+        "is_answer": false
+      },
+      {
+        "label": "4",
+        "text": "Event Message ใน Massage Bus",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "2",
+    "answer": "Load ของ CPU",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 26,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 27,
+    "source_id": "CAT-027",
+    "category": "Microservice",
+    "question": "ในการออกแบบระบบ microservice ถึงควรจะหลีกเลี่ยงการสื่อสารระหว่าง service แบบ Synchronous",
+    "options": [
+      {
+        "label": "1",
+        "text": "การสื่อสารแบบ Synchronous กิน resource เกินไป",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "การสื่อสารแบบ Synchronous มี response time ที่สูงเกินไปไม่เหมาะกับ micro service",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "การสื่อสารแบบ Synchronous ทำให้ service ที่เรียกต่อๆกันเกิดการรอคำตอบทำให้ไม่สามารถใช้งาน service ได้อย่างเต็มประสิทธิภาพ",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "ไม่สามารถใช้การสื่อสารแบบ Synchronous ได้",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "การสื่อสารแบบ Synchronous ทำให้ service ที่เรียกต่อๆกันเกิดการรอคำตอบทำให้ไม่สามารถใช้งาน service ได้อย่างเต็มประสิทธิภาพ",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 26,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 21,
+    "source_id": "CAT-021",
+    "category": "Blockchain",
+    "question": "Blockchain คืออะไร บล็อกเชน (Blockchain) คือเทคโนโลยีการจัดเก็บข้อมูลแบบกระจายศูนย์ (Decentralized) ที่เชื่อมโยงข้อมูลเข้า ด้วยกันเป็นลูกโซ่ (Chain) โดยแต่ละข้อมูลหรือธุรกรรมจะถูกบันทึกเป็น \"บล็อก\" ซึ่งจะถูกเข้ารหัสและเชื่อมโยงกับ บล็อกก่อนหน้าทำให้ข้อมูลที่บันทึกแล้วไม่สามารถแก้ไขหรือเปลี่ยนแปลงได้",
+    "options": [],
+    "answer_label": "text",
+    "answer": "บล็อกเชน (Blockchain) คือเทคโนโลยีการจัดเก็บข้อมูลแบบกระจายศูนย์ (Decentralized) ที่เชื่อมโยงข้อมูลเข้า ด้วยกันเป็นลูกโซ่ (Chain) โดยแต่ละข้อมูลหรือธุรกรรมจะถูกบันทึกเป็น \"บล็อก\" ซึ่งจะถูกเข้ารหัสและเชื่อมโยงกับ บล็อกก่อนหน้าทำให้ข้อมูลที่บันทึกแล้วไม่สามารถแก้ไขหรือเปลี่ยนแปลงได้",
+    "answer_note": "answer highlighted in body text, not a numbered option",
+    "highlighted_body": [
+      "บล็อกเชน (Blockchain) คือเทคโนโลยีการจัดเก็บข้อมูลแบบกระจายศูนย์ (Decentralized) ที่เชื่อมโยงข้อมูลเข้า",
+      "ด้วยกันเป็นลูกโซ่ (Chain) โดยแต่ละข้อมูลหรือธุรกรรมจะถูกบันทึกเป็น \"บล็อก\" ซึ่งจะถูกเข้ารหัสและเชื่อมโยงกับ",
+      "บล็อกก่อนหน้าทำให้ข้อมูลที่บันทึกแล้วไม่สามารถแก้ไขหรือเปลี่ยนแปลงได้"
+    ],
+    "page": 26,
+    "figures": []
+  },
+  {
+    "source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "number": 26,
+    "source_id": "CAT-026",
+    "category": "Blockchain",
+    "question": "Crypto Wallets หาก MetaMask ปิดตัวไปเรายังสามารถเข้าถึง Wallet ของเราได้หรือไม่",
+    "options": [
+      {
+        "label": "1",
+        "text": "ไม่สามารถเข้าถึงได้",
+        "is_answer": false
+      },
+      {
+        "label": "2",
+        "text": "สามารถเข้าได้โดยติดต่อทีมสนับสนุน MetaMask",
+        "is_answer": false
+      },
+      {
+        "label": "3",
+        "text": "สามารถเข้าถึงได้โดยใช้ Seed Phrase บนกระเป๋าเงินอื่น",
+        "is_answer": true
+      },
+      {
+        "label": "4",
+        "text": "สามารถเข้าถึงได้โดยใช้บัญชีของ MetaMask บนเว็บไซต์ผู้ให้บริการอื่น",
+        "is_answer": false
+      }
+    ],
+    "answer_label": "3",
+    "answer": "สามารถเข้าถึงได้โดยใช้ Seed Phrase บนกระเป๋าเงินอื่น",
+    "answer_note": "",
+    "highlighted_body": [],
+    "page": 26,
+    "figures": []
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 65,
+  "crop": "exam03/question_crops/q065/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 33,
+      "y": 192,
+      "cy": 197,
+      "blue": 0,
+      "dark": 3,
+      "mean": 226.3801652892562
+    },
+    {
+      "x": 33,
+      "y": 225,
+      "cy": 230,
+      "blue": 0,
+      "dark": 5,
+      "mean": 227.25619834710744
+    },
+    {
+      "x": 33,
+      "y": 256,
+      "cy": 261,
+      "blue": 0,
+      "dark": 3,
+      "mean": 226.84297520661158
+    },
+    {
+      "x": 33,
+      "y": 287,
+      "cy": 292,
+      "blue": 0,
+      "dark": 4,
+      "mean": 226.96694214876032
+    }
+  ],
+  "text": "ภาพนิเป็นทนึ่งในขั้นคอนของเทศนค surace reconstruction แบบใจ\niaท65\nอนคำวอา\nf\nsigned distanc: function\na spline surface reconstruction\ntriangulated surface reconstruction\npoisson surace reconstruction",
+  "lines": [
+    {
+      "text": "ภาพนิเป็นทนึ่งในขั้นคอนของเทศนค surace reconstruction แบบใจ",
+      "conf": 0.3363007003689008,
+      "x0": 71.0,
+      "y0": 29.0,
+      "x1": 417.0,
+      "y1": 49.0
+    },
+    {
+      "text": "iaท65",
+      "conf": 0.26578518642586046,
+      "x0": 23.0,
+      "y0": 31.0,
+      "x1": 63.0,
+      "y1": 47.0
+    },
+    {
+      "text": "อนคำวอา",
+      "conf": 0.4387225473564539,
+      "x0": 869.0,
+      "y0": 33.0,
+      "x1": 907.0,
+      "y1": 47.0
+    },
+    {
+      "text": "f",
+      "conf": 0.028644184322602406,
+      "x0": 75.0,
+      "y0": 61.0,
+      "x1": 203.0,
+      "y1": 171.0
+    },
+    {
+      "text": "signed distanc: function",
+      "conf": 0.25868723604415406,
+      "x0": 79.0,
+      "y0": 189.0,
+      "x1": 221.0,
+      "y1": 209.0
+    },
+    {
+      "text": "a spline surface reconstruction",
+      "conf": 0.6336650370171607,
+      "x0": 79.0,
+      "y0": 221.0,
+      "x1": 255.0,
+      "y1": 241.0
+    },
+    {
+      "text": "triangulated surface reconstruction",
+      "conf": 0.9823733678634593,
+      "x0": 79.0,
+      "y0": 253.0,
+      "x1": 277.0,
+      "y1": 273.0
+    },
+    {
+      "text": "poisson surace reconstruction",
+      "conf": 0.7921753001047609,
+      "x0": 81.0,
+      "y0": 283.0,
+      "x1": 251.0,
+      "y1": 303.0
+    }
+  ]
+}

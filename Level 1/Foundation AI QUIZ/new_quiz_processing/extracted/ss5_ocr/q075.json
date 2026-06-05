@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 75,
+  "crop": "ss5/question_crops/q075/question_full.png",
+  "selected_index": 2,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 114,
+      "dark": 22,
+      "mean": 164.08641975308643
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.34567901234567
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "ข้อใดไม่ใชหลักการของการแสดงข้อมูลอย่างมีประสิทธิภาพ (principles for effective graphical display)\nข้าที่ 75\nลบค่าตอบ\ninduce the viewer\nmake it beautiful\npresent many numbers in a small space\navoid distorting",
+  "lines": [
+    {
+      "text": "ข้อใดไม่ใชหลักการของการแสดงข้อมูลอย่างมีประสิทธิภาพ (principles for effective graphical display)",
+      "conf": 0.6262353918459459,
+      "x0": 89.0,
+      "y0": 17.0,
+      "x1": 736.0,
+      "y1": 49.0
+    },
+    {
+      "text": "ข้าที่ 75",
+      "conf": 0.3164331703339466,
+      "x0": 28.0,
+      "y0": 20.0,
+      "x1": 76.0,
+      "y1": 44.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8923537997443758,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "induce the viewer",
+      "conf": 0.6306883358314445,
+      "x0": 102.0,
+      "y0": 62.0,
+      "x1": 238.0,
+      "y1": 86.0
+    },
+    {
+      "text": "make it beautiful",
+      "conf": 0.567914699775283,
+      "x0": 104.0,
+      "y0": 101.0,
+      "x1": 232.0,
+      "y1": 129.0
+    },
+    {
+      "text": "present many numbers in a small space",
+      "conf": 0.6714234628957837,
+      "x0": 104.0,
+      "y0": 144.0,
+      "x1": 390.0,
+      "y1": 171.0
+    },
+    {
+      "text": "avoid distorting",
+      "conf": 0.7147867189240601,
+      "x0": 104.0,
+      "y0": 186.0,
+      "x1": 226.0,
+      "y1": 212.0
+    }
+  ]
+}

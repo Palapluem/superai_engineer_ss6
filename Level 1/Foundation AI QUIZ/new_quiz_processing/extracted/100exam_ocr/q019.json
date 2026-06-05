@@ -1,0 +1,40 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 19,
+  "crop": "100exam_crops/q019/question_full.png",
+  "text": "multilayer perceptron (mlp) ไม่จัดเปินเทคนิคด้าน deep learning\nข้อที 19\ntrue\nfalse",
+  "lines": [
+    {
+      "text": "multilayer perceptron (mlp) ไม่จัดเปินเทคนิคด้าน deep learning",
+      "conf": 0.5445383763663012,
+      "x0": 160.0,
+      "y0": 34.0,
+      "x1": 821.0,
+      "y1": 82.0
+    },
+    {
+      "text": "ข้อที 19",
+      "conf": 0.5415109621166482,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "true",
+      "conf": 0.9512428641319275,
+      "x0": 182.0,
+      "y0": 106.0,
+      "x1": 246.0,
+      "y1": 138.0
+    },
+    {
+      "text": "false",
+      "conf": 0.8621416288065328,
+      "x0": 181.0,
+      "y0": 169.0,
+      "x1": 253.0,
+      "y1": 205.0
+    }
+  ]
+}

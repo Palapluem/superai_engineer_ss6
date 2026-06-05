@@ -1,0 +1,56 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 49,
+  "crop": "100exam_crops/q049/question_full.png",
+  "text": "ข้อกล่าวถูกต้องเกียวกับ alot\nข้อที 49\nal adds value to iat through machine learning and improved decision mal\nalot makes the intelligence realtime management\nlot adds value to al through connectivity and data exchange\nalot enhance data management and analytics",
+  "lines": [
+    {
+      "text": "ข้อกล่าวถูกต้องเกียวกับ alot",
+      "conf": 0.9012403576438113,
+      "x0": 160.0,
+      "y0": 33.0,
+      "x1": 445.0,
+      "y1": 78.0
+    },
+    {
+      "text": "ข้อที 49",
+      "conf": 0.6839147720500293,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 138.0,
+      "y1": 70.0
+    },
+    {
+      "text": "al adds value to iat through machine learning and improved decision mal",
+      "conf": 0.27667423409047387,
+      "x0": 180.0,
+      "y0": 98.0,
+      "x1": 934.0,
+      "y1": 147.0
+    },
+    {
+      "text": "alot makes the intelligence realtime management",
+      "conf": 0.7592550173239775,
+      "x0": 181.0,
+      "y0": 167.0,
+      "x1": 707.0,
+      "y1": 209.0
+    },
+    {
+      "text": "lot adds value to al through connectivity and data exchange",
+      "conf": 0.602357004749293,
+      "x0": 178.0,
+      "y0": 228.0,
+      "x1": 807.0,
+      "y1": 278.0
+    },
+    {
+      "text": "alot enhance data management and analytics",
+      "conf": 0.6970955973843731,
+      "x0": 181.0,
+      "y0": 299.0,
+      "x1": 657.0,
+      "y1": 340.0
+    }
+  ]
+}

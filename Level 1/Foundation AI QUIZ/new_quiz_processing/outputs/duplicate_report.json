@@ -1,0 +1,326 @@
+[
+  {
+    "duplicate": "K1-023",
+    "duplicate_source": "ข้อสอบชุด1.pdf",
+    "kept": "SS6-038",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 0.98,
+    "question": "Amazon เก็บข้อมูลผู้บริโภคจำนวนวนมหาศาลเพื่อวิเคราะห์พฤติกรรมการซื้อและค้นหาสินค้า โมเดลข้อมูลใดต่อไปนี้ ไม่ใช่โมเดลหลักที่ Amazon ใช้เพื่อวิเคราะห์พฤติกรรมของผู้บริโภค ?",
+    "kept_question": "Amazon เก็บข้อมูลผู้บริโภคจำนวนมหาศาลเพื่อวิเคราะห์พฤติกรรมการซื้อและค้นหาสินค้า โมเดลข้อมูลใดต่อไปนี้ ไม่ใช่โมเดลหลักที่ Amazon ใช้เพื่อวิเคราะห์พฤติกรรมผู้บริโภค?"
+  },
+  {
+    "duplicate": "K1-085",
+    "duplicate_source": "ข้อสอบชุด1.pdf",
+    "kept": "SS6-031",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 1.0,
+    "question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้",
+    "kept_question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้"
+  },
+  {
+    "duplicate": "CAT-062",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-051",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "เหตุใดการอัพเดทความรู้ใน Bayesian inference จึงมีประโยชน์",
+    "kept_question": "เหตุใดการอัพเดทความรู้ใน Bayesian inference จึงมีประโยชน์?"
+  },
+  {
+    "duplicate": "CAT-086",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-054",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.947,
+    "question": "สมมติว่า ใน ANOVA ถูกปฏิเสธหมายความว่าอย่างไร 𝐻0",
+    "kept_question": "สมมติว่า HO ใน ANOVA ถูกปฏิเสธ หมายความว่าอย่างไร?"
+  },
+  {
+    "duplicate": "CAT-042",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-044",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "Category Comparison เหมาะสำหรับการแสดงข้อมูลแบบใด",
+    "kept_question": "Category Comparison เหมาะสำหรับการแสดงข้อมูลแบบใด"
+  },
+  {
+    "duplicate": "CAT-048",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-050",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.986,
+    "question": "ข้อความต่อไปนี้เกี่ยวข้องกับ Data Types และ Database จงเลือกคำให้เหมาะสมกับข้อความเหล่านี้ (1) โครงสร้างเรียบง่ายมนุษย์สามารถอ่านและเขียนได้โดยไม่ต้องใช้เครื่องมือพิเศษใช้พื้นที่ เก็บน้อยเหมาะสำหรับการส่งผ่านข้อมูลบนอินเทอร์เน็ตรองรับภาษาโปรแกรมหลากหลายภาษาเหมาะสำหรับการ พัฒนาเว็ปแอฟพลิเคชัน (2) เป็นภาษาที่ถูกออกแบบมาเพื่อจัดการกับฐานข้อมูลโดยเฉพาะใช้งานได้กับระบบฐานข้อมูล แบบเชิงสัมพันธ์เรียนรู้และใช้งานได้ง่ายโดยใช้คำศัพท์ภาษาอังกฤษทั่วไป (3) ถูกออกแบบมาเพื่อรองรับข้อมูลที่มีรูปแบบหลากหลายเหมาะสำหรับข้อมูลที่ไม่มีโครงสร้าง ตายตัวหรือโครงสร้างที่เปลี่ยนแปลงอยู่เสมอและสามารถปรับขนาดได้ง่ายเหมาะสำหรับการใช้งานกับแอปพลิ เคชันสมัยใหมม่ที่มีการใช้งานข้อมูลจำนวนมาก",
+    "kept_question": "ข้อความต่อไปนี้ เกี่ยวข้องกับ Data Types และ Database จงเลือกคำให้เหมาะสมกับข้อความ เหล่านี้ “ โครงสร้างเรียบง่าย มนุษย์สามารถอ่านและเขียนได้โดยไม่ต้องใช้เครื่องมือพิเศษ ใช้ พื้นที่เก็บข้อมูลน้อยเหมาะสำหรับการส่งผ่านข้อมูลบนอินเทอร์เน็ต รองรับภาษาโปรแกรม หลากหลายภาษา เหมาะสำหรับการพัฒนาเว็บแอปพลิเคชัน เป็นภาษาที่ถูกออกแบบมาเพื่อ จัดการกับฐานข้อมูลโดยเฉพาะ ใช้งานได้กับระบบฐานข้อมูลแบบเชิงสัมพันธ์ เรียนรู้และใช้งาน ได้ง่าย โดยใช้คำศัพท์ภาษาอังกฤษทั่วไปถูกออกแบบบมาเพื่อรองรับข้อมูลที่มีรูปแบบ หลากหลาย เหมาะส่าหรับข้อมูลที่ไม่มีโครงสร้างตายตัว หรือโครงสร้างที่เปลี่ยนแปลงอยู่เสมอ และสามารถปรับขนาดได้ง่ายเหมาะสำหรับการใช้งานกับแอปพลิเคชันสมัยใหม่ที่มีการใช้งาน ข้อมูลจำนวนมาก”"
+  },
+  {
+    "duplicate": "CAT-032",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-029",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.961,
+    "question": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศผลลัพธ์จาก Confusion Matrix แสดงให้ เห็นว่ามี False Alarm (False Positive) สูงมากแต่ค่า Miss (False Negative) ตำ่จากสถานการณ์นี้ข้อใดเป็นการ แปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด",
+    "kept_question": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก Confusion Matrix แสดงให้เห็นว่ามี False Alarm (False Positive) สูงมาn uain Miss (False Negative) Rin จากสถานการณ์นี้ ข้อใดเป็นการแปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด"
+  },
+  {
+    "duplicate": "CAT-036",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "SS6-043",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 1.0,
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Validation set",
+    "kept_question": "ข้อใดถูกต้องเกี่ยวกับ Validation set?"
+  },
+  {
+    "duplicate": "CAT-072",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-059",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "Library ใดที่สามารถช่วยในการสร้าง Decision Tree ได้",
+    "kept_question": "Library ใดที่สามารถช่วยในการสร้าง Decision Tree ได้"
+  },
+  {
+    "duplicate": "CAT-088",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-076",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดอธิบายการทำงานของ Bootstrap sampling ได้ถูกต้อง",
+    "kept_question": "ข้อใดอธิบายการทำงานของ Bootstrap sampling ได้ถูกต้อง"
+  },
+  {
+    "duplicate": "CAT-092",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-020",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดคือความสัมพันธ์ระหว่าง exploration และ exploitation",
+    "kept_question": "ข้อใดคือความส้มพันธ์ระหว่าง exploration และ exploitation"
+  },
+  {
+    "duplicate": "CAT-094",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-060",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.987,
+    "question": "ในการพัฒนาโมเดล AI เพื่อวิเคราะห์ความคิดเห็นของลูกค้าจากรีวิวสินค้าออนไลน์ประเภทของการเรียนรู้ของ เครื่อง (machine learning) ที่เหมาะสมที่สุดคืออะไร",
+    "kept_question": "ในการพัฒนาโมเดล AI เพื่อวิเคราะห์ความคิดเห็นของลูกค้ารีวิวสินค้าออนไลน์ ประเภทของ การเรียนรู้ของเครื่อง (Machine Learning) ที่เหมาะสมที่สุดคืออะไร"
+  },
+  {
+    "duplicate": "CAT-030",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-030",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.954,
+    "question": "Softmax คืออะไรและถูกนำไปใช้งานอย่างไรในด้านวิทยาการคอมพิวเตอร์",
+    "kept_question": "Softmax คืออะไร และถูกนำไปไปใช้งานอย่างไรในวันวิทยาการคอมพิวเตอร์?"
+  },
+  {
+    "duplicate": "CAT-053",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-071",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดเป็นเหตุผลที่ Perceptron ไม่สามารถแก้ปัญหา XOR ได้",
+    "kept_question": "ข้อใดเป็นเหตุผลที่ Perceptron ไม่สามารถแก้ปัญหา XOR ได้?"
+  },
+  {
+    "duplicate": "CAT-063",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-017",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Max Pooling",
+    "kept_question": "ข้อใดถูกต้องเกี่ยวกับ Max Pooling?"
+  },
+  {
+    "duplicate": "CAT-064",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-082",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดเป็นเป้าหมายหลักของการควบคุมแรงกดดันการคัดเลือก (Selection Pressure)",
+    "kept_question": "ข้อใดเป็นเป้าหมายหลักของการควบคุมแรงกดดันการคัดเลือก(Selection Pressure)"
+  },
+  {
+    "duplicate": "CAT-067",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "SS6-012",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 1.0,
+    "question": "เมื่อพิจารณาความสามารถในการแข่งขันและการพัฒนาอย่างยั่งยืน (Competitiveness and Sustainability Development) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์ข้อใดกล่าวไม่ถูกต้อง",
+    "kept_question": "เมื่อพิจารณาความสามารถในการแข่งขันและการพัฒนาอย่างยั่งยืน (Competitiveness and Sustainability Development) ตามหลักการทางจริยธรรมปัญญาประดิษฐ์ ข้อใดกล่าวไม่ถูกต้อง"
+  },
+  {
+    "duplicate": "CAT-071",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-067",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.998,
+    "question": "จากโค้ดต่อไปนี้คำสั่ง layer.Flatten ทำหน้าที่อะไร from tensorflow.keras.applications.vgg16 import VGG16 vgg = VGG16(include_top=False, weights=’imagenet’) # fit input x_in = layers.Input(shape=(32, 32, 1) x = layers.Conv2D(3, 1)(x_in) x = vgg(x) # fit output x = layers.Flatten()(x) x = layers.Dense(10, activation=’softmax’)(x) model = keras.Model(x_in, x) model.summary()",
+    "kept_question": "จากโค้ดต่อไปนี้ คำสั่ง layers.Flatten ทำหน้าที่อะไร from tensorflow.keras.applications.vgg16 import VGG16 vgg = VGG16(include_top=False, weights='imagenet') # fit input x_in = layers.Input(shape=(32, 32, 1)) x = layers.Conv2D(3, 1)(x_in) x = vgg (x) # fit output x = layers.Flatten()(x) x = layers.Dense(10, activation-'softmax') (x) model = keras.Model (x_in, x) model.summary ()"
+  },
+  {
+    "duplicate": "CAT-001",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "SS6-031",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 1.0,
+    "question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้",
+    "kept_question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้"
+  },
+  {
+    "duplicate": "CAT-002",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-036",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "วิธีการใดที่ Flatten histogram ได้มากที่สุด",
+    "kept_question": "วิธีการใดที่ Flatten histogram ได้มากที่สุด"
+  },
+  {
+    "duplicate": "CAT-017",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-038",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ในกระบวนการแปลงภาพเป็นภาพดิจิทัล Sampling หมายถึงข้อใด",
+    "kept_question": "ในกระบวนการแปลงภาพเป็นภาพดิจิทัล Sampling หมายถึงข้อใด"
+  },
+  {
+    "duplicate": "CAT-020",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-041",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้อง",
+    "kept_question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้อง"
+  },
+  {
+    "duplicate": "CAT-025",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-033",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Feature descriptor",
+    "kept_question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Feature descriptor"
+  },
+  {
+    "duplicate": "CAT-029",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-027",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "จุดกำเนิด (0, 0) ของระบบพิกัด Image pixel coordinate system อยู่ในตำแหน่งใด",
+    "kept_question": "จุดกำเนิด (0,0) ของระบบพิกัด Image pixel coordinate systemอยู่ในตำแหน่งใด"
+  },
+  {
+    "duplicate": "CAT-040",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-026",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "การหาพื้นที่ของวัตถุเป้าหมายในภาพจัดเป็นงานประเภทใดในด้าน Computer Vision",
+    "kept_question": "การหาพื้นที่ของวัตถุเป้าหมายในภาพ จัดเป็นงานประเภทใดในด้านComputer Vision"
+  },
+  {
+    "duplicate": "CAT-049",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-024",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.977,
+    "question": "เหตุใดเมื่อนำ PCA ไปประยุกต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลายเมื่อการเลือกค่า eigenventors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง",
+    "kept_question": "เหตุใดเมื่อน่า PCA ไปประยุคต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลาย เมื่อการ เลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง"
+  },
+  {
+    "duplicate": "CAT-016",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-046",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ภาษาไทยใช้ระบบการเขียนแบบใด",
+    "kept_question": "ภาษาไทยใช้ระบบการเขียนแบบใด?"
+  },
+  {
+    "duplicate": "CAT-076",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-040",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ภาษาใดต่อไปนี้ใช้ระบบการเขียนแบบ Alphabets",
+    "kept_question": "ภาษาใดต่อไปนี้ใช้ระบบการเขียนแบบ Alphabets"
+  },
+  {
+    "duplicate": "CAT-047",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-070",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "การแทนลำดับข้อมูลนำเข้า (input sequence) ในข้อใดหากนำไปสร้างระบบสังเคราะห์เสียงแล้วจะมีความถูก ต้องและเป็นธรรมชาติมากกว่าข้ออื่น",
+    "kept_question": "การแทนลำดับข้อมูลนำเข้า (input sequence) ในข้อใด หากนำไปสร้างระบบสังเคราะห์เสียง แล้วจะมีความถูกต้องและเป็นธรรมชาติมากกว่าข้ออื่น"
+  },
+  {
+    "duplicate": "CAT-035",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-068",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.944,
+    "question": "ข้อใดไม่จัดเป็นอุปกรณ์สำหรับใช้ในการพัฒนา IoT",
+    "kept_question": "ข้อใด ไม่จัดเป็นอุปกรณ์สำหรับใช้ใช่ในการพัฒนา loT"
+  },
+  {
+    "duplicate": "CAT-051",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-009",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.968,
+    "question": "การเชื่อมต่อแบบใดไม่จัดอยู่ในรูป Wireless Communication",
+    "kept_question": "การเชื่อมต่อแบบใด ไม่จัดอยู่ในรูปแบบ Wireless Communication"
+  },
+  {
+    "duplicate": "CAT-098",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-021",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "ข้อใดกล่าวถึงโครงสร้างโปรแกรมภาษา C ที่ใช้กับ Arduino ได้ถูกต้อง",
+    "kept_question": "ข้อใด กล่าวถึง โครงสร้างโปรแกรมภาษา C ที่ใช้กับ Arduino ได้ถูกต้อง"
+  },
+  {
+    "duplicate": "CAT-037",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-001",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 1.0,
+    "question": "จุดประสงค์หลักของการ Run คำสั่ง !chmod 600 ~/.kaggle/kaggle.json ใน Google Colab Notebook คือ อะไร",
+    "kept_question": "จุดประสงค์หลักของการ Run คำสั่ง !chmod 600 ~/.kaggle/kaggle.json ใน Google Colab Notebook คืออะไร"
+  },
+  {
+    "duplicate": "CAT-069",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "SS6-072",
+    "kept_source": "SuperAI SS6_Foundation AI QUIZ.pdf",
+    "score": 1.0,
+    "question": "ข้อใดต่อไปนี้แสดงให้เห็นถึงข้อดีของการใช้ Version control ของ GitHub ใน Google Colab ได้ดีที่สุด",
+    "kept_question": "ข้อใดต่อไปนี้แสดงให้เห็นถึงข้อดีของการใช้ Version control ของ GitHub ใน Google Colab ได้ดีที่สุด?"
+  },
+  {
+    "duplicate": "CAT-038",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-055",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.982,
+    "question": "หากต้องการดู log การทำงานภายใต้ container id a036be7f4862 ที่ถูกสร้างให้ทำงานด้วยคำสั่ง docker run -P nginx:alpine จะสามารถดูได้โดยใช้คำสั่งใด",
+    "kept_question": "หากต้องการดู log การทำงานภายใต้ container id a036be714862 ที่ถูกสร้างให้ท่างานด้วย คำสั่ง docker run -P nginx:alpine จะสามารถดูได้โดยใช้คำสั่งใด"
+  },
+  {
+    "duplicate": "CAT-026",
+    "duplicate_source": "[เฉลย] ข้อสอบ แยกหมวด.pdf",
+    "kept": "K1-088",
+    "kept_source": "ข้อสอบชุด1.pdf",
+    "score": 0.985,
+    "question": "Crypto Wallets หาก MetaMask ปิดตัวไปเรายังสามารถเข้าถึง Wallet ของเราได้หรือไม่",
+    "kept_question": "Crypto Wallets หาn MetaMask ปิดตัวไป เรายังสามารถเข้าถึง Wallet ของเราได้หรือไม่ ?"
+  }
+]

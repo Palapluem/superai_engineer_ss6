@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 47,
+  "crop": "ss5/question_crops/q047/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.28395061728395
+    },
+    {
+      "y": 155,
+      "dark": 25,
+      "mean": 164.12345679012347
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "embedded system แตกต่างจาก computer อย่างไร\nข้าที่ 47\nลบค่าตอบ\nembedded system ไม่มี controller แต่ computer มี\ncomputer จำเป็นต้องมี memory แต่ embedded system ไม่จำเปิน\nembedded system ทำหน้าทีเฉพาะอย่าง แต่ computer ทำหน้าทีไค้หลายอย่าง\nembedded system ไม่สามารถใข้ไนเขียนโปรแกรมได้ แต่ computer สามารถใข้ในเขียนโปรแกรมได้",
+  "lines": [
+    {
+      "text": "embedded system แตกต่างจาก computer อย่างไร",
+      "conf": 0.5567735419143269,
+      "x0": 92.0,
+      "y0": 20.0,
+      "x1": 428.0,
+      "y1": 48.0
+    },
+    {
+      "text": "ข้าที่ 47",
+      "conf": 0.5389111652746011,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8885155989419051,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "embedded system ไม่มี controller แต่ computer มี",
+      "conf": 0.7462881868008948,
+      "x0": 104.0,
+      "y0": 60.0,
+      "x1": 454.0,
+      "y1": 89.0
+    },
+    {
+      "text": "computer จำเป็นต้องมี memory แต่ embedded system ไม่จำเปิน",
+      "conf": 0.5081632143052284,
+      "x0": 103.0,
+      "y0": 100.0,
+      "x1": 536.0,
+      "y1": 131.0
+    },
+    {
+      "text": "embedded system ทำหน้าทีเฉพาะอย่าง แต่ computer ทำหน้าทีไค้หลายอย่าง",
+      "conf": 0.6478969303544705,
+      "x0": 104.0,
+      "y0": 141.0,
+      "x1": 600.0,
+      "y1": 171.0
+    },
+    {
+      "text": "embedded system ไม่สามารถใข้ไนเขียนโปรแกรมได้ แต่ computer สามารถใข้ในเขียนโปรแกรมได้",
+      "conf": 0.42643254766627847,
+      "x0": 104.0,
+      "y0": 182.0,
+      "x1": 714.0,
+      "y1": 213.0
+    }
+  ]
+}

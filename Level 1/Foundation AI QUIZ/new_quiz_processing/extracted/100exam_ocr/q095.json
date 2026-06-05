@@ -1,0 +1,56 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 95,
+  "crop": "100exam_crops/q095/question_full.png",
+  "text": "key ทีส่าคัญของห่วงโซ่คุณค่าของโมเดลธุรกิจข้อมลได้แก่อะไรบ้าง\nข้อที 95\nbig data information flow, service use, software tools and algorithm transfe\nbig data information flow, service use, service provider\nbig data information flow, service use., hardware components\nbig data information flow, service use, embedded systems",
+  "lines": [
+    {
+      "text": "key ทีส่าคัญของห่วงโซ่คุณค่าของโมเดลธุรกิจข้อมลได้แก่อะไรบ้าง",
+      "conf": 0.46124593660482327,
+      "x0": 160.0,
+      "y0": 33.0,
+      "x1": 794.0,
+      "y1": 81.0
+    },
+    {
+      "text": "ข้อที 95",
+      "conf": 0.679408268063652,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "big data information flow, service use, software tools and algorithm transfe",
+      "conf": 0.41415551311484516,
+      "x0": 180.0,
+      "y0": 99.0,
+      "x1": 939.0,
+      "y1": 147.0
+    },
+    {
+      "text": "big data information flow, service use, service provider",
+      "conf": 0.6053692086689418,
+      "x0": 181.0,
+      "y0": 167.0,
+      "x1": 745.0,
+      "y1": 207.0
+    },
+    {
+      "text": "big data information flow, service use., hardware components",
+      "conf": 0.6407908965917094,
+      "x0": 181.0,
+      "y0": 231.0,
+      "x1": 813.0,
+      "y1": 274.0
+    },
+    {
+      "text": "big data information flow, service use, embedded systems",
+      "conf": 0.672808659279482,
+      "x0": 181.0,
+      "y0": 296.0,
+      "x1": 781.0,
+      "y1": 337.0
+    }
+  ]
+}

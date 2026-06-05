@@ -1,0 +1,131 @@
+{
+  "source": "EXAM03.pdf",
+  "number": 12,
+  "crop": "exam03/question_crops/q012/question_full.png",
+  "selected_index": null,
+  "selected_scores": [
+    {
+      "x": 32,
+      "y": 72,
+      "cy": 77,
+      "blue": 0,
+      "dark": 3,
+      "mean": 225.94214876033058
+    },
+    {
+      "x": 32,
+      "y": 122,
+      "cy": 127,
+      "blue": 0,
+      "dark": 0,
+      "mean": 223.54545454545453
+    },
+    {
+      "x": 32,
+      "y": 173,
+      "cy": 178,
+      "blue": 0,
+      "dark": 0,
+      "mean": 224.9917355371901
+    },
+    {
+      "x": 33,
+      "y": 224,
+      "cy": 228,
+      "blue": 0,
+      "dark": 4,
+      "mean": 228.93388429752065
+    }
+  ],
+  "text": "วโค็คขอโดเป็นคาสังทโซแบ่งข้อมลออกเป็น 2 ส่วน โคยโหสวนข้อมลเทรนมีขนาลเปืน 8d% ตองขอมลท์งหมด\nงงทีา2\ntrom sklearn modal _selection imoort train_test _solit\nix train. y_train., ix_test. y_test =\ntrain_test split( x y. train_siz==0,80)\nfrom skleamn model selection import train_test _split\nix train., ly_train, ix_test. y_test = train _rest split( ix y. test_size=0.83)\nfrom skleam modal_selection imocrt train_test salit\nix train., ix_test. j_train. y_test = train_test spiit{ x. y. train_size=0,20)\nfrom sklearn model selection import train_test spli:\nixtrain. ix_test ytrain., y_test = train_test _split{ ix y. test_size=0.20)",
+  "lines": [
+    {
+      "text": "วโค็คขอโดเป็นคาสังทโซแบ่งข้อมลออกเป็น 2 ส่วน โคยโหสวนข้อมลเทรนมีขนาลเปืน 8d% ตองขอมลท์งหมด",
+      "conf": 0.06400150892954375,
+      "x0": 67.0,
+      "y0": 20.0,
+      "x1": 612.0,
+      "y1": 49.0
+    },
+    {
+      "text": "งงทีา2",
+      "conf": 0.08761886614290913,
+      "x0": 19.0,
+      "y0": 25.0,
+      "x1": 61.0,
+      "y1": 43.0
+    },
+    {
+      "text": "trom sklearn modal _selection imoort train_test _solit",
+      "conf": 0.1790587088831282,
+      "x0": 79.0,
+      "y0": 59.0,
+      "x1": 367.0,
+      "y1": 79.0
+    },
+    {
+      "text": "ix train. y_train., ix_test. y_test =",
+      "conf": 0.1291782849219096,
+      "x0": 78.0,
+      "y0": 74.0,
+      "x1": 244.0,
+      "y1": 100.0
+    },
+    {
+      "text": "train_test split( x y. train_siz==0,80)",
+      "conf": 0.28370666712348963,
+      "x0": 248.0,
+      "y0": 76.0,
+      "x1": 454.0,
+      "y1": 100.0
+    },
+    {
+      "text": "from skleamn model selection import train_test _split",
+      "conf": 0.4133009547933107,
+      "x0": 80.0,
+      "y0": 107.0,
+      "x1": 368.0,
+      "y1": 131.0
+    },
+    {
+      "text": "ix train., ly_train, ix_test. y_test = train _rest split( ix y. test_size=0.83)",
+      "conf": 0.07725259772723823,
+      "x0": 78.0,
+      "y0": 126.0,
+      "x1": 448.0,
+      "y1": 150.0
+    },
+    {
+      "text": "from skleam modal_selection imocrt train_test salit",
+      "conf": 0.1242063813602919,
+      "x0": 81.0,
+      "y0": 161.0,
+      "x1": 367.0,
+      "y1": 179.0
+    },
+    {
+      "text": "ix train., ix_test. j_train. y_test = train_test spiit{ x. y. train_size=0,20)",
+      "conf": 0.09946286146657725,
+      "x0": 78.0,
+      "y0": 176.0,
+      "x1": 454.0,
+      "y1": 200.0
+    },
+    {
+      "text": "from sklearn model selection import train_test spli:",
+      "conf": 0.34971853857080887,
+      "x0": 81.0,
+      "y0": 209.0,
+      "x1": 367.0,
+      "y1": 229.0
+    },
+    {
+      "text": "ixtrain. ix_test ytrain., y_test = train_test _split{ ix y. test_size=0.20)",
+      "conf": 0.1569919864636979,
+      "x0": 78.0,
+      "y0": 226.0,
+      "x1": 448.0,
+      "y1": 252.0
+    }
+  ]
+}

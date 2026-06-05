@@ -1,0 +1,115 @@
+{
+  "source": "EXAM02.pdf",
+  "number": 32,
+  "crop": "exam02/question_crops/q032/question_full.png",
+  "selected_index": 1,
+  "selected_scores": [
+    {
+      "x": 30,
+      "y": 110,
+      "cy": 115,
+      "blue": 90,
+      "dark": 25,
+      "mean": 181.71074380165288
+    },
+    {
+      "x": 30,
+      "y": 146,
+      "cy": 151,
+      "blue": 0,
+      "dark": 2,
+      "mean": 226.64462809917356
+    },
+    {
+      "x": 30,
+      "y": 182,
+      "cy": 187,
+      "blue": 0,
+      "dark": 0,
+      "mean": 226.89256198347107
+    },
+    {
+      "x": 30,
+      "y": 218,
+      "cy": 223,
+      "blue": 0,
+      "dark": 0,
+      "mean": 227.31404958677686
+    }
+  ],
+  "text": "จากข่อความดอไปนี้ จัดเปน nlp application ใด\ntอฟ32\nอบค่าคอบ\n\"determining the attitude ofa speaker or a writer with respect to some topic or the overall contextual\npolarity ofa document\".\nsentimen: analysis\nreadability assessment\ngenre classification\nlanguage identification",
+  "lines": [
+    {
+      "text": "จากข่อความดอไปนี้ จัดเปน nlp application ใด",
+      "conf": 0.5220492589867404,
+      "x0": 72.0,
+      "y0": 24.0,
+      "x1": 356.0,
+      "y1": 52.0
+    },
+    {
+      "text": "tอฟ32",
+      "conf": 0.10863329182725785,
+      "x0": 17.0,
+      "y0": 27.0,
+      "x1": 61.0,
+      "y1": 47.0
+    },
+    {
+      "text": "อบค่าคอบ",
+      "conf": 0.35210878095246795,
+      "x0": 863.0,
+      "y0": 31.0,
+      "x1": 913.0,
+      "y1": 45.0
+    },
+    {
+      "text": "\"determining the attitude ofa speaker or a writer with respect to some topic or the overall contextual",
+      "conf": 0.36641781609189183,
+      "x0": 70.0,
+      "y0": 43.0,
+      "x1": 706.0,
+      "y1": 74.0
+    },
+    {
+      "text": "polarity ofa document\".",
+      "conf": 0.5644128843869134,
+      "x0": 72.0,
+      "y0": 70.0,
+      "x1": 230.0,
+      "y1": 94.0
+    },
+    {
+      "text": "sentimen: analysis",
+      "conf": 0.44504000107230435,
+      "x0": 82.0,
+      "y0": 106.0,
+      "x1": 206.0,
+      "y1": 130.0
+    },
+    {
+      "text": "readability assessment",
+      "conf": 0.9666666616001802,
+      "x0": 81.0,
+      "y0": 136.0,
+      "x1": 234.0,
+      "y1": 166.0
+    },
+    {
+      "text": "genre classification",
+      "conf": 0.6245741913065322,
+      "x0": 81.0,
+      "y0": 175.0,
+      "x1": 212.0,
+      "y1": 200.0
+    },
+    {
+      "text": "language identification",
+      "conf": 0.6241091627587096,
+      "x0": 81.0,
+      "y0": 212.0,
+      "x1": 238.0,
+      "y1": 239.0
+    }
+  ]
+}

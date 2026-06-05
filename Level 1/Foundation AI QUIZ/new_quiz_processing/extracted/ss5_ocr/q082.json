@@ -1,0 +1,87 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 82,
+  "crop": "ss5/question_crops/q082/question_full.png",
+  "selected_index": 2,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.09876543209876
+    },
+    {
+      "y": 114,
+      "dark": 31,
+      "mean": 164.2716049382716
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.28395061728395
+    }
+  ],
+  "text": "ข้อใดจัดเปินค่าตอบของ object detection\nข้าที่ 82\nลบค่าตอบ\nbounding boxes\nbounding boxes with class label\nsegment\nclass label",
+  "lines": [
+    {
+      "text": "ข้อใดจัดเปินค่าตอบของ object detection",
+      "conf": 0.7451820228739542,
+      "x0": 89.0,
+      "y0": 17.0,
+      "x1": 360.0,
+      "y1": 49.0
+    },
+    {
+      "text": "ข้าที่ 82",
+      "conf": 0.6934037808345718,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.9273704057248385,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "bounding boxes",
+      "conf": 0.8507343153238213,
+      "x0": 104.0,
+      "y0": 62.0,
+      "x1": 226.0,
+      "y1": 90.0
+    },
+    {
+      "text": "bounding boxes with class label",
+      "conf": 0.5452804367113028,
+      "x0": 102.0,
+      "y0": 98.0,
+      "x1": 336.0,
+      "y1": 130.0
+    },
+    {
+      "text": "segment",
+      "conf": 0.6330592809106833,
+      "x0": 103.0,
+      "y0": 143.0,
+      "x1": 176.0,
+      "y1": 173.0
+    },
+    {
+      "text": "class label",
+      "conf": 0.5929322726393275,
+      "x0": 105.0,
+      "y0": 187.0,
+      "x1": 187.0,
+      "y1": 207.0
+    }
+  ]
+}

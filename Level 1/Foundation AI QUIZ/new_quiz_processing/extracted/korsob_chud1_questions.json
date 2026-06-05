@@ -1,0 +1,2707 @@
+[
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 1,
+    "question": "จุดประสงค์หลักของการ Run คำสั่ง !chmod 600 ~/.kaggle/kaggle.json ใน Google Colab Notebook คืออะไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพื่อแก่ไข Permission ของไฟล์",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "เพื่อสร้าง Token ของ Kaggle APl ใหม่",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "เพื่อดาวน์โหลด Datasets จาก Kaggle",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "เพื่อติดตั้ง Kaggle library",
+        "is_answer": false
+      }
+    ],
+    "answer": "เพื่อแก่ไข Permission ของไฟล์",
+    "answer_label": "a",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 2,
+    "question": "ควรเลือกใช้ระบบ CBM กับอุปกรณ์/เครื่องจักรประเภทใด?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ใช้กับอุปกรณ์/เครื่องจักร ที่สามารถติดตั้งเซ็นเซอร์ได้ง่าย",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ใช้กับอุปรณ์/เครื่องจักรทุกประเภท",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ใช้กับอุปกรณ์/เครื่องจักรที่สำคัญที่สุด",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "ใช้กับอุปกรณ์/เครื่องจักร ที่ใช้คนเข้าไปดรวจสอบได้ยาก",
+        "is_answer": false
+      }
+    ],
+    "answer": "ใช้กับอุปกรณ์/เครื่องจักรที่สำคัญที่สุด",
+    "answer_label": "c",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 3,
+    "question": "กระบวนการ Word-Embedding มีเทคนิดอะไรบ้าง?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Skip-gram, CBOW, GloVe, FastText",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "CNN, RNN, LSTM, Transformer",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "TF-IDF, Bag-of-Words, N-gram, One-hot encoding",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "PCA, t-SNE, UMAP, LDA",
+        "is_answer": false
+      }
+    ],
+    "answer": "Skip-gram, CBOW, GloVe, FastText",
+    "answer_label": "a",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 4,
+    "question": "ถ้ามีการเรียกใช้ API สำหรับ สร้าง user ใหม่และผลของการทำงาน API สำเสร็จ ตัว API ควร จะ return http response code เป็นเลขอะไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "202",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "201",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "203",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "200",
+        "is_answer": false
+      }
+    ],
+    "answer": "201",
+    "answer_label": "b",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 5,
+    "question": "คำสั่งใดคือคำสั่งในการ Download Dockecker image จาก registry",
+    "options": [
+      {
+        "label": "a",
+        "text": "docker run",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "docker build",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "docker ps",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "docker pull",
+        "is_answer": true
+      }
+    ],
+    "answer": "docker pull",
+    "answer_label": "d",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 6,
+    "question": "ข้อใดต่อไปนี้สามารถใช้ตรวจสอบว่ามีคนกำลังเดินอยู่ในวิดีโอได้",
+    "options": [
+      {
+        "label": "a",
+        "text": "ถูกทุกข้อ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "นำภาพในเฟรมก่อนหน้ามาลบกับเฟรมปัจจุบัน หากมีความแตกต่างแสดงว่ามีการ เคลื่อนไหว",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "ใช้ smoothed nonlinear filter เพื่อตรวจจับการเคลื่อนไหว",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ใช้ median filter เพื่อลดสัญญาณรบกวนและทำให้รูปร่างของคนชัดเจนขึ้น",
+        "is_answer": false
+      }
+    ],
+    "answer": "นำภาพในเฟรมก่อนหน้ามาลบกับเฟรมปัจจุบัน หากมีความแตกต่างแสดงว่ามีการ เคลื่อนไหว",
+    "answer_label": "b",
+    "page": 1
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 7,
+    "question": "โครโมโซม 01111011 และ 01001111 ไม่น่าจะไขว้เปลี่ยนได้ลูกหน้าตาอย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "11110111",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "01101111",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "01000111",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "01111111",
+        "is_answer": false
+      }
+    ],
+    "answer": "01101111",
+    "answer_label": "b",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 8,
+    "question": "ฟังก์ชันที่ใช่ในการอ่านรูปภาพ คือฟังก์ชันใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ฟังก์ชัน cv2.resize()",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ฟังก์ชัน cv2.imrite()",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ฟังก์ชัน cv2.imshow()",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ฟังก์ชัน cv2.imread()",
+        "is_answer": true
+      }
+    ],
+    "answer": "ฟังก์ชัน cv2.imread()",
+    "answer_label": "d",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 9,
+    "question": "การเชื่อมต่อแบบใด ไม่จัดอยู่ในรูปแบบ Wireless Communication",
+    "options": [
+      {
+        "label": "a",
+        "text": "Bluetooth",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "PLC",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Wifi",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Cellular",
+        "is_answer": false
+      }
+    ],
+    "answer": "PLC",
+    "answer_label": "b",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 10,
+    "question": "การควบคุมอัตราการผสมพันธุ์ (Crossover Rate) มีความสำคัญอย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพื่อควบคุมจำนวนโครโมโชมใหม่ในแต่ละรุ่น",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "เพื่อรักษาสมดุลระหว่างการสำรวจและการปรับปรุง",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "เพื่อป้องกันการทำลายโครโมโซมที่ดี",
+        "is_answer": false
+      }
+    ],
+    "answer": "ถูกทุกข้อ",
+    "answer_label": "b",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 11,
+    "question": "ข้อใดกล่าวถึงข้อแตกต่างของแบบจำลอง Tacotron2 (Auto-regressive) และ FastPitch (Non-autoregresive) ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "โมเดล Tacotron2 จะใช้เวลาในการสร้างเสียงสังเคราะห์น้อยกว่า FastPitch",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "โมเดล FastPitch จะใช้เวลาในการสร้างเสียงสังเคราะห์มากกว่า Tacotron2",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "โมเดล FastPitch จะมีการทำนายความยาวของหน่วยเสียงก่อน",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "โมเดล Tacotron2 สามารถปรับแต่งระดับความทุ่มแหลมของเสียงได้",
+        "is_answer": false
+      }
+    ],
+    "answer": "โมเดล FastPitch จะมีการทำนายความยาวของหน่วยเสียงก่อน",
+    "answer_label": "c",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 12,
+    "question": "Lexitron มีความสำคัญกับการประมวลผลทางภาษาศาศาสตร์อย่างไร?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Lexitron เป็นโปรแกรมที่ใช้ในการสร้างข้อความอัตโนมัติโดยใช้เทคนิคการเรียนรู้ของ เครื่อง",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Lexitron เป็นพจนานุกรมอิเล็กทรอนิกส์ที่ใช้สำหรับการแปลภาษาจากภาษาไทยเป็น ภาษาอังกฤษและภาษาอังกฤษเป็นภาษาไทย",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Lexitron เป็นชุดข้อมูลขนาดใหญ่ที่ประกอบด้วยตัวอย่างข้อความจากสื่อต่าง ๆที่ใช่ใน การฝึกโมเดลภาษา",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Lexitron เป็นเครื่องมือที่ใช้ในการวิเคราะห์โครงสร้างประโยคและการวิเคราะห์ความ หมายของประโยคในภาษาต่าง ๆ",
+        "is_answer": false
+      }
+    ],
+    "answer": "Lexitron เป็นพจนานุกรมอิเล็กทรอนิกส์ที่ใช้สำหรับการแปลภาษาจากภาษาไทยเป็น ภาษาอังกฤษและภาษาอังกฤษเป็นภาษาไทย",
+    "answer_label": "b",
+    "page": 2
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 13,
+    "question": "Cryptocurrency & Software Wallet aguah แต่ท่าไมต้องใช้ Hardware Wallet เพิ่มเติม ?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Hardware Wallet ใช้งานง่ายกว่า Software Wallet",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Hardware Wallet พกพาสะดวกกว่า Software Wallet",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Hardware Wallet sองรับ Cryptocurrency มากกว่า Software Wallet",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Hardware Wallet มีความปลลดภัยสูงกว่า Software Wallet",
+        "is_answer": true
+      }
+    ],
+    "answer": "Hardware Wallet มีความปลลดภัยสูงกว่า Software Wallet",
+    "answer_label": "d",
+    "page": 3
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 14,
+    "question": "เทคนิคในข้อใดไม่ได้ถูกประยุกต์ใช้กับการหา Word Similarity?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Pointwise Mutual Information (PMI)",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Cosine Similarity",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Euclidean Distance",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Random Forest",
+        "is_answer": true
+      }
+    ],
+    "answer": "Random Forest",
+    "answer_label": "d",
+    "page": 3
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 15,
+    "question": "ในขณะที่หุ่นยนต์ส่งสินค้าเดินไปตามทางเท้าที่มีคนพลุกพล่าน มีสิ่งก็ดขวางเข้ามาขวาง ด้านหน้าหุ่นยนต์อย่างกระทันหันสถานการณ์ใดต่อไปนี้ ที่แสดงให้เห็นถึง การทำงานตาม กระบวนการ Sense-Think-Act ของหุ่นยนต์ได้ดีที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "หุ่นยนต์หยุดกะทันหัน ทำให้คนที่เดินอยู่ด้านหลังชนแล้วล้ม",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "หุ่นยนต์คำนวณหาเส้นทางใหม่ รอบ ๆ สิ่งกีดขวาง โดยใช้เวลานานเป็นสองเท่าในการ ไปถึงจุดหมายปลายทาง",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "หุ่นยนต์ตรวจจับสิ่งกีดขวาง แต่ยังคงไม่หยุดเคลื่อนที่ไปข้างหน้า",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "หุ่นยนต์ส่งเสียงเตือนเสียงดัง สร้างความตกใจให้กับคนที่เดินอยู่บริเวณนั้น",
+        "is_answer": false
+      }
+    ],
+    "answer": "หุ่นยนต์คำนวณหาเส้นทางใหม่ รอบ ๆ สิ่งกีดขวาง โดยใช้เวลานานเป็นสองเท่าในการ ไปถึงจุดหมายปลายทาง",
+    "answer_label": "b",
+    "page": 3
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 16,
+    "question": "ในกรณีของ DeepFake นักศึกษาคิดว่า มีความเสี่ยงที่จะละเมิดหลักการของปัญญาประดิษฐ์ใน ข้อใดมากที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ความเท่าเทียม หลากหลาย ครอบคลุม และเป็นธรรม",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ความมั่นคงปลอดภัยและความเป็นส่วนตัว",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "ความสามารถในการแข่งขันและพัฒนาอย่างยั่งยืน",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ความน่าเชื่อถือ",
+        "is_answer": false
+      }
+    ],
+    "answer": "ความมั่นคงปลอดภัยและความเป็นส่วนตัว",
+    "answer_label": "b",
+    "page": 3
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 17,
+    "question": "ข้อใดถูกต้องเกี่ยวกับ Max Pooling?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการทำให้ข้อมูลนำเข้าเป็นเชิงเส้น",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการเพิ่มขนาดของข้อมูลนำเข้าโดยการเพิ่ม ข้อมูลซ้ำในแต่ละกลุ่มของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการสกัดข้อมูลที่มีค่าเฉลี่ยสูงสุดในแต่ละกลุ่มของ ข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Max Pooling เป็นกระบวนการที่ใช้ในการลดขนาดของข้อมูลนำเข้าโดยการเลือกค่า มากสุดในแต่ละกลุ่มของข้อมูล",
+        "is_answer": true
+      }
+    ],
+    "answer": "Max Pooling เป็นกระบวนการที่ใช้ในการลดขนาดของข้อมูลนำเข้าโดยการเลือกค่า มากสุดในแต่ละกลุ่มของข้อมูล",
+    "answer_label": "d",
+    "page": 3
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 18,
+    "question": "ระบบพิกัดในข้อใดที่ปกติจะอยู่บนระนาบเดียวกัน",
+    "options": [
+      {
+        "label": "a",
+        "text": "Image pixel coordinate system และ Camera coordinate system",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Image pixel coordinate system และ Imaging plane coordinate system",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Imaging plane coordinate system และ World coordinate system",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Camera coordinate system และ Imaging plane coordinate system",
+        "is_answer": false
+      }
+    ],
+    "answer": "Image pixel coordinate system และ Imaging plane coordinate system",
+    "answer_label": "b",
+    "page": 4
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 19,
+    "question": "สถานการณ์ใดต่อไปนี้ แสดงให้เห็นถึงการใช้ Automatic completion ของ Google Colab ได้มี ประสิทธิภาพที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "พิมพ์ชื่อ Function และ Parameter แบบเต็มด้วยตัวเองทั้งหมด",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ใช้ Autocomplete สำหรับ Function ทั่วไป จากนั้นปรับแต่งตามต้องการ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "กด โลb ทุกครั้ง หลังจากพิมพ์ตัวอักษร ไปได้ 1 ตัวอักษร",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ปิดการใช้งาน Autocomplete ทั้งหมดเพื่อหลีกเลี่ยงการรมกวน",
+        "is_answer": false
+      }
+    ],
+    "answer": "ใช้ Autocomplete สำหรับ Function ทั่วไป จากนั้นปรับแต่งตามต้องการ",
+    "answer_label": "b",
+    "page": 4
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 20,
+    "question": "ข้อใดคือความส้มพันธ์ระหว่าง exploration และ exploitation",
+    "options": [
+      {
+        "label": "a",
+        "text": "exploration และ exploitation มากเกินไปจะทำให้อัลกอริธีมทำงางานช้าลง",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "exploration และ exploitation มากเกินไปจะทำให้อัลกอริธีมไม่สามารถหาผลลัพธ์ได้ เลย",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "exploration มากเกินไปอาจทำให้อัลกอริธีมติดอยู่ในผลลัพธ์ท้องถิ่น ในขณะที่ exploitation มากเกินไปอาจทำให้พลาดโซลูขั้นที่ดีที่สุด",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "exploration มากเกินไปอาจทำให้อัลกอริธีมพลาดโซลูชันที่ดีที่สุด ในขณะที่ exploitation มากเกินไปอาจทำให้อัลกอริธีมติดอยู่ในผลลัพธ์ท้องถิ่น",
+        "is_answer": true
+      }
+    ],
+    "answer": "exploration มากเกินไปอาจทำให้อัลกอริธีมพลาดโซลูชันที่ดีที่สุด ในขณะที่ exploitation มากเกินไปอาจทำให้อัลกอริธีมติดอยู่ในผลลัพธ์ท้องถิ่น",
+    "answer_label": "d",
+    "page": 4
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 21,
+    "question": "ข้อใด กล่าวถึง โครงสร้างโปรแกรมภาษา C ที่ใช้กับ Arduino ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "ฟังก์ชัน initialize() ฟังก์ชัน run()",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ฟังก์ชัน setup() ฟังก์ชัน loop()",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "ฟังก์ชัน start) ฟังก์ชัน repeat()",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ฟังก์ชัน begin) ฟังก์ชัน cycle()",
+        "is_answer": false
+      }
+    ],
+    "answer": "ฟังก์ชัน setup() ฟังก์ชัน loop()",
+    "answer_label": "b",
+    "page": 4
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 22,
+    "question": "ในการสังเคราะห์เสียงพูดจะต้องอาศัย Vocoder เพื่อแปลงจากผลลัพธ์ที่ได้จากโมเดล Tacotron หรือ FastPitch เป็นเสียงพูด ข้อใดเป็นข้อมูลนำเข้าโมเดล Vocoder",
+    "options": [
+      {
+        "label": "a",
+        "text": "FO",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "BAP",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Mel-spectrogram แบบไม่มี phase informaton",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "MFCC",
+        "is_answer": false
+      }
+    ],
+    "answer": "Mel-spectrogram แบบไม่มี phase informaton",
+    "answer_label": "c",
+    "page": 4
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 23,
+    "question": "Amazon เก็บข้อมูลผู้บริโภคจำนวนวนมหาศาลเพื่อวิเคราะห์พฤติกรรมการซื้อและค้นหาสินค้า โมเดลข้อมูลใดต่อไปนี้ ไม่ใช่โมเดลหลักที่ Amazon ใช้เพื่อวิเคราะห์พฤติกรรมของผู้บริโภค ?",
+    "options": [
+      {
+        "label": "a",
+        "text": "โมเดลข้อมูลลูกค้า (Customer Data Model) โมเดลนี้เก็บข้อมูลส่วนตัว ข้อมูล การ ติดต่อ ประวัติการซื้อ และข้อมูลอื่นๆ เกี่ยวกับลูกค้าแต่ละราย",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "โมเดลข้อมูลสินค้า (Product Data Model) โมเดลนี้เก็บข้อมูลเกี่ยวกับสินค้าที่ Amazon ขาย เช่น รายละเอียดสินค้า ราคา รูปภาพ และรีวิว",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "โมเดลข้อมูลการจัดส่ง (Delivery Data Model) โมเดลนี้เก็บข้อมูลเกี่ยวกับที่อยู่จัดส่ง วันที่จัดส่ง และข้อมูลติดตามสินค้า",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "โมเดลข้อมูลการค้นหา (Search Data Model) โมเดลนี้เก็บข้อมูลเกี่ยวกับคำค้นหาของ ลูกค้า สินค้าที่พวกเขาเลือกใส่ตะกร้า และสินค้าที่พวกเขาซื้อ",
+        "is_answer": false
+      }
+    ],
+    "answer": "โมเดลข้อมูลการจัดส่ง (Delivery Data Model) โมเดลนี้เก็บข้อมูลเกี่ยวกับที่อยู่จัดส่ง วันที่จัดส่ง และข้อมูลติดตามสินค้า",
+    "answer_label": "c",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 24,
+    "question": "เหตุใดเมื่อน่า PCA ไปประยุคต์ใช้ในการรู้จำใบหน้าภายใต้สภาวะแสงที่หลากหลาย เมื่อการ เลือกค่า eigenvectors ที่สอดคล้องกับค่า eigenvalue ต่ำไปใช้แล้วกลับได้ประสิทธิภาพสูง",
+    "options": [
+      {
+        "label": "a",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูง มีค่า Mean ของแสงมาก",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูง มีค่า Variance ของแสงมาก",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูง ทำให้ลด Dimension ได้มาก",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูง มีค่า Noise มาก",
+        "is_answer": false
+      }
+    ],
+    "answer": "เนื่องจากองค์ประกอบที่ได้จากค่า eigenvalue สูง มีค่า Variance ของแสงมาก",
+    "answer_label": "b",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 25,
+    "question": "ข้อใดไม่ถูกต้องในการใช้งาน L1 และ L2 loss function",
+    "options": [
+      {
+        "label": "a",
+        "text": "ค่าความคลาดเคลื่อนสามารถติดลบได้",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "ใช่ในการหาค่าพารามิเตอร์ที่เหมาะสม",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ใช่ในการบอกทิศทางในการปรับค่าของพารามิเตอร์",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ค่าความคาดเคลื่อนต้องเป็นค่าติดลบ",
+        "is_answer": true
+      }
+    ],
+    "answer": "ค่าความคาดเคลื่อนต้องเป็นค่าติดลบ",
+    "answer_label": "d",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 26,
+    "question": "การหาพื้นที่ของวัตถุเป้าหมายในภาพ จัดเป็นงานประเภทใดในด้านComputer Vision",
+    "options": [
+      {
+        "label": "a",
+        "text": "Regression (การประมาณค่า)",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Classification (การจำแนกประเภท)",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Segmentation (การแบ่งส่วนภาพ)",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Object Detection (การตรวจจับวัตถุ)",
+        "is_answer": false
+      }
+    ],
+    "answer": "Segmentation (การแบ่งส่วนภาพ)",
+    "answer_label": "c",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 27,
+    "question": "จุดกำเนิด (0,0) ของระบบพิกัด Image pixel coordinate systemอยู่ในตำแหน่งใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ขวาบน",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ขวาล่าง",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ซ้ายบน",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "ซ้ายล่าง",
+        "is_answer": false
+      }
+    ],
+    "answer": "ซ้ายบน",
+    "answer_label": "c",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 28,
+    "question": "วิธีใดช่วยจัดการคำที่ไม่เคยปรากฏ (unknown word) ในการแปลได้ที่ดีที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ลบคำนั้นออกจากประโยคภาษาต้นทาง",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "แบ่งข้อความเป็นระดับตัวอักษรแล้วสร้างโมเดลแปลระดับตัวอักษร",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "แทนคำคำที่ไม่ปรากฏในคลังข้อมูลด้วยสัญสัญลักษณ์ บกk",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "แบ่งข้อความเป็นหน่วยย่อยที่เล็กกว่าระดับคำ (Subword unit) แต่ใหญ่กว่าระดับตัว อักษร",
+        "is_answer": true
+      }
+    ],
+    "answer": "แบ่งข้อความเป็นหน่วยย่อยที่เล็กกว่าระดับคำ (Subword unit) แต่ใหญ่กว่าระดับตัว อักษร",
+    "answer_label": "d",
+    "page": 5
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 29,
+    "question": "ในการทดสอบระบบตรวจจับความผิดปกติของการจราจรทางอากาศ ผลลัพธ์จาก Confusion Matrix แสดงให้เห็นว่ามี False Alarm (False Positive) สูงมาn uain Miss (False Negative) Rin จากสถานการณ์นี้ ข้อใดเป็นการแปลความหมายและข้อเสนอแนะที่เหมาะสมที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ระบบทำงานได้ดีแล้ว เพราะสามารถตรวจจับความผิดปกติได้เกือบทั้งหมด ไม่จำเป็น ต้องปรับปรุง",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ควรเปลี่ยนไปใช้ deep learning-based approach เพราะวิธีปัจจุบันไม่สามารถจัดการ กับความซับซ้อนของข้อมูลได้",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ควรเพิ่มจำนวนข้อมูล normal ในชุดชุดข้อมูลฝึกฝน เพื่อให้ระบบเรียนรู้รูปแบบปกติได้ ดีขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ระบบมีความไว (Sensitivity) สูงเกินไป ควรปรับลดความไวลงเพื่อลด FalseAlarm แม้อาจทำให้ Miss เพิ่มขึ้นบ้าง",
+        "is_answer": true
+      }
+    ],
+    "answer": "ระบบมีความไว (Sensitivity) สูงเกินไป ควรปรับลดความไวลงเพื่อลด FalseAlarm แม้อาจทำให้ Miss เพิ่มขึ้นบ้าง",
+    "answer_label": "d",
+    "page": 6
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 30,
+    "question": "Softmax คืออะไร และถูกนำไปไปใช้งานอย่างไรในวันวิทยาการคอมพิวเตอร์?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Softmax เป็นอัลกอริทีมสำหรับการลดขนาดของข้อมูล โดยใช่ในการประมวลผลภาพ และเสียง ใช้ในงานลดข้อมูลรบกวนและ feature extraction",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Softmax เป็นฟังก์ชั้นที่ใช้ในการวัดความคล้ายคลึงกันระหว่างเวกเตอร์สองตัวใช่ใน งานค้นหาข้อมูลและการแนะนำ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Softmax เป็นฟังก์ชันที่ใช้แปลงค่าจำนวนจริงชุดหนึ่งให้เป็นค่าความน่าจะเป็นโดยค่า ทั้งหมดจะรวมกันได้ 1 และค่าที่มากที่สุดจะสอดคล้องกับคลาสที่มีความน่าจะเป็นสูงสุด ใช่ในงานจำแนกประเภท เช่น การจำแนกภาพหรือข้อความ",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Softmax เป็นวิธีการหนึ่งในการปรับปรุงประสิทธิภาพของ neural network โดยใช่ใน การปรับค่าน้ำหนักของแต่ละ node ใน network",
+        "is_answer": false
+      }
+    ],
+    "answer": "Softmax เป็นฟังก์ชันที่ใช้แปลงค่าจำนวนจริงชุดหนึ่งให้เป็นค่าความน่าจะเป็นโดยค่า ทั้งหมดจะรวมกันได้ 1 และค่าที่มากที่สุดจะสอดคล้องกับคลาสที่มีความน่าจะเป็นสูงสุด ใช่ในงานจำแนกประเภท เช่น การจำแนกภาพหรือข้อความ",
+    "answer_label": "c",
+    "page": 6
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 31,
+    "question": "ข้อใดอธิบายการใช้ประโยชน์ของ Eigenvalues และ Eigenvectors ในการวิเคราะห์ข้อมูลได้ ถูกต้อง?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ใช่ในการเปลี่ยนข้อมูลเชิงเส้นให้เป็นข้อมูลไม่เชิงเส้น",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ใช้ในการหาค่าที่ต่ำสุดของเมทริกซ์เพื่อลดความซับซ้อนของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ใช้ในการทำให้ข้อมูลที่มีมีมิติสูงขึ้นเพื่อการวิเคราะห์ที่ชับซ้อนขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ใช้ในการหาองค์ประกอบที่สำคัญในข้อมูลโดยกระบวนการ PCA",
+        "is_answer": true
+      }
+    ],
+    "answer": "ใช้ในการหาองค์ประกอบที่สำคัญในข้อมูลโดยกระบวนการ PCA",
+    "answer_label": "d",
+    "page": 6
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 32,
+    "question": "Observation probability คือ ค่า probablity ของตัวแปร a11, a12, a22, a23, a33",
+    "options": [
+      {
+        "label": "a",
+        "text": "True",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "False",
+        "is_answer": true
+      }
+    ],
+    "answer": "False",
+    "answer_label": "b",
+    "page": 6
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 33,
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Feature descriptor",
+    "options": [
+      {
+        "label": "a",
+        "text": "Local feature descriptor จะน่าจุด 3 จุดที่อยู่ดำแหน่งรอบๆ ของจุด Keypoint มาใช้ พิจารณาลักษณะของจุด Keypoint",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Feature descriptor ที่ดีต้องยังคงบอกคุณสมบัติลักษณะของจุด Keypoint ได้ แม้ค่า Resolution จะเปลี่ยนไป",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Feature descriptor ที่ดีต้องยังคงบอกคุณสมบัติลักษณะของจุด Keypoint ได้ แม้จะมี สัญญาณรบกวนของภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Global feature descriptor จะน่าจุดใน Point cloud ทุกจุดมาใช้พิจารณาลักษณะ ของจุด Keypoint",
+        "is_answer": false
+      }
+    ],
+    "answer": "Local feature descriptor จะน่าจุด 3 จุดที่อยู่ดำแหน่งรอบๆ ของจุด Keypoint มาใช้ พิจารณาลักษณะของจุด Keypoint",
+    "answer_label": "a",
+    "page": 6
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 34,
+    "question": "POS tagging คืองานในข้อใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "การระบุขอบเขตของนิพจน์ระบุนาม",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "การกำกับชนิดของคำ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "การวิเคราะห์โครงสร้างประโยค",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "การตีความความหมายแฝงของคำ",
+        "is_answer": false
+      }
+    ],
+    "answer": "การกำกับชนิดของคำ",
+    "answer_label": "b",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 35,
+    "question": "ข้อใดกล่าวผิดเกี่ยวกับการใช้งาน HTTP Method ร่วมกับ RESTful API",
+    "options": [
+      {
+        "label": "a",
+        "text": "การเปลี่ยนแปลงข้อมูลใช้งาน HTTP Method PUT หรือ PATCH",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "การเพิ่มข้อมูลควรใช้งาน HTTP Method POST",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "การอ่านข้อมูลควรใช้งาน HTTP Method GET",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "การลบข้อมูลควรใช้งาน HTTP Method DELETE",
+        "is_answer": false
+      }
+    ],
+    "answer": "การเปลี่ยนแปลงข้อมูลใช้งาน HTTP Method PUT หรือ PATCH",
+    "answer_label": "a",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 36,
+    "question": "วิธีการใดที่ Flatten histogram ได้มากที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "Local intensity distribution equalization",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Histogram equalization",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Contrast Limited Adaptive Histogram equalization",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Pixel sorting",
+        "is_answer": false
+      }
+    ],
+    "answer": "Histogram equalization",
+    "answer_label": "b",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 37,
+    "question": "Algorithm ใดต่อไปนี้สามารถน่ามาใช้ในการแก่ไขปัญหาเรื่อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "missing value ในข้อมูลแบบต่อเนื่อง หรือในข้อมูลแบบกลุ่มได้",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Linear Regression",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "K-NN",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Logistic Regression",
+        "is_answer": false
+      }
+    ],
+    "answer": "K-NN",
+    "answer_label": "c",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 38,
+    "question": "ในกระบวนการแปลงภาพเป็นภาพดิจิทัล Sampling หมายถึงข้อใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "การเพิ่มความคมชัดของภาพโดยการใช้ Fiter ที่เหมาะสม",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "กระบวนการกำหนดดำแหน่งข้อมูลบนภาพที่ต่อเนื่องเป็นข้อมูลแบบไม่ต่อเนื่อง เพื่อ บันทึกค่าแสง",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "การแปลงค่าสีของภาพที่มีค่าต่อเนื่องให้เป็นระดับสีเพื่อบันทึกในดอมพิวเตอร์",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "การลดสัญญาณรบกวนในภาพโดยการกำจัดจุดดำและจุดขาวที่ไม่ต้องการ",
+        "is_answer": false
+      }
+    ],
+    "answer": "กระบวนการกำหนดดำแหน่งข้อมูลบนภาพที่ต่อเนื่องเป็นข้อมูลแบบไม่ต่อเนื่อง เพื่อ บันทึกค่าแสง",
+    "answer_label": "b",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 39,
+    "question": "จงจับคู่คำที่มีความเกี่ยวข้องกันต่อไปนี้ให้ถูกต้อง ●A. ○MySQL ○MSSQL ●B. ○Cassandra ○HBase ●C. ○Memcached ○Coherence ●D. ○Neo4J ○OrientDB ●E. ○MongoDB ○CouchDB ประเภทฐานข้อมูลที่ต้องจับคู่: 1.Graph DB 2.Document DB 3.Key-Value Cache 4.RDBMS 5.Tabular/Columnar DB ตัวเลือกคำตอบ:",
+    "options": [
+      {
+        "label": "a",
+        "text": "C, B, D, A, E",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "D, C, E, A, B",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "B, C, D, A, E",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "D, E, C, A, B",
+        "is_answer": true
+      }
+    ],
+    "answer": "D, E, C, A, B",
+    "answer_label": "d",
+    "page": 7
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 40,
+    "question": "ภาษาใดต่อไปนี้ใช้ระบบการเขียนแบบ Alphabets",
+    "options": [
+      {
+        "label": "a",
+        "text": "ภาษาพม่า, ภาษาไทย, ภาษาทมิฬ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ภาษาอารบิก, ภาษาฮิบรู, ภาษาแอราเมอิก",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ภาษาโรมัน, ภาษาอาร์มีเนีย, ภาษากรีก",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "ภาษาเชโรกี, อักษรครี, ฮิรางานะ(ญี่ปุ่น)",
+        "is_answer": false
+      }
+    ],
+    "answer": "ภาษาโรมัน, ภาษาอาร์มีเนีย, ภาษากรีก",
+    "answer_label": "c",
+    "page": 8
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 41,
+    "question": "ข้อใดต่อไปนี้กล่าวไม่ถูกต้อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "Feature matching สามารถเปรียบเทียบกันโดยใช้ Histogram ของ Keypointที่ ต้องการ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Keypoint ใน Point cloud หนึ่งสามารถตรวจสอบว่าเป็น Keypoint ในอีก Point cloud หนึ่งได้โดยใช้ Transformation matrix ในการคำนวณ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Keypoint ทุกคู่ที่ได้จากการดำเนินการ Matching จะถูกนำมาใช่ในการค่านวณหา Transformation matrix",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Point matching สามารถเปรียบเทียบกันโดยใช้พิกัด 3 มิติของ Keypoint ที่ต้องการ",
+        "is_answer": false
+      }
+    ],
+    "answer": "Keypoint ทุกคู่ที่ได้จากการดำเนินการ Matching จะถูกนำมาใช่ในการค่านวณหา Transformation matrix",
+    "answer_label": "c",
+    "page": 8
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 42,
+    "question": "วิธีการใดสามารถจัดการ Noise image ได้",
+    "options": [
+      {
+        "label": "a",
+        "text": "Spatial Filtering",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Segmentation",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Image sampling",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Image quantization",
+        "is_answer": false
+      }
+    ],
+    "answer": "Spatial Filtering",
+    "answer_label": "a",
+    "page": 8
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 43,
+    "question": "กระบวนการ Stemming และ Lemmatization เหมือนหรือแตกต่างกันอย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "Stemming และ Lemmatization เป็นกระบวนการเดียวกัน ใช้เพื่อลดรูปคำให้เป็น รากศัพท์",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Lemmatization เป็นกระบวนการที่รวดเร็วกว่า Stemming แต่ให้ผลลัพธ์ที่แม่นยำน้อย กว่า",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Stemming ใช้พจนานุกรมในการลดรูปคำ ส่วน Lemmatization ใช้กฎทาง ภาษาศาสตร์",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Stemming ตัดส่วนท้ายของคำออก ในขณะที่ Lemmatization ใช้ความรู้ทาง ภาษาศาสตร์เพื่อลดรูปคำให้ถูกต้องตามหลักไวยากรณ์",
+        "is_answer": true
+      }
+    ],
+    "answer": "Stemming ตัดส่วนท้ายของคำออก ในขณะที่ Lemmatization ใช้ความรู้ทาง ภาษาศาสตร์เพื่อลดรูปคำให้ถูกต้องตามหลักไวยากรณ์",
+    "answer_label": "d",
+    "page": 9
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 44,
+    "question": "Category Comparison เหมาะสำหรับการแสดงข้อมูลแบบใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ข้อมูลที่ต้องการแสดงความสัมพันธ์",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ข้อมูลที่มีการเชื่อมโยงกัน",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ข้อมูลที่ต้องการแสดงความถี่",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ข้อมูลที่มีการเปรียบเทียบ",
+        "is_answer": true
+      }
+    ],
+    "answer": "ข้อมูลที่มีการเปรียบเทียบ",
+    "answer_label": "d",
+    "page": 9
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 45,
+    "question": "ในการใช้งาน Google Colab สำหรับโปรเจค Machine Learning ที่ต้องการประสิทธิภาพการ ประมวลผลสูง หากต้องการตรวจสอบว่า GPU ที่ได้รับการจัดสรรมีสเปคอย่างไร คำสั่งใดต่อไป นี้เหมาะสมที่สุดสำหรับการตรวจสอบนี้",
+    "options": [
+      {
+        "label": "a",
+        "text": "from google.colab import files",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "print(tf.test.gpu_device_name())",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "!nvidia-smi",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "!pip freeze",
+        "is_answer": false
+      }
+    ],
+    "answer": "!nvidia-smi",
+    "answer_label": "c",
+    "page": 9
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 46,
+    "question": "ภาษาไทยใช้ระบบการเขียนแบบใด?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Abjads",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Alternative scripts",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Abugidas",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Alphabets",
+        "is_answer": false
+      }
+    ],
+    "answer": "Abugidas",
+    "answer_label": "c",
+    "page": 9
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 47,
+    "question": "โค้ดข้อใดเป็นคำสั่งที่ใช้แบ่งข้อมูลลออกเป็น 2 ส่วน โดยให้ส่วนข้อมูลเทรนมีขนาดเป็น 80% ของข้อมูลทั้งหมด",
+    "options": [
+      {
+        "label": "a",
+        "text": "from sklearn.model selection import train_test_split X_train, y_train, X_test, y_test = train_test_split(X, y, test_size=0.80)",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "from sklearn.model_selection import train_test_split X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.20)",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "from sklearn.model_selection import train_test_split X_train, y_train, X_test, y_test = train_test_split(X, y, train_size=0.80)",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "from sklearn.model selection import train test_split X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)",
+        "is_answer": false
+      }
+    ],
+    "answer": "from sklearn.model_selection import train_test_split X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.20)",
+    "answer_label": "b",
+    "page": 9
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 48,
+    "question": "หากข้อมูลน่าเข้าเป็นรูปภาพสี RGB ขนาด 225 x 225 ถูกประมวลผลด้วย Convolution layer ที่มีขนาด 3 3 3 (width x height) จำนวน 64 filters โดยใช้ Stride=1 ไม่ใช้ Padding ขนาด ของผลลัพธ์ของแต่ละ flter ที่ได้จะมีจำนวนเท่ากับข้อใด?",
+    "options": [
+      {
+        "label": "a",
+        "text": "223 x 223 x 128",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "223 x 223 x 1",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "223 x 223 x 64",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "223 x 223 x 3",
+        "is_answer": false
+      }
+    ],
+    "answer": "223 x 223 x 64",
+    "answer_label": "c",
+    "page": 10
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 49,
+    "question": "การทำ ฉันทมติ (Consensus) ด้วยวิธีการ PoS ทำไมถึงประหยัด พลังงานมากกว่าวิธีการ PoW ?",
+    "options": [
+      {
+        "label": "a",
+        "text": "PoS ใช้การคำนวณทางคณิตศาสตร์ที่เรียบง่ายกว่า PoW",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "POS ไม่จำเป็นต้องใช้ฮาร์ดแวร์พิเศษสำหรับการขุด",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "PoS ตรวจสอบธุรกรรมโดยใช้เครือข่ายผู้ตรวจสอบแบบกระจายศูนย์",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "PoS จูงใจให้ผู้ใช้ถือเหรียญไว้แทนที่จะขุด",
+        "is_answer": false
+      }
+    ],
+    "answer": "POS ไม่จำเป็นต้องใช้ฮาร์ดแวร์พิเศษสำหรับการขุด",
+    "answer_label": "b",
+    "page": 10
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 50,
+    "question": "ข้อความต่อไปนี้ เกี่ยวข้องกับ Data Types และ Database จงเลือกคำให้เหมาะสมกับข้อความ เหล่านี้ “ โครงสร้างเรียบง่าย มนุษย์สามารถอ่านและเขียนได้โดยไม่ต้องใช้เครื่องมือพิเศษ ใช้ พื้นที่เก็บข้อมูลน้อยเหมาะสำหรับการส่งผ่านข้อมูลบนอินเทอร์เน็ต รองรับภาษาโปรแกรม หลากหลายภาษา เหมาะสำหรับการพัฒนาเว็บแอปพลิเคชัน เป็นภาษาที่ถูกออกแบบมาเพื่อ จัดการกับฐานข้อมูลโดยเฉพาะ ใช้งานได้กับระบบฐานข้อมูลแบบเชิงสัมพันธ์ เรียนรู้และใช้งาน ได้ง่าย โดยใช้คำศัพท์ภาษาอังกฤษทั่วไปถูกออกแบบบมาเพื่อรองรับข้อมูลที่มีรูปแบบ หลากหลาย เหมาะส่าหรับข้อมูลที่ไม่มีโครงสร้างตายตัว หรือโครงสร้างที่เปลี่ยนแปลงอยู่เสมอ และสามารถปรับขนาดได้ง่ายเหมาะสำหรับการใช้งานกับแอปพลิเคชันสมัยใหม่ที่มีการใช้งาน ข้อมูลจำนวนมาก”",
+    "options": [
+      {
+        "label": "a",
+        "text": "JSON,JSON,SQL",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "JSON,SQL,NoSQL",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "SQL,JSON,SQL",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "SQL,JSON,NoSQL",
+        "is_answer": false
+      }
+    ],
+    "answer": "JSON,SQL,NoSQL",
+    "answer_label": "b",
+    "page": 10
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 51,
+    "question": "เหตุใดการอัพเดทความรู้ใน Bayesian inference จึงมีประโยชน์?",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพราะช่วยในการสร้างข้อมูลใหม่จากความรู้เดิม",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "เพราะช่วยในการเพิ่มความน่าจะเป็นของเหตุการณ์ที่ไม่เกิดขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "เพราะช่วยในการลดความซับช้อนของปัญหา",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "เพราะช่วยในการปรับปรุงความน่าจะเป็นของเหตุการณ์ตามข้อมูลใหม่",
+        "is_answer": true
+      }
+    ],
+    "answer": "เพราะช่วยในการปรับปรุงความน่าจะเป็นของเหตุการณ์ตามข้อมูลใหม่",
+    "answer_label": "d",
+    "page": 10
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 52,
+    "question": "สมมติว่าเราต้องการ maximize function เราต้องทำเช่นไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "ใช้ Viterbi algorithm",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ทำ eigen-decomposition",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "adapt ตัวแปรสวนทิศ gradient",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "adapt ตัวแปรตามทิศ gradient",
+        "is_answer": true
+      }
+    ],
+    "answer": "adapt ตัวแปรตามทิศ gradient",
+    "answer_label": "d",
+    "page": 10
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 53,
+    "question": "การทำ Hash แบบ SHA256 ดีกว่าการทำ Hash แบบ Encryption/Decryption arinols ?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Hash แบบ SHA256 ตรวจจับการเปลี่ยนแปลงข้อมูลได้ดีกว่า Encryption/Decryption",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Hash แบบ SHA256 เร็วกว่า Encryption/Decryption",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Hash แบบ SHA256 ใช้พลังงานในการประมวลผลน้อยกว่า Encryption/Decryption เสมอ",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Hash แบบ SHA256 ปลอดภัยกว่า Encryption/Decryption เสมอ",
+        "is_answer": false
+      }
+    ],
+    "answer": "Hash แบบ SHA256 ตรวจจับการเปลี่ยนแปลงข้อมูลได้ดีกว่า Encryption/Decryption",
+    "answer_label": "a",
+    "page": 11
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 54,
+    "question": "สมมติว่า HO ใน ANOVA ถูกปฏิเสธ หมายความว่าอย่างไร?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ค่าเฉลี่ยของทุกกลุ่มเท่ากัน",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "มีความแปรปรวนของกลุ่มหนึ่งที่แตกต่างจากความแปรปรวนของกลุ่มอื่นๆ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "มีค่าเฉลี่ยของกลุ่มหนึ่งที่แตกต่างจากค่าเฉลี่ยของกลุ่มอื่นๆ",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "ความแปรปรวนของทุกกลุ่มเท่ากัน",
+        "is_answer": false
+      }
+    ],
+    "answer": "มีค่าเฉลี่ยของกลุ่มหนึ่งที่แตกต่างจากค่าเฉลี่ยของกลุ่มอื่นๆ",
+    "answer_label": "c",
+    "page": 11
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 55,
+    "question": "หากต้องการดู log การทำงานภายใต้ container id a036be714862 ที่ถูกสร้างให้ท่างานด้วย คำสั่ง docker run -P nginx:alpine จะสามารถดูได้โดยใช้คำสั่งใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ไม่ต้องทำอะไรเพราะ log จะแสดงที่หน้าจอโดยอัดโนมัติ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "docker log nigix:alpine",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "docker log a036be7f4862",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "docker logs a036be7f4862",
+        "is_answer": true
+      }
+    ],
+    "answer": "docker logs a036be7f4862",
+    "answer_label": "d",
+    "page": 11
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 56,
+    "question": "การพัฒนาระบบตรวจจับความผิดปกติสำหรับการเคลื่อนที่ของเรือ พบว่าระบบมีแนวโน้มที่จะ ระบุเรือที่เคลื่อนที่ช้ามากหรือเร็วมากเกินไปเป็น outier บ่อยครั้ง แม้ว่าผู้เชี่ยวชาญจะระบุ ว่าเป็นการเคลื่อนที่ปกติ จากสถานการณ์นี้ ข้อใดเป็นแนวทางที่เหมาะสมที่สุดในการปรับปรุง ประสิทธิภาพของระบบ",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพิ่มมิติของข้อมูลโดยรวมปัจจัยอื่น เช่น ขนาดของเรือและสภาพอากาศ ในการ วิเคราะห์",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "เพิ่มจำนวนข้อมูลการเคลื่อนที่ของเรือที่มีความเร็วป่านกลางในชุดข้อมูลฝึกฝน (training data)",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ปรับเปลี่ยนค่า threshold ของ Standard Deviation ในการระบุ outlier จาก30 เป็น 20",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ใช้เทคนิค deep learning แทนวิธีการแบบดั้งเดิมในการตรวจจับ outlier",
+        "is_answer": false
+      }
+    ],
+    "answer": "เพิ่มมิติของข้อมูลโดยรวมปัจจัยอื่น เช่น ขนาดของเรือและสภาพอากาศ ในการ วิเคราะห์",
+    "answer_label": "a",
+    "page": 11
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 57,
+    "question": "ข้อใดไม่ใช่องค์ประกอบของห่วงโซ่คุณค่าของโมเดลธุรกิจข้อมูล",
+    "options": [
+      {
+        "label": "a",
+        "text": "Big data Application Provider/Big Data Framework Provider",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Data Consumer/Data Provider",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "System Orchestrator",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Engineering/Governance",
+        "is_answer": true
+      }
+    ],
+    "answer": "Engineering/Governance",
+    "answer_label": "d",
+    "page": 11
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 58,
+    "question": "ข้อใด คือ องค์ประกอบหลักของ loT",
+    "options": [
+      {
+        "label": "a",
+        "text": "Internet, Microcontroller, 5G",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Hardware, Software, Connectivity",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Memory, Input, Output",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Lora, Sigfox, NB-loT",
+        "is_answer": false
+      }
+    ],
+    "answer": "Hardware, Software, Connectivity",
+    "answer_label": "b",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 59,
+    "question": "Library ใดที่สามารถช่วยในการสร้าง Decision Tree ได้",
+    "options": [
+      {
+        "label": "a",
+        "text": "numpy",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "pandas",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "opencv",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "scikit-learn",
+        "is_answer": true
+      }
+    ],
+    "answer": "scikit-learn",
+    "answer_label": "d",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 60,
+    "question": "ในการพัฒนาโมเดล AI เพื่อวิเคราะห์ความคิดเห็นของลูกค้ารีวิวสินค้าออนไลน์ ประเภทของ การเรียนรู้ของเครื่อง (Machine Learning) ที่เหมาะสมที่สุดคืออะไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "Supervised Learning",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Semi-supervised Learning",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Unsupervised Learning",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Reinforcement Learning",
+        "is_answer": false
+      }
+    ],
+    "answer": "Supervised Learning",
+    "answer_label": "a",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 61,
+    "question": "การมีระบบ loT ไม่ได้ช่วยผลักดันในเรื่องใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ค่าใช้จ่าย",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ประสิทธิภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "การใช้ไฟฟ้า",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "นวัตกรรม",
+        "is_answer": false
+      }
+    ],
+    "answer": "การใช้ไฟฟ้า",
+    "answer_label": "c",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 62,
+    "question": "คำสั่ง sudo ใช้เพื่ออะไร?",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพื่อแจ้งให้ Superuser ทำงานให้เรา",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "เพื่อทำงานโดยใช้สิทธิ์ของ Superuser",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "เพื่อดูคิวงานที่ Superuser ต้องทำ",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "เพื่อทำงานใน Secure user mode",
+        "is_answer": false
+      }
+    ],
+    "answer": "เพื่อทำงานโดยใช้สิทธิ์ของ Superuser",
+    "answer_label": "b",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 63,
+    "question": "ข้อใดจัดเป็นความแตกต่างระหว่าง Adaptive histogram equalization hu Local intensity distribution equalion",
+    "options": [
+      {
+        "label": "a",
+        "text": "Global vs local",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Gray vs RGB",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Single vs multivariable",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Non-parametric vs parametric",
+        "is_answer": false
+      }
+    ],
+    "answer": "Global vs local",
+    "answer_label": "a",
+    "page": 12
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 64,
+    "question": "Decision Tree ใช้ค่าใดในการกำหนด Feature เพื่อ Split",
+    "options": [
+      {
+        "label": "a",
+        "text": "Mean Squared error",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ถูกทุกข้อ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Entropy",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Mean Absolute error",
+        "is_answer": false
+      }
+    ],
+    "answer": "Entropy",
+    "answer_label": "c",
+    "page": 13
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 65,
+    "question": "ให้ผลลัพธ์การแปลคือ Target sentence คือ \"ฉัน กิน ข้าว อยู่ ใต้ต้นไม่\" ประโยคที่เป็น reference คือ ฉัน กิน ขนม อยู่ ใต้ ต้นไม้ในการคำนวณ BLEU Score จำเป็นต้องคำนวณ Cumulative n-gramจากตัวอย่าง ดังกล่าวจำนวน n และค่า Cumulative 1-gram ถึง n-gram คือเท่าไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "n = 6, Cumulative 1-gram ถึง n-gram 5/6,3/5, 1/4,0, 0, 0, 0",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "n = 5, Cumulative 1-gram ถึง n-gram 5/6, 3/5, 1/4, 0, 0, 0",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "n = 6, Cumulative 1-gram ถึง n-gram 5/6, 3/4, 1/4, 0, 0, 0",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "n = 4, Cumulative 1-gram ถึง n-gram 5/6,2/5, 1/4,0, 0, 0, 0",
+        "is_answer": false
+      }
+    ],
+    "answer": "n = 5, Cumulative 1-gram ถึง n-gram 5/6, 3/5, 1/4, 0, 0, 0",
+    "answer_label": "b",
+    "page": 13
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 66,
+    "question": "นักศึกษาทุกคนที่เรียน superAI แล้วจะเก่ง แปลได้ว่า",
+    "options": [
+      {
+        "label": "a",
+        "text": "Vx( study(x, superAl) → smart(x) )",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "크x( study(x, superAl) → smart(x) )",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "크x( study(x, superAl) v smart(x) )",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Vx( study(x, superAl) A smart(x) )",
+        "is_answer": false
+      }
+    ],
+    "answer": "Vx( study(x, superAl) → smart(x) )",
+    "answer_label": "a",
+    "page": 13
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 67,
+    "question": "จากโค้ดต่อไปนี้ คำสั่ง layers.Flatten ทำหน้าที่อะไร from tensorflow.keras.applications.vgg16 import VGG16 vgg = VGG16(include_top=False, weights='imagenet') # fit input x_in = layers.Input(shape=(32, 32, 1)) x = layers.Conv2D(3, 1)(x_in) x = vgg (x) # fit output x = layers.Flatten()(x) x = layers.Dense(10, activation-'softmax') (x) model = keras.Model (x_in, x) model.summary ()",
+    "options": [
+      {
+        "label": "a",
+        "text": "แปลงข้อมูลจาก multi-dimensions ให้เป็น vector",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "เพิ่มจำนวนช่องสีให้เข้ากับ weights ที่ใช้งาน",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "แปลงข้อมูล multi-layers ให้เป็น a layer",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "แปลงข้อมูลให้มีจำนวน output เท่ากับ 10",
+        "is_answer": false
+      }
+    ],
+    "answer": "แปลงข้อมูลจาก multi-dimensions ให้เป็น vector",
+    "answer_label": "a",
+    "page": 13
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 68,
+    "question": "ข้อใด ไม่จัดเป็นอุปกรณ์สำหรับใช้ใช่ในการพัฒนา loT",
+    "options": [
+      {
+        "label": "a",
+        "text": "Arduino Board",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ESP8266",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Mainboard",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Raspberry Pi",
+        "is_answer": false
+      }
+    ],
+    "answer": "Mainboard",
+    "answer_label": "c",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 69,
+    "question": "ข้อใดกล่าวถึง Covariance matrix ได้ถูกต้องมากที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "ค่า Covariance เท่ากับค่า Variance และเท่ากับค่า Standard Deviation",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ขนาดของ Covariance matrix เป็นเมทริกฆ์จัดรัสเสมอ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Covariance(x,x) ไม่เท่ากับ Variance(x)",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Covariance(x,y) ไม่เท่ากับ Covariance(y,x)",
+        "is_answer": false
+      }
+    ],
+    "answer": "ขนาดของ Covariance matrix เป็นเมทริกฆ์จัดรัสเสมอ",
+    "answer_label": "b",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 70,
+    "question": "การแทนลำดับข้อมูลนำเข้า (input sequence) ในข้อใด หากนำไปสร้างระบบสังเคราะห์เสียง แล้วจะมีความถูกต้องและเป็นธรรมชาติมากกว่าข้ออื่น",
+    "options": [
+      {
+        "label": "a",
+        "text": "ตัวอักษร (Character)",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "จำนวนของพยางค์ในแต่ละคำ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "สัญลักษณ์แทนการออกเสียง (Phoneme)",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "ชนิดของคำ (Part-of-speech)",
+        "is_answer": false
+      }
+    ],
+    "answer": "สัญลักษณ์แทนการออกเสียง (Phoneme)",
+    "answer_label": "c",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 71,
+    "question": "ข้อใดเป็นเหตุผลที่ Perceptron ไม่สามารถแก้ปัญหา XOR ได้?",
+    "options": [
+      {
+        "label": "a",
+        "text": "เนื่องจากใช้ฟังก์ชันกระตุ้นแบบ ReLU",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "เนื่องจากการปรับค่า Hyperparameters ที่ไม่เหมาะสม",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Perceptron ไม่สามารถเรียนรู้รูปแบบของข้อมูลแบบเชิงเส้นได้",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "XOR เป็นปัญหาไม่เชิงเส้น แต่ Perceptron แก่ได้เฉพาะปัญหาเชิงเส้น",
+        "is_answer": true
+      }
+    ],
+    "answer": "XOR เป็นปัญหาไม่เชิงเส้น แต่ Perceptron แก่ได้เฉพาะปัญหาเชิงเส้น",
+    "answer_label": "d",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 72,
+    "question": "Lie Factor จากหัวข้อ Graphical Integrity ควรอยู่ในช่วงเท่าใด",
+    "options": [
+      {
+        "label": "a",
+        "text": "0.80 - 1.20",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "0.90 - 1.10",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "0.85 - 1.15",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "0.95 - 1.05",
+        "is_answer": true
+      }
+    ],
+    "answer": "0.95 - 1.05",
+    "answer_label": "d",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 73,
+    "question": "DOF ของระบบแขนกลหุ่นยนต์เรียกว่าชื่อเต็มว่าอย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "Direct of Freedom",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Degree of Freedom",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Degree of Field",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Direct of Factor",
+        "is_answer": false
+      }
+    ],
+    "answer": "Degree of Freedom",
+    "answer_label": "b",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 74,
+    "question": "วิธีการ Vanilla ICP นั้นประกอบด้วยขั้นตอนตามลำดับอย่างไรบ้าง",
+    "options": [
+      {
+        "label": "a",
+        "text": "Alignment was Data Association",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Distance measuring และ Alignment",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Data association แล: Alignment",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Matrix decomposition และ Data association",
+        "is_answer": false
+      }
+    ],
+    "answer": "Data association แล: Alignment",
+    "answer_label": "c",
+    "page": 14
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 75,
+    "question": "เมื่อไม่ได้กำหนดฟังก์ชั้นกระตุ้น (Activation) ให้กับชั้นต่าง ๆ หมายความได้ว่าเป็นการใช้ฟังก์ชันกระตุ้นแบบเชิงเส้น (Linear)",
+    "options": [
+      {
+        "label": "1",
+        "text": "TRUE",
+        "is_answer": true
+      },
+      {
+        "label": "2",
+        "text": "FALSE",
+        "is_answer": false
+      }
+    ],
+    "answer": "TRUE",
+    "answer_label": "1",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 76,
+    "question": "ข้อใดอธิบายการทำงานของ Bootstrap sampling ได้ถูกต้อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "sample without replacement",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "sample with replacement multiple times",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "without sampling",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "sample with replacement",
+        "is_answer": true
+      }
+    ],
+    "answer": "sample with replacement",
+    "answer_label": "d",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 77,
+    "question": "ข้อใดเรียงลำดับการประมวลผลของการรู้จำเสียงพูดได้ถูกต้อง",
+    "options": [
+      {
+        "label": "a",
+        "text": "Signal level - Acoustic level - Language Level",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "Signal level - Language Level - Acoustic level",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Language Level - Acoustic level - Signal level",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Acoustic level + Language Level - Signal level",
+        "is_answer": false
+      }
+    ],
+    "answer": "Signal level - Acoustic level - Language Level",
+    "answer_label": "a",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 78,
+    "question": "โมเดล U-Net ต่างจาก SegNet อย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "U-net มีการลดจำนวน layer ใน Decoder เพื่อให้ท่างางานเร็วขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "U-net มีการลดจำนวน layer ใน Encoder เพื่อให้ทำงานเร็วขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "U-net มีการเดิมข้อมูลจาก Decoder ใส่ Encoder เพื่อเพิ่มข้อมูลที่คาดว่าจะหายไป",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "U-net มีการเติมข้อมูลจาก Encoder ใน Decoder เพื่อเพิ่มข้อมูลที่คาดว่าจะหายไป",
+        "is_answer": true
+      }
+    ],
+    "answer": "U-net มีการเติมข้อมูลจาก Encoder ใน Decoder เพื่อเพิ่มข้อมูลที่คาดว่าจะหายไป",
+    "answer_label": "d",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 79,
+    "question": "Self-Attention ช่วยในการจัดการกับลำดับที่ยาวได้อย่างไร",
+    "options": [
+      {
+        "label": "a",
+        "text": "โดยการลดขนาดของลำดับข้อมูลให้สั้นลง",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "โดยการคำนวณความสำพันธ์ระหว่างข้อมูลทุกตำแหน่งในล่าดับพร้อมกัน",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "โดยการใช้ Recurrent Connections เพื่อเพิ่มหน่วยความจำ",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "โดยการใช้ Convolutional Layers เพื่อจับลักษณะของล่าดับ",
+        "is_answer": false
+      }
+    ],
+    "answer": "โดยการคำนวณความสำพันธ์ระหว่างข้อมูลทุกตำแหน่งในล่าดับพร้อมกัน",
+    "answer_label": "b",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 80,
+    "question": "ข้อใดไม่ใช่ประโยชน์ของการใช้ LDA topic modeling",
+    "options": [
+      {
+        "label": "a",
+        "text": "การค้นพบ themes ที่ซ่อนอยู่ในคลังข้อมูลขนาดใหญ่",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "การจัดหมวดหมู่เอกสารอัตโนมัติ",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "การปรับปรุงระบบค้นคืนสารสนเทศ",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "การสรุปเนื้อหาของเอกสาร",
+        "is_answer": false
+      },
+      {
+        "label": "e",
+        "text": "การแก่ไขข้อผิดพลาดทางไวยากรณ์ในเอกสาร",
+        "is_answer": true
+      }
+    ],
+    "answer": "การแก่ไขข้อผิดพลาดทางไวยากรณ์ในเอกสาร",
+    "answer_label": "e",
+    "page": 15
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 81,
+    "question": "ข้อในต่อไปนี้กล่าวไม่ถูกต้องเกี่ยวกับ Independent Component Analysis (ICA)",
+    "options": [
+      {
+        "label": "a",
+        "text": "ใช้สำหรับการลดขนาดมิติของข้อมูล",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "ICA สามารถนำมาช่วยในการหาโครงสร้างของข้อมูล",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ใน ICA แต่ละ component มีความสำคัญไม่เท่ากัน",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ใช้สำหรับการแยกคุณลักษณะเฉพาะ",
+        "is_answer": false
+      }
+    ],
+    "answer": "ใช้สำหรับการลดขนาดมิติของข้อมูล",
+    "answer_label": "a",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 82,
+    "question": "ข้อใดเป็นเป้าหมายหลักของการควบคุมแรงกดดันการคัดเลือก(Selection Pressure)",
+    "options": [
+      {
+        "label": "a",
+        "text": "เพื่อหาคำตอบที่เหมาะสมที่สุดอย่างมีประสิทธิภาพ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "เพื่อเพิ่มความหลากหลายในประชากร",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "เพื่อเร่งกระบวนการวิวัฒนาการ",
+        "is_answer": false
+      }
+    ],
+    "answer": "ถูกทุกข้อ",
+    "answer_label": "c",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 83,
+    "question": "ข้อใดไม่ใช่ประเภทของ Influencer",
+    "options": [
+      {
+        "label": "a",
+        "text": "Executive Influencer",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Niche Influencer",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Virtual Influencer",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Exclusive Influencer",
+        "is_answer": true
+      }
+    ],
+    "answer": "Exclusive Influencer",
+    "answer_label": "d",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 84,
+    "question": "ข้อใดกล่าวไม่ถูกต้องเกี่ยวกับ Histogram",
+    "options": [
+      {
+        "label": "a",
+        "text": "การทำ Histogram equalization จะทำให้ Histogram มีช่วงการกระจายกว้างขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Histogram คือกราฟที่แสดงจำนวนวัตถุของภาพ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "การทำ Histogram equalization จะทำให้ภาพมีความต่างสีกันมากขึ้น",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "ภาพที่มีสีแบบ Low contrast นั้น Histogram จะมีช่วงการกระจายในระยะแคบ",
+        "is_answer": false
+      }
+    ],
+    "answer": "Histogram คือกราฟที่แสดงจำนวนวัตถุของภาพ",
+    "answer_label": "b",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 85,
+    "question": "ข้อมูลชนิดใดที่สามารถนำไปสร้างเป็นภาพได้",
+    "options": [
+      {
+        "label": "a",
+        "text": "Float64",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "c",
+        "text": "Float32",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "UINT8",
+        "is_answer": false
+      }
+    ],
+    "answer": "ถูกทุกข้อ",
+    "answer_label": "b",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 86,
+    "question": "ข้อใดไม่ถูกต้อง เกี่ยวกับการแข่งขันแบบ Team ใน Kaggle?",
+    "options": [
+      {
+        "label": "a",
+        "text": "ชื่อทีม สามารถเปลี่ยนได้ตามความต้องการ",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "แรกเริ่ม ทุกคนจะอยู่ในทีม ที่เป็นชื่อของตัวเอง",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ในการแข่งแบบทีม เราสามารถส่งคำขอรวมทีมกับผู้ที่เข้าร่วมแข่งขันด้วยได้",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "จำนวนผลที่ส่งได้ต่อวัน จะขึ้นอยู่กับจำนวนสมาชิกในทีม",
+        "is_answer": true
+      }
+    ],
+    "answer": "จำนวนผลที่ส่งได้ต่อวัน จะขึ้นอยู่กับจำนวนสมาชิกในทีม",
+    "answer_label": "d",
+    "page": 16
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 87,
+    "question": "Parameter ในข้อใดที่แสดงถึงคุณลักษณะภายในของกล้องที่ใช้ถ่ายภาพ",
+    "options": [
+      {
+        "label": "a",
+        "text": "Extrinsic parameter",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Transform parameter",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Projector parameter",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Intrinsic parameter",
+        "is_answer": true
+      }
+    ],
+    "answer": "Intrinsic parameter",
+    "answer_label": "d",
+    "page": 17
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 88,
+    "question": "Crypto Wallets หาn MetaMask ปิดตัวไป เรายังสามารถเข้าถึง Wallet ของเราได้หรือไม่ ?",
+    "options": [
+      {
+        "label": "a",
+        "text": "สามารถเข้าถึงได้ โดยติดต่อทีมสนับสนุน MetaMask",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "ไม่สามารถเข้าถึงได้",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "สามารถเข้าถึงได้ โดยใช้ Seed Phrase บนกระเป้าเงินอื่น",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "สามารถเข้าถึงได้ โดยใช้บัญชีของ MetaMask บนเว็บไซต์ผู้ให้บริการอื่น",
+        "is_answer": false
+      }
+    ],
+    "answer": "สามารถเข้าถึงได้ โดยใช้ Seed Phrase บนกระเป้าเงินอื่น",
+    "answer_label": "c",
+    "page": 17
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 89,
+    "question": "OpenCV สามารถเปิดวีดีโอจากแหล่งใดได้บ้าง",
+    "options": [
+      {
+        "label": "a",
+        "text": "ไฟล์",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "IP camera",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "ถูกทุกข้อ",
+        "is_answer": true
+      },
+      {
+        "label": "d",
+        "text": "Webcam",
+        "is_answer": false
+      }
+    ],
+    "answer": "ถูกทุกข้อ",
+    "answer_label": "c",
+    "page": 17
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 90,
+    "question": "ข้อใดเกี่ยวข้องกับกระบวนการ Information Extraction น้อยที่สุด",
+    "options": [
+      {
+        "label": "a",
+        "text": "Named Entity Recognition (NER)",
+        "is_answer": false
+      },
+      {
+        "label": "b",
+        "text": "Part-of-Speech Tagging (PoS Tagging)",
+        "is_answer": false
+      },
+      {
+        "label": "c",
+        "text": "Relation Extraction",
+        "is_answer": false
+      },
+      {
+        "label": "d",
+        "text": "Image classification",
+        "is_answer": true
+      }
+    ],
+    "answer": "Image classification",
+    "answer_label": "d",
+    "page": 17
+  },
+  {
+    "source": "ข้อสอบชุด1.pdf",
+    "number": 91,
+    "question": "Transfer Learning แบ่งการเรียนรู้เป็น 2 ครั้ง คือ Pre-traingและ Post-training",
+    "options": [
+      {
+        "label": "a",
+        "text": "TRUE",
+        "is_answer": true
+      },
+      {
+        "label": "b",
+        "text": "FALSE",
+        "is_answer": false
+      }
+    ],
+    "answer": "TRUE",
+    "answer_label": "a",
+    "page": 17
+  }
+]

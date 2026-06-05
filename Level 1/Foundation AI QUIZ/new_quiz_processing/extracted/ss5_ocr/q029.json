@@ -1,0 +1,135 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 29,
+  "crop": "ss5/question_crops/q029/question_full.png",
+  "selected_index": 3,
+  "selected_scores": [
+    {
+      "y": 217,
+      "dark": 0,
+      "mean": 249.22222222222223
+    },
+    {
+      "y": 258,
+      "dark": 0,
+      "mean": 249.28395061728395
+    },
+    {
+      "y": 299,
+      "dark": 26,
+      "mean": 164.1604938271605
+    },
+    {
+      "y": 340,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "จงเรียงล่าดับขั้นตอนการท่างานของ sequence-to- sequence model แบบทีมี attention ให้ถูกต้อง\nข้าที่ 29\nลบค่าตอบ\na) คำนวณหา target word distribution\nb) concatenate encoder hidden state\nc) หา attention score และสร้าง context vector\nd) แปลง input ให้เปิน word - embedding\ne) initial decoder hidden state โดยการเฉลี่ยสิ่งทีได้จาก encoder\nf) ใช้ lstm อ่าน input จากข้ายไปขวา และขวามาซ้ายเพือสร้าง encoder hidden state\nadfb ec\nad bfec\ndf b eca\ndabfce",
+  "lines": [
+    {
+      "text": "จงเรียงล่าดับขั้นตอนการท่างานของ sequence-to- sequence model แบบทีมี attention ให้ถูกต้อง",
+      "conf": 0.579838946855083,
+      "x0": 90.0,
+      "y0": 15.0,
+      "x1": 710.0,
+      "y1": 52.0
+    },
+    {
+      "text": "ข้าที่ 29",
+      "conf": 0.7414713775027865,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8885155989419051,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "a) คำนวณหา target word distribution",
+      "conf": 0.828956552059772,
+      "x0": 92.0,
+      "y0": 44.0,
+      "x1": 358.0,
+      "y1": 72.0
+    },
+    {
+      "text": "b) concatenate encoder hidden state",
+      "conf": 0.8729701973866575,
+      "x0": 92.0,
+      "y0": 67.0,
+      "x1": 364.0,
+      "y1": 95.0
+    },
+    {
+      "text": "c) หา attention score และสร้าง context vector",
+      "conf": 0.648614590818529,
+      "x0": 92.0,
+      "y0": 92.0,
+      "x1": 414.0,
+      "y1": 118.0
+    },
+    {
+      "text": "d) แปลง input ให้เปิน word - embedding",
+      "conf": 0.3102030859099059,
+      "x0": 92.0,
+      "y0": 112.0,
+      "x1": 364.0,
+      "y1": 144.0
+    },
+    {
+      "text": "e) initial decoder hidden state โดยการเฉลี่ยสิ่งทีได้จาก encoder",
+      "conf": 0.6064370227203045,
+      "x0": 92.0,
+      "y0": 138.0,
+      "x1": 522.0,
+      "y1": 166.0
+    },
+    {
+      "text": "f) ใช้ lstm อ่าน input จากข้ายไปขวา และขวามาซ้ายเพือสร้าง encoder hidden state",
+      "conf": 0.28354251126307795,
+      "x0": 92.0,
+      "y0": 162.0,
+      "x1": 640.0,
+      "y1": 190.0
+    },
+    {
+      "text": "adfb ec",
+      "conf": 0.5438044567112015,
+      "x0": 104.0,
+      "y0": 206.0,
+      "x1": 192.0,
+      "y1": 230.0
+    },
+    {
+      "text": "ad bfec",
+      "conf": 0.9290525964030014,
+      "x0": 104.0,
+      "y0": 246.0,
+      "x1": 192.0,
+      "y1": 272.0
+    },
+    {
+      "text": "df b eca",
+      "conf": 0.5428736323959106,
+      "x0": 104.0,
+      "y0": 288.0,
+      "x1": 190.0,
+      "y1": 312.0
+    },
+    {
+      "text": "dabfce",
+      "conf": 0.9638040292696146,
+      "x0": 104.0,
+      "y0": 328.0,
+      "x1": 192.0,
+      "y1": 354.0
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 39,
+  "crop": "ss5/question_crops/q039/question_full.png",
+  "selected_index": 1,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 26,
+      "mean": 164.4320987654321
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.28395061728395
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.34567901234567
+    },
+    {
+      "y": 196,
+      "dark": 0,
+      "mean": 249.07407407407408
+    }
+  ],
+  "text": "ววิธีการ์ดที flatten histogram ได้มากทีสุด\nข้าที่ 39\nลบค่าตอบ\nhistogram equalization\nlocal intensity distribution equalization\nsorting\npixel\ncontrast limited adaptive histogram equalization",
+  "lines": [
+    {
+      "text": "ววิธีการ์ดที flatten histogram ได้มากทีสุด",
+      "conf": 0.4515283221796897,
+      "x0": 88.0,
+      "y0": 15.0,
+      "x1": 363.0,
+      "y1": 51.0
+    },
+    {
+      "text": "ข้าที่ 39",
+      "conf": 0.4263292982042597,
+      "x0": 28.0,
+      "y0": 20.0,
+      "x1": 76.0,
+      "y1": 44.0
+    },
+    {
+      "text": "ลบค่าตอบ",
+      "conf": 0.8923537997443758,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "histogram equalization",
+      "conf": 0.7341486073715455,
+      "x0": 102.0,
+      "y0": 60.0,
+      "x1": 276.0,
+      "y1": 92.0
+    },
+    {
+      "text": "local intensity distribution equalization",
+      "conf": 0.605814737952313,
+      "x0": 104.0,
+      "y0": 101.0,
+      "x1": 388.0,
+      "y1": 131.0
+    },
+    {
+      "text": "sorting",
+      "conf": 0.3720516130582339,
+      "x0": 137.1172791367188,
+      "y0": 139.16388105512118,
+      "x1": 201.8827208632812,
+      "y1": 173.83611894487882
+    },
+    {
+      "text": "pixel",
+      "conf": 0.7601882485387808,
+      "x0": 104.0,
+      "y0": 144.0,
+      "x1": 146.0,
+      "y1": 168.0
+    },
+    {
+      "text": "contrast limited adaptive histogram equalization",
+      "conf": 0.43146411065121726,
+      "x0": 104.0,
+      "y0": 185.0,
+      "x1": 464.0,
+      "y1": 213.0
+    }
+  ]
+}

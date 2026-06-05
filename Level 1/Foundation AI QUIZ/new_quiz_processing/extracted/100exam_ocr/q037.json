@@ -1,0 +1,88 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 37,
+  "crop": "100exam_crops/q037/question_full.png",
+  "text": "จงเรียงสำดับขั้นตอนการทางานของ sequence -to sequence model แบบที่มี atte\nข้อที37\na) คานวณหา target word distribution\nb) concatenate encoder hidden state\nc)หา attention score และสร้าง context vector\nd) แปลง input ให้เป็น word-embedding\ne) initial decoder hidden state โดยการเฉลี่ยสิ่งที่ได้จาก encoder\nคฺใช้ lstm อ่าน input จากซ้ายไปขวา และขวามาซ้ายเพื่อสร้าง encoder hidden\ndabfce\nad bfec",
+  "lines": [
+    {
+      "text": "จงเรียงสำดับขั้นตอนการทางานของ sequence -to sequence model แบบที่มี atte",
+      "conf": 0.45232725263637596,
+      "x0": 161.0,
+      "y0": 35.0,
+      "x1": 938.0,
+      "y1": 79.0
+    },
+    {
+      "text": "ข้อที37",
+      "conf": 0.927140554200407,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 138.0,
+      "y1": 70.0
+    },
+    {
+      "text": "a) คานวณหา target word distribution",
+      "conf": 0.7991061112545335,
+      "x0": 163.0,
+      "y0": 77.0,
+      "x1": 549.0,
+      "y1": 120.0
+    },
+    {
+      "text": "b) concatenate encoder hidden state",
+      "conf": 0.646528354038296,
+      "x0": 163.0,
+      "y0": 115.0,
+      "x1": 555.0,
+      "y1": 153.0
+    },
+    {
+      "text": "c)หา attention score และสร้าง context vector",
+      "conf": 0.902755271567317,
+      "x0": 163.0,
+      "y0": 152.0,
+      "x1": 639.0,
+      "y1": 191.0
+    },
+    {
+      "text": "d) แปลง input ให้เป็น word-embedding",
+      "conf": 0.5941311200005236,
+      "x0": 162.0,
+      "y0": 184.0,
+      "x1": 570.0,
+      "y1": 235.0
+    },
+    {
+      "text": "e) initial decoder hidden state โดยการเฉลี่ยสิ่งที่ได้จาก encoder",
+      "conf": 0.7621219250318325,
+      "x0": 163.0,
+      "y0": 221.0,
+      "x1": 803.0,
+      "y1": 265.0
+    },
+    {
+      "text": "คฺใช้ lstm อ่าน input จากซ้ายไปขวา และขวามาซ้ายเพื่อสร้าง encoder hidden",
+      "conf": 0.5279029353719646,
+      "x0": 162.0,
+      "y0": 262.0,
+      "x1": 936.0,
+      "y1": 311.0
+    },
+    {
+      "text": "dabfce",
+      "conf": 0.9913248310526677,
+      "x0": 182.0,
+      "y0": 334.0,
+      "x1": 306.0,
+      "y1": 366.0
+    },
+    {
+      "text": "ad bfec",
+      "conf": 0.8589589122073596,
+      "x0": 180.0,
+      "y0": 397.0,
+      "x1": 306.0,
+      "y1": 433.0
+    }
+  ]
+}

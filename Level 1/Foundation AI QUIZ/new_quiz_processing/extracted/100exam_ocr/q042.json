@@ -1,0 +1,64 @@
+{
+  "source": "100Exam_Lv1.pdf",
+  "number": 42,
+  "crop": "100exam_crops/q042/question_full.png",
+  "text": "ข้อใดกล่าวถูกต้องเกียวกับ embedded system\nข่อที42\nhas a cpu and programs that mainly control physical things\nhas limited processing power and limited electrical power and limited data\n\"special purpose\" unit\na\"\nhas \"intelligence\"",
+  "lines": [
+    {
+      "text": "ข้อใดกล่าวถูกต้องเกียวกับ embedded system",
+      "conf": 0.799055292698588,
+      "x0": 157.0,
+      "y0": 31.0,
+      "x1": 610.0,
+      "y1": 80.0
+    },
+    {
+      "text": "ข่อที42",
+      "conf": 0.3600875624583041,
+      "x0": 70.0,
+      "y0": 38.0,
+      "x1": 140.0,
+      "y1": 70.0
+    },
+    {
+      "text": "has a cpu and programs that mainly control physical things",
+      "conf": 0.5165147470572075,
+      "x0": 179.0,
+      "y0": 103.0,
+      "x1": 797.0,
+      "y1": 145.0
+    },
+    {
+      "text": "has limited processing power and limited electrical power and limited data",
+      "conf": 0.5334408000805777,
+      "x0": 181.0,
+      "y0": 168.0,
+      "x1": 938.0,
+      "y1": 209.0
+    },
+    {
+      "text": "\"special purpose\" unit",
+      "conf": 0.6924458136121231,
+      "x0": 206.0,
+      "y0": 230.0,
+      "x1": 435.0,
+      "y1": 275.0
+    },
+    {
+      "text": "a\"",
+      "conf": 0.9998132102773919,
+      "x0": 182.0,
+      "y0": 236.0,
+      "x1": 220.0,
+      "y1": 264.0
+    },
+    {
+      "text": "has \"intelligence\"",
+      "conf": 0.9588700718992544,
+      "x0": 181.0,
+      "y0": 299.0,
+      "x1": 361.0,
+      "y1": 339.0
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "source": "SuperAI SS5_Foundation AI QUIZ.pdf",
+  "number": 81,
+  "crop": "ss5/question_crops/q081/question_full.png",
+  "selected_index": 4,
+  "selected_scores": [
+    {
+      "y": 73,
+      "dark": 0,
+      "mean": 249.34567901234567
+    },
+    {
+      "y": 114,
+      "dark": 0,
+      "mean": 249.07407407407408
+    },
+    {
+      "y": 155,
+      "dark": 0,
+      "mean": 249.320987654321
+    },
+    {
+      "y": 196,
+      "dark": 26,
+      "mean": 164.41975308641975
+    }
+  ],
+  "text": "ข้อใดจัดเปินความแตกต่างระหว่าง histogram equalization กับ adaptive histogram equalization\nข้าที่ 81\nลบค่ำตอบ\nsingle vs multivariable\nnon parametric vs parametric\ngray\nvs rgb\nglobal vs local",
+  "lines": [
+    {
+      "text": "ข้อใดจัดเปินความแตกต่างระหว่าง histogram equalization กับ adaptive histogram equalization",
+      "conf": 0.5214044494224352,
+      "x0": 90.0,
+      "y0": 18.0,
+      "x1": 720.0,
+      "y1": 50.0
+    },
+    {
+      "text": "ข้าที่ 81",
+      "conf": 0.5795128936681379,
+      "x0": 29.0,
+      "y0": 21.0,
+      "x1": 75.0,
+      "y1": 41.0
+    },
+    {
+      "text": "ลบค่ำตอบ",
+      "conf": 0.6441684406057359,
+      "x0": 1295.0,
+      "y0": 27.0,
+      "x1": 1347.0,
+      "y1": 43.0
+    },
+    {
+      "text": "single vs multivariable",
+      "conf": 0.7834534318000081,
+      "x0": 104.0,
+      "y0": 62.0,
+      "x1": 269.0,
+      "y1": 88.0
+    },
+    {
+      "text": "non parametric vs parametric",
+      "conf": 0.5495128522485156,
+      "x0": 104.0,
+      "y0": 104.0,
+      "x1": 324.0,
+      "y1": 130.0
+    },
+    {
+      "text": "gray",
+      "conf": 0.40497238631196375,
+      "x0": 101.2287736592851,
+      "y0": 141.21456992734423,
+      "x1": 147.7712263407149,
+      "y1": 171.78543007265577
+    },
+    {
+      "text": "vs rgb",
+      "conf": 0.5440935207048962,
+      "x0": 140.0,
+      "y0": 144.0,
+      "x1": 198.0,
+      "y1": 168.0
+    },
+    {
+      "text": "global vs local",
+      "conf": 0.6047759932139549,
+      "x0": 105.0,
+      "y0": 187.0,
+      "x1": 217.0,
+      "y1": 207.0
+    }
+  ]
+}
