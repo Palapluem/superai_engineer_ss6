@@ -558,3 +558,8 @@ Reference:
 - path ต้องเหมาะกับ Kaggle/Colab ตามที่ระบุ
 - ถ้าไม่มั่นใจอย่าเดา ให้ inspect ไฟล์จริงก่อน
 ```
+
+# รายละเอียดของโจทย์
+train/ - This folder contains the training set with 83 CSV files. Each file includes continuous numerical values collected from multiple sensors, resampled to 16 Hz. The continuous signals can be considered as continuous segments, with each 30-second segment having the same label.
+
+test_segment/ - This process segments the test data for each subject ID into 30-second intervals, ensuring that each segment is associated with a single label. The segmented data corresponds to the "id" column in the sample submission file. sample_submission.csv - This CSV file serves as a sample submission. It includes the filenames corresponding to subject_segment IDs and the predicted labels.

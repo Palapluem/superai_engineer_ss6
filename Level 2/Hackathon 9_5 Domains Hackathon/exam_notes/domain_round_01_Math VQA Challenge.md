@@ -558,3 +558,347 @@ Reference:
 - path ต้องเหมาะกับ Kaggle/Colab ตามที่ระบุ
 - ถ้าไม่มั่นใจอย่าเดา ให้ inspect ไฟล์จริงก่อน
 ```
+
+# รูปแบบโจทย์และข้อมูลแบบละเอียด
+In this individual assessment, you will build a system that reads an image of a Thai-language mathematics problem and outputs the correct answer. The dataset contains 700 problems drawn from Thai math curricula across multiple grade levels — primary, lower-secondary, and upper-secondary — and includes a mix of arithmetic, algebra, geometry, combinatorics, and word problems.
+
+Each problem is provided as a single image. Problems may include:
+
+Thai natural-language text describing the question.
+Diagrams (geometric figures, number lines, tables, charts).
+Mathematical notation, including fractions, square roots, and angle measures.
+Your task is to produce a CSV of predicted answers — one row per problem — that maximizes exact-match accuracy against the hidden ground-truth answers, after a deterministic normalization step (described in detail in the Evaluation tab).
+
+Goal
+Given an image of a Thai math problem, predict the answer.
+
+A trivial baseline that answers "2" for every problem scores approximately 4–6%. Your submission should comfortably beat this. Strong solutions are expected to combine a capable vision-language model (or OCR + LLM pipeline) with careful prompting and answer normalization.
+
+Why this matters
+Thai-language mathematical reasoning is an underexplored intersection of:
+
+Vision-language modeling — understanding figures, equations, and Thai text in a single image.
+Numerical and symbolic reasoning — performing multi-step calculations correctly.
+Low-resource language modeling — Thai is far less represented than English in most pretrained models.
+Solving this challenge requires more than calling a single API — you will need to engineer how the model sees the problem, reasons about it, and formats its final answer.
+
+What you will submit
+A single CSV file with two columns: id and answer, covering every row in test.csv. The exact format is described in Evaluation → Submission File.
+
+Eligibility & rules
+This competition is restricted to participants of the Super AI Engineer SS6 program and is an individual assessment — no teams. See the Rules tab for the full set of constraints, including allowed external data, pretrained models, submission limits, and prohibited actions.
+
+Start
+
+9 hours ago
+Close
+
+5 hours to go
+Description
+The problem
+Each example in this competition is a single image containing a complete Thai-language mathematics problem. The image carries the entire context the model needs to answer:
+
+The problem statement (Thai natural language).
+Any accompanying diagram — triangles, circles, coordinate grids, number tables, etc.
+Any necessary mathematical notation, drawn in the original textbook typesetting.
+The model's task is to produce a single short answer string per problem. Answers vary in form across the dataset:
+
+Plain integers — e.g. "36", "227", "-2"
+Decimals — e.g. "2.8125"
+Numbers with Thai units — e.g. "20 ตารางเซนติเมตร", "30 องศา", "15 หน่วย"
+LaTeX expressions — e.g. "$6\sqrt{3}$", "$\frac{17}{10}$"
+Short Thai phrases — e.g. "ขาดทุน ร้อยละ 1", "ข้อ (จ)"
+The Evaluation tab describes exactly how these forms are normalized before comparison, so you do not need to match the host's exact string — you only need to match it up to normalization.
+
+Data composition
+The 700 problems are drawn from 9 source buckets (identified by a 3-digit prefix in the original filename), which correspond roughly to grade level and problem set.
+
+Adversarial Split Warning: While the train.csv set contains a representative mix of all 9 buckets, the test set features an Adversarial Split. Certain buckets are evaluated exclusively on the Public Leaderboard, while others are evaluated exclusively on the Private Leaderboard. Beware of overfitting to the Public Leaderboard difficulty mix!
+
+Bucket	Count
+101	26
+102	27
+103	125
+104	134
+105	101
+116	105
+118	38
+120	30
+122	114
+Files
+train.csv — id, image_path, answer for 280 problems.
+test.csv — id, image_path for 420 problems (no answers).
+sample_submission.csv — a valid submission that predicts "2" for every row.
+images/{id}.jpg — the 700 problem images, named by id.
+image_path is a path relative to the dataset root, e.g. images/42.jpg.
+
+What approaches work
+We expect competitive solutions to combine several ideas:
+
+⚠️ Commercial vision-language model APIs are not allowed in this competition. You may not call hosted services such as Claude, GPT-4o, Gemini, or any other paid or free commercial inference API to produce your predictions. See the Rules tab for the precise definition. All inference must run from open-weights models that you load and run yourself (locally, on Kaggle Notebooks, or on your own infrastructure).
+
+Open-weights vision-language models
+An open-weights VLM (for example Qwen-VL, InternVL, Llama-3.2-Vision, MiniCPM-V, Pixtral, DeepSeek-VL, Molmo) can read the image directly and reason about the problem. Things to think about:
+
+Prompt design — instruct the model to extract the problem, reason step by step, and output only the final answer in a constrained format.
+Few-shot examples — draw 2–5 demonstrations from train.csv to anchor both the reasoning style and the answer format.
+Self-consistency — sample multiple chains and take a majority vote.
+Quantization — for larger open-weights models, use 4-bit / 8-bit loading (bitsandbytes, AWQ, GPTQ) to fit on a single GPU.
+OCR + LLM pipelines
+If you prefer not to rely on a single VLM, you can:
+
+Run a Thai-capable OCR (Tesseract Thai, EasyOCR, PaddleOCR) to extract the problem text.
+Pass the text — and optionally a description of the figure — to a strong open-weights reasoning LLM (Qwen, Llama, DeepSeek, Typhoon, etc.) that you run yourself.
+Combine with a separate vision pass for any geometric content.
+Hybrid approaches
+The strongest entries will likely combine open-weights VLM perception with explicit symbolic reasoning (e.g. SymPy), post-process the model's output through your own normalizer, and validate against the held-out portion of train.csv before submitting.
+
+Tips and pitfalls
+Match the normalizer. A correct answer that is formatted wrongly will be scored wrong. Build your own copy of the normalizer (see Evaluation), run it on your predictions, and check against train.csv locally before each submission.
+Watch units. Many ground-truth answers carry Thai units (ตารางเซนติเมตร, องศา, วิธี, จำนวน, etc.) that the normalizer strips. You can submit "20" or "20 ตารางเซนติเมตร" and both will normalize the same way — but only if you stay within the recognized unit list.
+Thai vs Arabic digits. The normalizer translates ๐–๙ to 0–9. Don't rely on this for answers — just always submit Arabic digits.
+Use your daily submission budget wisely. Five submissions per day is enough to validate small prompt or model tweaks. Use most of your iteration on local evaluation against train.csv.
+Acknowledgements
+This dataset is curated from publicly available Thai mathematics problems for the purpose of evaluating Super AI Engineer SS6 candidates. Questions and ground-truth answers are used here for educational assessment only.
+
+Evaluation
+Submissions are evaluated on accuracy — the fraction of test problems for which your predicted answer exactly matches the ground-truth answer, after a deterministic normalization step that is applied to both sides before comparison.
+
+Formally, for a test set of $N$ problems with ground-truth answers $y_1, \dots, y_N$ and your predictions $\hat{y}_1, \dots, \hat{y}_N$:
+
+
+The Public Leaderboard is computed on approximately 34% of the test set; the Private Leaderboard on the remaining 66%. Final standings are determined by the Private Leaderboard.
+
+Normalization
+Both the prediction and the ground truth pass through the same normalize function before comparison. The function is deterministic, public, and applied identically to every submission. The steps, in order, are:
+
+Lowercase and strip. Outer whitespace is removed, and the string is lowercased.
+Thai digits → Arabic digits. Characters ๐ ๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ are mapped to 0–9.
+Strip math delimiters. Dollar signs $ (used for inline LaTeX) are removed.
+Strip recognized units. Common Thai and English unit words that do not change the value are removed — for example ตารางเซนติเมตร, ลูกบาศก์หน่วย, เซนติเมตร, องศา, หน่วย, จำนวน, วิธี, แบบ, ค่า, ร้อยละ, ดอลลาร์, บาท, degrees, square centimeters, years old, and others.
+Expand LaTeX. A fixed set of LaTeX macros is rewritten to plain text:
+\frac{a}{b} → (a)/(b)
+\sqrt{x} → sqrt(x)
+\pi → pi
+\times, \cdot → *
+\div → /
+\pm → +-
+\overrightarrow{AB}, \overline{AB}, \vec{AB} → AB
+\left, \right, \,, \;, \:, \! → removed
+Drop structural characters. Whitespace and the characters { } \ , are removed.
+Drop redundant parentheses around pure integers. (3) → 3. This means sqrt(3) collapses to sqrt3 on both sides, so they still match.
+Integer canonicalization. If the result parses as a number with zero fractional part, it is rewritten in integer form. "2.0" and "2" both normalize to "2".
+Worked examples
+Raw answer	After normalization
+20 ตารางเซนติเมตร	20
+30 องศา	30
+15 หน่วย	15
+$6\sqrt{3}$	6sqrt3
+$\frac{17}{10}$	17/10
+$\frac{3\sqrt{3}}{2}$	3sqrt3/2
+๒๕	25
+2.0	2
+80 degrees	80
+You do not need to reproduce the host's exact formatting — you only need to produce a string that normalizes to the same canonical form.
+
+Submission File
+For each id in test.csv, you must predict a single string in the answer column. The file must contain a header and have the following format:
+
+id,answer
+0,20
+1,1
+2,6sqrt(3)
+3,10
+4,69
+etc.
+Constraints:
+
+The file must contain exactly two columns with the header id,answer.
+Every id in test.csv must appear exactly once in your submission.
+id is treated as a string. Do not strip leading zeros or change the format.
+answer may contain Thai characters, LaTeX, units, or plain numbers — the normalizer handles all of them.
+Empty answer cells are scored as wrong.
+Local validation
+A trivial baseline submission that predicts "2" for every test row is provided as sample_submission.csv. It scores approximately 6.3% on the Public Leaderboard and 3.9% on the Private Leaderboard. Use it to verify your submission pipeline end-to-end before iterating on a real solution.
+
+For local validation, hold out a small slice of train.csv and score yourself with the same normalization rules — your local score will be a strong predictor of the public score, since the train, public, and private splits are stratified the same way.
+
+The dataset contains 700 Thai-language mathematics problems, each represented as a single image plus a short string answer. The data has been split into a training set (with answers) and a test set (without answers). Your task is to predict the answer for every problem in the test set.
+
+Files
+File	Rows	Description
+train.csv	280	Training problems — id, image_path, and ground-truth answer.
+test.csv	420	Test problems — id and image_path only. Predict the answer.
+sample_submission.csv	420	Example submission in the correct format (predicts "2" for every row).
+images/	700	All problem images, one JPEG per problem, named {id}.jpg.
+Columns
+train.csv
+Column	Type	Description
+id	string	Unique identifier for the problem. Use this to match images and submission rows.
+image_path	string	Path to the problem image, relative to the dataset root (e.g. images/42.jpg).
+answer	string	The ground-truth answer. May be a plain number, a number with a Thai unit, a LaTeX expression, or a short Thai phrase.
+test.csv
+Column	Type	Description
+id	string	Unique identifier for the problem.
+image_path	string	Path to the problem image, relative to the dataset root.
+sample_submission.csv
+Column	Type	Description
+id	string	Must match every id in test.csv.
+answer	string	Your predicted answer for that id.
+Images
+Format: JPEG
+Color mode: RGB
+Dimensions: vary by problem — most are roughly 1000–1500 px wide and 500–800 px tall.
+Content: each image contains the complete problem — Thai text, any diagrams (geometric figures, tables, number lines, coordinate planes), and any required mathematical notation. The image is self-contained; no external context is needed.
+To load an image in Python:
+
+from PIL import Image
+img = Image.open("images/0.jpg")
+img.show()
+Example rows from train.csv
+id,image_path,answer
+0,images/0.jpg,20 ตารางเซนติเมตร
+1,images/1.jpg,1
+2,images/2.jpg,$6\sqrt{3}$
+3,images/3.jpg,10
+5,images/5.jpg,$(\frac{17}{10}, \frac{289}{20})$
+9,images/9.jpg,30 องศา
+Answer forms
+Ground-truth answers in train.csv appear in several forms. The Evaluation tab describes how each form is normalized before scoring, so you only need to match up to normalization.
+
+Form	Example	Frequency
+Plain integer	36, 227, -2	Most common
+Decimal	2.8125	Occasional
+Number + Thai unit	20 ตารางเซนติเมตร, 30 องศา	Common
+LaTeX fraction or square root	$\frac{17}{10}$, $6\sqrt{3}$	~9% of training set
+Short Thai phrase	ขาดทุน ร้อยละ 1, ข้อ (จ)	Rare
+Thai digits	๒๕	Rare
+Sentinel	<n/a>	A handful of rows
+Data composition
+The 700 problems come from 9 source buckets, identified by a 3-digit prefix in the original problem filenames. The buckets correspond approximately to grade level and source collection.
+
+Notes on the data
+Problems are drawn from publicly available Thai mathematics curricula and are used here solely for educational assessment within the Super AI Engineer SS6 program.
+No problem appears in more than one split. Each id is unique across the entire dataset.
+The test set contains no answer column. Any submission that depends on reading an answer from test.csv will fail.
+There is no leakage between train and test: the same problem (image) does not appear in both.
+Loading the data
+A minimal example to get started:
+
+# Make a trivial submission
+import pandas as pd
+from PIL import Image
+
+train = pd.read_csv("train.csv")
+test  = pd.read_csv("test.csv")
+
+# Look at one example
+row = train.iloc[0]
+img = Image.open(row["image_path"])
+print(row["id"], "→", row["answer"])
+img.show()
+
+# Make a trivial submission
+sub = pd.DataFrame({"id": test["id"], "answer": "2"})
+sub.to_csv("submission.csv", index=False)
+
+Competition Rules
+Super AI Engineer SS6 — Individual Test Thai Math Visual QA
+
+By submitting to this competition, you agree to be bound by the rules below. The competition host's decisions are final in all matters relating to the competition.
+
+1. Eligibility
+1.1 This competition is restricted to enrolled participants of the Super AI Engineer SS6 program. Invitations are issued by the program organizers; uninvited Kaggle users may view the competition page but may not join, submit, or appear on the leaderboard.
+
+1.2 Participants must be at least 13 years of age and meet Kaggle's general Terms of Service.
+
+1.3 Employees, contractors, and immediate family of the competition host, judges, or evaluation team are not eligible for top placements but may join for practice.
+
+2. Individual Participation
+2.1 This is an individual assessment. Teams are not permitted. Each participant must work alone, on their own Kaggle account, and submit independently.
+
+2.2 You may not form or join teams in the Kaggle UI for this competition. Any team merger attempts will result in disqualification of all involved accounts.
+
+2.3 You must not collaborate with any other participant — including, but not limited to: discussing solution approaches, sharing prompts, sharing code, sharing model outputs, sharing predictions, sharing notebooks privately, or coordinating submissions.
+
+3. One Account Per Participant
+3.1 You may submit from only one Kaggle account. Submitting from multiple accounts, or having another person submit on your behalf, is strictly forbidden.
+
+3.2 Use of duplicate, alternate, or proxy accounts will result in immediate disqualification of all related accounts and may result in removal from the Super AI Engineer SS6 program.
+
+4. Submissions
+4.1 Each submission must be a valid CSV with the exact header id,answer, containing one row for every id in test.csv. Malformed submissions will fail to score.
+
+4.2 Submission limit: 5 submissions per day per participant.
+
+4.3 At the end of the competition you may select up to 2 submissions to be used for Private Leaderboard scoring. If you do not select any, Kaggle will use your two highest-scoring submissions on the Public Leaderboard by default.
+
+4.4 Late submissions (after the official close time) will not be scored.
+
+5. External Data and Pretrained Models
+5.1 External datasets: Permitted. You may use any publicly available dataset (textbooks, prior math competition archives, open VQA datasets, etc.) to develop your solution, provided the data was publicly available before the competition start date and you do not include data that overlaps with the test set.
+
+5.2 Pretrained models — open weights only. You may use any pretrained model whose weights are openly published and downloadable (for example Llama, Qwen, Qwen-VL, InternVL, MiniCPM-V, Pixtral, DeepSeek-VL, Typhoon, Molmo). You may run these models locally, on Kaggle Notebooks, on Colab, or on your own infrastructure.
+
+5.3 Commercial / hosted inference APIs are PROHIBITED. You may not call any hosted model-serving API — paid or free — to produce predictions for this competition. This includes, but is not limited to: Anthropic Claude, OpenAI GPT-4o / GPT-4 / o1 / any OpenAI model, Google Gemini / PaLM / Vertex AI, AWS Bedrock, Azure OpenAI, Cohere, Mistral La Plateforme, Together AI, Replicate, Fireworks, Groq, Perplexity, DeepInfra, OpenRouter, Hugging Face Inference API / Inference Endpoints, and any equivalent service. The model performing inference must be one whose weights you have downloaded and are running yourself.
+
+5.4 Open-source tooling APIs are still permitted. OCR libraries that run locally (Tesseract, EasyOCR, PaddleOCR), search-augmentation against your own local indices, and any other local computation are allowed.
+
+5.5 Disclosure: You must briefly disclose the external data and pretrained models you used in the description of your final selected submission. Failure to disclose may result in disqualification.
+
+6. Prohibited Actions
+The following actions are strictly forbidden and will result in disqualification:
+
+6.1 Hand-labeling the test set — manually inspecting test images and writing answers by hand, in whole or in part. Submissions must be produced by an automated system.
+
+6.2 Probing the leaderboard — using the submission limit to extract per-id answers (e.g., binary-search techniques against the public LB).
+
+6.3 Sourcing the ground truth — attempting to identify the original source of any test problem (e.g., from a textbook or competition archive) in order to look up its answer.
+
+6.4 Sharing solutions — sharing code, prompts, predictions, notebooks, or any solution component with other participants during the competition, by any channel (private chat, screen-share, code repositories, etc.).
+
+6.5 Reverse engineering the evaluation system, scraping non-public Kaggle endpoints, or otherwise attempting to obtain information not intended to be public.
+
+6.6 Plagiarism — submitting work substantially copied from public Kaggle notebooks, GitHub repositories, or any other source without your own meaningful contribution.
+
+6.7 Routing predictions through a commercial API — using any wrapper, proxy, agent framework, browser-automation, or third-party tool that ultimately invokes a prohibited commercial inference API (see §5.3) to produce or refine your submission. The prohibition applies to the act of using the model, regardless of how the call is dressed up.
+
+7. Notebooks and Code Sharing
+7.1 During the competition, you may use Kaggle Notebooks privately for your own development.
+
+7.2 Do not publicly share notebooks containing competition-specific solutions while the competition is open. Public notebooks containing baseline exploration (data loading, EDA only) are allowed.
+
+7.3 After the competition closes, top participants may be asked to publish their solution notebook for the program's educational benefit.
+
+8. Winner Requirements
+8.1 To be eligible for top placement, the top 5 participants on the Private Leaderboard must:
+
+(a) Submit a clean, runnable notebook or repository reproducing their final submission within 7 days of the competition close. (b) Provide a written description (1–2 pages) of their approach, including the external data and pretrained models used. (c) Make their submission reproducible — fix random seeds, pin dependencies, and document the environment. (d) Be available for a short verification interview with the program organizers if requested.
+
+8.2 Failure to meet these requirements within the deadline will result in forfeiting the placement, and the next-ranked eligible participant will be moved up.
+
+9. Evaluation
+9.1 Submissions are scored by accuracy — exact match between your predicted answer and the ground truth, after applying the normalization rules described in the competition Overview. The normalization is deterministic and the same for every participant.
+
+9.2 The Public Leaderboard is computed on approximately 35% of the test set and is visible throughout the competition.
+
+9.3 The Private Leaderboard is computed on the remaining 65% of the test set and is revealed only after the competition closes. Final rankings are determined by the Private Leaderboard.
+
+10. Disqualification
+10.1 The competition host reserves the right to disqualify any participant, at any time, for violating these rules. Disqualification may be applied with or without prior notice.
+
+10.2 Disqualified submissions will be removed from both leaderboards.
+
+10.3 Disqualification from this competition may also result in removal from the Super AI Engineer SS6 program, at the program's discretion.
+
+11. General Provisions
+11.1 The competition host may modify these rules at any time for clarity, fairness, or to address unforeseen issues. Material changes will be announced on the competition forum.
+
+11.2 In the event of a tie on the Private Leaderboard, the participant who reached the tied score earlier (by submission timestamp) will be ranked higher.
+
+11.3 All decisions of the competition host and the Super AI Engineer SS6 program organizers are final.
+
+11.4 By participating, you grant the competition host the right to use your username, ranking, and (with your consent) your solution writeup for educational and promotional purposes within the Super AI Engineer SS6 program.
+
+12. Contact
+Questions about the rules should be posted on the competition's Discussion forum so all participants receive the same information. Private questions about eligibility or suspected violations may be sent to the program organizers.

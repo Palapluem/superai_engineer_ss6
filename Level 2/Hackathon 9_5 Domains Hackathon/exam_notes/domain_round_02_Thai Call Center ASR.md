@@ -558,3 +558,61 @@ Reference:
 - path ต้องเหมาะกับ Kaggle/Colab ตามที่ระบุ
 - ถ้าไม่มั่นใจอย่าเดา ให้ inspect ไฟล์จริงก่อน
 ```
+# คำสั่งและคำอธิบายจากโจทย์
+
+Description
+Welcome to the Individual Test: Thai Call Center ASR Challenge!
+
+As Voice-to-Voice (V2V) AI assistants become the new standard in customer service, the ability to accurately transcribe what a customer is saying—even in less-than-ideal audio conditions—is critical.
+
+This dataset is derived from the KUSED (Thai V2V Benchmark), a framework originally designed to evaluate large language models (like Gemini Live and GPT-Realtime) acting as banking assistants. The audio files in this competition mimic real-world call center scenarios, including:
+
+Complex Banking Queries: Credit card cancellations, loan inquiries, and account troubleshooting. Conversational Nuances: Backchannels (e.g., "อืม", "ค่ะ"), pauses, and mid-sentence hesitations. Extreme Audio Environments: To test your model's robustness, the dataset includes heavy data augmentations such as phone-line compression (8kHz), Gaussian background noise, pitch shifting, and extreme speed variations (fast/slow). Your Mission Your objective is to develop an ASR model capable of parsing these challenging Thai audio files into clean, accurate text transcripts. You may fine-tune existing open-source models (like Whisper or Wav2Vec2) or build your own architecture.
+
+Are you ready to build the next-generation voice interface for Thai banking? Let the hacking begin!
+
+Evaluation
+Submissions are evaluated based on the Mean Levenshtein Distance (or Character/Word Error Rate) between your predicted transcript and the actual observed transcript. For the Thai language, capturing the exact characters and spacing is crucial.
+
+The error rate is calculated using the following formula:
+
+
+Where:
+
+S is the number of Substitutions (characters/words replaced)
+D is the number of Deletions (characters/words omitted)
+I is the number of Insertions (extra characters/words added)
+N is the total number of characters/words in the ground truth reference
+Lower distance scores are better, indicating that your predicted text requires fewer edits to perfectly match the ground truth.
+
+Submission File
+For each audio file in the test set, you must predict the exact spoken Thai transcription. The submission file should be in CSV format, contain a header, and have the exact following format:
+
+Id,Expected
+RSP_001_audio.wav,ผมทำบัตรเครดิตหายครับ ต้องการอายัดบัตรด่วน
+BCH_002_audio_noise.wav,สวัสดีค่ะ พอดีจะสอบถามเรื่องการสมัครบัตรเครดิตหน่อยค่ะ
+SDB_015_turn_1_fast.wav,มีโปรโมชั่นอะไรน่าสนใจบ้างครับช่วงนี้
+
+Note: Ensure your predicted text does not contain special characters that are not part of the spoken utterance.
+
+Dataset Description (นำไปแปะในแท็บ Data -> Data Explorer / Dataset Description)
+This dataset contains a comprehensive collection of Thai conversational audio files curated specifically for the banking and call center domains. The audio files are designed to test the robustness of Automatic Speech Recognition (ASR) models against real-world acoustic challenges.
+
+📁 Files
+audio/ - A folder containing all 5,850 testing audio files in .wav format.
+sample_submission.csv - A sample submission file in the correct format. This file lists all the audio filenames that you need to predict.
+🎵 Audio Variations (Data Augmentations)
+To simulate the chaotic environment of a real customer service center, the original audio files have been augmented into 5 additional variations. You can identify the variation by looking at the suffix of the filename:
+
+Original (No Suffix): Clear, studio-quality conversational audio (16kHz).
+_phone.wav: Telephone-line simulation. The audio is down-sampled and compressed to 8kHz to mimic a standard mobile phone call.
+_noise.wav: Background noise added. Simulates calls made from busy streets or noisy environments.
+_fast.wav: Time-stretched to 1.2x speed to simulate fast-speaking customers.
+_slow.wav: Time-stretched to 0.8x speed to simulate slow or hesitant speech.
+_pitch.wav: Pitch-shifted audio to diversify vocal tones.
+Note: Regardless of the acoustic variation, the ground-truth text (the words spoken) remains exactly the same as the original file.
+
+📄 Columns in sample_submission.csv
+file_name: The exact name of the audio file in the audio/ directory (e.g., RSP_001_audio.wav, BCH_005_audio_noise.wav).
+text: The predicted Thai transcription of the audio file. (You must fill this in with your model's predictions).
+Tips: Watch out for filler words (คำอุทาน) such as "อืม", "เอ่อ", "ค่ะ", "ครับ" which are fully transcribed in the ground truth. Your model should capture these accurately to achieve the lowest Error Rate!

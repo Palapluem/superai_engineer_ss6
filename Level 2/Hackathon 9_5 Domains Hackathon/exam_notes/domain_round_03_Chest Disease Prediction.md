@@ -558,3 +558,45 @@ Reference:
 - path ต้องเหมาะกับ Kaggle/Colab ตามที่ระบุ
 - ถ้าไม่มั่นใจอย่าเดา ให้ inspect ไฟล์จริงก่อน
 ```
+
+# รายละเอียดโจทย์
+
+Description
+Welcome to the final hackathon! Medical imaging is a critical component of modern healthcare, enabling doctors to diagnose and treat diseases quickly and accurately. Chest X-rays are among the most common medical imaging exams, used to detect a wide range of conditions affecting the lungs, heart, and chest wall.
+
+The Challenge
+Your objective in this competition is to build a machine learning model capable of automatically detecting the presence of 13 different abnormalities or diseases from chest X-ray images.
+
+This is a Multi-label Classification problem, meaning a single patient's X-ray image may show signs of multiple diseases simultaneously.
+
+The Target Classes
+You will be predicting the probability for the following 13 classes:
+
+Atelectasis
+Cardiomegaly
+Consolidation
+Edema
+Enlarged Cardiomediastinum
+Fracture
+Lung Lesion
+Lung Opacity
+No Finding (Healthy / Normal)
+Pleural Effusion
+Pleural Other
+Pneumonia
+Pneumothorax
+Good luck, and may the best model win!
+
+Evaluation
+Submissions are evaluated on the Mean Column-wise ROC AUC (Area Under the Receiver Operating Characteristic curve). The final score is the average of the individual AUCs for each of the 13 predicted classes.
+
+(Note: The higher the ROC AUC score, the better your model's performance.)
+
+Submission File
+For each image filename in the test set, you must predict a probability (ranging from 0.0 to 1.0) for each of the 13 target variables.
+
+The submission file must be in .csv format, must contain a header, and should look exactly like the example below:
+filename,Atelectasis,Cardiomegaly,Consolidation,Edema,Enlarged Cardiomediastinum,Fracture,Lung Lesion,Lung Opacity,No Finding,Pleural Effusion,Pleural Other,Pneumonia,Pneumothorax
+cxr00001.jpg,0.1,0.0,0.8,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0,0.0
+cxr00002.jpg,0.0,0.0,0.0,0.0,0.0,0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+cxr00003.jpg,0.0,0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8,0.0,0.0,0.0
