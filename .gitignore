@@ -6,6 +6,12 @@ Level 1/Hackathon 2_การแข่งขัน OCR เอกสารผล�
 .gemini/
 .claude/
 
+# Personal documents
+*CV*.pdf
+*cv*.pdf
+*Resume*.pdf
+*resume*.pdf
+
 # Virtual Environments
 .venv/
 venv/

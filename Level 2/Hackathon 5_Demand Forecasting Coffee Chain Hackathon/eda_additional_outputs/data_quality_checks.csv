@@ -1,0 +1,17 @@
+check,count
+duplicates_order_id,0
+duplicates_transaction_id,0
+duplicates_order_id_product_id,60007
+duplicates_product_id,0
+duplicates_store_id,0
+orders_missing_transactions,0
+transactions_missing_orders,0
+transactions_missing_product,0
+orders_missing_store,0
+neg_units_sold,0
+zero_units_sold,0
+neg_revenue,0
+zero_revenue,0
+neg_discount_applied,0
+zero_discount_applied,2402150
+order_hour_out_of_range,0
